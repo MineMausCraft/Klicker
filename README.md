@@ -821,8 +821,6 @@ Resources
 *TEMPLATE
 		always hidden
 
-	
-		
 *Raupep
 *Bienenstockp
 *Termitenbaup
@@ -836,124 +834,88 @@ Resources
 *Ivanp
 *Eimerp
 
-//Shinies --------------------------
-
-	
+//Shinies ---------------------------------------------------------------------------------------------------------
 Shinies
-
-
+*TEMPLATE
+	on click:log Woop
+	class:bigButton
 //1
-
 *luckyFly
-        on click:log Woop
         frequency:600
         frequency variation:600
 		movement:onRight moveLeft fade bounce:0.05
 		icon:iconsgr[2,0]
-        class:bigButton
         on click:yield Nahrung*0.01% Nahrung
         on click:toast Du hast der kleinen Fliege <b>[Nahrung*0.01%]</b> Nahrung geklaut!
-		
 //2 
- 
 *luckyBug
-	on click:log Woop   
     frequency:700
     frequency variation:600
     duration:10
     movement:anywhere fade grow
     icon:iconsgr[2,3]
-    class:bigButton
     on click:yield Nahrung*0.03% Nahrung
     on click:toast Der kleine Käfer brachte dir <b>[Nahrung*0.03%]</b> Nahrung!
-	
 //3	
-	
 *luckyMai
-	on click:log Woop
     frequency:800
     frequency variation:600
     duration:10
     movement:onLeft moveRight bobVertical
     icon:iconsgr[2,1]
-    class:bigButton
     on click:yield Nahrung*0.02% Nahrung
     on click:toast Der kleine Maikäfer brachte dir <b>[Nahrung*0.02%]</b> Nahrung!
-
 //4
-
 *luckyGemeinerKaefer
-	on click:log Woop  
     frequency:900
     frequency variation:600
     duration:10
     movement:moveRandom growShrink
     icon:iconsgr[2,2]
-    class:bigButton
     on click:lose Nahrung*0.01% Nahrung
     on click:toast Der gemeine Käfer stahl dir <b>[Nahrung*0.2%]</b> Nahrung!
-	
 //5	
-	
 *luckyMariechen
- 	on click:log Woop  
     frequency:1000
     frequency variation:600
     duration:10
     movement:anywhere pulse growShrink
     icon:iconsgr[2,6]
-    class:bigButton
     on click:yield Nahrung*0.01% Nahrung
     on click:toast Mariechen brachte dir <b>[Nahrung*0.01%]</b> Nahrung!
-
 //6	
-	
 *luckyKakerlake
-	on click:log Woop   
     frequency:1100
     frequency variation:600
     duration:10
     movement:anywhere fade growShrink
     icon:iconsgr[2,5]
-    class:bigButton
     on click:yield Nahrung*0.001% Nahrung
     on click:toast Die faule Kakerlake brachte dir <b>[Nahrung*0.001%]</b> Nahrung!
-	
 //7	
-	
 *luckyMike
- 	on click:log Woop  
     frequency:1200
     frequency variation:600
     duration:5
 	movement:onRight fade moveLeft
     icon:iconsgr[2,4]
-    class:bigButton
     on click:yield Nahrung*0.01% Nahrung
     on click:toast Der schnelle Mike brachte dir <b>[Nahrung*0.01%]</b> Nahrung!
-	
 //8
-
 *luckyBee
-    on click:log Woop
     frequency:1300
     frequency variation:600
 	movement:onRight moveLeft fade bounce:0.05
 	icon:iconsgr[2,7]
-	class:bigButton
     on click:yield Nahrung*0.01% Nahrung
     on click:toast Die kleine Biene brachte dir <b>[Nahrung*0.01%]</b> Nahrung!
-	
 //9
-	
 *luckyMaikaefer
-	on click:log Woop   
     frequency:600
     frequency variation:360
     duration:10
     movement:anywhere fade growShrink
     icon:iconsgr[2,8]
-    class:bigButton
 	    on click:
         if (chance(1%))
             lose Zeit
@@ -965,17 +927,12 @@ Shinies
             toast Der Maikäfer brachte dir <b>[Nahrung*0.002%]</b> Nahrung!
         end
     end    
-
-		
 //10
-
 *luckyBienchen
-    on click:log Woop
     frequency:700
     frequency variation:360
 	movement:onRight moveLeft fade bounce:0.05
 	icon:iconsgr[2,9]
-	class:bigButton
 	    on click:
         if (chance(1%))
             lose Zeit
@@ -987,18 +944,13 @@ Shinies
             toast Das kleine Bienchen brachte dir <b>[Nahrung*0.02%]</b> Nahrung!
         end
     end    
-
-		
 //11
-	
 *luckyMai2
-	on click:log Woop   
     frequency:800
     frequency variation:360
     duration:10
     movement:anywhere fade growShrink
     icon:iconsgr[3,0]
-    class:bigButton
 	    on click:
         if (chance(1%))
             lose Zeit
@@ -1010,18 +962,13 @@ Shinies
             toast Der Maikäfer brachte dir <b>[Nahrung*0.001%]</b> Nahrung!
         end
     end    
-
-	
 //12
-	
 *luckyFliege
-	on click:log Woop   
     frequency:900
     frequency variation:360
     duration:10
     movement:anywhere fade growShrink
     icon:iconsgr[3,1]
-    class:bigButton
 	    on click:
         if (chance(1%))
             lose Zeit
@@ -1033,18 +980,13 @@ Shinies
             toast Die Fliege brachte dir <b>[Nahrung*0.002%]</b> Nahrung!
         end
     end    
-
-  
 //13
-	
 *luckyGrKaefer
-	on click:log Woop   
     frequency:1000
     frequency variation:360
     duration:10
     movement:anywhere fade growShrink
     icon:iconsgr[3,2]
-    class:bigButton
 	    on click:
         if (chance(1%))
             lose Zeit
@@ -1056,19 +998,13 @@ Shinies
             toast Der grüne Käfer brachte dir <b>[Nahrung*0.012%]</b> Nahrung!
         end
     end    
-
-	
-	
 //14
-	
 *luckyMoskito
-	on click:log Woop   
     frequency:1100
     frequency variation:360
     duration:10
     movement:anywhere fade growShrink
     icon:iconsgr[3,3]
-    class:bigButton
 	    on click:
         if (chance(1%))
             lose Zeit
@@ -1080,18 +1016,13 @@ Shinies
             toast Der Moskito brachte dir <b>[Nahrung*0.02%]</b> Nahrung!
         end
     end    
-
-	
 //15
-	
 *luckyMuecke
-	on click:log Woop   
     frequency:1200
     frequency variation:360
     duration:10
     movement:anywhere fade growShrink
     icon:iconsgr[3,4]
-    class:bigButton
 	    on click:
         if (chance(1%))
             lose Zeit
@@ -1103,18 +1034,13 @@ Shinies
             toast Die Mücke brachte dir <b>[Nahrung*0.01%]</b> Nahrung!
         end
     end    
-
-	
 //16
-	
 *luckyGelb
-	on click:log Woop   
     frequency:1300
     frequency variation:360
     duration:10
     movement:anywhere fade growShrink
     icon:iconsgr[3,5]
-    class:bigButton
 	    on click:
         if (chance(1%))
             lose Zeit
@@ -1126,21 +1052,13 @@ Shinies
             toast Der gelbe Käfer brachte dir <b>[Nahrung*0.02%]</b> Nahrung!
         end
     end    
-
-	
-		
-
 //17	
-	
 *luckyBird
- 	on click:log Woop  
     frequency:1400
     frequency variation:360
     duration:5
 	movement:onLeft fade moveRight bounce
     icon:iconsgr[3,6]
-    class:bigButton
-	    
     on click:
         if (chance(1%))
             lose Zeit
@@ -1152,19 +1070,13 @@ Shinies
             toast Das kleine Vögelchen brachte dir <b>[Nahrung*0.01%]</b> Nahrung!
         end
     end    
-
-
 //18
-
 *luckyAngryBird
-     on click:log Woop  
     frequency:1500
     frequency variation:360
     duration:5
     movement:onRight fade moveLeft
     icon:iconsgr[3,7]
-    class:bigButton
-    
     on click:
         if (chance(1%))
             lose Zeit
@@ -1177,7 +1089,6 @@ Shinies
         end
     end    
 
-	
 Buildings
 	*TEMPLATE
 		on click:anim glow
