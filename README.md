@@ -1154,6 +1154,7 @@ Buildings
         no tooltip
 		no buy
 
+*TEMPLATE		
 //Nahrungs Gebäude -----------------
 
  //1
