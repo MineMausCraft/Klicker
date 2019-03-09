@@ -1168,9 +1168,7 @@ Buildings
 	on tick:yield 3 SammlerAp
     req:1000 Insekten:earned   
 	on earn:yield 0.1 Erfahrung
-	
 //2
-	   
 *SucherAmeise|SucherAmeisen
     name:SucherAmeise|SucherAmeisen
     desc:Sie sind sehr effizient bei der Nahrungssuche!<//><b><.></b> Produziert <b>260</b> Nps.<//><.> Produktion: <b>[SucherAmeise*260]</b> /Nps 
@@ -1180,9 +1178,7 @@ Buildings
     on tick:yield 260 Nahrung
     req:112000 Insekten:earned and 900 SammlerAmeisen
 	on earn:yield 0.1 Erfahrung
-	
 //3
-	   
 *JaegerAmeise|JaegerAmeisen
     name:JägerAmeise|JägerAmeisen
     desc:Sie sind großarte Jäger!<//><b><.></b> Produziert <b>380000</b> Nps.<//><.> Produktion: <b>[JaegerAmeise*380000]</b> /Nps 
@@ -1192,16 +1188,8 @@ Buildings
     on tick:yield 380000 Nahrung
     req:420000000 Insekten:earned and 900 SucherAmeise
 	on earn:yield 0.1 Erfahrung
-	
  
- 
- 
- 
- 
-//Larven Gebäude ---------------
- 
- 
- 
+//Larven Gebäude -------------------------------------------------------------
  //1
 *Raupe|Raupen
     name:Raupe|Raupen
@@ -1212,9 +1200,7 @@ Buildings
 	on tick:yield 0.3 Raupep
 	on earn:yield 0.1 Erfahrung
     req:1 Larve:earned   
-	
 //2
-	   
 *Bienenstock
     name:Bienenstock|Bienenstöcke
     desc:Viele kleine Bienenlarven wachsen hier! <//><b><.></b> Produziert <b>1</b> Lps. Aktuell: <b>[Bienenstockp:ps/Bienenstock]</b> Lps <//><b><.></b> Produktion aktuell: <b>[Bienenstockp:ps]</b> Lps <//><b><.></b> Verbrauch: <b>1</b> Bps und <b>1</b> Nps <//><b><.></b> Gesamter Vb: <b>[Bienenstock*1]</b>/Bps und <b>[Bienenstock*1]</b>/Nps
@@ -1226,9 +1212,7 @@ Buildings
  	on tick:lose 1 Nahrung
 	on earn:yield 1 Erfahrung
 	req:112 Larven:earned 
-	
 //3
-	   
 *Termitenbau
     name:Termitenbau
     desc:So viel Platz für kleine Larven! <//><b><.></b> Produziert <b>8</b> Lps. Aktuell: <b>[Termitenbaup:ps/Termitenbau]</b> Lps <//><b><.></b> Produktion aktuell: <b>[Termitenbaup:ps]</b> Lps <//><b><.></b> Verbrauch: <b>2</b> Bps und <b>5</b> Nps <//><b><.></b> Gesamter Vb: <b>[Termitenbau*2]</b>/Bps und <b>[Termitenbau*5]</b>/Nps
@@ -1240,9 +1224,7 @@ Buildings
 	on tick:lose 5 Nahrung
 	on earn:yield 1 Erfahrung
 	req:1232 Larven:earned  
-	
  //4
-	  
 *Blatt
     name:Blatt|Blätter
     desc:An der Unterseite dieses Blattes kleben viele Larven! <//><b><.></b> Produziert <b>48</b> Lps. Aktuell: <b>[Blattp:ps/Blatt]</b> Lps <//><b><.></b> Produktion aktuell: <b>[Blattp:ps]</b> Lps <//><b><.></b> Verbrauch: <b>3</b> Bps und <b>10</b> Nps <//><b><.></b> Gesamter Vb: <b>[Blatt*3]</b>/Bps und <b>[Blatt*10]</b>/Nps
@@ -1254,9 +1236,7 @@ Buildings
 	on tick:lose 10 Nahrung
 	on earn:yield 1 Erfahrung
 	req:13440 Larven:earned 
-	
 //5
-	     
 *WespenNest|WespenNester
     name:WespenNest|WespenNester
     desc:Vorsicht sie stechen! <//><b><.></b> Produziert <b>266</b> Lps. Aktuell: <b>[WNestp:ps/WespenNest]</b> Lps <//><b><.></b> Produktion aktuell: <b>[WNestp:ps]</b> Lps <//><b><.></b> Verbrauch: <b>15</b> Bps und <b>75</b> Nps <//><b><.></b> Gesamter Vb: <b>[WespenNest*15]</b>/Bps und <b>[WespenNest*50]</b>/Nps
@@ -1268,9 +1248,7 @@ Buildings
 	on tick:lose 50 Nahrung
 	on earn:yield 1 Erfahrung
     req:145600 Larven:earned   
-	
 //6
-	      
 *VerfaulterApfel|VerfaulteAepfel
     name:VerfaulterApfel|VerfaulteÄpfel
     desc:So schön faulig, bietet Platz für einige Larven! <//><b><.></b> Produziert <b>1430</b> Lps. Aktuell: <b>[VApfelp:ps/VerfaulterApfel]</b> Lps <//><b><.></b> Produktion aktuell: <b>[VApfelp:ps]</b> Lps <//><b><.></b> Verbrauch: <b>80</b> Bps und <b>75</b> Nps<//><b><.></b> Gesamter Vb: <b>[VerfaulterApfel*80]</b>/Bps und <b>[VerfaulterApfel*75]</b>/Nps
@@ -1282,9 +1260,7 @@ Buildings
 	on tick:lose 75 Nahrung
 	on earn:yield 1 Erfahrung
     req:1568000 Larven:earned   
-	
 //7
-	   
 *AltesNest|AlteNester
     name:AltesNest|AlteNester
     desc:Niemand weiß wer es gebaut hat aber es ist dunkel! <//><b><.></b> Produziert <b>7966</b> Lps. Aktuell: <b>[ANestp:ps/AltesNest]</b> Lps <//><b><.></b> Produktion aktuell: <b>[ANestp:ps]</b> Lps <//><b><.></b> Verbrauch: <b>300</b> Bps und <b>100</b> Nps<//><b><.></b> Gesamter Vb: <b>[AltesNest*300]</b>/Bps und <b>[AltesNest*100]</b>/Nps
@@ -1296,9 +1272,7 @@ Buildings
    	on tick:lose 300 BauMaterial
 	on tick:lose 100 Nahrung
 	on earn:yield 1 Erfahrung
-	
 //8
-	   
 *UeberwucherterSchuh|UeberwucherteSchuhe
     name:ÜberwucherterSchuh|ÜberwucherteSchuhe
     desc:Alt und stinkig, wie lange steht er wohl schon hier?!<//><b><.></b> Produziert <b>44936</b> Lps. Aktuell: <b>[Schuhp:ps/UeberwucherterSchuh]</b> Lps <//><b><.></b> Produktion aktuell: <b>[Schuhp:ps]</b> Lps <//><b><.></b> Verbrauch: <b>300</b> Bps und <b>100</b> Nps<//><b><.></b> Gesamter Vb: <b>[UeberwucherterSchuh*1201]</b>/Bps und <b>[UeberwucherterSchuh*125]</b>/Nps
@@ -1310,9 +1284,7 @@ Buildings
  	on tick:lose 1201 BauMaterial
 	on tick:lose 125 Nahrung
 	on earn:yield 1 Erfahrung
-	
 //9
-	   
 *Pizza|Pizzen
     name:Pizza|Pizzen
     desc:Sie war mal lecker!<//><b><.></b> Produziert <b>265532</b> Lps. Aktuell: <b>[Pizzap:ps/Pizza]</b> Lps <//><b><.></b> Produktion aktuell: <b>[Pizzap:ps]</b> Lps <//><b><.></b> Verbrauch: <b>10000</b> Bps und <b>150</b> Nps<//><b><.></b> Gesamter Vb: <b>[Pizza*10000]</b>/Bps und <b>[Pizza*150]</b>/Nps
@@ -1324,9 +1296,7 @@ Buildings
  	on tick:lose 10000 BauMaterial
 	on tick:lose 150 Nahrung
 	on earn:yield 1 Erfahrung
-	
 //10
-	   
 *SchneckeIvan|SchneckenIvan
     name:SchneckeIvan|SchneckenIvan
     desc:Er ist nicht schnell aber sein Haus ist voller Eier!<//><b><.></b> Produziert <b>1634043</b> Lps. Aktuell: <b>[Ivanp:ps/SchneckeIvan]</b> Lps <//><b><.></b> Produktion aktuell: <b>[Ivanp:ps]</b> Lps <//><b><.></b> Verbrauch: <b>50000</b> Bps und <b>175</b> Nps<//><.> Gesamter Vb: <b>[SchneckeIvan*50000]</b>/Bps und <b>[SchneckeIvan*175]</b>/Nps
@@ -1338,9 +1308,7 @@ Buildings
  	on tick:lose 50000 BauMaterial
 	on tick:lose 175 Nahrung
 	on earn:yield 1 Erfahrung
-	
 //11
-	   
 *WasserEimer
     name:WasserEimer
     desc:Ein wunderbares zuhause für Wasser liebende Larven!<//><b><.></b> Produziert <b>10212766</b> Lps. Aktuell: <b>[Eimerp:ps/WasserEimer]</b> Lps <//><b><.></b> Produktion aktuell: <b>[Eimerp:ps]</b> Lps <//><b><.></b> Verbrauch: <b>300000</b> Bps und <b>200</b> Nps<//><.> Gesamter Vb: <b>[WasserEimer*300000]</b>/Bps und <b>[WasserEimer*200]</b>/Nps
@@ -1352,9 +1320,7 @@ Buildings
    	on tick:lose 300000 BauMaterial
 	on tick:lose 200 Nahrung
 	on earn:yield 1 Erfahrung
-	
 //12
-	   
 *DahlienBusch|DahlienBuesche
     name:DahlienBusch|DahlienBüsche
     desc:Schmetterlingslarven fühen sich hier pudelwohl!<//><b><.></b> Produziert <b>66382979</b> Lps.<//><.> Produktion: <b>[DahlienBusch*66382979]</b> /Lps <//><.> Verbrauch: <b>2147929</b> Bps und <b>225</b> Nps<//><.> Gesamter Vb: <b>[DahlienBusch*2147929]</b>/Bps und <b>[DahlienBusch*225]</b>/Nps
@@ -1365,9 +1331,7 @@ Buildings
  	on tick:lose 2147929 BauMaterial
 	on tick:lose 225 Nahrung
 	on earn:yield 1 Erfahrung
-	
 //13
-	   
 *Maruscha|Maruschas
     name:Maruscha|Maruschas
     desc:Sie ist eine Krabbe und rot!<//><b><.></b> Produziert <b>439148936</b> Lps.<//><.> Produktion: <b>[Maruscha*439148936]</b> /Lps <//><.> Verbrauch: <b>12887574</b> Bps und <b>250</b> Nps<//><.> Gesamter Vb: <b>[Maruscha*12887574]</b>/Bps und <b>[Maruscha*250]</b>/Nps
@@ -1378,9 +1342,7 @@ Buildings
 	on tick:lose 12887574 BauMaterial
 	on tick:lose 250 Nahrung
 	on earn:yield 1 Erfahrung
-	
 //14
-	   
 *Gelbfisch|Gelbfische
 	name:Gelbfisch|Gelbfische
 	desc:Dieser Gelbfisch ist geschickt im Larven fangen!<//><b><.></b> Produziert <b>2961702128</b> Lps.<//><.> Produktion: <b>[Gelbfisch*2961702128]</b> /Lps <//><.> Verbrauch: <b>85256259</b> Bps und <b>275</b> Nps<//><.> Gesamter Vb: <b>[Gelbfisch*85256259]</b>/Bps und <b>[Gelbfisch*275]</b>/Nps
@@ -1391,9 +1353,7 @@ Buildings
 	on tick:lose 85256259 BauMaterial
 	on tick:lose 275 Nahrung
 	on earn:yield 1 Erfahrung
-	
 //15
-	   
 *Schildkroete|Schildkroeten
 	name:Schildkröte|Schildkröten
 	desc:Unter einem Schildkröten Panzer kann man viele Larven vestecken!<//><b><.></b> Produziert <b>21446808511</b> Lps.<//><.> Produktion: <b>[Schildkroete*21446808511]</b> /Lps <//><.> Verbrauch: <b>574984069</b> Bps und <b>300</b> Nps<//><.> Gesamter Vb: <b>[Schildkroete*574984069]</b>/Bps und <b>[Schildkroete*300]</b>/Nps
@@ -1404,9 +1364,7 @@ Buildings
 	on tick:lose 574984069 BauMaterial
 	on tick:lose 300 Nahrung
 	on earn:yield 1 Erfahrung
-	
 //16
-	   
 *Banane|Bananen
 	name:Banane|Bananen
 	desc:Bananen sind süß und safig, ein prima ort für unsere Larven!<//><b><.></b> Produziert <b>153191489362</b> Lps.<//><.> Produktion: <b>[Banane*153191489362]</b> /Lps <//><.> Verbrauch: <b>4163677742</b> Bps und <b>325</b> Nps<//><.> Gesamter Vb: <b>[Banane*4163677742]</b>/Bps und <b>[Banane*325]</b>/Nps
@@ -1417,9 +1375,7 @@ Buildings
 	on tick:lose 4163677742 BauMaterial
 	on tick:lose 325 Nahrung
 	on earn:yield 1 Erfahrung
-	
 //17
-	   
 *Kroete|Kroeten
 	name:Kröte|Kröten
 	desc:So viel Laich!<//><b><.></b> Produziert <b>919148936170</b> Lps.<//><.> Produktion: <b>[Kroete*919148936170]</b> /Lps <//><.> Verbrauch: <b>29740555303</b> Bps und <b>350</b> Nps<//><.> Gesamter Vb: <b>[Kroete*29740555303]</b>/Bps und <b>[Kroete*350]</b>/Nps
@@ -1431,11 +1387,8 @@ Buildings
 	on tick:lose 350 Nahrung
 	on earn:yield 1 Erfahrung
 	
-
-//Insekten Gebäude ------------------------------------------------
-
+//Insekten Gebäude -------------------------------------------------------------------------------------------------------
 //1	   
- 
 *Ameise|Ameisen
     name:Ameise|Ameisen
     desc:kleine Ameisen<//><b><.></b> Produziert <b>0.2</b> Insekten pro Sekunde.<//><.> Produktion: <b>[Ameise*0.2]</b> /Ips
@@ -1444,9 +1397,7 @@ Buildings
     on tick:yield 0.2 Insekten
     req:1 Insekten:earned
 	on earn:yield 0.1 Erfahrung
-	
 //2
-	   
 *Termite|Termiten
     name:Termite|Termiten
     desc:kleine Termiten<//><b><.></b> Produziert <b>1</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Termite*1]</b> /Ips <//><.> Verbrauch: <b>1</b> Bps Total: <b>[Termiten*1]</b>/Bps
@@ -1456,9 +1407,7 @@ Buildings
     req:14 Insekten:earned and UpgITermitorium
  	on tick:lose 1 BauMaterial
 	on earn:yield 1 Erfahrung
-	
 //3
-	   
 *Fliege|Fliegen
     name:Fliege|Fliegen
     desc:kleine Fliegen<//><b><.></b> Produziert <b>7</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Fliegen*7]</b> /Ips <//><.> Verbrauch: <b>2</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Fliege*2]</b>/Bps
@@ -1468,9 +1417,7 @@ Buildings
     req:1540 Insekten:earned and UpgISchmeisfliege
  	on tick:lose 2 BauMaterial
 	on earn:yield 1 Erfahrung
-	
 //4
-	   
 *Kaefer
     name:Käfer
     desc:Kleine Käfer<//><b><.></b> Produziert <b>39</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Kaefer*39]</b> /Ips <//><.> Verbrauch: <b>3</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Kaefer*3]</b>/Bps
@@ -1480,9 +1427,7 @@ Buildings
     req:16800 Insekten:earned and UpgIBuggy
  	on tick:lose 3 BauMaterial
 	on earn:yield 1 Erfahrung
-	
 //5
-	   
 *Biene|Bienen
     name:Biene|Bienen
     desc:Kleine Biene<//><b><.></b> Produziert <b>217</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Biene*217]</b> /Ips <//><.> Verbrauch: <b>15</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Biene*15]</b>/Bps
@@ -1492,9 +1437,7 @@ Buildings
     req:182000 Insekten:earned and UpgIBienenqueen
 	on tick:lose 15 BauMaterial
 	on earn:yield 1 Erfahrung
-	
 //6
-	   
 *RoteAmeise|RoteAmeisen
     name:RoteAmeise|RoteAmeisen
     desc:Fleißige rote Ameisen<//><b><.></b> Produziert <b>1168</b> Insekt pro Sekunde.<//><.> Produktion: <b>[RoteAmeise*1168]</b> /Ips <//><.> Verbrauch: <b>80</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[RoteAmeise*80]</b>/Bps
@@ -1504,9 +1447,7 @@ Buildings
     req:1960000 Insekten:earned and UpgIRoteAmeise
 	on tick:lose 80 BauMaterial
 	on earn:yield 1 Erfahrung
-	
 //7
-	   
 *GrosserKaefer|GrosseKaefer
     name:GroßerKäfer|GroßeKäfer
     desc:So groß!<//><b>Effect:</b><.>Produziert <b>6506</b> Insekt pro Sekunde.<//><.> Produktion: <b>[GrosserKaefer*6506]</b> /Ips <//><.> Verbrauch: <b>300</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[GrosserKaefer*300]</b>/Bps
@@ -1516,9 +1457,7 @@ Buildings
     req:28000000 Insekten:earned and UpgIGrosserBug
   	on tick:lose 300 BauMaterial
 	on earn:yield 1 Erfahrung
-	
 //8
-	   
 *Schmetterling|Schmetterlinge
     name:Schmetterling|Schmetterlinge
     desc:Bunte Schmetterlinge<//><b><.></b> Produziert <b>36698</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Schmetterling*36698]</b> /Ips <//><.> Verbrauch: <b>1201</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Schmetterling*1201]</b>/Bps
@@ -1528,9 +1467,7 @@ Buildings
     req:420000000 Insekten:earned and UpgISchmetterl
   	on tick:lose 1201 BauMaterial
 	on earn:yield 1 Erfahrung
-	
 //9
-	   
 *Schabe|Schaben
     name:Schabe|Schaben
     desc:So flach sie sind!<//><b><.></b> Produziert <b>216851</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Schabe*216851]</b> /Ips <//><.> Verbrauch: <b>10000</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Schabe*10000]</b>/Bps
@@ -1540,9 +1477,7 @@ Buildings
     req:6490909091 Insekten:earned and UpgISchabe
  	on tick:lose 10000 BauMaterial
 	on earn:yield 1 Erfahrung
-	
 //10
-	   
 *Skorpion|Skorpione
     name:Skorpion|Skorpione
     desc:Aus der heißen Wüste er kommt!<//><b><.></b> Produziert <b>1322791</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Skorpion*1322791]</b> /Ips <//><.> Verbrauch: <b>50000</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Skorpion*50000]</b>/Bps
@@ -1552,9 +1487,7 @@ Buildings
     req:95454545455 Insekten:earned and UpgISkorion
 	on tick:lose 50000 BauMaterial
 	on earn:yield 1 Erfahrung
-	
 //11
-	   
 *Moskito|Moskitos
     name:Mücke|Mücken
     desc:Sie bringen so viel Blut!<//><b><.></b> Produziert <b>8267447</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Moskito*8267447]</b> /Ips <//><.> Verbrauch: <b>300000</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Moskito*300000]</b>/Bps
@@ -1564,9 +1497,7 @@ Buildings
     req:1272727272727 Insekten:earned and UpgIMoskito
 	on tick:lose 300000 BauMaterial
 	on earn:yield 1 Erfahrung
-		
 //12
-	   
 *Willi|Willis
     name:Willi|Willis
     desc:Er war immer ein kluger Grashüpfer!<//><b><.></b> Produziert <b>53738404</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Willi*53738404]</b> /Ips <//><.> Verbrauch: <b>2147929</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Willi*2147929]</b>/Bps
@@ -1576,9 +1507,7 @@ Buildings
     req:17818181818182 Insekten:earned and UpgIWilli
 	on tick:lose 2147929 BauMaterial
 	on earn:yield 1 Erfahrung
-	
 //13
-	   
 *Libelle|Libellen
     name:Libelle|Libellen<//><b><.></b> Produziert <b>355500213</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Libelle*355500213]</b> /Ips <//><.> Verbrauch: <b>12887574</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Libelle*12887574]</b>/Bps
     desc:Brumm Brumm!
@@ -1588,9 +1517,7 @@ Buildings
     req:216363636363636 Insekten:earned and UpgILibelle
 	on tick:lose 12887574 BauMaterial
 	on earn:yield 1 Erfahrung
-	
 //14
-	   
 *Gluehwurm|Gluehwuermchen
     name:Glühwurm|Glühwürmchen
     desc:Möge es dir ein Licht sein an dunklen Orten, wenn alle anderen Lichter ausgehen.<//><b><.></b> Produziert <b>2397559574</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Gluehwurm*2397559574]</b> /Ips <//><.> Verbrauch: <b>85256259</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Gluehwurm*85256259]</b>/Bps
@@ -1600,9 +1527,7 @@ Buildings
     req:2672727272727270 Insekten:earned and UpgIGluehwurm
 	on tick:lose 85256259 BauMaterial
 	on earn:yield 1 Erfahrung
-	
 //15
-	   
 *Mistroller
     name:Mistroller
     desc:Er macht aus Mist Leben!<//><b><.></b> Produziert <b>17361638298</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Mistroller*17361638298]</b> /Ips <//><.> Verbrauch: <b>574984069</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Mistroller*574984069]</b>/Bps
@@ -1612,9 +1537,7 @@ Buildings
     req:33090909090909100 Insekten:earned and UpgIMistroller
 	on tick:lose 574984069 BauMaterial
 	on earn:yield 1 Erfahrung
-	
 //16
-	   
 *Nachtfalter
     name:Nachtfalter
     desc:Er sucht das Licht!<//><b><.></b> Produziert <b>124011702128</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Nachtfalter*124011702128]</b> /Ips <//><.> Verbrauch: <b>4163677742</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Nachtfalter*4163677742]</b>/Bps
@@ -1625,13 +1548,8 @@ Buildings
 	on tick:lose 4163677742 BauMaterial
 	on earn:yield 1 Erfahrung
 	
-
-
 // Baumaterial Gebäude ----------------------------------------------------
-
- 
  //1 
- 
 *Gras
     name:Gras
     desc:Saftiges grünes Gras, gut um den Bau zu polstern.<//><b><.></b> Produziert <b>0.1</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[Gras*0.1]</b> /Bps
@@ -1641,7 +1559,6 @@ Buildings
     req:1 BauMaterial:earned
 	on earn:yield 0.1 Erfahrung
  //2
- 
 *Ast|Aeste
     name:Ast|Äste
     desc:Gutes stabiles BauMaterial.<//><b><.></b> Produziert <b>1</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[Ast*1]</b> /Bps
@@ -1651,7 +1568,6 @@ Buildings
     req:121 BauMaterial:earned
 	on earn:yield 0.1 Erfahrung
  //3
- 
 *Wurzel|Wurzeln
     name:Wurzel|Wurzeln
     desc:Hier gibt es viel BauMaterial zu holen!<//><b><.></b> Produziert <b>6</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[Wurzel*6]</b> /Bps
@@ -1661,7 +1577,6 @@ Buildings
     req:943 BauMaterial:earned
 	on earn:yield 1 Erfahrung
  //4
- 
 *Stein|Steine
     name:Stein|Steine
     desc:Kleine, feine, deine!<//><b><.></b> Produziert <b>36</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[Stein*36]</b> /Bps
@@ -1671,7 +1586,6 @@ Buildings
     req:9191 BauMaterial:earned
 	on earn:yield 1 Erfahrung
  //5
- 
 *Dreck
     name:Dreck
     desc:Ein bißchen Dreck muß sein.<//><b><.></b> Produziert <b>180</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[Dreck*180]</b> /Bps
@@ -1681,7 +1595,6 @@ Buildings
     req:90000 BauMaterial:earned
 	on earn:yield 1 Erfahrung
  //6
- 
  *AltesBuch|AlteBuecher
 	name:AltesBuch|AlteBücher
 	desc:Watership Down<//><b><.></b> Produziert <b>969</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[AltesBuch*969]</b> /Bps
@@ -1690,9 +1603,7 @@ Buildings
 	on tick:yield 969 BauMaterial
 	req:969231 BauMaterial:earned
 	on earn:yield 1 Erfahrung
-	
  //7
- 
  *Karnickel
 	name:Karnickel
 	desc:Es ist so flauschig und so produktiv!<//><b><.></b> Produziert <b>5400</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[Karnickel*5400]</b> /Bps
@@ -1701,9 +1612,7 @@ Buildings
 	on tick:yield 5400 BauMaterial
 	req:13846154 BauMaterial:earned
 	on earn:yield 1 Erfahrung
-	
  //8
- 
  *Sonnenblume|Sonnenblumen
 	name:Sonnenblume|Sonnenblumen
 	desc:Sonnenblumenfasern sind schwer beliebt!<//><b><.></b> Produziert <b>30462</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[Sonnenblume*30462]</b> /Bps
@@ -1712,10 +1621,7 @@ Buildings
 	on tick:yield 30462 BauMaterial
 	req:228461538 BauMaterial:earned
 	on earn:yield 1 Erfahrung
-	
- 	
  //9
- 
  *Fred|Freds
 	name:Fred der Maulwurf
 	desc:Fred buddelt den ganzen Tag!<//><b><.></b> Produziert <b>167538</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[Fred*167538]</b> /Bps
@@ -1724,10 +1630,7 @@ Buildings
 	on tick:yield 167538 BauMaterial
 	req:3286331361 BauMaterial:earned
 	on earn:yield 1 Erfahrung
-	
- 	
  //10
- 
  *Blumenbusch|Blumenbuesche
 	name:Blumenbusch|Blumenbüsche
 	desc:Ein Busch der viele Arten von BauMaterial produziert!<//><b><.></b> Produziert <b>1031006</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[Blumenbusch*1031006]</b> /Bps
@@ -1736,9 +1639,7 @@ Buildings
 	on tick:yield 1031006 BauMaterial
 	req:48328402367 BauMaterial:earned
 	on earn:yield 1 Erfahrung
-	
  //11
- 
  *Wollmaus|Wollmaeuse
 	name:Wollmaus|Wollmäuse
 	desc:Endlich hat sie einen Zweck zu erfüllen!<//><b><.></b> Produziert <b>6443787</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[Wollmaus*6443787]</b> /Bps
@@ -1747,9 +1648,7 @@ Buildings
 	on tick:yield 6443787 BauMaterial
 	req:644378698225 BauMaterial:earned	
 	on earn:yield 1 Erfahrung
-	 	
  //12
- 
  *VogelNest|VogelNester
 	name:VogelNest|VogelNester
 	desc:Ein unendlicher Vorrat an Baumaterial lagert hier!<//><b><.></b> Produziert <b>38662722</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[VogelNest*38662722]</b> /Bps
@@ -1758,9 +1657,7 @@ Buildings
 	on tick:yield 38662722 BauMaterial
 	req:8327355484752 BauMaterial:earned
 	on earn:yield 1 Erfahrung
-	
  //13
- 
  *HolzStapel
 	name:HolzStapel
 	desc:Gibt es einen besseren Weg BauMaterial zu lagern als es zu stapeln?<//><b><.></b> Produziert <b>255768776</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[HolzStapel*255768776]</b> /Bps
@@ -1769,9 +1666,7 @@ Buildings
 	on tick:yield 255768776 BauMaterial
 	req:101117888029131 BauMaterial:earned
 	on earn:yield 1 Erfahrung
-	 	
  //14
- 
  *HerbstLaub
 	name:HerbstLaub
 	desc:Es ist bunt und raschelt, damit baut Ameise gerne!<//><b><.></b> Produziert <b>1724952208</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[HerbstLaub*1724952208]</b> /Bps
@@ -1780,9 +1675,7 @@ Buildings
 	on tick:yield 1724952208 BauMaterial
 	req:1249103322712790 BauMaterial:earned
 	on earn:yield 1 Erfahrung
-	 	
  //15
- 
  *EuleFrieda|EulenFrieda
 	name:EuleFrieda|EulenFrieda
 	desc:Diese Eule ist in der Mauser und liefert uns so viel weiches BauMaterial!<//><b><.></b> Produziert <b>12491033227</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[EuleFrieda*12491033227]</b> /Bps
@@ -1791,9 +1684,7 @@ Buildings
 	on tick:yield 12491033227 BauMaterial
 	req:15465088757396500 BauMaterial:earned
 	on earn:yield 1 Erfahrung
-	
  //16
- 
  *CreepyTree|CreepyTrees
 	name:CreepyTree|CreepyTrees
 	desc:Asdpkl ntt dffie djftgtv ojsle Cndu!<//><b><.></b> Produziert <b>89221665908</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[CreepyTree*89221665908]</b> /Bps
@@ -1802,17 +1693,13 @@ Buildings
 	on tick:yield 89221665908 BauMaterial
 	req:184391442876650000 BauMaterial:earned
 	on earn:yield 1 Erfahrung
-	 
-
-
-
+//--------------------------------------------------------------------------------------------------------------------
 *important
 	on tick:show :Upgrades
 	on tick:hide :Upgrades:owned
 	on tick:show tag:prestige
 	always hidden
-
-
+	
 Upgrades
 
 //Muster für limit
@@ -1832,9 +1719,6 @@ Upgrades
 		on earn:yield 1 upgradesII
 		on click:anim glow
 		class:noBackground
-	
-	
-	
 
 // Larven Multi mit Erfahrung
 
@@ -1909,8 +1793,6 @@ Upgrades
 		passive:multiply yield of Larven by 1.03
 		req:1110000 Erfahrung and UgRLErfahrung9
 		
-		
-
 // Insekten Multi mit Erfahrung
 
 *UgRIErfahrung1
@@ -1983,8 +1865,6 @@ Upgrades
 		cost:1370000 Erfahrung
 		passive:multiply yield of Insekten by 1.03
 		req:1110000 Erfahrung and UgRIErfahrung9
-		
-		
 
 // BauMaterial Multi mit Erfahrung
 
@@ -2059,35 +1939,8 @@ Upgrades
 		passive:multiply yield of BauMaterial by 1.03
 		req:1110000 Erfahrung and UgRBErfahrung9
 		
-		
-		
-		
-		
-		
-		
-				
-		
-		
-		
-		
-				
-		
-		
-		
-		
-			
-	
-	
-	
-
-// Sammler Upgrades -----------------------------------
-
-
-
-
-	
+// Sammler Upgrades -------------------------------------------------------------------------------------------
 //1 	
-	
 *UgBIPSammlerA1
 		name:SammlerAmeisenPanzer I
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2095,8 +1948,6 @@ Upgrades
 		cost:10 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:1 InsektenPanzer
-		class:noBackground
-
 *UgBIPSammlerA2
 		name:SammlerAmeisenPanzer II
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2104,9 +1955,6 @@ Upgrades
 		cost:100 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA1
-		class:noBackground
-	
-
 *UgBIPSammlerA3
 		name:SammlerAmeisenPanzer III
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2114,8 +1962,6 @@ Upgrades
 		cost:10000 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA2
-		class:noBackground
-
 *UgBIPSammlerA4
 		name:SammlerAmeisenPanzer IV
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2123,8 +1969,6 @@ Upgrades
 		cost:100000 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA3
-		class:noBackground
-
 *UgBIPSammlerA5
 		name:SammlerAmeisenPanzer V
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2132,8 +1976,6 @@ Upgrades
 		cost:1000000 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA4
-		class:noBackground
-
 *UgBIPSammlerA6
 		name:SammlerAmeisenPanzer VI
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2141,8 +1983,6 @@ Upgrades
 		cost:10000000 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA5
-		class:noBackground
-
 *UgBIPSammlerA7
 		name:SammlerAmeisenPanzer VII
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2150,8 +1990,6 @@ Upgrades
 		cost:100000000 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA6
-		class:noBackground
-
 *UgBIPSammlerA8
 		name:SammlerAmeisenPanzer VIII
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2159,8 +1997,6 @@ Upgrades
 		cost:1000000000 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA7
-		class:noBackground
-
 *UgBIPSammlerA9
 		name:SammlerAmeisenPanzer IX
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2168,8 +2004,6 @@ Upgrades
 		cost:10000000000 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA8
-		class:noBackground
-
 *UgBIPSammlerA10
 		name:SammlerAmeisenPanzer X
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2177,8 +2011,6 @@ Upgrades
 		cost:100000000000 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA9
-		class:noBackground
-		
 *UgBIPSammlerA11
 		name:SammlerAmeisenPanzer XI
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2186,8 +2018,6 @@ Upgrades
 		cost:10000000000000 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA10
-		class:noBackground
-		
 *UgBIPSammlerA12
 		name:SammlerAmeisenPanzer XII
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2195,8 +2025,6 @@ Upgrades
 		cost:1000000000000000 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA11
-		class:noBackground
-		
 *UgBIPSammlerA13
 		name:SammlerAmeisenPanzer XIII
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2204,8 +2032,6 @@ Upgrades
 		cost:100000000000000000 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA12
-		class:noBackground
-		
 *UgBIPSammlerA14
 		name:SammlerAmeisenPanzer XIV
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2213,8 +2039,6 @@ Upgrades
 		cost:10000000000000000000 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA13
-		class:noBackground
-		
 *UgBIPSammlerA15
 		name:SammlerAmeisenPanzer XV
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
@@ -2222,23 +2046,8 @@ Upgrades
 		cost:1000000000000000000000 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA14
-		class:noBackground		
 
-	
-	
-	
-	
-	
-
-//Larvenupgrades ------------------------------
-	
-
-	
-
-
-		
-		
-		
+//Larvenupgrades ---------------------------------------------------------------------------------------
 
 *UgRLMandala1
 		name:Ein buntes Mandala
@@ -2387,11 +2196,6 @@ Upgrades
 		cost:10000000000000000 Larven
 		passive:multiply yield of Larven by 1.01
 		req:2500000000000000 Larven:earned and UgRLMandala20
-		
-			
-
-		
-		
 
 *UgRLNudelK1
 		name:Bandnudel
@@ -2540,8 +2344,6 @@ Upgrades
 		cost:10000000000000000 Larve
 		passive:multiply yield of LarveButton by 3
 		req:2500000000000000 Larve:earned and UgRLNudelK20
-		
-
 
 *UgRLMinecraftk1
         name:Schleimball
@@ -2585,9 +2387,6 @@ Upgrades
         cost:100000000 Larve
         passive:increase yield of LarveButton by 1
         req:1000000 Larve:earned and UgRLMinecraftk5
-
-				
-
 		
 *UgBLRaupe1
 		name:Raupen Tango
@@ -2596,7 +2395,6 @@ Upgrades
 		cost:1000 Larven,1 Territorien
 		passive:multiply yield of Raupe by 1.75
 		req:1000 Larven:earned
-
 *UgBLRaupe2
 		name:Raupenmarsch
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
@@ -2604,7 +2402,6 @@ Upgrades
 		cost:10000 Larven,10 Territorien
 		passive:multiply yield of Raupe by 1.75
 		req:10000 Larven:earned and UgBLRaupe1
-				
 *UgBLRaupe3
 		name:Raupenparty
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
@@ -2612,7 +2409,6 @@ Upgrades
 		cost:1000000 Larven,100 Territorien
 		passive:multiply yield of Raupe by 1.75
 		req:1000000 Larven:earned and UgBLRaupe2
-
 *UgBLRaupe4
 		name:Raupenmusik
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
@@ -2620,7 +2416,6 @@ Upgrades
 		cost:100000000 Larven,1000 Territorien
 		passive:multiply yield of Raupe by 1.75
 		req:100000000 Larven:earned and UgBLRaupe3
-		
 *UgBLRaupe5
 		name:Raupastik
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
@@ -2628,7 +2423,6 @@ Upgrades
 		cost:10000000000 Larven,10000 Territorien
 		passive:multiply yield of Raupe by 1.75
 		req:10000000000 Larven:earned and UgBLRaupe4
-		
 *UgBLRaupe6
 		name:Raupenpuppe
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
@@ -2636,7 +2430,6 @@ Upgrades
 		cost:1000000000000 Larven,100000 Territorien
 		passive:multiply yield of Raupe by 1.75
 		req:1000000000000 Larven:earned and UgBLRaupe5
-		
 *UgBLRaupe7
 		name:Raupenmania
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
@@ -2644,7 +2437,6 @@ Upgrades
 		cost:100000000000000 Larven,1000000 Territorien
 		passive:multiply yield of Raupe by 1.75
 		req:100000000000000 Larven:earned and UgBLRaupe6
-		
 *UgBLRaupe8
 		name:Raupengesang
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
@@ -2652,7 +2444,6 @@ Upgrades
 		cost:10000000000000000 Larven,10000000 Territorien
 		passive:multiply yield of Raupe by 1.75
 		req:10000000000000000 Larven:earned and UgBLRaupe7
-		
 *UgBLRaupe9
 		name:Raupenlolli
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
@@ -2660,7 +2451,6 @@ Upgrades
 		cost:1000000000000000000 Larven,100000000 Territorien
 		passive:multiply yield of Raupe by 1.75
 		req:1000000000000000000 Larven:earned and UgBLRaupe8
-		
 *UgBLRaupe10
 		name:Raupensymphonie
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
@@ -2668,7 +2458,6 @@ Upgrades
 		cost:100000000000000000000 Larven,1000000000 Territorien
 		passive:multiply yield of Raupe by 1.75
 		req:100000000000000000000 Larven:earned and UgBLRaupe9
-		
 *UgBLRaupe11
 		name:Raupenklatschen
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
@@ -2676,7 +2465,6 @@ Upgrades
 		cost:10000000000000000000000 Larven,10000000000 Territorien
 		passive:multiply yield of Raupe by 1.75
 		req:10000000000000000000000 Larven:earned and UgBLRaupe10
-		
 *UgBLRaupe12
 		name:Raupenwetter
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
@@ -2685,9 +2473,6 @@ Upgrades
 		passive:multiply yield of Raupe by 1.75
 		req:1000000000000000000000000 Larven:earned and UgBLRaupe11
 		
-				
-
-	
 *UgBLRaupeF1
 		name:Raupenpanzer
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
@@ -2794,12 +2579,6 @@ Upgrades
 		passive:multiply yield of Raupe by 1.75
 		req:350 Raupen and UgBLRaupeF14	
 		
-		
-		
-	
-									
-
-		
 *UgBLBienenstock1
 		name:Bienenwabe
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
@@ -2807,7 +2586,6 @@ Upgrades
 		cost:12000 Larven,10 Territorien
 		passive:multiply yield of Bienenstock by 1.75
 		req:12000 Larven:earned
-				
 *UgBLBienenstock2
 		name:Bienenkönigin
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
@@ -2815,7 +2593,6 @@ Upgrades
 		cost:90000 Larven,100 Territorien
 		passive:multiply yield of Bienenstock by 1.75
 		req:90000 Larven:earned and UgBLBienenstock1
-		
 *UgBLBienenstock3
 		name:Binentango
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
@@ -2823,7 +2600,6 @@ Upgrades
 		cost:9000000 Larven,1000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
 		req:9000000 Larven:earned and UgBLBienenstock2
-		
 *UgBLBienenstock4
 		name:Bienenfieber
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
@@ -2831,7 +2607,6 @@ Upgrades
 		cost:900000000 Larven,10000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
 		req:900000000 Larven:earned and UgBLBienenstock3
-		
 *UgBLBienenstock5
 		name:Bienensummen
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
@@ -2839,7 +2614,6 @@ Upgrades
 		cost:90000000000 Larven,100000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
 		req:90000000000 Larven:earned and UgBLBienenstock4
-		
 *UgBLBienenstock6
 		name:Bienenparty
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
@@ -2847,7 +2621,6 @@ Upgrades
 		cost:9000000000000 Larven,1000000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
 		req:9000000000000 Larven:earned and UgBLBienenstock5
-		
 *UgBLBienenstock7
 		name:Bienenflügel
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
@@ -2855,7 +2628,6 @@ Upgrades
 		cost:900000000000000 Larven,10000000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
 		req:900000000000000 Larven:earned and UgBLBienenstock6
-		
 *UgBLBienenstock8
 		name:Bienentorte
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
@@ -2863,7 +2635,6 @@ Upgrades
 		cost:90000000000000000 Larven,100000000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
 		req:90000000000000000 Larven:earned and UgBLBienenstock7
-		
 *UgBLBienenstock9
 		name:Bienenkuchen
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
@@ -2871,7 +2642,6 @@ Upgrades
 		cost:9000000000000000000 Larven,1000000000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
 		req:9000000000000000000 Larven:earned and UgBLBienenstock8
-		
 *UgBLBienenstock10
 		name:Bienensafari
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
@@ -2879,7 +2649,6 @@ Upgrades
 		cost:900000000000000000000 Larven,10000000000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
 		req:900000000000000000000 Larven:earned and UgBLBienenstock9
-		
 *UgBLBienenstock11
 		name:Bienenpolka
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
@@ -2887,7 +2656,6 @@ Upgrades
 		cost:90000000000000000000000 Larven,100000000000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
 		req:90000000000000000000000 Larven:earned and UgBLBienenstock10
-		
 *UgBLBienenstock12
 		name:Bientasium
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
@@ -2896,11 +2664,7 @@ Upgrades
 		passive:multiply yield of Bienenstock by 1.75
 		req:9000000000000000000000000 Larven:earned and UgBLBienenstock11
 
-		
-
-
 //2
-	
 *UgBLBienenstF1
 		name:Stroh Verkleidung
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
@@ -3006,9 +2770,6 @@ Upgrades
 		cost:350 Bienenstock
 		passive:multiply yield of Bienenstock by 1.75
 		req:350 Bienenstock and UgBLBienenstF14	
-		
-
-
 
 *UgBLTermitenbau1
 		name:Termitenpolka
@@ -3017,7 +2778,6 @@ Upgrades
 		cost:810000 Larven,100 Territorien
 		passive:multiply yield of Termitenbau by 1.75
 		req:810000 Larven:earned
-		
 *UgBLTermitenbau2
 		name:Termitenmeister
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>75</b> %.
@@ -3025,7 +2785,6 @@ Upgrades
 		cost:81000000 Larven,1000 Territorien
 		passive:multiply yield of Termitenbau by 1.75
 		req:81000000 Larven:earned and UgBLTermitenbau1
-		
 *UgBLTermitenbau3
 		name:Termitits
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>75</b> %.
@@ -3033,7 +2792,6 @@ Upgrades
 		cost:8100000000 Larven,10000 Territorien
 		passive:multiply yield of Termitenbau by 1.75
 		req:8100000000 Larven:earned and UgBLTermitenbau2
-		
 *UgBLTermitenbau4
 		name:Termitenermaster
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>75</b> %.
@@ -3041,7 +2799,6 @@ Upgrades
 		cost:810000000000 Larven,100000 Territorien
 		passive:multiply yield of Termitenbau by 1.75
 		req:810000000000 Larven:earned and UgBLTermitenbau3
-				
 *UgBLTermitenbau5
 		name:Termitenkaffee
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>75</b> %.
@@ -3049,7 +2806,6 @@ Upgrades
 		cost:81000000000000 Larven,1000000 Territorien
 		passive:multiply yield of Termitenbau by 1.75
 		req:81000000000000 Larven:earned and UgBLTermitenbau4
-				
 *UgBLTermitenbau6
 		name:Termitenmusik
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>75</b> %.
@@ -3057,7 +2813,6 @@ Upgrades
 		cost:8100000000000000 Larven,10000000 Territorien
 		passive:multiply yield of Termitenbau by 1.75
 		req:8100000000000000 Larven:earned and UgBLTermitenbau5
-				
 *UgBLTermitenbau7
 		name:Termitenrising
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>75</b> %.
@@ -3065,7 +2820,6 @@ Upgrades
 		cost:810000000000000000 Larven,100000000 Territorien
 		passive:multiply yield of Termitenbau by 1.75
 		req:810000000000000000 Larven:earned and UgBLTermitenbau6
-				
 *UgBLTermitenbau8
 		name:Termitenbonbon
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>75</b> %.
@@ -3073,7 +2827,6 @@ Upgrades
 		cost:81000000000000000000 Larven,1000000000 Territorien
 		passive:multiply yield of Termitenbau by 1.75
 		req:81000000000000000000 Larven:earned and UgBLTermitenbau7
-				
 *UgBLTermitenbau9
 		name:Termitensamba
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>75</b> %.
@@ -3081,7 +2834,6 @@ Upgrades
 		cost:8100000000000000000000 Larven,10000000000 Territorien
 		passive:multiply yield of Termitenbau by 1.75
 		req:8100000000000000000000 Larven:earned and UgBLTermitenbau8
-				
 *UgBLTermitenbau10
 		name:Termitosis
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>75</b> %.
@@ -3089,7 +2841,6 @@ Upgrades
 		cost:810000000000000000000000 Larven,100000000000 Territorien
 		passive:multiply yield of Termitenbau by 1.75
 		req:810000000000000000000000 Larven:earned and UgBLTermitenbau9
-				
 *UgBLTermitenbau11
 		name:Termitenerhebung
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>75</b> %.
@@ -3097,7 +2848,6 @@ Upgrades
 		cost:81000000000000000000000000 Larven,1000000000000 Territorien
 		passive:multiply yield of Termitenbau by 1.75
 		req:81000000000000000000000000 Larven:earned and UgBLTermitenbau10
-				
 *UgBLTermitenbau12
 		name:Termitengesang
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>75</b> %.
@@ -3105,12 +2855,7 @@ Upgrades
 		cost:8100000000000000000000000000 Larven,10000000000000 Territorien
 		passive:multiply yield of Termitenbau by 1.75
 		req:8100000000000000000000000000 Larven:earned and UgBLTermitenbau11
-		
-		
-
-
 //3
-	
 *UgBLTermitenbF1
 		name:Stroh Verkleidung
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>75</b> %.
@@ -3216,8 +2961,6 @@ Upgrades
 		cost:350 Termitenbau
 		passive:multiply yield of Termitenbau by 1.75
 		req:350 Termitenbau and UgBLTermitenbF14	
-				
-		
 
 *UgBLBlatt1
 		name:Ahornblatt
@@ -3226,7 +2969,6 @@ Upgrades
 		cost:260000 Larven,100 Territorien
 		passive:multiply yield of Blatt by 1.75
 		req:260000 Larven:earned
-		
 *UgBLBlatt2
 		name:Eichenblatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3234,7 +2976,6 @@ Upgrades
 		cost:26000000 Larven,1000 Territorien
 		passive:multiply yield of Blatt by 1.75
 		req:26000000 Larven:earned and UgBLBlatt1
-		
 *UgBLBlatt3
 		name:Buchenblatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3242,7 +2983,6 @@ Upgrades
 		cost:2600000000 Larven,10000 Territorien
 		passive:multiply yield of Blatt by 1.75
 		req:2600000000 Larven:earned and UgBLBlatt2
-
 *UgBLBlatt4
 		name:Birkenblatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3250,8 +2990,6 @@ Upgrades
 		cost:260000000000 Larven,100000 Territorien
 		passive:multiply yield of Blatt by 1.75
 		req:260000000000 Larven:earned and UgBLBlatt3
-		
-
 *UgBLBlatt5
 		name:Eschenblatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3259,8 +2997,6 @@ Upgrades
 		cost:26000000000000 Larven,1000000 Territorien
 		passive:multiply yield of Blatt by 1.75
 		req:26000000000000 Larven:earned and UgBLBlatt4
-
-
 *UgBLBlatt6
 		name:Erlenblatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3268,8 +3004,6 @@ Upgrades
 		cost:2600000000000000 Larven,10000000 Territorien
 		passive:multiply yield of Blatt by 1.75
 		req:2600000000000000 Larven:earned and UgBLBlatt5
-				
-
 *UgBLBlatt7
 		name:Haselblatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3277,8 +3011,6 @@ Upgrades
 		cost:260000000000000000 Larven,100000000 Territorien
 		passive:multiply yield of Blatt by 1.75
 		req:260000000000000000 Larven:earned and UgBLBlatt6
-
-
 *UgBLBlatt8
 		name:Wallnussblatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3286,8 +3018,6 @@ Upgrades
 		cost:26000000000000000000 Larven,1000000000 Territorien
 		passive:multiply yield of Blatt by 1.75
 		req:26000000000000000000 Larven:earned and UgBLBlatt7
-
-
 *UgBLBlatt9
 		name:Kastanienblatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3295,8 +3025,6 @@ Upgrades
 		cost:2600000000000000000000 Larven,10000000000 Territorien
 		passive:multiply yield of Blatt by 1.75
 		req:2600000000000000000000 Larven:earned and UgBLBlatt8
-
-
 *UgBLBlatt10
 		name:Lärchenblatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3304,8 +3032,6 @@ Upgrades
 		cost:260000000000000000000000 Larven,100000000000 Territorien
 		passive:multiply yield of Blatt by 1.75
 		req:260000000000000000000000 Larven:earned and UgBLBlatt9
-
-
 *UgBLBlatt11
 		name:Palmenblatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3313,8 +3039,6 @@ Upgrades
 		cost:26000000000000000000000000 Larven,1000000000000 Territorien
 		passive:multiply yield of Blatt by 1.75
 		req:26000000000000000000000000 Larven:earned and UgBLBlatt10
-
-
 *UgBLBlatt12
 		name:Lindenblatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3322,14 +3046,7 @@ Upgrades
 		cost:2600000000000000000000000000 Larven,10000000000000 Territorien
 		passive:multiply yield of Blatt by 1.75
 		req:2600000000000000000000000000 Larven:earned and UgBLBlatt11
-		
-
-		
-		
-
-
 //4
-	
 *UgBLBlattF1
 		name:Ahorn Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3337,7 +3054,6 @@ Upgrades
 		cost:10 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:10 Blatt
-		class:noBackground
 *UgBLBlattF2
 		name:Birken Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3345,7 +3061,6 @@ Upgrades
 		cost:25 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:25 Blatt and UgBLBlattF1
-		class:noBackground
 *UgBLBlattF3
 		name:Eichen Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3353,7 +3068,6 @@ Upgrades
 		cost:50 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:50 Blatt and UgBLBlattF2
-		class:noBackground
 *UgBLBlattF4
 		name:Buchen Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3361,7 +3075,6 @@ Upgrades
 		cost:75 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:75 Blatt and UgBLBlattF3
-		class:noBackground
 *UgBLBlattF5
 		name:Birnen Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3369,7 +3082,6 @@ Upgrades
 		cost:100 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:100 Blatt and UgBLBlattF4
-		class:noBackground
 *UgBLBlattF6
 		name:Ebereschen Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3377,7 +3089,6 @@ Upgrades
 		cost:125 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:125 Blatt and UgBLBlattF5
-		class:noBackground
 *UgBLBlattF7
 		name:Erlen Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3385,7 +3096,6 @@ Upgrades
 		cost:150 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:150 Blatt and UgBLBlattF6
-		class:noBackground
 *UgBLBlattF8
 		name:Kastanien Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3393,7 +3103,6 @@ Upgrades
 		cost:175 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:175 Blatt and UgBLBlattF7
-		class:noBackground
 *UgBLBlattF9
 		name:Linden Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3401,7 +3110,6 @@ Upgrades
 		cost:200 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:200 Blatt and UgBLBlattF8
-		class:noBackground
 *UgBLBlattF10
 		name:Schwarzdorn Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3409,7 +3117,6 @@ Upgrades
 		cost:225 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:225 Blatt and UgBLBlattF9
-		class:noBackground
 *UgBLBlattF11
 		name:Stechpalmen Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3417,7 +3124,6 @@ Upgrades
 		cost:250 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:250 Blatt and UgBLBlattF10
-		class:noBackground
 *UgBLBlattF12
 		name:Ulmen Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3425,7 +3131,6 @@ Upgrades
 		cost:275 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:275 Blatt and UgBLBlattF11
-		class:noBackground
 *UgBLBlattF13
 		name:Weiden Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3433,7 +3138,6 @@ Upgrades
 		cost:300 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:300 Blatt and UgBLBlattF12
-		class:noBackground
 *UgBLBlattF14
 		name:Pappel Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3441,7 +3145,6 @@ Upgrades
 		cost:325 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:325 Blatt and UgBLBlattF13
-		class:noBackground
 *UgBLBlattF15
 		name:Apfel Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -3449,12 +3152,7 @@ Upgrades
 		cost:350 Blatt
 		passive:multiply yield of Blatt by 1.75
 		req:350 Blatt and UgBLBlattF14	
-		class:noBackground
-		
-		
 //5
-
-
 *UgBLWNest1
 		name:Bssst!
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3462,7 +3160,6 @@ Upgrades
 		cost:1456000 Larven,100 Territorien
 		passive:multiply yield of WespenNest by 1.75
 		req:1456000 Larven:earned
-		
 *UgBLWNest2
 		name:Zartes WespenNest
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3470,7 +3167,6 @@ Upgrades
 		cost:145600000 Larven,1000 Territorien
 		passive:multiply yield of WespenNest by 1.75
 		req:145600000 Larven:earned and UgBLWNest1
-		
 *UgBLWNest3
 		name:Feines WespenNest
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3478,7 +3174,6 @@ Upgrades
 		cost:14560000000 Larven,10000 Territorien
 		passive:multiply yield of WespenNest by 1.75
 		req:14560000000 Larven:earned and UgBLWNest2
-
 *UgBLWNest4
 		name:Großes WespenNest
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3486,8 +3181,6 @@ Upgrades
 		cost:1456000000000 Larven,100000 Territorien
 		passive:multiply yield of WespenNest by 1.75
 		req:1456000000000 Larven:earned and UgBLWNest3
-		
-
 *UgBLWNest5
 		name:Langes WespenNest
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3495,8 +3188,6 @@ Upgrades
 		cost:145600000000000 Larven,1000000 Territorien
 		passive:multiply yield of WespenNest by 1.75
 		req:145600000000000 Larven:earned and UgBLWNest4
-
-
 *UgBLWNest6
 		name:Dickes WespenNest
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3504,8 +3195,6 @@ Upgrades
 		cost:14560000000000000 Larven,10000000 Territorien
 		passive:multiply yield of WespenNest by 1.75
 		req:14560000000000000 Larven:earned and UgBLWNest5
-				
-
 *UgBLWNest7
 		name:Dünnes WespenNest
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3513,8 +3202,6 @@ Upgrades
 		cost:1456000000000000000 Larven,100000000 Territorien
 		passive:multiply yield of WespenNest by 1.75
 		req:1456000000000000000 Larven:earned and UgBLWNest6
-
-
 *UgBLWNest8
 		name:Altes WespenNest
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3522,8 +3209,6 @@ Upgrades
 		cost:145600000000000000000 Larven,1000000000 Territorien
 		passive:multiply yield of WespenNest by 1.75
 		req:145600000000000000000 Larven:earned and UgBLWNest7
-
-
 *UgBLWNest9
 		name:Dunkles WespenNest
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3531,8 +3216,6 @@ Upgrades
 		cost:14560000000000000000000 Larven,10000000000 Territorien
 		passive:multiply yield of WespenNest by 1.75
 		req:14560000000000000000000 Larven:earned and UgBLWNest8
-
-
 *UgBLWNest10
 		name:Helles WespenNest
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3540,8 +3223,6 @@ Upgrades
 		cost:1456000000000000000000000 Larven,100000000000 Territorien
 		passive:multiply yield of WespenNest by 1.75
 		req:1456000000000000000000000 Larven:earned and UgBLWNest9
-
-
 *UgBLWNest11
 		name:Gespaltenes WespenNest
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3549,8 +3230,6 @@ Upgrades
 		cost:145600000000000000000000000 Larven,1000000000000 Territorien
 		passive:multiply yield of WespenNest by 1.75
 		req:145600000000000000000000000 Larven:earned and UgBLWNest10
-
-
 *UgBLWNest12
 		name:WespenNester Haufen
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3558,12 +3237,7 @@ Upgrades
 		cost:14560000000000000000000000000 Larven,10000000000000 Territorien
 		passive:multiply yield of WespenNest by 1.75
 		req:14560000000000000000000000000 Larven:earned and UgBLWNest11
-		
-
-
-		
 //5
-	
 *UgBLWespenNestF1
 		name:Kleine Verstärkung
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3571,7 +3245,6 @@ Upgrades
 		cost:10 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:10 WespenNest
-		class:noBackground
 *UgBLWespenNestF2
 		name:Holz Vertäfelung
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3579,7 +3252,6 @@ Upgrades
 		cost:25 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:25 WespenNest and UgBLWespenNestF1
-		class:noBackground
 *UgBLWespenNestF3
 		name:Strauch Schutz
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3587,7 +3259,6 @@ Upgrades
 		cost:50 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:50 WespenNest and UgBLWespenNestF2
-		class:noBackground
 *UgBLWespenNestF4
 		name:Äste Rahmen
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3595,7 +3266,6 @@ Upgrades
 		cost:75 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:75 WespenNest and UgBLWespenNestF3
-		class:noBackground
 *UgBLWespenNestF5
 		name:Dornen
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3603,7 +3273,6 @@ Upgrades
 		cost:100 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:100 WespenNest and UgBLWespenNestF4
-		class:noBackground
 *UgBLWespenNestF6
 		name:Dickere Wände
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3611,7 +3280,6 @@ Upgrades
 		cost:125 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:125 WespenNest and UgBLWespenNestF5
-		class:noBackground
 *UgBLWespenNestF7
 		name:Brutplätze
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3619,7 +3287,6 @@ Upgrades
 		cost:150 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:150 WespenNest and UgBLWespenNestF6
-		class:noBackground
 *UgBLWespenNestF8
 		name:Zweiter Eingang
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3627,7 +3294,6 @@ Upgrades
 		cost:175 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:175 WespenNest and UgBLWespenNestF7
-		class:noBackground
 *UgBLWespenNestF9
 		name:Harte Schale
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3635,7 +3301,6 @@ Upgrades
 		cost:200 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:200 WespenNest and UgBLWespenNestF8
-		class:noBackground
 *UgBLWespenNestF10
 		name:Windschutz
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3643,7 +3308,6 @@ Upgrades
 		cost:225 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:225 WespenNest and UgBLWespenNestF9
-		class:noBackground
 *UgBLWespenNestF11
 		name:Ein paar Zweige mehr
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3651,7 +3315,6 @@ Upgrades
 		cost:250 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:250 WespenNest and UgBLWespenNestF10
-		class:noBackground
 *UgBLWespenNestF12
 		name:Nestbauerinnen
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3659,7 +3322,6 @@ Upgrades
 		cost:275 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:275 WespenNest and UgBLWespenNestF11
-		class:noBackground
 *UgBLWespenNestF13
 		name:Wespen Königin
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3667,7 +3329,6 @@ Upgrades
 		cost:300 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:300 WespenNest and UgBLWespenNestF12
-		class:noBackground
 *UgBLWespenNestF14
 		name:Wespen Prinzessin
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3675,7 +3336,6 @@ Upgrades
 		cost:325 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:325 WespenNest and UgBLWespenNestF13
-		class:noBackground
 *UgBLWespenNestF15
 		name:Wespen Staat
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
@@ -3683,12 +3343,7 @@ Upgrades
 		cost:350 WespenNest
 		passive:multiply yield of WespenNest by 1.75
 		req:350 WespenNest and UgBLWespenNestF14	
-		class:noBackground
-		
-		
 //6
-
-
 *UgBLVApfel1
 		name:Verfaulter Elstar
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3696,7 +3351,6 @@ Upgrades
 		cost:165800000 Larven, 16580000 Nahrung,1000 Territorien
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:165800000 Larven:earned
-		
 *UgBLVApfel2
 		name:Verfaulter Gala
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3704,7 +3358,6 @@ Upgrades
 		cost:16580000000 Larven, 1658000000 Nahrung,10000 Territorien
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:16580000000 Larven:earned and UgBLVApfel1
-		
 *UgBLVApfel3
 		name:Verfaulter Iduna
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3712,7 +3365,6 @@ Upgrades
 		cost:1658000000000 Larven, 165800000000 Nahrung,100000 Territorien
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:1658000000000 Larven:earned and UgBLVApfel2
-
 *UgBLVApfel4
 		name:Verfaulter Maigold
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3720,8 +3372,6 @@ Upgrades
 		cost:165800000000000 Larven, 16580000000000 Nahrung,1000000 Territorien
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:165800000000000 Larven:earned and UgBLVApfel3
-		
-
 *UgBLVApfel5
 		name:Verfaulter Brauner Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3729,8 +3379,6 @@ Upgrades
 		cost:16580000000000000 Larven, 1658000000000000 Nahrung,10000000 Territorien
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:16580000000000000 Larven:earned and UgBLVApfel4
-
-
 *UgBLVApfel6
 		name:Verfaulter Alter Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3738,8 +3386,6 @@ Upgrades
 		cost:1658000000000000000 Larven, 165800000000000000 Nahrung,100000000 Territorien
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:1658000000000000000 Larven:earned and UgBLVApfel5
-				
-
 *UgBLVApfel7
 		name:Verfaulter Red Delicious
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3747,8 +3393,6 @@ Upgrades
 		cost:165800000000000000000 Larven, 16580000000000000000 Nahrung,1000000000 Territorien
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:165800000000000000000 Larven:earned and UgBLVApfel6
-
-
 *UgBLVApfel8
 		name:Verfaulter Golden Delicious
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3756,8 +3400,6 @@ Upgrades
 		cost:16580000000000000000000 Larven, 1658000000000000000000 Nahrung,10000000000 Territorien
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:16580000000000000000000 Larven:earned and UgBLVApfel7
-
-
 *UgBLVApfel9
 		name:Verfaulter Yataka
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3765,8 +3407,6 @@ Upgrades
 		cost:1658000000000000000000000 Larven, 165800000000000000000000 Nahrung,100000000000 Territorien
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:1658000000000000000000000 Larven:earned and UgBLVApfel8
-
-
 *UgBLVApfel10
 		name:Verfaulter Jonagold
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3774,8 +3414,6 @@ Upgrades
 		cost:165800000000000000000000000 Larven, 16580000000000000000000000 Nahrung,1000000000000 Territorien
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:165800000000000000000000000 Larven:earned and UgBLVApfel9
-
-
 *UgBLVApfel11
 		name:Verfaulter Kanzi
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3783,8 +3421,6 @@ Upgrades
 		cost:16580000000000000000000000000 Larven, 1658000000000000000000000000 Nahrung,10000000000000 Territorien
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:16580000000000000000000000000 Larven:earned and UgBLVApfel10
-
-
 *UgBLVApfel12
 		name:Verfaulter Kleiner Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3792,11 +3428,7 @@ Upgrades
 		cost:1658000000000000000000000000000 Larven, 165800000000000000000000000000 Nahrung,100000000000000 Territorien
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:1658000000000000000000000000000 Larven:earned and UgBLVApfel11
-		
-
-
 //6
-	
 *UgBLVApfelF1
 		name:Brauner Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3804,7 +3436,6 @@ Upgrades
 		cost:10 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:10 VerfaulterApfel
-		class:noBackground
 *UgBLVApfelF2
 		name:Schrumpeliger Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3812,7 +3443,6 @@ Upgrades
 		cost:25 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:25 VerfaulterApfel and UgBLVApfelF1
-		class:noBackground
 *UgBLVApfelF3
 		name:Angeschlagener Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3820,7 +3450,6 @@ Upgrades
 		cost:50 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:50 VerfaulterApfel and UgBLVApfelF2
-		class:noBackground
 *UgBLVApfelF4
 		name:Matschiger Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3828,7 +3457,6 @@ Upgrades
 		cost:75 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:75 VerfaulterApfel and UgBLVApfelF3
-		class:noBackground
 *UgBLVApfelF5
 		name:Angefressener Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3836,7 +3464,6 @@ Upgrades
 		cost:100 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:100 VerfaulterApfel and UgBLVApfelF4
-		class:noBackground
 *UgBLVApfelF6
 		name:Fauliger Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3844,7 +3471,6 @@ Upgrades
 		cost:125 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:125 VerfaulterApfel and UgBLVApfelF5
-		class:noBackground
 *UgBLVApfelF7
 		name:Stinkender Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3852,7 +3478,6 @@ Upgrades
 		cost:150 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:150 VerfaulterApfel and UgBLVApfelF6
-		class:noBackground
 *UgBLVApfelF8
 		name:Weicher Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3860,7 +3485,6 @@ Upgrades
 		cost:175 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:175 VerfaulterApfel and UgBLVApfelF7
-		class:noBackground
 *UgBLVApfelF9
 		name:Fester Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3868,7 +3492,6 @@ Upgrades
 		cost:200 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:200 VerfaulterApfel and UgBLVApfelF8
-		class:noBackground
 *UgBLVApfelF10
 		name:Großer Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3876,7 +3499,6 @@ Upgrades
 		cost:225 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:225 VerfaulterApfel and UgBLVApfelF9
-		class:noBackground
 *UgBLVApfelF11
 		name:Ein Stück Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3884,7 +3506,6 @@ Upgrades
 		cost:250 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:250 VerfaulterApfel and UgBLVApfelF10
-		class:noBackground
 *UgBLVApfelF12
 		name:Mehliger Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3892,7 +3513,6 @@ Upgrades
 		cost:275 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:275 VerfaulterApfel and UgBLVApfelF11
-		class:noBackground
 *UgBLVApfelF13
 		name:Alter Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3900,7 +3520,6 @@ Upgrades
 		cost:300 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:300 VerfaulterApfel and UgBLVApfelF12
-		class:noBackground
 *UgBLVApfelF14
 		name:Grüner Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3908,7 +3527,6 @@ Upgrades
 		cost:325 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:325 VerfaulterApfel and UgBLVApfelF13
-		class:noBackground
 *UgBLVApfelF15
 		name:Runder Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
@@ -3916,12 +3534,7 @@ Upgrades
 		cost:350 VerfaulterApfel
 		passive:multiply yield of VerfaulterApfel by 1.75
 		req:350 VerfaulterApfel and UgBLVApfelF14	
-		class:noBackground
-			
-
 //7
-
-
 *UgBLANest1
 		name:VogelNest
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4006,14 +3619,7 @@ Upgrades
 		cost:224000000000000000000000000000000 Larven, 22400000000000000000000000000000 Nahrung,100000000000000 Territorien
 		passive:multiply yield of AltesNest by 1.75
 		req:224000000000000000000000000000000 Larven:earned and UgBLANest11
-		
-
-
-	
-
-
 //7
-	
 *UgBLANestF1
 		name:Nestlein
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4021,7 +3627,6 @@ Upgrades
 		cost:10 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:10 AlteNester
-		class:noBackground
 *UgBLANestF2
 		name:Nest im Baum
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4029,7 +3634,6 @@ Upgrades
 		cost:25 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:25 AlteNester and UgBLANestF1
-		class:noBackground
 *UgBLANestF3
 		name:Ovales Nest
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4037,7 +3641,6 @@ Upgrades
 		cost:50 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:50 AlteNester and UgBLANestF2
-		class:noBackground
 *UgBLANestF4
 		name:Rundes Nest 
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4045,7 +3648,6 @@ Upgrades
 		cost:75 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:75 AlteNester and UgBLANestF3
-		class:noBackground
 *UgBLANestF5
 		name:Zugiges Nest
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4053,7 +3655,6 @@ Upgrades
 		cost:100 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:100 AlteNester and UgBLANestF4
-		class:noBackground
 *UgBLANestF6
 		name:Warmes Nest
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4061,7 +3662,6 @@ Upgrades
 		cost:125 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:125 AlteNester and UgBLANestF5
-		class:noBackground
 *UgBLANestF7
 		name:Löchriges Nest
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4069,7 +3669,6 @@ Upgrades
 		cost:150 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:150 AlteNester and UgBLANestF6
-		class:noBackground
 *UgBLANestF8
 		name:Kaputtes Nest
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4077,7 +3676,6 @@ Upgrades
 		cost:175 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:175 AlteNester and UgBLANestF7
-		class:noBackground
 *UgBLANestF9
 		name:Feines Nest
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4085,7 +3683,6 @@ Upgrades
 		cost:200 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:200 AlteNester and UgBLANestF8
-		class:noBackground
 *UgBLANestF10
 		name:Verstecktes Nest
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4093,7 +3690,6 @@ Upgrades
 		cost:225 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:225 AlteNester and UgBLANestF9
-		class:noBackground
 *UgBLANestF11
 		name:Verworrenes Nest
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4101,7 +3697,6 @@ Upgrades
 		cost:250 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:250 AlteNester and UgBLANestF10
-		class:noBackground
 *UgBLANestF12
 		name:Großes Nest
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4109,7 +3704,6 @@ Upgrades
 		cost:275 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:275 AlteNester and UgBLANestF11
-		class:noBackground
 *UgBLANestF13
 		name:Spatzle Nestle
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4117,7 +3711,6 @@ Upgrades
 		cost:300 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:300 AlteNester and UgBLANestF12
-		class:noBackground
 *UgBLANestF14
 		name:Hühner Nest
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4125,7 +3718,6 @@ Upgrades
 		cost:325 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:325 AlteNester and UgBLANestF13
-		class:noBackground
 *UgBLANestF15
 		name:Vogel Nest
 		desc:<.> Erhöht die Produktion der AltenNester um <b>75</b> %.
@@ -4133,15 +3725,7 @@ Upgrades
 		cost:350 AlteNester
 		passive:multiply yield of AlteNester by 1.75
 		req:350 AlteNester and UgBLANestF14	
-		class:noBackground
-
-
-
-
-	
 //8	
-
-
 *UgBLSchuh1
 		name:Sniker
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4226,13 +3810,7 @@ Upgrades
 		cost:35840000000000000000000000000000 Larven, 3584000000000000000000000000000 Nahrung,1000000000000000000 Territorien
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:35840000000000000000000000000000 Larven:earned and UgBLSchuh11
-		
-
-
-
-
 //8
-	
 *UgBLSchuhF1
 		name:Trockener Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4240,7 +3818,6 @@ Upgrades
 		cost:10 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:10 UeberwucherterSchuh
-		class:noBackground
 *UgBLSchuhF2
 		name:Feuchter Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4248,7 +3825,6 @@ Upgrades
 		cost:25 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:25 UeberwucherterSchuh and UgBLSchuhF1
-		class:noBackground
 *UgBLSchuhF3
 		name:Nasser Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4256,7 +3832,6 @@ Upgrades
 		cost:50 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:50 UeberwucherterSchuh and UgBLSchuhF2
-		class:noBackground
 *UgBLSchuhF4
 		name:Bunter Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4264,7 +3839,6 @@ Upgrades
 		cost:75 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:75 UeberwucherterSchuh and UgBLSchuhF3
-		class:noBackground
 *UgBLSchuhF5
 		name:Spitzer Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4272,7 +3846,6 @@ Upgrades
 		cost:100 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:100 UeberwucherterSchuh and UgBLSchuhF4
-		class:noBackground
 *UgBLSchuhF6
 		name:Leder Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4280,7 +3853,6 @@ Upgrades
 		cost:125 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:125 UeberwucherterSchuh and UgBLSchuhF5
-		class:noBackground
 *UgBLSchuhF7
 		name:Brauner Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4288,7 +3860,6 @@ Upgrades
 		cost:150 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:150 UeberwucherterSchuh and UgBLSchuhF6
-		class:noBackground
 *UgBLSchuhF8
 		name:Alter Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4296,7 +3867,6 @@ Upgrades
 		cost:175 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:175 UeberwucherterSchuh and UgBLSchuhF7
-		class:noBackground
 *UgBLSchuhF9
 		name:Eingewachsener Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4304,7 +3874,6 @@ Upgrades
 		cost:200 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:200 UeberwucherterSchuh and UgBLSchuhF8
-		class:noBackground
 *UgBLSchuhF10
 		name:Verfaulter Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4312,7 +3881,6 @@ Upgrades
 		cost:225 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:225 UeberwucherterSchuh and UgBLSchuhF9
-		class:noBackground
 *UgBLSchuhF11
 		name:Vermoderter Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4320,7 +3888,6 @@ Upgrades
 		cost:250 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:250 UeberwucherterSchuh and UgBLSchuhF10
-		class:noBackground
 *UgBLSchuhF12
 		name:Löchriger Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4328,7 +3895,6 @@ Upgrades
 		cost:275 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:275 UeberwucherterSchuh and UgBLSchuhF11
-		class:noBackground
 *UgBLSchuhF13
 		name:Zerfetzter Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4336,7 +3902,6 @@ Upgrades
 		cost:300 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:300 UeberwucherterSchuh and UgBLSchuhF12
-		class:noBackground
 *UgBLSchuhF14
 		name:Angenagter Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4344,7 +3909,6 @@ Upgrades
 		cost:325 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:325 UeberwucherterSchuh and UgBLSchuhF13
-		class:noBackground
 *UgBLSchuhF15
 		name:Zerkratzter Schuh
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
@@ -4352,12 +3916,7 @@ Upgrades
 		cost:350 UeberwucherterSchuh
 		passive:multiply yield of UeberwucherterSchuh by 1.75
 		req:350 UeberwucherterSchuh and UgBLSchuhF14	
-		class:noBackground
-			
-
 //9
-
-
 *UgBLPizza1
 		name:Pizza Margherita
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4442,13 +4001,7 @@ Upgrades
 		cost:495600000000000000000000000000000 Larven, 49560000000000000000000000000000 Nahrung,1000000000000000000 Territorien
 		passive:multiply yield of Pizza by 1.75
 		req:495600000000000000000000000000000 Larven:earned and UgBLPizza11
-		
-
-	
-
-
 //9
-	
 *UgBLPizzaF1
 		name:Pizza Rustika
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4456,7 +4009,6 @@ Upgrades
 		cost:10 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:10 Pizza
-		class:noBackground
 *UgBLPizzaF2
 		name:Pizza La Bella
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4464,7 +4016,6 @@ Upgrades
 		cost:25 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:25 Pizza and UgBLPizzaF1
-		class:noBackground
 *UgBLPizzaF3
 		name:Pizza Peperoniwurst
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4472,7 +4023,6 @@ Upgrades
 		cost:50 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:50 Pizza and UgBLPizzaF2
-		class:noBackground
 *UgBLPizzaF4
 		name:Familienpizza
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4480,7 +4030,6 @@ Upgrades
 		cost:75 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:75 Pizza and UgBLPizzaF3
-		class:noBackground
 *UgBLPizzaF5
 		name:Pizza alla Panna
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4488,7 +4037,6 @@ Upgrades
 		cost:100 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:100 Pizza and UgBLPizzaF4
-		class:noBackground
 *UgBLPizzaF6
 		name:Weiche Pizza
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4496,7 +4044,6 @@ Upgrades
 		cost:125 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:125 Pizza and UgBLPizzaF5
-		class:noBackground
 *UgBLPizzaF7
 		name:Matschige Pizza 
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4504,7 +4051,6 @@ Upgrades
 		cost:150 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:150 Pizza and UgBLPizzaF6
-		class:noBackground
 *UgBLPizzaF8
 		name:Trockene Pizza
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4512,7 +4058,6 @@ Upgrades
 		cost:175 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:175 Pizza and UgBLPizzaF7
-		class:noBackground
 *UgBLPizzaF9
 		name:Knusprige Pizza
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4520,7 +4065,6 @@ Upgrades
 		cost:200 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:200 Pizza and UgBLPizzaF8
-		class:noBackground
 *UgBLPizzaF10
 		name:Leckere Pizza
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4528,7 +4072,6 @@ Upgrades
 		cost:225 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:225 Pizza and UgBLPizzaF9
-		class:noBackground
 *UgBLPizzaF11
 		name:Faulige Pizza
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4536,7 +4079,6 @@ Upgrades
 		cost:250 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:250 Pizza and UgBLPizzaF10
-		class:noBackground
 *UgBLPizzaF12
 		name:Schimmlige Pizza
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4544,7 +4086,6 @@ Upgrades
 		cost:275 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:275 Pizza and UgBLPizzaF11
-		class:noBackground
 *UgBLPizzaF13
 		name:Großes Pizza Stück
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4552,7 +4093,6 @@ Upgrades
 		cost:300 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:300 Pizza and UgBLPizzaF12
-		class:noBackground
 *UgBLPizzaF14
 		name:Angenagte Pizza
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4560,7 +4100,6 @@ Upgrades
 		cost:325 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:325 Pizza and UgBLPizzaF13
-		class:noBackground
 *UgBLPizzaF15
 		name:Pizzakrümel
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -4568,21 +4107,8 @@ Upgrades
 		cost:350 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:350 Pizza and UgBLPizzaF14	
-		class:noBackground
-			
-		
-		
-
-//Insekten Upgrades
-
-	
-		
-		
+//Insekten Upgrades-------------------------------------------------------------------------------------------------
 // Upgrade Ressource Insekten		
-		
-		
-		
-
 *UgRIBlume1
 		name:Ackerwinde
 		desc:<.> Erhöht die Produktion von Insekten um <b>1</b> %.
@@ -4674,7 +4200,6 @@ Upgrades
 		cost:1000000000000 Insekten
 		passive:multiply yield of Insekten by 1.01
 		req:50000000000 Insekten:earned and UgRIBlume12
-
 *UgRIBlume14
 		name:Kosmee
 		desc:<.> Erhöht die Produktion von Insekten um <b>1</b> %.
@@ -4682,7 +4207,6 @@ Upgrades
 		cost:5000000000000 Insekten
 		passive:multiply yield of Insekten by 1.01
 		req:250000000000 Insekten:earned and UgRIBlume13
-
 *UgRIBlume15
 		name:Iberis
 		desc:<.> Erhöht die Produktion von Insekten um <b>1</b> %.
@@ -4690,7 +4214,6 @@ Upgrades
 		cost:10000000000000 Insekten
 		passive:multiply yield of Insekten by 1.01
 		req:UgRIBlume14
-
 *UgRIBlume16
 		name:Elfenblume
 		desc:<.> Erhöht die Produktion von Insekten um <b>1</b> %.
@@ -4698,7 +4221,6 @@ Upgrades
 		cost:50000000000000 Insekten
 		passive:multiply yield of Insekten by 1.01
 		req:5000000000000 Insekten:earned and UgRIBlume15
-
 *UgRIBlume17
 		name:Blaukissen
 		desc:<.> Erhöht die Produktion von Insekten um <b>1</b> %.
@@ -4734,10 +4256,6 @@ Upgrades
 		cost:10000000000000000 Insekten
 		passive:multiply yield of Insekten by 1.01
 		req:2500000000000000 Insekten:earned and UgRIBlume20
-		
-
-		
-		
 
 *UgRINuss1
 		name:Mandeln
@@ -4886,9 +4404,6 @@ Upgrades
 		cost:10000000000000000 Insekten
 		passive:multiply yield of InsektenButton by 3
 		req:2500000000000000 Insekten:earned and UgRINuss20
-		
-		
-
 
 *UgRILegok1
         name:Lego!
@@ -4933,10 +4448,6 @@ Upgrades
         passive:increase yield of InsektenButton by 1
         req:1000000 Insekt:earned and UgRILegok5
 
-				
-		
-
-
 *UgBIAmeise1
 		name:Ameisenlimbo
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -4944,7 +4455,6 @@ Upgrades
 		cost:130 Insekten,60 Larven,10 BauMaterial
 		passive:multiply yield of Ameise by 1.75
 		req:130 Insekten:earned
-
 *UgBIAmeise2
 		name:Ameisenrama
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -4952,7 +4462,6 @@ Upgrades
 		cost:13000 Insekten,6000 Larven,1000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
 		req:13000 Insekten:earned and UgBIAmeise1
-
 *UgBIAmeise3
 		name:Ameisenstraße
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -4960,7 +4469,6 @@ Upgrades
 		cost:1300000 Insekten,600000 Larven,100000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
 		req:1300000 Insekten:earned and UgBIAmeise2
-
 *UgBIAmeise4
 		name:Ameisenbrücke
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -4968,7 +4476,6 @@ Upgrades
 		cost:130000000 Insekten,60000000 Larven,10000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
 		req:130000000 Insekten:earned and UgBIAmeise3
-
 *UgBIAmeise5
 		name:Ameisenhighway
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -4976,8 +4483,6 @@ Upgrades
 		cost:13000000000 Insekten,6000000000 Larven,1000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
 		req:13000000000 Insekten:earned and UgBIAmeise4
-		
-
 *UgBIAmeise6
 		name:Ameisenkreuzung
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -4985,7 +4490,6 @@ Upgrades
 		cost:1300000000000 Insekten,600000000000 Larven,100000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
 		req:1300000000000 Insekten:earned and UgBIAmeise5
-
 *UgBIAmeise7
 		name:Ameisenmonopol
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -4993,7 +4497,6 @@ Upgrades
 		cost:130000000000000 Insekten,60000000000000 Larven,10000000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
 		req:130000000000000 Insekten:earned and UgBIAmeise6
-
 *UgBIAmeise8
 		name:Ameisenunterführung
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -5001,7 +4504,6 @@ Upgrades
 		cost:13000000000000000 Insekten,6000000000000000 Larven,1000000000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
 		req:13000000000000000 Insekten:earned and UgBIAmeise7
-
 *UgBIAmeise9
 		name:Ameisenboot
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -5009,7 +4511,6 @@ Upgrades
 		cost:1300000000000000000 Insekten,600000000000000000 Larven,100000000000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
 		req:1300000000000000000 Insekten:earned and UgBIAmeise8
-
 *UgBIAmeise10
 		name:Ameisensalsa
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -5017,7 +4518,6 @@ Upgrades
 		cost:130000000000000000000 Insekten,60000000000000000000 Larven,10000000000000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
 		req:130000000000000000000 Insekten:earned and UgBIAmeise9
-		
 
 *UgBIAmeise11
 		name:Ameisensalat
@@ -5026,8 +4526,6 @@ Upgrades
 		cost:13000000000000000000000 Insekten,6000000000000000000000 Larven,1000000000000000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
 		req:13000000000000000000000 Insekten:earned and UgBIAmeise10
-		
-
 *UgBIAmeise12
 		name:Ameisenkönig
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -5035,8 +4533,6 @@ Upgrades
 		cost:1300000000000000000000000 Insekten,600000000000000000000000 Larven,100000000000000000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
 		req:1300000000000000000000000 Insekten:earned and UgBIAmeise11
-				
-
 *UgBIPAmeise1
 		name:AmeisenPanzer I
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -5044,8 +4540,6 @@ Upgrades
 		cost:100 InsektenPanzer
 		passive:multiply yield of Ameise by 1.75
 		req:1 InsektenPanzer
-		class:noBackground
-
 *UgBIPAmeise2
 		name:AmeisenPanzer II
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -5053,9 +4547,6 @@ Upgrades
 		cost:10000 InsektenPanzer
 		passive:multiply yield of Ameise by 1.75
 		req:UgBIPAmeise1
-		class:noBackground
-	
-
 *UgBIPAmeise3
 		name:AmeisenPanzer III
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -5063,8 +4554,6 @@ Upgrades
 		cost:1000000 InsektenPanzer
 		passive:multiply yield of Ameise by 1.75
 		req:UgBIPAmeise2
-		class:noBackground
-
 *UgBIPAmeise4
 		name:AmeisenPanzer IV
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -5072,8 +4561,6 @@ Upgrades
 		cost:100000000 InsektenPanzer
 		passive:multiply yield of Ameise by 1.75
 		req:UgBIPAmeise3
-		class:noBackground
-
 *UgBIPAmeise5
 		name:AmeisenPanzer V
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -5081,8 +4568,6 @@ Upgrades
 		cost:10000000000 InsektenPanzer
 		passive:multiply yield of Ameise by 1.75
 		req:UgBIPAmeise4
-		class:noBackground
-
 *UgBIPAmeise6
 		name:AmeisenPanzer VI
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -5090,8 +4575,6 @@ Upgrades
 		cost:1000000000000 InsektenPanzer
 		passive:multiply yield of Ameise by 1.75
 		req:UgBIPAmeise5
-		class:noBackground
-
 *UgBIPAmeise7
 		name:AmeisenPanzer VII
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -5099,8 +4582,6 @@ Upgrades
 		cost:100000000000000 InsektenPanzer
 		passive:multiply yield of Ameise by 1.75
 		req:UgBIPAmeise6
-		class:noBackground
-
 *UgBIPAmeise8
 		name:AmeisenPanzer VIII
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -5108,8 +4589,6 @@ Upgrades
 		cost:10000000000000000 InsektenPanzer
 		passive:multiply yield of Ameise by 1.75
 		req:UgBIPAmeise7
-		class:noBackground
-
 *UgBIPAmeise9
 		name:AmeisenPanzer IX
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -5117,8 +4596,6 @@ Upgrades
 		cost:1000000000000000000 InsektenPanzer
 		passive:multiply yield of Ameise by 1.75
 		req:UgBIPAmeise8
-		class:noBackground
-
 *UgBIPAmeise10
 		name:AmeisenPanzer X
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -5126,14 +4603,6 @@ Upgrades
 		cost:100000000000000000000 InsektenPanzer
 		passive:multiply yield of Ameise by 1.75
 		req:UgBIPAmeise9
-		class:noBackground
-
-
-				
-				
-			
-				
-				
 				
 *UgBITermite1
 		name:Termitenmarsch
@@ -5142,7 +4611,6 @@ Upgrades
 		cost:1348 Insekten,697 Larven,343 BauMaterial
 		passive:multiply yield of Termite by 1.75
 		req:1400 Insekten:earned and 1 Termite
-
 *UgBITermite2
 		name:Termitarium
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5150,7 +4618,6 @@ Upgrades
 		cost:13480000 Insekten,6970000 Larven,3430000 BauMaterial
 		passive:multiply yield of Termite by 1.75
 		req:14000000 Insekten:earned and UgBITermite1
-
 *UgBITermite3
 		name:Termitenkette
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5158,7 +4625,6 @@ Upgrades
 		cost:1348000000 Insekten,697000000 Larven,343000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
 		req:1400000000 Insekten:earned and UgBITermite2
-
 *UgBITermite4
 		name:Termitenpuder
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5166,7 +4632,6 @@ Upgrades
 		cost:134800000000 Insekten,69700000000 Larven,34300000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
 		req:140000000000 Insekten:earned and UgBITermite3
-
 *UgBITermite5
 		name:Termitenwache
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5174,7 +4639,6 @@ Upgrades
 		cost:13480000000000 Insekten,6970000000000 Larven,3430000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
 		req:14000000000000 Insekten:earned and UgBITermite4
-
 *UgBITermite6
 		name:Termitenmarmelade
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5182,7 +4646,6 @@ Upgrades
 		cost:1348000000000000 Insekten,697000000000000 Larven,343000000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
 		req:1400000000000000 Insekten:earned and UgBITermite5
-
 *UgBITermite7
 		name:Termitenbrot
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5190,7 +4653,6 @@ Upgrades
 		cost:134800000000000000 Insekten,69700000000000000 Larven,34300000000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
 		req:140000000000000000 Insekten:earned and UgBITermite6
-
 *UgBITermite8
 		name:Termitenlink
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5198,7 +4660,6 @@ Upgrades
 		cost:13480000000000000000 Insekten,6970000000000000000 Larven,3430000000000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
 		req:14000000000000000000 Insekten:earned and UgBITermite7
-
 *UgBITermite9
 		name:Termitendisko
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5206,7 +4667,6 @@ Upgrades
 		cost:1348000000000000000000 Insekten,697000000000000000000 Larven,343000000000000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
 		req:1400000000000000000000 Insekten:earned and UgBITermite8
-
 *UgBITermite10
 		name:Termitenküche
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5214,7 +4674,6 @@ Upgrades
 		cost:134800000000000000000000 Insekten,69700000000000000000000 Larven,34300000000000000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
 		req:140000000000000000000000 Insekten:earned and UgBITermite9
-
 *UgBITermite11
 		name:Termitenwalzer
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5222,7 +4681,6 @@ Upgrades
 		cost:13480000000000000000000000 Insekten,6970000000000000000000000 Larven,3430000000000000000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
 		req:14000000000000000000000000 Insekten:earned and UgBITermite10
-
 *UgBITermite12
 		name:Termitenkuscheln
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5231,10 +4689,6 @@ Upgrades
 		passive:multiply yield of Termite by 1.75
 		req:1400000000000000000000000000 Insekten:earned and UgBITermite11
 
-		
-	
-
-
 *UgBIPTermite1
 		name:TermitenPanzer I
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5242,8 +4696,6 @@ Upgrades
 		cost:1430 InsektenPanzer
 		passive:multiply yield of Termite by 1.75
 		req:1 InsektenPanzer and 1 Termite
-		class:noBackground
-
 *UgBIPTermite2
 		name:TermitenPanzer II
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5251,8 +4703,6 @@ Upgrades
 		cost:143000 InsektenPanzer
 		passive:multiply yield of Termite by 1.75
 		req:UgBIPTermite1
-		class:noBackground
-
 *UgBIPTermite3
 		name:TermitenPanzer III
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5260,8 +4710,6 @@ Upgrades
 		cost:14300000 InsektenPanzer
 		passive:multiply yield of Termite by 1.75
 		req:UgBIPTermite2
-		class:noBackground
-
 *UgBIPTermite4
 		name:TermitenPanzer IV
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5269,8 +4717,6 @@ Upgrades
 		cost:1430000000 InsektenPanzer
 		passive:multiply yield of Termite by 1.75
 		req:UgBIPTermite3
-		class:noBackground
-
 *UgBIPTermite5
 		name:TermitenPanzer V
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5278,8 +4724,6 @@ Upgrades
 		cost:143000000000 InsektenPanzer
 		passive:multiply yield of Termite by 1.75
 		req:UgBIPTermite4
-		class:noBackground
-
 *UgBIPTermite6
 		name:TermitenPanzer VI
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5287,8 +4731,6 @@ Upgrades
 		cost:14300000000000 InsektenPanzer
 		passive:multiply yield of Termite by 1.75
 		req:UgBIPTermite5
-		class:noBackground
-
 *UgBIPTermite7
 		name:TermitenPanzer VII
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5296,8 +4738,6 @@ Upgrades
 		cost:1430000000000000 InsektenPanzer
 		passive:multiply yield of Termite by 1.75
 		req:UgBIPTermite6
-		class:noBackground
-
 *UgBIPTermite8
 		name:TermitenPanzer VIII
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5305,8 +4745,6 @@ Upgrades
 		cost:143000000000000000 InsektenPanzer
 		passive:multiply yield of Termite by 1.75
 		req:UgBIPTermite7
-		class:noBackground
-
 *UgBIPTermite9
 		name:TermitenPanzer IX
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5314,8 +4752,6 @@ Upgrades
 		cost:14300000000000000000 InsektenPanzer
 		passive:multiply yield of Termite by 1.75
 		req:UgBIPTermite8
-		class:noBackground
-
 *UgBIPTermite10
 		name:TermitenPanzer X
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
@@ -5323,10 +4759,6 @@ Upgrades
 		cost:1430000000000000000000 InsektenPanzer
 		passive:multiply yield of Termite by 1.75
 		req:UgBIPTermite9
-		class:noBackground
-
-
-
 
 *UgBIFliegen1
 		name:Fliegenklatsche
@@ -5335,7 +4767,6 @@ Upgrades
 		cost:14800 Insekten,6800 Larven,3750 BauMaterial
 		passive:multiply yield of Fliege by 1.75
 		req:14800 Insekten:earned and 1 Fliege
-
 *UgBIFliegen2
 		name:Fliegenrumba
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5343,8 +4774,6 @@ Upgrades
 		cost:1480000 Insekten,680000 Larven,375000 BauMaterial
 		passive:multiply yield of Fliege by 1.75
 		req:1480000 Insekten:earned and UgBIFliegen1
-
-
 *UgBIFliegen3
 		name:BrummBrummFliege
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5352,7 +4781,6 @@ Upgrades
 		cost:148000000 Insekten,68000000 Larven,37500000 BauMaterial
 		passive:multiply yield of Fliege by 1.75
 		req:148000000 Insekten:earned and UgBIFliegen2
-
 *UgBIFliegen4
 		name:Fliegenflügel
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5360,7 +4788,6 @@ Upgrades
 		cost:14800000000 Insekten,6800000000 Larven,3750000000 BauMaterial
 		passive:multiply yield of Fliege by 1.75
 		req:14800000000 Insekten:earned and UgBIFliegen3
-
 *UgBIFliegen5
 		name:Fliegerbrille
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5368,7 +4795,6 @@ Upgrades
 		cost:1480000000000 Insekten,680000000000 Larven,375000000000 BauMaterial
 		passive:multiply yield of Fliege by 1.75
 		req:1480000000000 Insekten:earned and UgBIFliegen4
-
 *UgBIFliegen6
 		name:Fliegeneier
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5376,7 +4802,6 @@ Upgrades
 		cost:148000000000000 Insekten,68000000000000 Larven,37500000000000 BauMaterial
 		passive:multiply yield of Fliege by 1.75
 		req:148000000000000 Insekten:earned and UgBIFliegen5
-
 *UgBIFliegen7
 		name:Fliegelarven
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5384,7 +4809,6 @@ Upgrades
 		cost:14800000000000000 Insekten,6800000000000000 Larven,3750000000000000 BauMaterial
 		passive:multiply yield of Fliege by 1.75
 		req:14800000000000000 Insekten:earned and UgBIFliegen6
-
 *UgBIFliegen8
 		name:Fliegengekreisch
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5392,7 +4816,6 @@ Upgrades
 		cost:1480000000000000000 Insekten,680000000000000000 Larven,375000000000000000 BauMaterial
 		passive:multiply yield of Fliege by 1.75
 		req:1480000000000000000 Insekten:earned and UgBIFliegen7
-
 *UgBIFliegen9
 		name:Fliegenpaarung
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5400,7 +4823,6 @@ Upgrades
 		cost:148000000000000000000 Insekten,68000000000000000000 Larven,37500000000000000000 BauMaterial
 		passive:multiply yield of Fliege by 1.75
 		req:148000000000000000000 Insekten:earned and UgBIFliegen8
-
 *UgBIFliegen10
 		name:Fliege in der Suppe
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5408,7 +4830,6 @@ Upgrades
 		cost:14800000000000000000000 Insekten,6800000000000000000000 Larven,3750000000000000000000 BauMaterial
 		passive:multiply yield of Fliege by 1.75
 		req:14800000000000000000000 Insekten:earned and UgBIFliegen9
-
 *UgBIFliegen11
 		name:Fliegenwein
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5416,7 +4837,6 @@ Upgrades
 		cost:1480000000000000000000000 Insekten,680000000000000000000000 Larven,375000000000000000000000 BauMaterial
 		passive:multiply yield of Fliege by 1.75
 		req:1480000000000000000000000 Insekten:earned and UgBIFliegen10
-
 *UgBIFliegen12
 		name:Fliegenragou
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5424,12 +4844,6 @@ Upgrades
 		cost:148000000000000000000000000 Insekten,68000000000000000000000000 Larven,37500000000000000000000000 BauMaterial
 		passive:multiply yield of Fliege by 1.75
 		req:148000000000000000000000000 Insekten:earned and UgBIFliegen11
-				
-	
-
-
-
-
 
 *UgBIPFliege1
 		name:FliegenPanzer I
@@ -5438,8 +4852,6 @@ Upgrades
 		cost:10000 InsektenPanzer
 		passive:multiply yield of Fliege by 1.75
 		req:1 InsektenPanzer and 1 Fliege
-		class:noBackground
-
 *UgBIPFliege2
 		name:FliegenPanzer II
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5447,8 +4859,6 @@ Upgrades
 		cost:1000000 InsektenPanzer
 		passive:multiply yield of Fliege by 1.75
 		req:UgBIPFliege1
-		class:noBackground
-
 *UgBIPFliege3
 		name:FliegenPanzer III
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5456,8 +4866,6 @@ Upgrades
 		cost:100000000 InsektenPanzer
 		passive:multiply yield of Fliege by 1.75
 		req:UgBIPFliege2
-		class:noBackground
-
 *UgBIPFliege4
 		name:FliegenPanzer IV
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5465,8 +4873,6 @@ Upgrades
 		cost:10000000000 InsektenPanzer
 		passive:multiply yield of Fliege by 1.75
 		req:UgBIPFliege3
-		class:noBackground
-
 *UgBIPFliege5
 		name:FliegenPanzer V
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5474,8 +4880,6 @@ Upgrades
 		cost:1000000000000 InsektenPanzer
 		passive:multiply yield of Fliege by 1.75
 		req:UgBIPFliege4
-		class:noBackground
-
 *UgBIPFliege6
 		name:FliegenPanzer VI
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5483,8 +4887,6 @@ Upgrades
 		cost:100000000000000 InsektenPanzer
 		passive:multiply yield of Fliege by 1.75
 		req:UgBIPFliege5
-		class:noBackground
-
 *UgBIPFliege7
 		name:FliegenPanzer VII
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5492,8 +4894,6 @@ Upgrades
 		cost:10000000000000000 InsektenPanzer
 		passive:multiply yield of Fliege by 1.75
 		req:UgBIPFliege6
-		class:noBackground
-
 *UgBIPFliege8
 		name:FliegenPanzer VIII
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5501,8 +4901,6 @@ Upgrades
 		cost:1000000000000000000 InsektenPanzer
 		passive:multiply yield of Fliege by 1.75
 		req:UgBIPFliege7
-		class:noBackground
-
 *UgBIPFliege9
 		name:FliegenPanzer IX
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5510,8 +4908,6 @@ Upgrades
 		cost:100000000000000000000 InsektenPanzer
 		passive:multiply yield of Fliege by 1.75
 		req:UgBIPFliege8
-		class:noBackground
-
 *UgBIPFliege10
 		name:FliegenPanzer X
 		desc:<.> Erhöht die Produktion der Fliegen um <b>75</b> %.
@@ -5519,13 +4915,6 @@ Upgrades
 		cost:10000000000000000000000 InsektenPanzer
 		passive:multiply yield of Fliege by 1.75
 		req:UgBIPFliege9
-		class:noBackground
-
-
-	
-	
-	
-	
 
 *UgBIKaefer1
 		name:Käfersummen
@@ -5534,7 +4923,6 @@ Upgrades
 		cost:168000 Insekten,84000 Larven, 42000 BauMaterial
 		passive:multiply yield of Kaefer by 1.75
 		req:168000 Insekten:earned and 1 Kaefer
-
 *UgBIKaefer2
 		name:Käferitis
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5542,7 +4930,6 @@ Upgrades
 		cost:16800000 Insekten,8400000 Larven, 4200000 BauMaterial
 		passive:multiply yield of Kaefer by 1.75
 		req:16800000 Insekten:earned and UgBIKaefer1
-
 *UgBIKaefer3
 		name:Käferlolli
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5550,7 +4937,6 @@ Upgrades
 		cost:1680000000 Insekten,840000000 Larven, 420000000 BauMaterial
 		passive:multiply yield of Kaefer by 1.75
 		req:1680000000 Insekten:earned and UgBIKaefer2
-
 *UgBIKaefer4
 		name:Käferkugeln
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5558,7 +4944,6 @@ Upgrades
 		cost:168000000000 Insekten,84000000000 Larven, 42000000000 BauMaterial
 		passive:multiply yield of Kaefer by 1.75
 		req:168000000000 Insekten:earned and UgBIKaefer3
-
 *UgBIKaefer5
 		name:Käfersammlung
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5566,7 +4951,6 @@ Upgrades
 		cost:16800000000000 Insekten,8400000000000 Larven, 4200000000000 BauMaterial
 		passive:multiply yield of Kaefer by 1.75
 		req:16800000000000 Insekten:earned and UgBIKaefer4
-
 *UgBIKaefer6
 		name:Käferrumba
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5574,7 +4958,6 @@ Upgrades
 		cost:1680000000000000 Insekten,840000000000000 Larven, 420000000000000 BauMaterial
 		passive:multiply yield of Kaefer by 1.75
 		req:1680000000000000 Insekten:earned and UgBIKaefer5
-
 *UgBIKaefer7
 		name:Käferhotel
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5582,7 +4965,6 @@ Upgrades
 		cost:168000000000000000 Insekten,84000000000000000 Larven, 42000000000000000 BauMaterial
 		passive:multiply yield of Kaefer by 1.75
 		req:168000000000000000 Insekten:earned and UgBIKaefer6
-
 *UgBIKaefer8
 		name:Käferhuddel
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5590,7 +4972,6 @@ Upgrades
 		cost:16800000000000000000 Insekten,8400000000000000000 Larven, 4200000000000000000 BauMaterial
 		passive:multiply yield of Kaefer by 1.75
 		req:16800000000000000000 Insekten:earned and UgBIKaefer7
-
 *UgBIKaefer9
 		name:Käferpolka
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5598,7 +4979,6 @@ Upgrades
 		cost:1680000000000000000000 Insekten,840000000000000000000 Larven, 420000000000000000000 BauMaterial
 		passive:multiply yield of Kaefer by 1.75
 		req:1680000000000000000000 Insekten:earned and UgBIKaefer8
-
 *UgBIKaefer10
 		name:Käferkäse
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5606,7 +4986,6 @@ Upgrades
 		cost:168000000000000000000000 Insekten,84000000000000000000000 Larven, 42000000000000000000000 BauMaterial
 		passive:multiply yield of Kaefer by 1.75
 		req:168000000000000000000000 Insekten:earned and UgBIKaefer9
-
 *UgBIKaefer11
 		name:Käferbrunch
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5614,7 +4993,6 @@ Upgrades
 		cost:16800000000000000000000000 Insekten,8400000000000000000000000 Larven, 4200000000000000000000000 BauMaterial
 		passive:multiply yield of Kaefer by 1.75
 		req:16800000000000000000000000 Insekten:earned and UgBIKaefer10
-
 *UgBIKaefer12
 		name:Käfergarten
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5622,10 +5000,6 @@ Upgrades
 		cost:1680000000000000000000000000 Insekten,840000000000000000000000000 Larven, 420000000000000000000000000 BauMaterial
 		passive:multiply yield of Kaefer by 1.75
 		req:1680000000000000000000000000 Insekten:earned and UgBIKaefer11
-	
-
-
-
 
 *UgBIPKaefer1
 		name:KäferPanzer I
@@ -5634,8 +5008,6 @@ Upgrades
 		cost:175000 InsektenPanzer
 		passive:multiply yield of Kaefer by 1.75
 		req:1 InsektenPanzer and 1 Kaefer
-		class:noBackground
-
 *UgBIPKaefer2
 		name:KäferPanzer II
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5643,8 +5015,6 @@ Upgrades
 		cost:17500000 InsektenPanzer
 		passive:multiply yield of Kaefer by 1.75
 		req:UgBIPKaefer1
-		class:noBackground
-
 *UgBIPKaefer3
 		name:KäferPanzer III
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5652,8 +5022,6 @@ Upgrades
 		cost:1750000000 InsektenPanzer
 		passive:multiply yield of Kaefer by 1.75
 		req:UgBIPKaefer2
-		class:noBackground
-
 *UgBIPKaefer4
 		name:KäferPanzer IV
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5661,8 +5029,6 @@ Upgrades
 		cost:175000000000 InsektenPanzer
 		passive:multiply yield of Kaefer by 1.75
 		req:UgBIPKaefer3
-		class:noBackground
-
 *UgBIPKaefer5
 		name:KäferPanzer V
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5670,8 +5036,6 @@ Upgrades
 		cost:17500000000000 InsektenPanzer
 		passive:multiply yield of Kaefer by 1.75
 		req:UgBIPKaefer4
-		class:noBackground
-
 *UgBIPKaefer6
 		name:KäferPanzer VI
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5679,8 +5043,6 @@ Upgrades
 		cost:1750000000000000 InsektenPanzer
 		passive:multiply yield of Kaefer by 1.75
 		req:UgBIPKaefer5
-		class:noBackground
-
 *UgBIPKaefer7
 		name:KäferPanzer VII
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5688,8 +5050,6 @@ Upgrades
 		cost:175000000000000000 InsektenPanzer
 		passive:multiply yield of Kaefer by 1.75
 		req:UgBIPKaefer6
-		class:noBackground
-
 *UgBIPKaefer8
 		name:KäferPanzer VIII
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5697,8 +5057,6 @@ Upgrades
 		cost:17500000000000000000 InsektenPanzer
 		passive:multiply yield of Kaefer by 1.75
 		req:UgBIPKaefer7
-		class:noBackground
-
 *UgBIPKaefer9
 		name:KäferPanzer IX
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5706,8 +5064,6 @@ Upgrades
 		cost:1750000000000000000000 InsektenPanzer
 		passive:multiply yield of Kaefer by 1.75
 		req:UgBIPKaefer8
-		class:noBackground
-
 *UgBIPKaefer10
 		name:KäferPanzer X
 		desc:<.> Erhöht die Produktion der Käfer um <b>75</b> %.
@@ -5715,15 +5071,6 @@ Upgrades
 		cost:175000000000000000000000 InsektenPanzer
 		passive:multiply yield of Kaefer by 1.75
 		req:UgBIPKaefer9
-		class:noBackground
-
-
-
-
-
-	
-
-	
 	
 *UgBIBiene1
 		name:Sumsebiene
@@ -5732,7 +5079,6 @@ Upgrades
 		cost:17900000 Insekten,8900000 Larven, 5670000 BauMaterial
 		passive:multiply yield of Biene by 1.75
 		req:17900000 Insekten:earned and 1 Biene
-
 *UgBIBiene2
 		name:Bienengelb
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5740,7 +5086,6 @@ Upgrades
 		cost:1790000000 Insekten,890000000 Larven, 567000000 BauMaterial
 		passive:multiply yield of Biene by 1.75
 		req:1790000000 Insekten:earned and UgBIBiene1
-
 *UgBIBiene3
 		name:Bienentreffen
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5748,7 +5093,6 @@ Upgrades
 		cost:179000000000 Insekten,89000000000 Larven, 56700000000 BauMaterial
 		passive:multiply yield of Biene by 1.75
 		req:179000000000 Insekten:earned and UgBIBiene2
-
 *UgBIBiene4
 		name:Bienensirup
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5756,7 +5100,6 @@ Upgrades
 		cost:17900000000000 Insekten,8900000000000 Larven, 5670000000000 BauMaterial
 		passive:multiply yield of Biene by 1.75
 		req:17900000000000 Insekten:earned and UgBIBiene3
-
 *UgBIBiene5
 		name:Bienenchachacha
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5764,7 +5107,6 @@ Upgrades
 		cost:1790000000000000 Insekten,890000000000000 Larven, 567000000000000 BauMaterial
 		passive:multiply yield of Biene by 1.75
 		req:1790000000000000 Insekten:earned and UgBIBiene4
-
 *UgBIBiene6
 		name:Bienemeeting
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5772,7 +5114,6 @@ Upgrades
 		cost:179000000000000000 Insekten,89000000000000000 Larven, 56700000000000000 BauMaterial
 		passive:multiply yield of Biene by 1.75
 		req:179000000000000000 Insekten:earned and UgBIBiene5
-
 *UgBIBiene7
 		name:Bienenstamm
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5780,7 +5121,6 @@ Upgrades
 		cost:17900000000000000000 Insekten,8900000000000000000 Larven, 5670000000000000000 BauMaterial
 		passive:multiply yield of Biene by 1.75
 		req:17900000000000000000 Insekten:earned and UgBIBiene6
-
 *UgBIBiene8
 		name:Bienendorf
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5788,7 +5128,6 @@ Upgrades
 		cost:1790000000000000000000 Insekten,890000000000000000000 Larven, 567000000000000000000 BauMaterial
 		passive:multiply yield of Biene by 1.75
 		req:1790000000000000000000 Insekten:earned and UgBIBiene7
-
 *UgBIBiene9
 		name:Bienenstadt
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5796,7 +5135,6 @@ Upgrades
 		cost:179000000000000000000000 Insekten,89000000000000000000000 Larven, 56700000000000000000000 BauMaterial
 		passive:multiply yield of Biene by 1.75
 		req:179000000000000000000000 Insekten:earned and UgBIBiene8
-
 *UgBIBiene10
 		name:Bienenmonopol
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5804,7 +5142,6 @@ Upgrades
 		cost:17900000000000000000000000 Insekten,8900000000000000000000000 Larven, 5670000000000000000000000 BauMaterial
 		passive:multiply yield of Biene by 1.75
 		req:17900000000000000000000000 Insekten:earned and UgBIBiene9
-
 *UgBIBiene11
 		name:Bienenrisiko
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5812,7 +5149,6 @@ Upgrades
 		cost:1790000000000000000000000000 Insekten,890000000000000000000000000 Larven, 567000000000000000000000000 BauMaterial
 		passive:multiply yield of Biene by 1.75
 		req:1790000000000000000000000000 Insekten:earned and UgBIBiene10
-
 *UgBIBiene12
 		name:Maya
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5821,12 +5157,6 @@ Upgrades
 		passive:multiply yield of Biene by 1.75
 		req:179000000000000000000000000000 Insekten:earned and UgBIBiene11
 
-
-
-
-
-
-
 *UgBIPBiene1
 		name:BienenPanzer I
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5834,8 +5164,6 @@ Upgrades
 		cost:1710000 InsektenPanzer
 		passive:multiply yield of Biene by 1.75
 		req:1 InsektenPanzer and 1 Biene
-		class:noBackground
-
 *UgBIPBiene2
 		name:BienenPanzer II
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5843,8 +5171,6 @@ Upgrades
 		cost:171000000 InsektenPanzer
 		passive:multiply yield of Biene by 1.75
 		req:UgBIPBiene1
-		class:noBackground
-
 *UgBIPBiene3
 		name:BienenPanzer III
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5852,8 +5178,6 @@ Upgrades
 		cost:17100000000 InsektenPanzer
 		passive:multiply yield of Biene by 1.75
 		req:UgBIPBiene2
-		class:noBackground
-
 *UgBIPBiene4
 		name:BienenPanzer IV
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5861,8 +5185,6 @@ Upgrades
 		cost:1710000000000 InsektenPanzer
 		passive:multiply yield of Biene by 1.75
 		req:UgBIPBiene3
-		class:noBackground
-
 *UgBIPBiene5
 		name:BienenPanzer V
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5870,8 +5192,6 @@ Upgrades
 		cost:171000000000000 InsektenPanzer
 		passive:multiply yield of Biene by 1.75
 		req:UgBIPBiene4
-		class:noBackground
-
 *UgBIPBiene6
 		name:BienenPanzer VI
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5879,8 +5199,6 @@ Upgrades
 		cost:17100000000000000 InsektenPanzer
 		passive:multiply yield of Biene by 1.75
 		req:UgBIPBiene5
-		class:noBackground
-
 *UgBIPBiene7
 		name:BienenPanzer VII
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5888,8 +5206,6 @@ Upgrades
 		cost:1710000000000000000 InsektenPanzer
 		passive:multiply yield of Biene by 1.75
 		req:UgBIPBiene6
-		class:noBackground
-
 *UgBIPBiene8
 		name:BienenPanzer VIII
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5897,8 +5213,6 @@ Upgrades
 		cost:171000000000000000000 InsektenPanzer
 		passive:multiply yield of Biene by 1.75
 		req:UgBIPBiene7
-		class:noBackground
-
 *UgBIPBiene9
 		name:BienenPanzer IX
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5906,8 +5220,6 @@ Upgrades
 		cost:17100000000000000000000 InsektenPanzer
 		passive:multiply yield of Biene by 1.75
 		req:UgBIPBiene8
-		class:noBackground
-
 *UgBIPBiene10
 		name:BienenPanzer X
 		desc:<.> Erhöht die Produktion der Bienen um <b>75</b> %.
@@ -5915,12 +5227,6 @@ Upgrades
 		cost:1710000000000000000000000 InsektenPanzer
 		passive:multiply yield of Biene by 1.75
 		req:UgBIPBiene9
-		class:noBackground
-
-
-		
-		
-
 
 *UgBIRoteAmeise1
 		name:RoteAmeisenSalat
@@ -5929,7 +5235,6 @@ Upgrades
 		cost:195900000 Insekten,98700000 Larven, 47000000 BauMaterial
 		passive:multiply yield of RoteAmeise by 1.75
 		req:195900000 Insekten:earned and 1 RoteAmeise
-
 *UgBIRoteAmeise2
 		name:RoteAmeisenStraße
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -5937,7 +5242,6 @@ Upgrades
 		cost:19590000000 Insekten,9870000000 Larven, 4700000000 BauMaterial
 		passive:multiply yield of RoteAmeise by 1.75
 		req:19590000000 Insekten:earned and UgBIRoteAmeise1
-
 *UgBIRoteAmeise3
 		name:RoteAmeisenSpur
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -5945,7 +5249,6 @@ Upgrades
 		cost:1959000000000 Insekten,987000000000 Larven, 470000000000 BauMaterial
 		passive:multiply yield of RoteAmeise by 1.75
 		req:1959000000000 Insekten:earned and UgBIRoteAmeise2
-
 *UgBIRoteAmeise4
 		name:RoteAmeisenFutter
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -5953,7 +5256,6 @@ Upgrades
 		cost:195900000000000 Insekten,98700000000000 Larven, 47000000000000 BauMaterial
 		passive:multiply yield of RoteAmeise by 1.75
 		req:195900000000000 Insekten:earned and UgBIRoteAmeise3
-
 *UgBIRoteAmeise5
 		name:RoteAmeisenGift
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -5961,7 +5263,6 @@ Upgrades
 		cost:19590000000000000 Insekten,9870000000000000 Larven, 4700000000000000 BauMaterial
 		passive:multiply yield of RoteAmeise by 1.75
 		req:19590000000000000 Insekten:earned and UgBIRoteAmeise4
-
 *UgBIRoteAmeise6
 		name:RoteAmeisenBrücke
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -5969,7 +5270,6 @@ Upgrades
 		cost:1959000000000000000 Insekten,987000000000000000 Larven, 470000000000000000 BauMaterial
 		passive:multiply yield of RoteAmeise by 1.75
 		req:1959000000000000000 Insekten:earned and UgBIRoteAmeise5
-
 *UgBIRoteAmeise7
 		name:RoteAmeisenBrüter
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -5977,7 +5277,6 @@ Upgrades
 		cost:195900000000000000000 Insekten,98700000000000000000 Larven, 47000000000000000000 BauMaterial
 		passive:multiply yield of RoteAmeise by 1.75
 		req:195900000000000000000 Insekten:earned and UgBIRoteAmeise6
-
 *UgBIRoteAmeise8
 		name:RoteAmeisenPrinzessin
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -5985,7 +5284,6 @@ Upgrades
 		cost:19590000000000000000000 Insekten,9870000000000000000000 Larven, 4700000000000000000000 BauMaterial
 		passive:multiply yield of RoteAmeise by 1.75
 		req:19590000000000000000000 Insekten:earned and UgBIRoteAmeise7
-
 *UgBIRoteAmeise9
 		name:RoteAmeisenSoldat
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -5993,7 +5291,6 @@ Upgrades
 		cost:1959000000000000000000000 Insekten,987000000000000000000000 Larven, 470000000000000000000000 BauMaterial
 		passive:multiply yield of RoteAmeise by 1.75
 		req:1959000000000000000000000 Insekten:earned and UgBIRoteAmeise8
-
 *UgBIRoteAmeise10
 		name:RoteAmeisenArbeiter
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -6001,7 +5298,6 @@ Upgrades
 		cost:195900000000000000000000000 Insekten,98700000000000000000000000 Larven, 47000000000000000000000000 BauMaterial
 		passive:multiply yield of RoteAmeise by 1.75
 		req:195900000000000000000000000 Insekten:earned and UgBIRoteAmeise9
-
 *UgBIRoteAmeise11
 		name:RoteAmeisenWache
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -6009,7 +5305,6 @@ Upgrades
 		cost:19590000000000000000000000000 Insekten,9870000000000000000000000000 Larven, 4700000000000000000000000000 BauMaterial
 		passive:multiply yield of RoteAmeise by 1.75
 		req:19590000000000000000000000000 Insekten:earned and UgBIRoteAmeise10
-
 *UgBIRoteAmeise12
 		name:Rotes Treiben
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -6017,9 +5312,6 @@ Upgrades
 		cost:1959000000000000000000000000000 Insekten,987000000000000000000000000000 Larven, 470000000000000000000000000000 BauMaterial
 		passive:multiply yield of RoteAmeise by 1.75
 		req:1959000000000000000000000000000 Insekten:earned and UgBIRoteAmeise11
-		
-		
-
 
 *UgBIPRoteAmeise1
 		name:RoteAmeisenPanzer I
@@ -6028,8 +5320,6 @@ Upgrades
 		cost:19200000 InsektenPanzer
 		passive:multiply yield of RoteAmeise by 1.75
 		req:1 InsektenPanzer and 1 RoteAmeise
-		class:noBackground
-
 *UgBIPRoteAmeise2
 		name:RoteAmeisenPanzer II
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -6037,8 +5327,6 @@ Upgrades
 		cost:1920000000 InsektenPanzer
 		passive:multiply yield of RoteAmeise by 1.75
 		req:UgBIPRoteAmeise1
-		class:noBackground
-
 *UgBIPRoteAmeise3
 		name:RoteAmeisenPanzer III
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -6046,8 +5334,6 @@ Upgrades
 		cost:192000000000 InsektenPanzer
 		passive:multiply yield of RoteAmeise by 1.75
 		req:UgBIPRoteAmeise2
-		class:noBackground
-
 *UgBIPRoteAmeise4
 		name:RoteAmeisenPanzer IV
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -6055,8 +5341,6 @@ Upgrades
 		cost:19200000000000 InsektenPanzer
 		passive:multiply yield of RoteAmeise by 1.75
 		req:UgBIPRoteAmeise3
-		class:noBackground
-
 *UgBIPRoteAmeise5
 		name:RoteAmeisenPanzer V
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -6064,8 +5348,6 @@ Upgrades
 		cost:1920000000000000 InsektenPanzer
 		passive:multiply yield of RoteAmeise by 1.75
 		req:UgBIPRoteAmeise4
-		class:noBackground
-
 *UgBIPRoteAmeise6
 		name:RoteAmeisenPanzer VI
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -6073,8 +5355,6 @@ Upgrades
 		cost:192000000000000000 InsektenPanzer
 		passive:multiply yield of RoteAmeise by 1.75
 		req:UgBIPRoteAmeise5
-		class:noBackground
-
 *UgBIPRoteAmeise7
 		name:RoteAmeisenPanzer VII
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -6082,8 +5362,6 @@ Upgrades
 		cost:19200000000000000000 InsektenPanzer
 		passive:multiply yield of RoteAmeise by 1.75
 		req:UgBIPRoteAmeise6
-		class:noBackground
-
 *UgBIPRoteAmeise8
 		name:RoteAmeisenPanzer VIII
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -6091,8 +5369,6 @@ Upgrades
 		cost:1920000000000000000000 InsektenPanzer
 		passive:multiply yield of RoteAmeise by 1.75
 		req:UgBIPRoteAmeise7
-		class:noBackground
-
 *UgBIPRoteAmeise9
 		name:RoteAmeisenPanzer IX
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -6100,8 +5376,6 @@ Upgrades
 		cost:192000000000000000000000 InsektenPanzer
 		passive:multiply yield of RoteAmeise by 1.75
 		req:UgBIPRoteAmeise8
-		class:noBackground
-
 *UgBIPRoteAmeise10
 		name:RoteAmeisenPanzer X
 		desc:<.> Erhöht die Produktion der RotenAmeisen um <b>75</b> %.
@@ -6109,11 +5383,6 @@ Upgrades
 		cost:10000000000 InsektenPanzer
 		passive:multiply yield of RoteAmeise by 1.75
 		req:UgBIPRoteAmeise9
-		class:noBackground
-
-
-
-
 
 *UgBIGrosserKaefer1
 		name:BockKäfer
@@ -6122,7 +5391,6 @@ Upgrades
 		cost:2799000000 Insekten,1399000000 Larven, 699000000 BauMaterial
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:2799000000 Insekten:earned and 1 GrosserKaefer
-
 *UgBIGrosserKaefer2
 		name:SchwarzKäfer
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6130,7 +5398,6 @@ Upgrades
 		cost:279900000000 Insekten,139900000000 Larven, 69900000000 BauMaterial
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:279900000000 Insekten:earned and UgBIGrosserKaefer1
-
 *UgBIGrosserKaefer3
 		name:Laufkäfer
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6138,7 +5405,6 @@ Upgrades
 		cost:27990000000000 Insekten,13990000000000 Larven, 6990000000000 BauMaterial
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:27990000000000 Insekten:earned and UgBIGrosserKaefer2
-
 *UgBIGrosserKaefer4
 		name:Speckkäfer
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6146,7 +5412,6 @@ Upgrades
 		cost:2799000000000000 Insekten,1399000000000000 Larven, 699000000000000 BauMaterial
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:2799000000000000 Insekten:earned and UgBIGrosserKaefer3
-
 *UgBIGrosserKaefer5
 		name:Brotkäfer
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6154,7 +5419,6 @@ Upgrades
 		cost:279900000000000000 Insekten,139900000000000000 Larven, 69900000000000000 BauMaterial
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:279900000000000000 Insekten:earned and UgBIGrosserKaefer4
-
 *UgBIGrosserKaefer6
 		name:Blatthornkäfer
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6162,7 +5426,6 @@ Upgrades
 		cost:27990000000000000000 Insekten,13990000000000000000 Larven, 6990000000000000000 BauMaterial
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:27990000000000000000 Insekten:earned and UgBIGrosserKaefer5
-
 *UgBIGrosserKaefer7
 		name:Schnellkäfer
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6170,7 +5433,6 @@ Upgrades
 		cost:2799000000000000000000 Insekten,1399000000000000000000 Larven, 699000000000000000000 BauMaterial
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:2799000000000000000000 Insekten:earned and UgBIGrosserKaefer6
-
 *UgBIGrosserKaefer8
 		name:Ölkäfer
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6178,7 +5440,6 @@ Upgrades
 		cost:279900000000000000000000 Insekten,139900000000000000000000 Larven, 69900000000000000000000 BauMaterial
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:279900000000000000000000 Insekten:earned and UgBIGrosserKaefer7
-
 *UgBIGrosserKaefer9
 		name:Flohkäfer
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6186,7 +5447,6 @@ Upgrades
 		cost:27990000000000000000000000 Insekten,13990000000000000000000000 Larven, 6990000000000000000000000 BauMaterial
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:27990000000000000000000000 Insekten:earned and UgBIGrosserKaefer8
-
 *UgBIGrosserKaefer10
 		name:Aaskäfer
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6194,7 +5454,6 @@ Upgrades
 		cost:2799000000000000000000000000 Insekten,1399000000000000000000000000 Larven, 699000000000000000000000000 BauMaterial
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:2799000000000000000000000000 Insekten:earned and UgBIGrosserKaefer9
-
 *UgBIGrosserKaefer11
 		name:Buntkäfer
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6202,7 +5461,6 @@ Upgrades
 		cost:279900000000000000000000000000 Insekten,139900000000000000000000000000 Larven, 69900000000000000000000000000 BauMaterial
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:279900000000000000000000000000 Insekten:earned and UgBIGrosserKaefer10
-
 *UgBIGrosserKaefer12
 		name:Scarabaeos
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6211,14 +5469,6 @@ Upgrades
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:27990000000000000000000000000000 Insekten:earned and UgBIGrosserKaefer11
 
-		
-		
-
-		
-
-
-
-
 *UgBIPGrosserKaefer1
 		name:GroßerKäferPanzer I
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6226,8 +5476,6 @@ Upgrades
 		cost:275000000 InsektenPanzer
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:1 InsektenPanzer and 1 GrosserKaefer
-		class:noBackground
-
 *UgBIPGrosserKaefer2
 		name:GroßerKäferPanzer II
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6235,8 +5483,6 @@ Upgrades
 		cost:27500000000 InsektenPanzer
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:UgBIPGrosserKaefer1
-		class:noBackground
-
 *UgBIPGrosserKaefer3
 		name:GroßerKäferPanzer III
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6244,8 +5490,6 @@ Upgrades
 		cost:2750000000000 InsektenPanzer
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:UgBIPGrosserKaefer2
-		class:noBackground
-
 *UgBIPGrosserKaefer4
 		name:GroßerKäferPanzer IV
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6253,8 +5497,6 @@ Upgrades
 		cost:275000000000000 InsektenPanzer
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:UgBIPGrosserKaefer3
-		class:noBackground
-
 *UgBIPGrosserKaefer5
 		name:GroßerKäferPanzer V
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6262,8 +5504,6 @@ Upgrades
 		cost:27500000000000000 InsektenPanzer
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:UgBIPGrosserKaefer4
-		class:noBackground
-
 *UgBIPGrosserKaefer6
 		name:GroßerKäferPanzer VI
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6271,8 +5511,6 @@ Upgrades
 		cost:2750000000000000000 InsektenPanzer
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:UgBIPGrosserKaefer5
-		class:noBackground
-
 *UgBIPGrosserKaefer7
 		name:GroßerKäferPanzer VII
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6280,8 +5518,6 @@ Upgrades
 		cost:275000000000000000000 InsektenPanzer
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:UgBIPGrosserKaefer6
-		class:noBackground
-
 *UgBIPGrosserKaefer8
 		name:GroßerKäferPanzer VIII
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6289,8 +5525,6 @@ Upgrades
 		cost:27500000000000000000000 InsektenPanzer
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:UgBIPGrosserKaefer7
-		class:noBackground
-
 *UgBIPGrosserKaefer9
 		name:GroßerKäferPanzer IX
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6298,8 +5532,6 @@ Upgrades
 		cost:2750000000000000000000000 InsektenPanzer
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:UgBIPGrosserKaefer8
-		class:noBackground
-
 *UgBIPGrosserKaefer10
 		name:GroßerKäferPanzer X
 		desc:<.> Erhöht die Produktion der GroßenKäfer um <b>75</b> %.
@@ -6307,12 +5539,6 @@ Upgrades
 		cost:275000000000000000000000000 InsektenPanzer
 		passive:multiply yield of GrosserKaefer by 1.75
 		req:UgBIPGrosserKaefer9
-		class:noBackground
-
-
-
-
-
 
 *UgBISchmetterling1
 		name:Feuerfalter
@@ -6321,7 +5547,6 @@ Upgrades
 		cost:42000000000 Insekten,21000000000 Larven, 10500000000 BauMaterial
 		passive:multiply yield of Schmetterling by 1.75
 		req:42000000000 Insekten:earned and 1 Schmetterling
-
 *UgBISchmetterling2
 		name:Gabelschwanz
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6329,7 +5554,6 @@ Upgrades
 		cost:4200000000000 Insekten,2100000000000 Larven, 1050000000000 BauMaterial
 		passive:multiply yield of Schmetterling by 1.75
 		req:4200000000000 Insekten:earned and UgBISchmetterling1
-
 *UgBISchmetterling3
 		name:Mohrenfalter
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6337,7 +5561,6 @@ Upgrades
 		cost:420000000000000 Insekten,210000000000000 Larven, 105000000000000 BauMaterial
 		passive:multiply yield of Schmetterling by 1.75
 		req:420000000000000 Insekten:earned and UgBISchmetterling2
-
 *UgBISchmetterling4
 		name:Schillerfalter
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6345,7 +5568,6 @@ Upgrades
 		cost:42000000000000000 Insekten,21000000000000000 Larven, 10500000000000000 BauMaterial
 		passive:multiply yield of Schmetterling by 1.75
 		req:42000000000000000 Insekten:earned and UgBISchmetterling3
-
 *UgBISchmetterling5
 		name:Nachtpfauenauge
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6353,7 +5575,6 @@ Upgrades
 		cost:4200000000000000000 Insekten,2100000000000000000 Larven, 1050000000000000000 BauMaterial
 		passive:multiply yield of Schmetterling by 1.75
 		req:4200000000000000000 Insekten:earned and UgBISchmetterling4
-
 *UgBISchmetterling6
 		name:Schneckenspinner
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6361,7 +5582,6 @@ Upgrades
 		cost:420000000000000000000 Insekten,210000000000000000000 Larven, 105000000000000000000 BauMaterial
 		passive:multiply yield of Schmetterling by 1.75
 		req:420000000000000000000 Insekten:earned and UgBISchmetterling5
-
 *UgBISchmetterling7
 		name:Bunteulchen
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6369,7 +5589,6 @@ Upgrades
 		cost:42000000000000000000000 Insekten,21000000000000000000000 Larven, 10500000000000000000000 BauMaterial
 		passive:multiply yield of Schmetterling by 1.75
 		req:42000000000000000000000 Insekten:earned and UgBISchmetterling6
-
 *UgBISchmetterling8
 		name:Ligustenwickler
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6377,7 +5596,6 @@ Upgrades
 		cost:4200000000000000000000000 Insekten,2100000000000000000000000 Larven, 1050000000000000000000000 BauMaterial
 		passive:multiply yield of Schmetterling by 1.75
 		req:4200000000000000000000000 Insekten:earned and UgBISchmetterling7
-
 *UgBISchmetterling9
 		name:Dickkopffalter
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6385,7 +5603,6 @@ Upgrades
 		cost:420000000000000000000000000 Insekten,210000000000000000000000000 Larven, 105000000000000000000000000 BauMaterial
 		passive:multiply yield of Schmetterling by 1.75
 		req:420000000000000000000000000 Insekten:earned and UgBISchmetterling8
-
 *UgBISchmetterling10
 		name:Pantherspanner
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6393,7 +5610,6 @@ Upgrades
 		cost:42000000000000000000000000000 Insekten,21000000000000000000000000000 Larven, 10500000000000000000000000000 BauMaterial
 		passive:multiply yield of Schmetterling by 1.75
 		req:42000000000000000000000000000 Insekten:earned and UgBISchmetterling9
-
 *UgBISchmetterling11
 		name:Purpurzünsler
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6401,7 +5617,6 @@ Upgrades
 		cost:4200000000000000000000000000000 Insekten,2100000000000000000000000000000 Larven, 1050000000000000000000000000000 BauMaterial
 		passive:multiply yield of Schmetterling by 1.75
 		req:4200000000000000000000000000000 Insekten:earned and UgBISchmetterling10
-
 *UgBISchmetterling12
 		name:Gelbe Tigermotte
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6410,8 +5625,6 @@ Upgrades
 		passive:multiply yield of Schmetterling by 1.75
 		req:420000000000000000000000000000000 Insekten:earned and UgBISchmetterling11
 
-
-
 *UgBIPSchmetterling1
 		name:SchmetterlingsPanzer I
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6419,8 +5632,6 @@ Upgrades
 		cost:3900000000 InsektenPanzer
 		passive:multiply yield of Schmetterling by 1.75
 		req:1 InsektenPanzer and 1 Schmetterling
-		class:noBackground
-
 *UgBIPSchmetterling2
 		name:SchmetterlingsPanzer II
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6428,8 +5639,6 @@ Upgrades
 		cost:390000000000 InsektenPanzer
 		passive:multiply yield of Schmetterling by 1.75
 		req:UgBIPSchmetterling1
-		class:noBackground
-
 *UgBIPSchmetterling3
 		name:SchmetterlingsPanzer III
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6437,8 +5646,6 @@ Upgrades
 		cost:39000000000000 InsektenPanzer
 		passive:multiply yield of Schmetterling by 1.75
 		req:UgBIPSchmetterling2
-		class:noBackground
-
 *UgBIPSchmetterling4
 		name:SchmetterlingsPanzer IV
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6446,8 +5653,6 @@ Upgrades
 		cost:3900000000000000 InsektenPanzer
 		passive:multiply yield of Schmetterling by 1.75
 		req:UgBIPSchmetterling3
-		class:noBackground
-
 *UgBIPSchmetterling5
 		name:SchmetterlingsPanzer V
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6455,8 +5660,6 @@ Upgrades
 		cost:390000000000000000 InsektenPanzer
 		passive:multiply yield of Schmetterling by 1.75
 		req:UgBIPSchmetterling4
-		class:noBackground
-
 *UgBIPSchmetterling6
 		name:SchmetterlingsPanzer VI
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6464,8 +5667,6 @@ Upgrades
 		cost:39000000000000000000 InsektenPanzer
 		passive:multiply yield of Schmetterling by 1.75
 		req:UgBIPSchmetterling5
-		class:noBackground
-
 *UgBIPSchmetterling7
 		name:SchmetterlingsPanzer VII
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6473,8 +5674,6 @@ Upgrades
 		cost:3900000000000000000000 InsektenPanzer
 		passive:multiply yield of Schmetterling by 1.75
 		req:UgBIPSchmetterling6
-		class:noBackground
-
 *UgBIPSchmetterling8
 		name:SchmetterlingsPanzer VIII
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6482,8 +5681,6 @@ Upgrades
 		cost:390000000000000000000000 InsektenPanzer
 		passive:multiply yield of Schmetterling by 1.75
 		req:UgBIPSchmetterling7
-		class:noBackground
-
 *UgBIPSchmetterling9
 		name:SchmetterlingsPanzer IX
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6491,8 +5688,6 @@ Upgrades
 		cost:39000000000000000000000000 InsektenPanzer
 		passive:multiply yield of Schmetterling by 1.75
 		req:UgBIPSchmetterling8
-		class:noBackground
-
 *UgBIPSchmetterling10
 		name:SchmetterlingsPanzer X
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6500,11 +5695,7 @@ Upgrades
 		cost:3900000000000000000000000000 InsektenPanzer
 		passive:multiply yield of Schmetterling by 1.75
 		req:UgBIPSchmetterling9
-		class:noBackground
-
-
 //9
-
 *UgBISchabe1
 		name:Küchenschabe
 		desc:<.> Erhöht die Produktion der Schaben um <b>75</b> %.
@@ -6512,7 +5703,6 @@ Upgrades
 		cost:65000000000 Insekten,31000000000 Larven, 15500000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:65000000000 Insekten:earned and 1 Schabe
-
 *UgBISchabe2
 		name:Kakerlake
 		desc:<.> Erhöht die Produktion der Schaben um <b>75</b> %.
@@ -6520,7 +5710,6 @@ Upgrades
 		cost:6500000000000 Insekten,3100000000000 Larven, 1550000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:6500000000000 Insekten:earned and UgBISchabe1
-
 *UgBISchabe3
 		name:Waldschabe 
 		desc:<.> Erhöht die Produktion der Schaben um <b>75</b> %.
@@ -6528,7 +5717,6 @@ Upgrades
 		cost:650000000000000 Insekten,310000000000000 Larven, 155000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:650000000000000 Insekten:earned and UgBISchabe2
-
 *UgBISchabe4
 		name:Amerikanische Schabe
 		desc:<.> Erhöht die Produktion der Schaben um <b>75</b> %.
@@ -6536,7 +5724,6 @@ Upgrades
 		cost:65000000000000000 Insekten,31000000000000000 Larven, 15500000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:65000000000000000 Insekten:earned and UgBISchabe3
-
 *UgBISchabe5
 		name:Asiatische Schabe
 		desc:<.> Erhöht die Produktion der Schaben um <b>75</b> %.
@@ -6544,7 +5731,6 @@ Upgrades
 		cost:6500000000000000000 Insekten,3100000000000000000 Larven, 1550000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:6500000000000000000 Insekten:earned and UgBISchabe4
-
 *UgBISchabe6
 		name:Australische Schabe
 		desc:<.> Erhöht die Produktion der Schaben um <b>75</b> %.
@@ -6552,7 +5738,6 @@ Upgrades
 		cost:650000000000000000000 Insekten,310000000000000000000 Larven, 155000000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:650000000000000000000 Insekten:earned and UgBISchabe5
-
 *UgBISchabe7
 		name:Braunbandschabe
 		desc:<.> Erhöht die Produktion der Schaben um <b>75</b> %.
@@ -6560,7 +5745,6 @@ Upgrades
 		cost:65000000000000000000000 Insekten,31000000000000000000000 Larven, 15500000000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:65000000000000000000000 Insekten:earned and UgBISchabe6
-
 *UgBISchabe8
 		name:Orientalische Schabe
 		desc:<.> Erhöht die Produktion der Schaben um <b>75</b> %.
@@ -6568,7 +5752,6 @@ Upgrades
 		cost:6500000000000000000000000 Insekten,3100000000000000000000000 Larven, 1550000000000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:6500000000000000000000000 Insekten:earned and UgBISchabe7
-
 *UgBISchabe9
 		name:Spanische Schabe
 		desc:<.> Erhöht die Produktion der Schaben um <b>75</b> %.
@@ -6576,7 +5759,6 @@ Upgrades
 		cost:650000000000000000000000000 Insekten,310000000000000000000000000 Larven, 155000000000000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:650000000000000000000000000 Insekten:earned and UgBISchabe8
-
 *UgBISchabe10
 		name:Europäische Schabe
 		desc:<.> Erhöht die Produktion der Schaben um <b>75</b> %.
@@ -6584,7 +5766,6 @@ Upgrades
 		cost:65000000000000000000000000000 Insekten,31000000000000000000000000000 Larven, 15500000000000000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:65000000000000000000000000000 Insekten:earned and UgBISchabe9
-
 *UgBISchabe11
 		name:Französiche Schabe
 		desc:<.> Erhöht die Produktion der Schaben um <b>75</b> %.
@@ -6592,7 +5773,6 @@ Upgrades
 		cost:6500000000000000000000000000000 Insekten,3100000000000000000000000000000 Larven, 1550000000000000000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:6500000000000000000000000000000 Insekten:earned and UgBISchabe10
-
 *UgBISchabe12
 		name:Russische Schabe
 		desc:<.> Erhöht die Produktion der Schaben um <b>75</b> %.
@@ -6601,7 +5781,6 @@ Upgrades
 		passive:multiply yield of Schabe by 1.75
 		req:650000000000000000000000000000000 Insekten:earned and UgBISchabe11
 
-
 *UgBIPSchabe1
 		name:SchabenPanzer I
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6609,8 +5788,6 @@ Upgrades
 		cost:62909090910 InsektenPanzer
 		passive:multiply yield of Schabe by 1.75
 		req:1 InsektenPanzer and 1 Schmetterling
-		class:noBackground
-
 *UgBIPSchabe2
 		name:SchabenPanzer II
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6618,8 +5795,6 @@ Upgrades
 		cost:6290909091000 InsektenPanzer
 		passive:multiply yield of Schabe by 1.75
 		req:UgBIPSchabe1
-		class:noBackground
-
 *UgBIPSchabe3
 		name:SchabenPanzer III
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6627,8 +5802,6 @@ Upgrades
 		cost:629090909100000 InsektenPanzer
 		passive:multiply yield of Schabe by 1.75
 		req:UgBIPSchabe2
-		class:noBackground
-
 *UgBIPSchabe4
 		name:SchabenPanzer IV
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6636,8 +5809,6 @@ Upgrades
 		cost:62909090910000000 InsektenPanzer
 		passive:multiply yield of Schabe by 1.75
 		req:UgBIPSchabe3
-		class:noBackground
-
 *UgBIPSchabe5
 		name:SchabenPanzer V
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6645,8 +5816,6 @@ Upgrades
 		cost:6290909091000000000 InsektenPanzer
 		passive:multiply yield of Schabe by 1.75
 		req:UgBIPSchabe4
-		class:noBackground
-
 *UgBIPSchabe6
 		name:SchabenPanzer VI
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6654,8 +5823,6 @@ Upgrades
 		cost:629090909100000000000 InsektenPanzer
 		passive:multiply yield of Schabe by 1.75
 		req:UgBIPSchabe5
-		class:noBackground
-
 *UgBIPSchabe7
 		name:SchabenPanzer VII
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6663,8 +5830,6 @@ Upgrades
 		cost:62909090910000000000000 InsektenPanzer
 		passive:multiply yield of Schabe by 1.75
 		req:UgBIPSchabe6
-		class:noBackground
-
 *UgBIPSchabe8
 		name:SchabenPanzer VIII
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6672,8 +5837,6 @@ Upgrades
 		cost:6290909091000000000000000 InsektenPanzer
 		passive:multiply yield of Schabe by 1.75
 		req:UgBIPSchabe7
-		class:noBackground
-
 *UgBIPSchabe9
 		name:SchabenPanzer IX
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6681,8 +5844,6 @@ Upgrades
 		cost:629090909100000000000000000 InsektenPanzer
 		passive:multiply yield of Schabe by 1.75
 		req:UgBIPSchabe8
-		class:noBackground
-
 *UgBIPSchabe10
 		name:SchabenPanzer X
 		desc:<.> Erhöht die Produktion der Schmetterlinge um <b>75</b> %.
@@ -6690,12 +5851,7 @@ Upgrades
 		cost:62909090910000000000000000000 InsektenPanzer
 		passive:multiply yield of Schabe by 1.75
 		req:UgBIPSchabe9
-		class:noBackground		
-	
-	
-
 //10
-
 *UgBISkorpion1
 		name:Großer Stachel
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6703,7 +5859,6 @@ Upgrades
 		cost:980000000000 Insekten,460000000000 Larven, 245000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:980000000000 Insekten:earned and 1 Skorpion
-
 *UgBISkorpion2
 		name:Dicker Stachel
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6711,7 +5866,6 @@ Upgrades
 		cost:98000000000000 Insekten,46000000000000 Larven, 24500000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:98000000000000 Insekten:earned and UgBISkorpion1
-
 *UgBISkorpion3
 		name:Dicker Panzer
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6719,7 +5873,6 @@ Upgrades
 		cost:9800000000000000 Insekten,4600000000000000 Larven, 2450000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:9800000000000000 Insekten:earned and UgBISkorpion2
-
 *UgBISkorpion4
 		name:Schnelle Füße
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6727,7 +5880,6 @@ Upgrades
 		cost:980000000000000000 Insekten,460000000000000000 Larven, 245000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:980000000000000000 Insekten:earned and UgBISkorpion3
-
 *UgBISkorpion5
 		name:Hitze resistent
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6735,7 +5887,6 @@ Upgrades
 		cost:98000000000000000000 Insekten,46000000000000000000 Larven, 24500000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:98000000000000000000 Insekten:earned and UgBISkorpion4
-
 *UgBISkorpion6
 		name:Kälte resistent
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6743,7 +5894,6 @@ Upgrades
 		cost:9800000000000000000000 Insekten,4600000000000000000000 Larven, 2450000000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:9800000000000000000000 Insekten:earned and UgBISkorpion5
-
 *UgBISkorpion7
 		name:Wüsten Skorpion
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6751,7 +5901,6 @@ Upgrades
 		cost:980000000000000000000000 Insekten,460000000000000000000000 Larven, 245000000000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:980000000000000000000000 Insekten:earned and UgBISkorpion6
-
 *UgBISkorpion8
 		name:Roter Skorpion
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6759,7 +5908,6 @@ Upgrades
 		cost:98000000000000000000000000 Insekten,46000000000000000000000000 Larven, 24500000000000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:98000000000000000000000000 Insekten:earned and UgBISkorpion7
-
 *UgBISkorpion9
 		name:Brauner Skorpion
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6767,7 +5915,6 @@ Upgrades
 		cost:9800000000000000000000000000 Insekten,4600000000000000000000000000 Larven, 2450000000000000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:9800000000000000000000000000 Insekten:earned and UgBISkorpion8
-
 *UgBISkorpion10
 		name:Kurze Füße
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6775,7 +5922,6 @@ Upgrades
 		cost:980000000000000000000000000000 Insekten,460000000000000000000000000000 Larven, 245000000000000000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:980000000000000000000000000000 Insekten:earned and UgBISkorpion9
-
 *UgBISkorpion11
 		name:Langer Stachel
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6783,7 +5929,6 @@ Upgrades
 		cost:98000000000000000000000000000000 Insekten,46000000000000000000000000000000 Larven, 24500000000000000000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:98000000000000000000000000000000 Insekten:earned and UgBISkorpion10
-
 *UgBISkorpion12
 		name:Amerikanischer Skorpion
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6791,9 +5936,7 @@ Upgrades
 		cost:9800000000000000000000000000000000 Insekten,4600000000000000000000000000000000 Larven, 2450000000000000000000000000000000 BauMaterial
 		passive:multiply yield of Schabe by 1.75
 		req:9800000000000000000000000000000000 Insekten:earned and UgBISkorpion11
-
 //10
-
 *UgBIPSkorpion1
 		name:SkorpionPanzer I
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6801,8 +5944,6 @@ Upgrades
 		cost:724545454550 InsektenPanzer
 		passive:multiply yield of Skorpion by 1.75
 		req:1 InsektenPanzer and 1 Skorpion
-		class:noBackground
-
 *UgBIPSkorpion2
 		name:SkorpionPanzer II
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6810,8 +5951,6 @@ Upgrades
 		cost:72454545455000 InsektenPanzer
 		passive:multiply yield of Skorpion by 1.75
 		req:UgBIPSkorpion1
-		class:noBackground
-
 *UgBIPSkorpion3
 		name:SkorpionPanzer III
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6819,8 +5958,6 @@ Upgrades
 		cost:7245454545500000 InsektenPanzer
 		passive:multiply yield of Skorpion by 1.75
 		req:UgBIPSkorpion2
-		class:noBackground
-
 *UgBIPSkorpion4
 		name:SkorpionPanzer IV
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6828,8 +5965,6 @@ Upgrades
 		cost:724545454550000000 InsektenPanzer
 		passive:multiply yield of Skorpion by 1.75
 		req:UgBIPSkorpion3
-		class:noBackground
-
 *UgBIPSkorpion5
 		name:SkorpionPanzer V
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6837,8 +5972,6 @@ Upgrades
 		cost:72454545455000000000 InsektenPanzer
 		passive:multiply yield of Skorpion by 1.75
 		req:UgBIPSkorpion4
-		class:noBackground
-
 *UgBIPSkorpion6
 		name:SkorpionPanzer VI
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6846,8 +5979,6 @@ Upgrades
 		cost:7245454545500000000000 InsektenPanzer
 		passive:multiply yield of Skorpion by 1.75
 		req:UgBIPSkorpion5
-		class:noBackground
-
 *UgBIPSkorpion7
 		name:SkorpionPanzer VII
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6855,8 +5986,6 @@ Upgrades
 		cost:724545454550000000000000 InsektenPanzer
 		passive:multiply yield of Skorpion by 1.75
 		req:UgBIPSkorpion6
-		class:noBackground
-
 *UgBIPSkorpion8
 		name:SkorpionPanzer VIII
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6864,8 +5993,6 @@ Upgrades
 		cost:72454545455000000000000000 InsektenPanzer
 		passive:multiply yield of Skorpion by 1.75
 		req:UgBIPSkorpion7
-		class:noBackground
-
 *UgBIPSkorpion9
 		name:SkorpionPanzer IX
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6873,8 +6000,6 @@ Upgrades
 		cost:7245454545500000000000000000 InsektenPanzer
 		passive:multiply yield of Skorpion by 1.75
 		req:UgBIPSkorpion8
-		class:noBackground
-
 *UgBIPSkorpion10
 		name:SkorpionPanzer X
 		desc:<.> Erhöht die Produktion der Skorpione um <b>75</b> %.
@@ -6882,15 +6007,7 @@ Upgrades
 		cost:724545454550000000000000000000 InsektenPanzer
 		passive:multiply yield of Skorpion by 1.75
 		req:UgBIPSkorpion9
-		class:noBackground	
-		
-		
-		
-
-
-	
 //10
-
 *UgBIMoskito1
 		name:Moskitole
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -6898,7 +6015,6 @@ Upgrades
 		cost:12700000000000 Insekten,3200000000000 Larven, 3150000000000 BauMaterial
 		passive:multiply yield of Moskito by 1.75
 		req:12700000000000 Insekten:earned and 1 Moskito
-
 *UgBIMoskito2
 		name:Nachtflügler
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -6906,7 +6022,6 @@ Upgrades
 		cost:1270000000000000 Insekten,320000000000000 Larven, 315000000000000 BauMaterial
 		passive:multiply yield of Moskito by 1.75
 		req:1270000000000000 Insekten:earned and UgBIMoskito1
-
 *UgBIMoskito3
 		name:Vampier
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -6914,7 +6029,6 @@ Upgrades
 		cost:127000000000000000 Insekten,32000000000000000 Larven, 31500000000000000 BauMaterial
 		passive:multiply yield of Moskito by 1.75
 		req:127000000000000000 Insekten:earned and UgBIMoskito2
-
 *UgBIMoskito4
 		name:Blutsauger
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -6922,7 +6036,6 @@ Upgrades
 		cost:12700000000000000000 Insekten,3200000000000000000 Larven, 3150000000000000000 BauMaterial
 		passive:multiply yield of Moskito by 1.75
 		req:12700000000000000000 Insekten:earned and UgBIMoskito3
-
 *UgBIMoskito5
 		name:Weite Flügel
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -6930,7 +6043,6 @@ Upgrades
 		cost:1270000000000000000000 Insekten,320000000000000000000 Larven, 315000000000000000000 BauMaterial
 		passive:multiply yield of Moskito by 1.75
 		req:1270000000000000000000 Insekten:earned and UgBIMoskito4
-
 *UgBIMoskito6
 		name:Schöne Flügel
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -6938,7 +6050,6 @@ Upgrades
 		cost:127000000000000000000000 Insekten,32000000000000000000000 Larven, 31500000000000000000000 BauMaterial
 		passive:multiply yield of Moskito by 1.75
 		req:127000000000000000000000 Insekten:earned and UgBIMoskito5
-
 *UgBIMoskito7
 		name:Lange Flügel
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -6946,7 +6057,6 @@ Upgrades
 		cost:12700000000000000000000000 Insekten,3200000000000000000000000 Larven, 3150000000000000000000000 BauMaterial
 		passive:multiply yield of Moskito by 1.75
 		req:12700000000000000000000000 Insekten:earned and UgBIMoskito6
-
 *UgBIMoskito8
 		name:Kurzer Stachel
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -6954,7 +6064,6 @@ Upgrades
 		cost:1270000000000000000000000000 Insekten,320000000000000000000000000 Larven, 315000000000000000000000000 BauMaterial
 		passive:multiply yield of Moskito by 1.75
 		req:1270000000000000000000000000 Insekten:earned and UgBIMoskito7
-
 *UgBIMoskito9
 		name:Langer Stachel
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -6962,7 +6071,6 @@ Upgrades
 		cost:127000000000000000000000000000 Insekten,32000000000000000000000000000 Larven, 31500000000000000000000000000 BauMaterial
 		passive:multiply yield of Moskito by 1.75
 		req:127000000000000000000000000000 Insekten:earned and UgBIMoskito8
-
 *UgBIMoskito10
 		name:Dicker Stachel
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -6970,7 +6078,6 @@ Upgrades
 		cost:12700000000000000000000000000000 Insekten,3200000000000000000000000000000 Larven, 3150000000000000000000000000000 BauMaterial
 		passive:multiply yield of Moskito by 1.75
 		req:12700000000000000000000000000000 Insekten:earned and UgBIMoskito9
-
 *UgBIMoskito11
 		name:Dünner Stachel
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -6978,7 +6085,6 @@ Upgrades
 		cost:1270000000000000000000000000000000 Insekten,320000000000000000000000000000000 Larven, 315000000000000000000000000000000 BauMaterial
 		passive:multiply yield of Moskito by 1.75
 		req:1270000000000000000000000000000000 Insekten:earned and UgBIMoskito10
-
 *UgBIMoskito12
 		name:Großer Mücken Stachel
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -6987,14 +6093,7 @@ Upgrades
 		passive:multiply yield of Moskito by 1.75
 		req:127000000000000000000000000000000000 Insekten:earned and UgBIMoskito11
 
-	
-
-
-
-
-
 //11
-
 *UgBIPMoskito1
 		name:MoskitoPanzer I
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -7002,8 +6101,6 @@ Upgrades
 		cost:9727272727270 InsektenPanzer
 		passive:multiply yield of Moskito by 1.75
 		req:1 InsektenPanzer and 1 Moskito
-		class:noBackground
-
 *UgBIPMoskito2
 		name:MoskitoPanzer II
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -7011,8 +6108,6 @@ Upgrades
 		cost:972727272727000 InsektenPanzer
 		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito1
-		class:noBackground
-
 *UgBIPMoskito3
 		name:MoskitoPanzer III
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -7020,8 +6115,6 @@ Upgrades
 		cost:97272727272700000 InsektenPanzer
 		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito2
-		class:noBackground
-
 *UgBIPMoskito4
 		name:MoskitoPanzer IV
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -7029,8 +6122,6 @@ Upgrades
 		cost:9727272727270000000 InsektenPanzer
 		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito3
-		class:noBackground
-
 *UgBIPMoskito5
 		name:MoskitoPanzer V
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -7038,8 +6129,6 @@ Upgrades
 		cost:972727272727000000000 InsektenPanzer
 		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito4
-		class:noBackground
-
 *UgBIPMoskito6
 		name:MoskitoPanzer VI
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -7047,8 +6136,6 @@ Upgrades
 		cost:97272727272700000000000 InsektenPanzer
 		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito5
-		class:noBackground
-
 *UgBIPMoskito7
 		name:MoskitoPanzer VII
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -7056,8 +6143,6 @@ Upgrades
 		cost:9727272727270000000000000 InsektenPanzer
 		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito6
-		class:noBackground
-
 *UgBIPMoskito8
 		name:MoskitoPanzer VIII
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -7065,8 +6150,6 @@ Upgrades
 		cost:972727272727000000000000000 InsektenPanzer
 		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito7
-		class:noBackground
-
 *UgBIPMoskito9
 		name:MoskitoPanzer IX
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -7074,8 +6157,6 @@ Upgrades
 		cost:97272727272700000000000000000 InsektenPanzer
 		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito8
-		class:noBackground
-
 *UgBIPMoskito10
 		name:MoskitoPanzer X
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
@@ -7083,16 +6164,7 @@ Upgrades
 		cost:9727272727270000000000000000000 InsektenPanzer
 		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito9
-		class:noBackground
-	
-		
-		
 // Schaltet insekten frei ----------------------------------------------------		
-		
-
-
-
-
 //2
 *UpgITermitorium
 	name:Termitorium
@@ -7100,7 +6172,6 @@ Upgrades
 	icon:icons[5,5] icons[0,1] icons[4,0]
 	cost:10 Bienenstock,5 Ast
 	req:10 Insekten:earned
-	class:noBackground
 //3
 *UpgISchmeisfliege
 	name:Schmeisfliege
@@ -7108,7 +6179,6 @@ Upgrades
 	icon:icons[5,5] icons[0,2] icons[4,0]
 	cost:10 Termitenbau,5 Knollenwurzel
 	req:UpgITermitorium
-	class:noBackground
 //4
 *UpgIBuggy
 	name:Käferlinge
@@ -7116,7 +6186,6 @@ Upgrades
 	icon:icons[5,5] icons[0,3] icons[4,0]
 	cost:10 Blatt,5 Steine
 	req:UpgISchmeisfliege	
-	class:noBackground
 //5
 *UpgIBienenqueen
 	name:Bienenkönigin
@@ -7124,7 +6193,6 @@ Upgrades
 	icon:icons[5,5] icons[0,4] icons[4,0]
 	cost:10 WespenNest,5 Dreck
 	req:UpgIBuggy
-	class:noBackground	
 //6
 *UpgIRoteAmeise
 	name:Feuerameise
@@ -7132,7 +6200,6 @@ Upgrades
 	icon:icons[5,5] icons[0,5] icons[4,0]
 	cost:10 VerfaulterApfel,5 AltesBuch
 	req:UpgIBienenqueen
-	class:noBackground	
 //7		
 *UpgIGrosserBug
 	name:Pillendreher
@@ -7140,7 +6207,6 @@ Upgrades
 	icon:icons[5,5] icons[0,6] icons[4,0]
 	cost:10 AlteNester,5 Karnickel
 	req:UpgIRoteAmeise
-	class:noBackground	
 //8	
 *UpgISchmetterl
 	name:Zitronenfalter
@@ -7148,7 +6214,6 @@ Upgrades
 	icon:icons[5,5] icons[0,7] icons[4,0]
 	cost:10 UeberwucherterSchuh,5 Sonnenblume
 	req:UpgIGrosserBug
-	class:noBackground			
 //9		
 *UpgISchabe
 	name:Kakerlaki
@@ -7156,8 +6221,6 @@ Upgrades
 	icon:icons[5,5] icons[0,8] icons[4,0]
 	cost:10 Pizzen,5 Freds
 	req:UpgISchmetterl
-	class:noBackground	
-	
 //10
 *UpgISkorion
 	name:Sultan Sting
@@ -7165,8 +6228,6 @@ Upgrades
 	icon:icons[5,5] icons[0,9] icons[4,0]
 	cost:10 SchneckeIvan,5 Blumenbusch
 	req:UpgISchabe
-	class:noBackground	
-	
 //11
 *UpgIMoskito
 	name:Stechmücke
@@ -7174,8 +6235,6 @@ Upgrades
 	icon:icons[5,5] icons[0,10] icons[4,0]
 	cost:10 WasserEimer,5 Wollmaus
 	req:UpgISkorion
-	class:noBackground	
-	
 //12
 *UpgIWilli
 	name:WilliWilli
@@ -7183,8 +6242,6 @@ Upgrades
 	icon:icons[5,5] icons[0,11] icons[4,0]
 	cost:10 DahlienBusch,5 VogelNest
 	req:UpgIMoskito
-	class:noBackground	
-	
 //13
 *UpgILibelle
 	name:Urlibelle
@@ -7192,8 +6249,6 @@ Upgrades
 	icon:icons[5,5] icons[0,12] icons[4,0]
 	cost:10 Maruscha,5 HolzStapel
 	req:UpgIWilli
-	class:noBackground	
-	
 //14
 *UpgIGluehwurm
 	name:Poleuchter
@@ -7201,8 +6256,6 @@ Upgrades
 	icon:icons[5,5] icons[0,13] icons[4,0]
 	cost:10 Gelbfisch,5 HerbstLaub
 	req:UpgILibelle
-	class:noBackground	
-	
 //15
 *UpgIMistroller
 	name:Mistkäfer
@@ -7210,8 +6263,6 @@ Upgrades
 	icon:icons[5,5] icons[0,14] icons[4,0]
 	cost:10 Schildkroete,5 EuleFrieda
 	req:UpgIGluehwurm
-	class:noBackground	
-	
 //16
 *UpgINachtfalter
 	name:Flattermann
@@ -7219,25 +6270,8 @@ Upgrades
 	icon:icons[5,5] icons[0,15] icons[4,0]
 	cost:10 Banane,5 CreepyTree
 	req:UpgIMistroller
-	class:noBackground		
-		
-			
-		
-	
-
-
-
-//BauMaterial Upgrades
-
-
-
-
+//BauMaterial Upgrades-----------------------------------------------------------------------------------
 //Upgrades Ressource Baumaterial	
-		
-		
-		
-		
-
 *UgRBKiesel1
 		name:Dacit
 		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
@@ -7329,7 +6363,6 @@ Upgrades
 		cost:1000000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:50000000000 BauMaterial:earned and UgRBKiesel12
-
 *UgRBKiesel14
 		name:Weißschiefer
 		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
@@ -7337,7 +6370,6 @@ Upgrades
 		cost:5000000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:250000000000 BauMaterial:earned and UgRBKiesel13
-
 *UgRBKiesel15
 		name:Suevit
 		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
@@ -7345,7 +6377,6 @@ Upgrades
 		cost:10000000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:UgRBKiesel14
-
 *UgRBKiesel16
 		name:Migmatit
 		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
@@ -7353,7 +6384,6 @@ Upgrades
 		cost:50000000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:5000000000000 BauMaterial:earned and UgRBKiesel15
-
 *UgRBKiesel17
 		name:MORB
 		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
@@ -7389,11 +6419,6 @@ Upgrades
 		cost:10000000000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:2500000000000000 BauMaterial:earned and UgRBKiesel20
-		
-		
-
-
-
 
 *UgRBPilz1
         name:Fliegenpilz
@@ -7542,7 +6567,6 @@ Upgrades
         cost:10000000000000000 BauMaterial
         passive:multiply yield of TreeButton by 3
         req:2500000000000000 BauMaterial:earned and UgRBPilz20     
-        
 
 *UgRBPilzk1
         name:Violettmilchling
@@ -7587,12 +6611,6 @@ Upgrades
         passive:increase yield of TreeButton by 1
         req:1000000 BauMaterial:earned and UgRBPilzk5
 
-		
-		
-		
-				
-
-
 *UgbBGras1
 		name:Zittergras
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7600,7 +6618,6 @@ Upgrades
 		cost:790 BauMaterial
 		passive:multiply yield of Gras by 1.75
 		req:790 BauMaterial:earned and 1 Gras
-
 *UgbBGras2
 		name:Knäuelgras
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7608,7 +6625,6 @@ Upgrades
 		cost:7900 BauMaterial
 		passive:multiply yield of Gras by 1.75
 		req:7900 BauMaterial:earned and UgbBGras1
-
 *UgbBGras3
 		name:Pampasgras
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7616,7 +6632,6 @@ Upgrades
 		cost:840000 BauMaterial
 		passive:multiply yield of Gras by 1.75
 		req:840000 BauMaterial:earned and UgbBGras2
-
 *UgbBGras4
 		name:Wollgras
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7624,7 +6639,6 @@ Upgrades
 		cost:9800000000 BauMaterial
 		passive:multiply yield of Gras by 1.75
 		req:9800000000 BauMaterial:earned and UgbBGras3
-
 *UgbBGras5
 		name:Pfeifengras
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7632,7 +6646,6 @@ Upgrades
 		cost:980000000000 BauMaterial
 		passive:multiply yield of Gras by 1.75
 		req:980000000000 BauMaterial:earned and UgbBGras4
-
 *UgbBGras6
 		name:Federborstengras
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7640,7 +6653,6 @@ Upgrades
 		cost:98000000000000 BauMaterial
 		passive:multiply yield of Gras by 1.75
 		req:98000000000000 BauMaterial:earned and UgbBGras5
-
 *UgbBGras7
 		name:Grünes Gras
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7648,7 +6660,6 @@ Upgrades
 		cost:9800000000000000 BauMaterial
 		passive:multiply yield of Gras by 1.75
 		req:9800000000000000 BauMaterial:earned and UgbBGras6
-
 *UgbBGras8
 		name:Rollrasen
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7656,7 +6667,6 @@ Upgrades
 		cost:980000000000000000 BauMaterial
 		passive:multiply yield of Gras by 1.75
 		req:980000000000000000 BauMaterial:earned and UgbBGras7
-		
 *UgbBGras9
 		name:Lampenputzergras
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7664,7 +6674,6 @@ Upgrades
 		cost:98000000000000000000 BauMaterial
 		passive:multiply yield of Gras by 1.75
 		req:98000000000000000000 BauMaterial:earned and UgbBGras8
-		
 *UgbBGras10
 		name:Timotheusgras
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7672,7 +6681,6 @@ Upgrades
 		cost:9800000000000000000000 BauMaterial
 		passive:multiply yield of Gras by 1.75
 		req:9800000000000000000000 BauMaterial:earned and UgbBGras9
-		
 *UgbBGras11
 		name:Raugras
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7680,7 +6688,6 @@ Upgrades
 		cost:980000000000000000000000 BauMaterial
 		passive:multiply yield of Gras by 1.75
 		req:980000000000000000000000 BauMaterial:earned and UgbBGras10
-		
 *UgbBGras12
 		name:Riesenfedergras
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7688,7 +6695,6 @@ Upgrades
 		cost:98000000000000000000000000 BauMaterial
 		passive:multiply yield of Gras by 1.75
 		req:980000000000000000000000000 BauMaterial:earned and UgbBGras11
-		
 *UgbBGras13
 		name:Rossschweifgras
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7696,8 +6702,6 @@ Upgrades
 		cost:9800000000000000000000000000 BauMaterial
 		passive:multiply yield of Gras by 1.75
 		req:9800000000000000000000000000 BauMaterial:earned and UgbBGras12
-	
-
 
 *UgbBGrasF1
 		name:Zittergräser
@@ -7706,7 +6710,6 @@ Upgrades
 		cost:10 Gras
 		passive:multiply yield of Gras by 1.75
 		req:790 BauMaterial:earned and 1 Gras
-
 *UgbBGrasF2
 		name:Knäuelgräser
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7714,7 +6717,6 @@ Upgrades
 		cost:50 Gras
 		passive:multiply yield of Gras by 1.75
 		req:79000 BauMaterial:earned and UgbBGrasF1
-
 *UgbBGrasF3
 		name:Pampasgräser
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7722,7 +6724,6 @@ Upgrades
 		cost:100 Gras
 		passive:multiply yield of Gras by 1.75
 		req:8400000 BauMaterial:earned and UgbBGrasF2
-
 *UgbBGrasF4
 		name:Wollgräser
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7730,7 +6731,6 @@ Upgrades
 		cost:125 Gras
 		passive:multiply yield of Gras by 1.75
 		req:98000000000 BauMaterial:earned and UgbBGrasF3
-
 *UgbBGrasF5
 		name:Pfeifengräser
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7738,7 +6738,6 @@ Upgrades
 		cost:150 Gras
 		passive:multiply yield of Gras by 1.75
 		req:9800000000000 BauMaterial:earned and UgbBGrasF4
-
 *UgbBGrasF6
 		name:Federborstengräser
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7746,7 +6745,6 @@ Upgrades
 		cost:175 Gras
 		passive:multiply yield of Gras by 1.75
 		req:980000000000000 BauMaterial:earned and UgbBGrasF5
-
 *UgbBGrasF7
 		name:Grüne Gräser
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7754,7 +6752,6 @@ Upgrades
 		cost:200 Gras
 		passive:multiply yield of Gras by 1.75
 		req:98000000000000000 BauMaterial:earned and UgbBGrasF6
-
 *UgbBGrasF8
 		name:Rollrasenmatten
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7762,7 +6759,6 @@ Upgrades
 		cost:225 Gras
 		passive:multiply yield of Gras by 1.75
 		req:9800000000000000000 BauMaterial:earned and UgbBGrasF7
-		
 *UgbBGrasF9
 		name:Lampenputzergräser
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7770,7 +6766,6 @@ Upgrades
 		cost:250 Gras
 		passive:multiply yield of Gras by 1.75
 		req:980000000000000000000 BauMaterial:earned and UgbBGrasF8
-		
 *UgbBGrasF10
 		name:Timotheusgräser
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7778,7 +6773,6 @@ Upgrades
 		cost:275 Gras
 		passive:multiply yield of Gras by 1.75
 		req:98000000000000000000000 BauMaterial:earned and UgbBGrasF9
-		
 *UgbBGrasF11
 		name:Raugräser
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7786,7 +6780,6 @@ Upgrades
 		cost:300 Gras
 		passive:multiply yield of Gras by 1.75
 		req:9800000000000000000000000 BauMaterial:earned and UgbBGrasF10
-		
 *UgbBGrasF12
 		name:Riesenfedergräser
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7794,7 +6787,6 @@ Upgrades
 		cost:325 Gras
 		passive:multiply yield of Gras by 1.75
 		req:980000000000000000000000000 BauMaterial:earned and UgbBGrasF11
-		
 *UgbBGrasF13
 		name:Rossschweifgräser
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7802,15 +6794,7 @@ Upgrades
 		cost:350 Gras
 		passive:multiply yield of Gras by 1.75
 		req:98000000000000000000000000000 BauMaterial:earned and UgbBGrasF12
-	
-
-
-
-
-
 //1	
-
-
 *UgbBGrasA1
 		name:Gras Sammler
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7818,7 +6802,6 @@ Upgrades
 		cost:10 Ameisen,10 SammlerAmeisen
 		passive:multiply yield of Gras by 1.75
 		req:790 BauMaterial:earned and 1 Gras
-
 *UgbBGrasA2
 		name:Mehr Sammler
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7826,7 +6809,6 @@ Upgrades
 		cost:19 Ameisen,19 SammlerAmeisen
 		passive:multiply yield of Gras by 1.75
 		req:UgbBGrasA1
-
 *UgbBGrasA3
 		name:Mehr Arbeiter
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7834,7 +6816,6 @@ Upgrades
 		cost:42 Ameisen,42 SammlerAmeisen
 		passive:multiply yield of Gras by 1.75
 		req:UgbBGrasA2
-
 *UgbBGrasA4
 		name:Mehr Träger
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7842,7 +6823,6 @@ Upgrades
 		cost:50 Ameisen,50 SammlerAmeisen
 		passive:multiply yield of Gras by 1.75
 		req:UgbBGrasA3
-
 *UgbBGrasA5
 		name:Logistiker
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7850,7 +6830,6 @@ Upgrades
 		cost:75 Ameisen,75 SammlerAmeisen
 		passive:multiply yield of Gras by 1.75
 		req:UgbBGrasA4
-
 *UgbBGrasA6
 		name:Ingenieure
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7858,7 +6837,6 @@ Upgrades
 		cost:100 Ameisen,100 SammlerAmeisen
 		passive:multiply yield of Gras by 1.75
 		req:UgbBGrasA5
-
 *UgbBGrasA7
 		name:Statiker
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7866,7 +6844,6 @@ Upgrades
 		cost:125 Ameisen,125 SammlerAmeisen
 		passive:multiply yield of Gras by 1.75
 		req:UgbBGrasA6
-
 *UgbBGrasA8
 		name:Bauplaner
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7874,7 +6851,6 @@ Upgrades
 		cost:150 Ameisen,150 SammlerAmeisen
 		passive:multiply yield of Gras by 1.75
 		req:UgbBGrasA7
-		
 *UgbBGrasA9
 		name:Transporter
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7882,7 +6858,6 @@ Upgrades
 		cost:175 Ameisen,175 SammlerAmeisen
 		passive:multiply yield of Gras by 1.75
 		req:UgbBGrasA8
-		
 *UgbBGrasA10
 		name:Transportunternehmen
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7890,7 +6865,6 @@ Upgrades
 		cost:200 Ameisen,200 SammlerAmeisen
 		passive:multiply yield of Gras by 1.75
 		req:UgbBGrasA9
-		
 *UgbBGrasA11
 		name:Minivan
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7898,7 +6872,6 @@ Upgrades
 		cost:225 Ameisen,225 SammlerAmeisen
 		passive:multiply yield of Gras by 1.75
 		req:UgbBGrasA10
-		
 *UgbBGrasA12
 		name:LKW
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7906,7 +6879,6 @@ Upgrades
 		cost:250 Ameisen,250 SammlerAmeisen
 		passive:multiply yield of Gras by 1.75
 		req:UgbBGrasA11
-		
 *UgbBGrasA13
 		name:Transportesel
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7914,7 +6886,6 @@ Upgrades
 		cost:275 Ameisen,275 SammlerAmeisen
 		passive:multiply yield of Gras by 1.75
 		req:UgbBGrasA12
-		
 *UgbBGrasA14
 		name:Lasttier
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -7922,9 +6893,6 @@ Upgrades
 		cost:300 Ameisen,300 SammlerAmeisen
 		passive:multiply yield of Gras by 1.75
 		req:UgbBGrasA13
-		
-		
-	
 	
 *UgbBAst1
 		name:Ästling
@@ -7933,7 +6901,6 @@ Upgrades
 		cost:1111 BauMaterial,10 Gras
 		passive:multiply yield of Ast by 1.75
 		req:11111 BauMaterial:earned and 9 Ast
-
 *UgbBAst2
 		name:Zweig
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -7941,7 +6908,6 @@ Upgrades
 		cost:1111100 BauMaterial,20 Gras
 		passive:multiply yield of Ast by 1.75
 		req:111110 BauMaterial:earned and 45 Ast and UgbBAst1
-		
 *UgbBAst3
 		name:Stock
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -7949,7 +6915,6 @@ Upgrades
 		cost:11111000 BauMaterial,30 Gras
 		passive:multiply yield of Ast by 1.75
 		req:11111000 BauMaterial:earned and 75 Ast and UgbBAst2
-		
 *UgbBAst4
 		name:Stecken
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -7957,7 +6922,6 @@ Upgrades
 		cost:1111100000 BauMaterial,40 Gras
 		passive:multiply yield of Ast by 1.75
 		req:1111100000 BauMaterial:earned and 100 Ast and UgbBAst3
-		
 *UgbBAst5
 		name:Blätterzweig
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -7965,7 +6929,6 @@ Upgrades
 		cost:111110000000 BauMaterial,50 Gras
 		passive:multiply yield of Ast by 1.75
 		req:111110000000 BauMaterial:earned and 125 Ast and UgbBAst4
-		
 *UgbBAst6
 		name:Dicker Ast
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -7973,7 +6936,6 @@ Upgrades
 		cost:11111000000000 BauMaterial,75 Gras
 		passive:multiply yield of Ast by 1.75
 		req:11111000000000 BauMaterial:earned and 150 Ast and UgbBAst5
-		
 *UgbBAst7
 		name:Astgabel
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -7981,7 +6943,6 @@ Upgrades
 		cost:1111100000000000 BauMaterial,100 Gras
 		passive:multiply yield of Ast by 1.75
 		req:1111100000000000 BauMaterial:earned and 175 Ast and UgbBAst6
-			
 *UgbBAst8
 		name:Astlöffel
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -7989,7 +6950,6 @@ Upgrades
 		cost:111110000000000000 BauMaterial,125 Gras
 		passive:multiply yield of Ast by 1.75
 		req:111110000000000000 BauMaterial:earned and 200 Ast and UgbBAst7
-			
 *UgbBAst9
 		name:Astbündel
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -7997,7 +6957,6 @@ Upgrades
 		cost:11111000000000000000 BauMaterial,150 Gras
 		passive:multiply yield of Ast by 1.75
 		req:11111000000000000000 BauMaterial:earned and 225 Ast and UgbBAst8
-			
 *UgbBAst10
 		name:Toter Ast
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -8005,7 +6964,6 @@ Upgrades
 		cost:1111100000000000000000 BauMaterial,175 Gras
 		passive:multiply yield of Ast by 1.75
 		req:1111100000000000000000 BauMaterial:earned and 250 Ast and UgbBAst9
-			
 *UgbBAst11
 		name:Morscher Ast
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -8013,7 +6971,6 @@ Upgrades
 		cost:111110000000000000000000 BauMaterial,200 Gras
 		passive:multiply yield of Ast by 1.75
 		req:111110000000000000000000 BauMaterial:earned and 275 Ast and UgbBAst10
-			
 *UgbBAst12
 		name:Astoteles
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -8021,7 +6978,6 @@ Upgrades
 		cost:11111000000000000000000000 BauMaterial,225 Gras
 		passive:multiply yield of Ast by 1.75
 		req:11111000000000000000000000 BauMaterial:earned and 300 Ast and UgbBAst11
-	
 
 *UgbBAstF1
 		name:Ästlinge
@@ -8030,7 +6986,6 @@ Upgrades
 		cost:10 Ast
 		passive:multiply yield of Ast by 1.75
 		req:11111 BauMaterial:earned and 9 Ast
-
 *UgbBAstF2
 		name:Zweige
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -8038,7 +6993,6 @@ Upgrades
 		cost:50 Ast
 		passive:multiply yield of Ast by 1.75
 		req:1111100 BauMaterial:earned and 45 Ast and UgbBAstF1
-		
 *UgbBAstF3
 		name:Stöcke
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -8046,7 +7000,6 @@ Upgrades
 		cost:100 Ast
 		passive:multiply yield of Ast by 1.75
 		req:111110000 BauMaterial:earned and 75 Ast and UgbBAstF2
-		
 *UgbBAstF4
 		name:Spazierstock
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -8054,7 +7007,6 @@ Upgrades
 		cost:125 Ast
 		passive:multiply yield of Ast by 1.75
 		req:11111000000 BauMaterial:earned and 100 Ast and UgbBAstF3
-		
 *UgbBAstF5
 		name:Blätterzweigling
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -8062,7 +7014,6 @@ Upgrades
 		cost:150 Ast
 		passive:multiply yield of Ast by 1.75
 		req:1111100000000 BauMaterial:earned and 125 Ast and UgbBAstF4
-		
 *UgbBAstF6
 		name:Dicke Äste
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -8070,7 +7021,6 @@ Upgrades
 		cost:175 Ast
 		passive:multiply yield of Ast by 1.75
 		req:111110000000000 BauMaterial:earned and 150 Ast and UgbBAstF5
-		
 *UgbBAstF7
 		name:Astgabelungen
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -8078,7 +7028,6 @@ Upgrades
 		cost:200 Ast
 		passive:multiply yield of Ast by 1.75
 		req:11111000000000000 BauMaterial:earned and 175 Ast and UgbBAstF6
-			
 *UgbBAstF8
 		name:Astlöffele
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -8086,7 +7035,6 @@ Upgrades
 		cost:225 Ast
 		passive:multiply yield of Ast by 1.75
 		req:1111100000000000000 BauMaterial:earned and 200 Ast and UgbBAstF7
-			
 *UgbBAstF9
 		name:Zerbrochener Ast
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -8094,7 +7042,6 @@ Upgrades
 		cost:250 Ast
 		passive:multiply yield of Ast by 1.75
 		req:111110000000000000000 BauMaterial:earned and 225 Ast and UgbBAstF8
-			
 *UgbBAstF10
 		name:Tote Äste
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -8102,7 +7049,6 @@ Upgrades
 		cost:275 Ast
 		passive:multiply yield of Ast by 1.75
 		req:11111000000000000000000 BauMaterial:earned and 250 Ast and UgbBAstF9
-			
 *UgbBAstF11
 		name:Morsche Äste
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -8110,7 +7056,6 @@ Upgrades
 		cost:300 Ast
 		passive:multiply yield of Ast by 1.75
 		req:1111100000000000000000000 BauMaterial:earned and 275 Ast and UgbBAstF10
-			
 *UgbBAstF12
 		name:Astreich
 		desc:<.> Erhöht die Produktion von Ästen um <b>75</b> %.
@@ -8118,9 +7063,6 @@ Upgrades
 		cost:325 Ast
 		passive:multiply yield of Ast by 1.75
 		req:111110000000000000000000000 BauMaterial:earned and 300 Ast and UgbBAstF11
-	
-	
-	
 
 *UgbBWurzeln1
 		name:Baumwurzel
@@ -8129,7 +7071,6 @@ Upgrades
 		cost:89600 BauMaterial,10 Ast
 		passive:multiply yield of Wurzeln by 1.75
 		req:89600 BauMaterial:earned and 9 Wurzeln
-
 *UgbBWurzeln2
 		name:Kleine Wurzel
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8137,7 +7078,6 @@ Upgrades
 		cost:8960000 BauMaterial,20 Ast
 		passive:multiply yield of Wurzeln by 1.75
 		req:8960000 BauMaterial:earned and 45 Wurzeln
-		
 *UgbBWurzeln3
 		name:Knollenwurzel
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8145,7 +7085,6 @@ Upgrades
 		cost:896000000 BauMaterial,30 Ast
 		passive:multiply yield of Wurzeln by 1.75
 		req:896000000 BauMaterial:earned and 75 Wurzeln
-		
 *UgbBWurzeln4
 		name:Fadenwurzel
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8153,7 +7092,6 @@ Upgrades
 		cost:89600000000 BauMaterial,40 Ast
 		passive:multiply yield of Wurzeln by 1.75
 		req:89600000000 BauMaterial:earned and 100 Wurzeln
-		
 *UgbBWurzeln5
 		name:Graswurzel
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8161,7 +7099,6 @@ Upgrades
 		cost:8960000000000 BauMaterial,50 Ast
 		passive:multiply yield of Wurzeln by 1.75
 		req:8960000000000 BauMaterial:earned and 125 Wurzeln
-		
 *UgbBWurzeln6
 		name:Unkrautwurzel
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8169,7 +7106,6 @@ Upgrades
 		cost:896000000000000 BauMaterial,75 Ast
 		passive:multiply yield of Wurzeln by 1.75
 		req:896000000000000 BauMaterial:earned and 150 Wurzeln
-		
 *UgbBWurzeln7
 		name:Dicke Wurzel
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8177,7 +7113,6 @@ Upgrades
 		cost:89600000000000000 BauMaterial,100 Ast
 		passive:multiply yield of Wurzeln by 1.75
 		req:89600000000000000 BauMaterial:earned and 175 Wurzeln
-			
 *UgbBWurzeln8
 		name:Feine Wurzel
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8185,7 +7120,6 @@ Upgrades
 		cost:8960000000000000000 BauMaterial,125 Ast
 		passive:multiply yield of Wurzeln by 1.75
 		req:8960000000000000000 BauMaterial:earned and 200 Wurzeln
-			
 *UgbBWurzeln9
 		name:Kaputte Wurzel
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8193,7 +7127,6 @@ Upgrades
 		cost:896000000000000000000 BauMaterial,150 Ast
 		passive:multiply yield of Wurzeln by 1.75
 		req:896000000000000000000 BauMaterial:earned and 225 Wurzeln
-			
 *UgbBWurzeln10
 		name:Feste Wurzel
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8201,7 +7134,6 @@ Upgrades
 		cost:89600000000000000000000 BauMaterial,175 Ast
 		passive:multiply yield of Wurzeln by 1.75
 		req:89600000000000000000000 BauMaterial:earned and 250 Wurzeln
-			
 *UgbBWurzeln11
 		name:Morsche Wurzel
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8209,7 +7141,6 @@ Upgrades
 		cost:8960000000000000000000000 BauMaterial,200 Ast
 		passive:multiply yield of Wurzeln by 1.75
 		req:8960000000000000000000000 BauMaterial:earned and 275 Wurzeln
-			
 *UgbBWurzeln12
 		name:Tiefe Wurzel
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8217,8 +7148,6 @@ Upgrades
 		cost:896000000000000000000000000 BauMaterial,225 Ast
 		passive:multiply yield of Wurzeln by 1.75
 		req:896000000000000000000000000 BauMaterial:earned and 300 Wurzeln
-	
-
 
 *UgbBWurzelnF1
 		name:Baumwurzeln
@@ -8227,7 +7156,6 @@ Upgrades
 		cost:10 Wurzeln
 		passive:multiply yield of Wurzeln by 1.75
 		req:89600 BauMaterial:earned and 9 Wurzeln
-
 *UgbBWurzelnF2
 		name:Kleine Wurzeln
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8235,7 +7163,6 @@ Upgrades
 		cost:50 Wurzeln
 		passive:multiply yield of Wurzeln by 1.75
 		req:8960000 BauMaterial:earned and 45 Wurzeln
-		
 *UgbBWurzelnF3
 		name:Knollenwurzeln
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8243,7 +7170,6 @@ Upgrades
 		cost:100 Wurzeln
 		passive:multiply yield of Wurzeln by 1.75
 		req:896000000 BauMaterial:earned and 75 Wurzeln
-		
 *UgbBWurzelnF4
 		name:Fadenwurzeln
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8251,7 +7177,6 @@ Upgrades
 		cost:125 Wurzeln
 		passive:multiply yield of Wurzeln by 1.75
 		req:89600000000 BauMaterial:earned and 100 Wurzeln
-		
 *UgbBWurzelnF5
 		name:Graswurzeln
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8259,7 +7184,6 @@ Upgrades
 		cost:150 Wurzeln
 		passive:multiply yield of Wurzeln by 1.75
 		req:8960000000000 BauMaterial:earned and 125 Wurzeln
-		
 *UgbBWurzelnF6
 		name:Unkrautwurzeln
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8267,7 +7191,6 @@ Upgrades
 		cost:175 Wurzeln
 		passive:multiply yield of Wurzeln by 1.75
 		req:896000000000000 BauMaterial:earned and 150 Wurzeln
-		
 *UgbBWurzelnF7
 		name:Dicke Wurzeln
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8275,7 +7198,6 @@ Upgrades
 		cost:200 Wurzeln
 		passive:multiply yield of Wurzeln by 1.75
 		req:89600000000000000 BauMaterial:earned and 175 Wurzeln
-			
 *UgbBWurzelnF8
 		name:Feine Wurzeln
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8283,7 +7205,6 @@ Upgrades
 		cost:225 Wurzeln
 		passive:multiply yield of Wurzeln by 1.75
 		req:8960000000000000000 BauMaterial:earned and 200 Wurzeln
-			
 *UgbBWurzelnF9
 		name:Kaputte Wurzeln
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8291,7 +7212,6 @@ Upgrades
 		cost:250 Wurzeln
 		passive:multiply yield of Wurzeln by 1.75
 		req:896000000000000000000 BauMaterial:earned and 225 Wurzeln
-			
 *UgbBWurzelnF10
 		name:Feste Wurzeln
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8299,7 +7219,6 @@ Upgrades
 		cost:275 Wurzeln
 		passive:multiply yield of Wurzeln by 1.75
 		req:89600000000000000000000 BauMaterial:earned and 250 Wurzeln
-			
 *UgbBWurzelnF11
 		name:Morsche Wurzeln
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8307,7 +7226,6 @@ Upgrades
 		cost:300 Wurzeln
 		passive:multiply yield of Wurzeln by 1.75
 		req:8960000000000000000000000 BauMaterial:earned and 275 Wurzeln
-			
 *UgbBWurzelnF12
 		name:Tiefe Wurzeln
 		desc:<.> Erhöht die Produktion von Wurzeln um <b>75</b> %.
@@ -8315,8 +7233,6 @@ Upgrades
 		cost:325 Wurzeln
 		passive:multiply yield of Wurzeln by 1.75
 		req:896000000000000000000000000 BauMaterial:earned and 300 Wurzeln
-		
-	
 
 *UgbBSteine1
 		name:Kieselstein
@@ -8325,7 +7241,6 @@ Upgrades
 		cost:912900 BauMaterial,10 Wurzeln
 		passive:multiply yield of Steine by 1.75
 		req:912900 BauMaterial:earned and 9 Steine
-
 *UgbBSteine2
 		name:Backstein
 		desc:<.> Erhöht die Produktion von Steinen um <b>75</b> %.
