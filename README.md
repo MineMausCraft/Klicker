@@ -549,9 +549,6 @@ Buttons
         on click:show SuperButtonOn
         on click:hide SuperButtonOff	
 
-
-
-
 *InsektenButton
 		name:Fleißiges Insekt
 		desc:Klicke dieses Insekt um mehr zu bekommen!
@@ -596,7 +593,6 @@ Buttons
       icon:https://i.imgur.com/nPpMXuV.png
       no text
 	  class:TreeButton
-
 
 *BrutkammerButton    
       name:Brutkammer
@@ -650,8 +646,6 @@ Buttons
         end
       cost:100 Larven
 
-
-
 *PanzerButton
 		name:InsektenPanzer
 		desc:Nur zur Anzeige des InsektenPanzer Anzahl
@@ -659,7 +653,6 @@ Buttons
 		class:PanzerButton
 		text:[InsektenPanzer] InsektenPanzer
 		no tooltip
-
 
 *TerritoriumButton    
         name:Territorium
@@ -698,7 +691,6 @@ Buttons
                 yield 10000000000000 Territorium 
                 lose 1000000000000000 BauMaterial 
             end
-			
         end
         cost:1000 BauMaterial
         req:1000 BauMaterial
@@ -711,7 +703,6 @@ Buttons
         text:[Territorium] Territorien
         no tooltip
 		
-
 *OPButton    
       name:Bssst
       desc:Ein bssssst 
@@ -721,12 +712,9 @@ Buttons
       show clicks      
       class:OPButton 
 
-
 *statusbar
 	  tag:booster
  	  name:sooooooLang
-      desc:bla bla  
-     // icon:https://imgur.com/7ulsbid.png
       no text
       show clicks     
       cost:100 Larven
@@ -746,7 +734,6 @@ Buttons
 		passive:multiply yield of Insekten by ((Erfolge*1/100)+1)
 		passive:multiply yield of BauMaterial by ((Erfolge*1/100)+1)
 		
-		
 Resources
 
 *upgradesII
@@ -757,7 +744,6 @@ Resources
 *Zeit
         name:Zeit
         desc:Als Timer für alles
-        //icon:https://i.imgur.com/ICiQOnw.png.jpg
         class:noBackground
 		on tick:yield 1 Zeit
         always hidden
@@ -813,10 +799,7 @@ Resources
         no tooltip
         always hidden
 		
-
-		
 // Gebäudeproduktions Ressourcen		------------------------------------------
-
 
 *TEMPLATE
 		always hidden
@@ -1726,70 +1709,70 @@ Upgrades
 		name:Brüter
 		desc:<.> Erhöht die Produktion von Larven um <b>3</b> %.
 		icon:icons[6,4]
-		cost:14000 Erfahrung
+		cost:140000 Erfahrung
 		passive:multiply yield of Larven by 1.03
 		req:12000 Erfahrung:earned
 *UgRLErfahrung2
 		name:Schlüpfer
 		desc:<.> Erhöht die Produktion von Larven um <b>3</b> %.
 		icon:icons[6,4]
-		cost:55000 Erfahrung
+		cost:550000 Erfahrung
 		passive:multiply yield of Larven by 1.03
 		req:40000 Erfahrung and UgRLErfahrung1
 *UgRLErfahrung3
 		name:Wachser
 		desc:<.> Erhöht die Produktion von Larven um <b>3</b> %.
 		icon:icons[6,4]
-		cost:125000 Erfahrung
+		cost:1250000 Erfahrung
 		passive:multiply yield of Larven by 1.03
 		req:120000 Erfahrung and UgRLErfahrung2
 *UgRLErfahrung4
 		name:Säher
 		desc:<.> Erhöht die Produktion von Larven um <b>3</b> %.
 		icon:icons[6,4]
-		cost:220000 Erfahrung
+		cost:2200000 Erfahrung
 		passive:multiply yield of Larven by 1.03
 		req:200000 Erfahrung and UgRLErfahrung3
 *UgRLErfahrung5
 		name:Pfleger
 		desc:<.> Erhöht die Produktion von Larven um <b>3</b> %.
 		icon:icons[6,4]
-		cost:340000 Erfahrung
+		cost:3400000 Erfahrung
 		passive:multiply yield of Larven by 1.03
 		req:320000 Erfahrung and UgRLErfahrung4
 *UgRLErfahrung6
 		name:Amme
 		desc:<.> Erhöht die Produktion von Larven um <b>3</b> %.
 		icon:icons[6,4]
-		cost:500000 Erfahrung
+		cost:5000000 Erfahrung
 		passive:multiply yield of Larven by 1.03
 		req:480000 Erfahrung and UgRLErfahrung5
 *UgRLErfahrung7
 		name:Hebamme
 		desc:<.> Erhöht die Produktion von Larven um <b>3</b> %.
 		icon:icons[6,4]
-		cost:660000 Erfahrung
+		cost:6600000 Erfahrung
 		passive:multiply yield of Larven by 1.03
 		req:640000 Erfahrung and UgRLErfahrung6
 *UgRLErfahrung8
 		name:Geburtshelfer
 		desc:<.> Erhöht die Produktion von Larven um <b>3</b> %.
 		icon:icons[6,4]
-		cost:880000 Erfahrung
+		cost:8800000 Erfahrung
 		passive:multiply yield of Larven by 1.03
 		req:840000 Erfahrung and UgRLErfahrung7
 *UgRLErfahrung9
 		name:Entbindungshelfer
 		desc:<.> Erhöht die Produktion von Larven um <b>3</b> %.
 		icon:icons[6,4]
-		cost:1100000 Erfahrung
+		cost:11000000 Erfahrung
 		passive:multiply yield of Larven by 1.03
 		req:1000000 Erfahrung and UgRLErfahrung8
 *UgRLErfahrung10
 		name:Schlüpfstation
 		desc:<.> Erhöht die Produktion von Larven um <b>3</b> %.
 		icon:icons[6,4]
-		cost:1370000 Erfahrung
+		cost:13700000 Erfahrung
 		passive:multiply yield of Larven by 1.03
 		req:1110000 Erfahrung and UgRLErfahrung9
 		
@@ -1799,70 +1782,70 @@ Upgrades
 		name:Insektenzüchter
 		desc:<.> Erhöht die Produktion von Insekten um <b>3</b> %.
 		icon:icons[6,5]
-		cost:14000 Erfahrung
+		cost:140000 Erfahrung
 		passive:multiply yield of Insekten by 1.03
 		req:12000 Erfahrung:earned
 *UgRIErfahrung2
 		name:Insektenpfleger
 		desc:<.> Erhöht die Produktion von Insekten um <b>3</b> %.
 		icon:icons[6,5]
-		cost:55000 Erfahrung
+		cost:550000 Erfahrung
 		passive:multiply yield of Insekten by 1.03
 		req:40000 Erfahrung and UgRIErfahrung1
 *UgRIErfahrung3
 		name:Insektenforscher
 		desc:<.> Erhöht die Produktion von Insekten um <b>3</b> %.
 		icon:icons[6,5]
-		cost:125000 Erfahrung
+		cost:1250000 Erfahrung
 		passive:multiply yield of Insekten by 1.03
 		req:120000 Erfahrung and UgRIErfahrung2
 *UgRIErfahrung4
 		name:Insektenfinder
 		desc:<.> Erhöht die Produktion von Insekten um <b>3</b> %.
 		icon:icons[6,5]
-		cost:220000 Erfahrung
+		cost:2200000 Erfahrung
 		passive:multiply yield of Insekten by 1.03
 		req:200000 Erfahrung and UgRIErfahrung3
 *UgRIErfahrung5
 		name:Insektenberater
 		desc:<.> Erhöht die Produktion von Insekten um <b>3</b> %.
 		icon:icons[6,5]
-		cost:340000 Erfahrung
+		cost:3400000 Erfahrung
 		passive:multiply yield of Insekten by 1.03
 		req:320000 Erfahrung and UgRIErfahrung4
 *UgRIErfahrung6
 		name:Insektenentomologe
 		desc:<.> Erhöht die Produktion von Insekten um <b>3</b> %.
 		icon:icons[6,5]
-		cost:500000 Erfahrung
+		cost:5000000 Erfahrung
 		passive:multiply yield of Insekten by 1.03
 		req:480000 Erfahrung and UgRIErfahrung5
 *UgRIErfahrung7
 		name:Insektenprofessor
 		desc:<.> Erhöht die Produktion von Insekten um <b>3</b> %.
 		icon:icons[6,5]
-		cost:660000 Erfahrung
+		cost:6600000 Erfahrung
 		passive:multiply yield of Insekten by 1.03
 		req:640000 Erfahrung and UgRIErfahrung6
 *UgRIErfahrung8
 		name:Insektenlehrer
 		desc:<.> Erhöht die Produktion von Insekten um <b>3</b> %.
 		icon:icons[6,5]
-		cost:880000 Erfahrung
+		cost:8800000 Erfahrung
 		passive:multiply yield of Insekten by 1.03
 		req:840000 Erfahrung and UgRIErfahrung7
 *UgRIErfahrung9
 		name:Insektengelehrter
 		desc:<.> Erhöht die Produktion von Insekten um <b>3</b> %.
 		icon:icons[6,5]
-		cost:1100000 Erfahrung
+		cost:11000000 Erfahrung
 		passive:multiply yield of Insekten by 1.03
 		req:1000000 Erfahrung and UgRIErfahrung8
 *UgRIErfahrung10
 		name:Insektenwissenschaftler
 		desc:<.> Erhöht die Produktion von Insekten um <b>3</b> %.
 		icon:icons[6,5]
-		cost:1370000 Erfahrung
+		cost:13700000 Erfahrung
 		passive:multiply yield of Insekten by 1.03
 		req:1110000 Erfahrung and UgRIErfahrung9
 
@@ -1872,70 +1855,70 @@ Upgrades
 		name:Straßenbauer
 		desc:<.> Erhöht die Produktion von BauMaterial um <b>3</b> %.
 		icon:icons[6,6]
-		cost:14000 Erfahrung
+		cost:140000 Erfahrung
 		passive:multiply yield of BauMaterial by 1.03
 		req:12000 Erfahrung:earned
 *UgRBErfahrung2
 		name:Baustoffprüfer
 		desc:<.> Erhöht die Produktion von BauMaterial um <b>3</b> %.
 		icon:icons[6,6]
-		cost:55000 Erfahrung
+		cost:550000 Erfahrung
 		passive:multiply yield of BauMaterial by 1.03
 		req:40000 Erfahrung and UgRBErfahrung1
 *UgRBErfahrung3
 		name:Bauzeichner
 		desc:<.> Erhöht die Produktion von BauMaterial um <b>3</b> %.
 		icon:icons[6,6]
-		cost:125000 Erfahrung
+		cost:1250000 Erfahrung
 		passive:multiply yield of BauMaterial by 1.03
 		req:120000 Erfahrung and UgRBErfahrung2
 *UgRBErfahrung4
 		name:Kanalbauer
 		desc:<.> Erhöht die Produktion von BauMaterial um <b>3</b> %.
 		icon:icons[6,6]
-		cost:220000 Erfahrung
+		cost:2200000 Erfahrung
 		passive:multiply yield of BauMaterial by 1.03
 		req:200000 Erfahrung and UgRBErfahrung3
 *UgRBErfahrung5
 		name:Maurer
 		desc:<.> Erhöht die Produktion von BauMaterial um <b>3</b> %.
 		icon:icons[6,6]
-		cost:340000 Erfahrung
+		cost:3400000 Erfahrung
 		passive:multiply yield of BauMaterial by 1.03
 		req:320000 Erfahrung and UgRBErfahrung4
 *UgRBErfahrung6
 		name:Drechsler
 		desc:<.> Erhöht die Produktion von BauMaterial um <b>3</b> %.
 		icon:icons[6,6]
-		cost:500000 Erfahrung
+		cost:5000000 Erfahrung
 		passive:multiply yield of BauMaterial by 1.03
 		req:480000 Erfahrung and UgRBErfahrung5
 *UgRBErfahrung7
 		name:Flechtwerkgestalter
 		desc:<.> Erhöht die Produktion von BauMaterial um <b>3</b> %.
 		icon:icons[6,6]
-		cost:660000 Erfahrung
+		cost:6600000 Erfahrung
 		passive:multiply yield of BauMaterial by 1.03
 		req:640000 Erfahrung and UgRBErfahrung6
 *UgRBErfahrung8
 		name:Tischler
 		desc:<.> Erhöht die Produktion von BauMaterial um <b>3</b> %.
 		icon:icons[6,6]
-		cost:880000 Erfahrung
+		cost:8800000 Erfahrung
 		passive:multiply yield of BauMaterial by 1.03
 		req:840000 Erfahrung and UgRBErfahrung7
 *UgRBErfahrung9
 		name:Zimmerer
 		desc:<.> Erhöht die Produktion von BauMaterial um <b>3</b> %.
 		icon:icons[6,6]
-		cost:1100000 Erfahrung
+		cost:11000000 Erfahrung
 		passive:multiply yield of BauMaterial by 1.03
 		req:1000000 Erfahrung and UgRBErfahrung8
 *UgRBErfahrung10
 		name:Steinmetz
 		desc:<.> Erhöht die Produktion von BauMaterial um <b>3</b> %.
 		icon:icons[6,6]
-		cost:1370000 Erfahrung
+		cost:13700000 Erfahrung
 		passive:multiply yield of BauMaterial by 1.03
 		req:1110000 Erfahrung and UgRBErfahrung9
 		
