@@ -2462,7 +2462,7 @@ Upgrades
 		icon:icons[5,5] icons[1,0] icons[8,0]
 		cost:10 Raupen
 		passive:multiply yield of Raupe by 1.75
-		req:10 Raupen
+		req:100 Larven:earned
 *UgBLRaupeF2
 		name:HolzRaupe
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
