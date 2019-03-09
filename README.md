@@ -52,11 +52,7 @@ Layout
 	costs:hide
 	names:hide
 
-
-		
 Buttons
-
-
 
 *SuperButton
         name:Superbutton
@@ -828,41 +824,17 @@ Resources
 	
 		
 *Raupep
-		name:Produktion der Raupen
-		always hidden
 *Bienenstockp
-		name:Produktion der Bienenstöcke
-		always hidden
 *Termitenbaup
-		name:Produktion der Termitenbauten
-		always hidden
 *Blattp
-		name:Produktion der Blätter
-		always hidden	
 *WNestp
-		name:Produktion der WespenNester
-		always hidden
 *VApfelp
-		name:Produktion der VerfaultenÄpfel
-		always hidden		
-		
 *SammlerAp
-		name:Produktion der SammlerAmeise
-		always hidden
-	
-
 *ANestp
-		name:Produktion der AltenNester
 *Schuhp
-		name:Produktion der UeberwucherterSchuh
 *Pizzap
-		name:Produktion der Pizzen
 *Ivanp
-		name:Produktion der SchneckeIvan
 *Eimerp
-		name:Produktion der WasserEimer
-		
-		
 
 //Shinies --------------------------
 
