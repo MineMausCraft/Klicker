@@ -836,6 +836,7 @@ Resources
 
 //Shinies ---------------------------------------------------------------------------------------------------------
 Shinies
+
 *TEMPLATE
 	on click:log Woop
 	class:bigButton
@@ -1090,7 +1091,7 @@ Shinies
     end    
 
 Buildings
-	*TEMPLATE
+*TEMPLATE
 		on click:anim glow
 		always hidden
 
