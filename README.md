@@ -7567,19 +7567,22 @@ Upgrades
 		cost:325 Dreck
 		passive:multiply yield of Dreck by 1.75
 		req:92300000000000000000000000000 BauMaterial:earned and 300 Dreck
-
  
-//6 AltesBuch|AlteBuecher
+//6 AltesBuch|AlteBuecher a
 *TEMPLATE
-		passive:multiply yield of AltesBuch by 10.75
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of AltesBuch by 1.75
 		desc:<.> Erhöht die Produktion der AltenBücher um <b>75</b> %.
-
 *UgbBAltesBuch1
 		name:Buchtest
 		icon:icons[2,4] icons[3,0]
-		cost:1 BauMaterial
-//		cost:9230000 BauMaterial,10 Dreck
-//		req:9230000 BauMaterial:earned and 9 Dreck
+		cost:9230000 BauMaterial,10 Dreck
+		req:9230000 BauMaterial:earned and 9 Dreck
 *UgbBAltesBuch2
 		name:Der Dunkle Turm
 		icon:icons[2,4] icons[3,1]
@@ -7696,7 +7699,7 @@ Upgrades
 		icon:icons[5,5] icons[2,4] icons[3,11]
 		cost:325 AltesBuch
 		req:92300000000000000000000000000 BauMaterial:earned and UgbBAltesBuchF11
-*TEMPLATE
+*TEMPLATE		
 		
 *TEMPLATE
 no buy
