@@ -7321,7 +7321,6 @@ Upgrades
 		cost:10 Steine
 		passive:multiply yield of Steine by 1.75
 		req:912900 BauMaterial:earned and 9 Steine
-
 *UgbBSteineF2
 		name:rote Backsteine
 		desc:<.> Erhöht die Produktion von Steinen um <b>75</b> %.
@@ -7329,7 +7328,6 @@ Upgrades
 		cost:50 Steine
 		passive:multiply yield of Steine by 1.75
 		req:91290000 BauMaterial:earned and 45 Steine
-		
 *UgbBSteineF3
 		name:Scharfe Steine
 		desc:<.> Erhöht die Produktion von Steinen um <b>75</b> %.
@@ -7337,7 +7335,6 @@ Upgrades
 		cost:100 Steine
 		passive:multiply yield of Steine by 1.75
 		req:9129000000 BauMaterial:earned and 75 Steine
-		
 *UgbBSteineF4
 		name:Runde Steine
 		desc:<.> Erhöht die Produktion von Steinen um <b>75</b> %.
@@ -7345,7 +7342,6 @@ Upgrades
 		cost:125 Steine
 		passive:multiply yield of Steine by 1.75
 		req:912900000000 BauMaterial:earned and 100 Steine
-		
 *UgbBSteineF5
 		name:Glitzersteine
 		desc:<.> Erhöht die Produktion von Steinen um <b>75</b> %.
@@ -7353,7 +7349,6 @@ Upgrades
 		cost:150 Steine
 		passive:multiply yield of Steine by 1.75
 		req:91290000000000 BauMaterial:earned and 125 Steine
-		
 *UgbBSteineF6
 		name:Dreckige Steine
 		desc:<.> Erhöht die Produktion von Steinen um <b>75</b> %.
@@ -7361,7 +7356,6 @@ Upgrades
 		cost:175 Steine
 		passive:multiply yield of Steine by 1.75
 		req:9129000000000000 BauMaterial:earned and 150 Steine
-		
 *UgbBSteineF7
 		name:Glänzende Steine
 		desc:<.> Erhöht die Produktion von Steinen um <b>75</b> %.
@@ -7369,7 +7363,6 @@ Upgrades
 		cost:200 Steine
 		passive:multiply yield of Steine by 1.75
 		req:912900000000000000 BauMaterial:earned and 175 Steine
-			
 *UgbBSteineF8
 		name:Große Steine
 		desc:<.> Erhöht die Produktion von Steinen um <b>75</b> %.
@@ -7377,7 +7370,6 @@ Upgrades
 		cost:225 Steine
 		passive:multiply yield of Steine by 1.75
 		req:91290000000000000000 BauMaterial:earned and 200 Steine
-			
 *UgbBSteineF9
 		name:Versteckte Steine
 		desc:<.> Erhöht die Produktion von Steinen um <b>75</b> %.
@@ -7385,7 +7377,6 @@ Upgrades
 		cost:250 Steine
 		passive:multiply yield of Steine by 1.75
 		req:9129000000000000000000 BauMaterial:earned and 225 Steine
-			
 *UgbBSteineF10
 		name:Zerbrachener Stein
 		desc:<.> Erhöht die Produktion von Steinen um <b>75</b> %.
@@ -7393,7 +7384,6 @@ Upgrades
 		cost:275 Steine
 		passive:multiply yield of Steine by 1.75
 		req:912900000000000000000000 BauMaterial:earned and 250 Steine
-			
 *UgbBSteineF11
 		name:Steinnester
 		desc:<.> Erhöht die Produktion von Steinen um <b>75</b> %.
@@ -7401,7 +7391,6 @@ Upgrades
 		cost:300 Steine
 		passive:multiply yield of Steine by 1.75
 		req:91290000000000000000000000 BauMaterial:earned and 275 Steine
-			
 *UgbBSteineF12
 		name:Steinigung
 		desc:<.> Erhöht die Produktion von Steinen um <b>75</b> %.
@@ -7409,7 +7398,6 @@ Upgrades
 		cost:325 Steine
 		passive:multiply yield of Steine by 1.75
 		req:9129000000000000000000000000 BauMaterial:earned and 300 Steine
-				
 
 *UgbBDreck1
 		name:Nasser Dreck
@@ -7418,7 +7406,6 @@ Upgrades
 		cost:9230000 BauMaterial,10 Steine
 		passive:multiply yield of Dreck by 1.75
 		req:9230000 BauMaterial:earned and 9 Dreck
-
 *UgbBDreck2
 		name:Staubiger Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7426,7 +7413,6 @@ Upgrades
 		cost:923000000 BauMaterial,20 Steine
 		passive:multiply yield of Dreck by 1.75
 		req:923000000 BauMaterial:earned and 45 Dreck
-		
 *UgbBDreck3
 		name:Matschiger Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7434,7 +7420,6 @@ Upgrades
 		cost:92300000000 BauMaterial,30 Steine
 		passive:multiply yield of Dreck by 1.75
 		req:92300000000 BauMaterial:earned and 75 Dreck
-		
 *UgbBDreck4
 		name:Klumpiger Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7442,7 +7427,6 @@ Upgrades
 		cost:9230000000000 BauMaterial,40 Steine
 		passive:multiply yield of Dreck by 1.75
 		req:9230000000000 BauMaterial:earned and 100 Dreck
-		
 *UgbBDreck5
 		name:Viel Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7450,7 +7434,6 @@ Upgrades
 		cost:923000000000000 BauMaterial,50 Steine
 		passive:multiply yield of Dreck by 1.75
 		req:923000000000000 BauMaterial:earned and 125 Dreck
-		
 *UgbBDreck6
 		name:Grober Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7458,7 +7441,6 @@ Upgrades
 		cost:92300000000000000 BauMaterial,75 Steine
 		passive:multiply yield of Dreck by 1.75
 		req:92300000000000000 BauMaterial:earned and 150 Dreck
-		
 *UgbBDreck7
 		name:Feiner Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7466,7 +7448,6 @@ Upgrades
 		cost:9230000000000000000 BauMaterial,100 Steine
 		passive:multiply yield of Dreck by 1.75
 		req:9230000000000000000 BauMaterial:earned and 175 Dreck
-			
 *UgbBDreck8
 		name:Drecks Sack
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7474,7 +7455,6 @@ Upgrades
 		cost:923000000000000000000 BauMaterial,125 Steine
 		passive:multiply yield of Dreck by 1.75
 		req:923000000000000000000 BauMaterial:earned and 200 Dreck
-			
 *UgbBDreck9
 		name:Harter Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7482,7 +7462,6 @@ Upgrades
 		cost:92300000000000000000000 BauMaterial,150 Steine
 		passive:multiply yield of Dreck by 1.75
 		req:92300000000000000000000 BauMaterial:earned and 225 Dreck
-			
 *UgbBDreck10
 		name:Dreckonia
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7490,7 +7469,6 @@ Upgrades
 		cost:9230000000000000000000000 BauMaterial,175 Steine
 		passive:multiply yield of Dreck by 1.75
 		req:9230000000000000000000000 BauMaterial:earned and 250 Dreck
-			
 *UgbBDreck11
 		name:Humus
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7498,7 +7476,6 @@ Upgrades
 		cost:923000000000000000000000000 BauMaterial,200 Steine
 		passive:multiply yield of Dreck by 1.75
 		req:923000000000000000000000000 BauMaterial:earned and 275 Dreck
-			
 *UgbBDreck12
 		name:Lehm
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7506,8 +7483,6 @@ Upgrades
 		cost:92300000000000000000000000000 BauMaterial,225 Steine
 		passive:multiply yield of Dreck by 1.75
 		req:92300000000000000000000000000 BauMaterial:earned and 300 Dreck
-		
-
 *UgbBDreckF1
 		name:Braunfarbiger Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7515,7 +7490,6 @@ Upgrades
 		cost:10 Dreck
 		passive:multiply yield of Dreck by 1.75
 		req:9230000 BauMaterial:earned and 9 Dreck
-
 *UgbBDreckF2
 		name:Graufarbiger Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7523,7 +7497,6 @@ Upgrades
 		cost:50 Dreck
 		passive:multiply yield of Dreck by 1.75
 		req:923000000 BauMaterial:earned and 45 Dreck
-		
 *UgbBDreckF3
 		name:Hellbraunfarbiger Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7531,7 +7504,6 @@ Upgrades
 		cost:100 Dreck
 		passive:multiply yield of Dreck by 1.75
 		req:92300000000 BauMaterial:earned and 75 Dreck
-		
 *UgbBDreckF4
 		name:Klumpen Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7539,7 +7511,6 @@ Upgrades
 		cost:125 Dreck
 		passive:multiply yield of Dreck by 1.75
 		req:9230000000000 BauMaterial:earned and 100 Dreck
-		
 *UgbBDreckF5
 		name:Ockerfarbiger Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7547,7 +7518,6 @@ Upgrades
 		cost:150 Dreck
 		passive:multiply yield of Dreck by 1.75
 		req:923000000000000 BauMaterial:earned and 125 Dreck
-		
 *UgbBDreckF6
 		name:Gelbfarbiger Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7555,7 +7525,6 @@ Upgrades
 		cost:175 Dreck
 		passive:multiply yield of Dreck by 1.75
 		req:92300000000000000 BauMaterial:earned and 150 Dreck
-		
 *UgbBDreckF7
 		name:Orangefarbiger Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7563,7 +7532,6 @@ Upgrades
 		cost:200 Dreck
 		passive:multiply yield of Dreck by 1.75
 		req:9230000000000000000 BauMaterial:earned and 175 Dreck
-			
 *UgbBDreckF8
 		name:Beigefarbiger Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7571,7 +7539,6 @@ Upgrades
 		cost:225 Dreck
 		passive:multiply yield of Dreck by 1.75
 		req:923000000000000000000 BauMaterial:earned and 200 Dreck
-			
 *UgbBDreckF9
 		name:Camelfarbiger Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7579,7 +7546,6 @@ Upgrades
 		cost:250 Dreck
 		passive:multiply yield of Dreck by 1.75
 		req:92300000000000000000000 BauMaterial:earned and 225 Dreck
-			
 *UgbBDreckF10
 		name:Nougatfarbiger Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7587,7 +7553,6 @@ Upgrades
 		cost:275 Dreck
 		passive:multiply yield of Dreck by 1.75
 		req:9230000000000000000000000 BauMaterial:earned and 250 Dreck
-			
 *UgbBDreckF11
 		name:Mahagonifarbiger Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7595,7 +7560,6 @@ Upgrades
 		cost:300 Dreck
 		passive:multiply yield of Dreck by 1.75
 		req:923000000000000000000000000 BauMaterial:earned and 275 Dreck
-			
 *UgbBDreckF12
 		name:Kupferbraunfarbiger Dreck
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
@@ -7603,23 +7567,143 @@ Upgrades
 		cost:325 Dreck
 		passive:multiply yield of Dreck by 1.75
 		req:92300000000000000000000000000 BauMaterial:earned and 300 Dreck
+
+ 
+//6 AltesBuch|AlteBuecher
+*TEMPLATE
+		passive:multiply yield of AltesBuch by 10.75
+		desc:<.> Erhöht die Produktion der AltenBücher um <b>75</b> %.
+
+*UgbBAltesBuch1
+		name:Buchtest
+		icon:icons[2,4] icons[3,0]
+		cost:1 BauMaterial
+//		cost:9230000 BauMaterial,10 Dreck
+//		req:9230000 BauMaterial:earned and 9 Dreck
+*UgbBAltesBuch2
+		name:Der Dunkle Turm
+		icon:icons[2,4] icons[3,1]
+		cost:923000000 BauMaterial,20 Dreck
+		req:923000000 BauMaterial:earned and UgbBAltesBuch1
+*UgbBAltesBuch3
+		name:Schwarz
+		icon:icons[2,4] icons[3,2]
+		cost:92300000000 BauMaterial,30 Dreck
+		req:92300000000 BauMaterial:earned and UgbBAltesBuch2
+*UgbBAltesBuch4
+		name:Drei
+		icon:icons[2,4] icons[3,3]
+		cost:9230000000000 BauMaterial,40 Dreck
+		req:9230000000000 BauMaterial:earned and UgbBAltesBuch3
+*UgbBAltesBuch5
+		name:Tod
+		icon:icons[2,4] icons[3,4]
+		cost:923000000000000 BauMaterial,50 Dreck
+		req:923000000000000 BauMaterial:earned and UgbBAltesBuch4
+*UgbBAltesBuch6
+		name:Glas
+		icon:icons[2,4] icons[3,5]
+		cost:92300000000000000 BauMaterial,75 Dreck
+		req:92300000000000000 BauMaterial:earned and UgbBAltesBuch5
+*UgbBAltesBuch7
+		name:Wind
+		icon:icons[2,4] icons[3,6]
+		cost:9230000000000000000 BauMaterial,100 Dreck
+		req:9230000000000000000 BauMaterial:earned and UgbBAltesBuch6
+*UgbBAltesBuch8
+		name:Wolfsmond
+		icon:icons[2,4] icons[3,7]
+		cost:923000000000000000000 BauMaterial,125 Dreck
+		req:923000000000000000000 BauMaterial:earned and UgbBAltesBuch7
+*UgbBAltesBuch9
+		name:Susana
+		icon:icons[2,4] icons[3,8]
+		cost:92300000000000000000000 BauMaterial,150 Dreck
+		req:92300000000000000000000 BauMaterial:earned and UgbBAltesBuch8
+*UgbBAltesBuch10
+		name:Carrie
+		icon:icons[2,4] icons[3,9]
+		cost:9230000000000000000000000 BauMaterial,175 Dreck
+		req:9230000000000000000000000 BauMaterial:earned and UgbBAltesBuch9
+*UgbBAltesBuch11
+		name:Brennen muß Salem
+		icon:icons[2,4] icons[3,10]
+		cost:923000000000000000000000000 BauMaterial,200 Dreck
+		req:923000000000000000000000000 BauMaterial:earned and UgbBAltesBuch10
+*UgbBAltesBuch12
+		name:Shining
+		icon:icons[2,4] icons[3,11]
+		cost:92300000000000000000000000000 BauMaterial,225 Dreck
+		req:92300000000000000000000000000 BauMaterial:earned and UgbBAltesBuch11
+
+*UgbBAltesBuchF1
+		name:The STand
+		icon:icons[5,5] icons[2,4] icons[3,0]
+		cost:10 AltesBuch
+		req:9230000 BauMaterial:earned
+*UgbBAltesBuchF2
+		name:Das Letzte Gefecht
+		icon:icons[5,5] icons[2,4] icons[3,1]
+		cost:50 AltesBuch
+		req:923000000 BauMaterial:earned and UgbBAltesBuchF1
+*UgbBAltesBuchF3
+		name:Nachtschicht
+		icon:icons[5,5] icons[2,4] icons[3,2]
+		cost:100 AltesBuch
+		req:92300000000 BauMaterial:earned and UgbBAltesBuchF2
+*UgbBAltesBuchF4
+		name:Deadzone
+		icon:icons[5,5] icons[2,4] icons[3,3]
+		cost:125 AltesBuch
+		req:9230000000000 BauMaterial:earned and UgbBAltesBuchF3
+*UgbBAltesBuchF5
+		name:Feuerkind
+		icon:icons[5,5] icons[2,4] icons[3,4]
+		cost:150 AltesBuch
+		req:923000000000000 BauMaterial:earned and UgbBAltesBuchF4
+*UgbBAltesBuchF6
+		name:Cujo
+		icon:icons[5,5] icons[2,4] icons[3,5]
+		cost:175 AltesBuch
+		req:92300000000000000 BauMaterial:earned and UgbBAltesBuchF5
+*UgbBAltesBuchF7
+		name:Frühling
+		icon:icons[5,5] icons[2,4] icons[3,6]
+		cost:200 AltesBuch
+		req:9230000000000000000 BauMaterial:earned and UgbBAltesBuchF6
+*UgbBAltesBuchF8
+		name:Sommer
+		icon:icons[5,5] icons[2,4] icons[3,7]
+		cost:225 AltesBuch
+		req:923000000000000000000 BauMaterial:earned and UgbBAltesBuchF7
+*UgbBAltesBuchF9
+		name:Herbst und Tod
+		icon:icons[5,5] icons[2,4] icons[3,8]
+		cost:250 AltesBuch
+		req:92300000000000000000000 BauMaterial:earned and UgbBAltesBuchF8
+*UgbBAltesBuchF10
+		name:Christine
+		icon:icons[5,5] icons[2,4] icons[3,9]
+		cost:275 AltesBuch
+		req:9230000000000000000000000 BauMaterial:earned and UgbBAltesBuchF9
+*UgbBAltesBuchF11
+		name:Friedhof der Kuscheltiere
+		icon:icons[5,5] icons[2,4] icons[3,10]
+		cost:300 AltesBuch
+		req:923000000000000000000000000 BauMaterial:earned and UgbBAltesBuchF10
+*UgbBAltesBuchF12
+		name:Der Talisman
+		icon:icons[5,5] icons[2,4] icons[3,11]
+		cost:325 AltesBuch
+		req:92300000000000000000000000000 BauMaterial:earned and UgbBAltesBuchF11
+*TEMPLATE
 		
-			
-					
-	
-
-
-
-
 *TEMPLATE
 no buy
 tag:owned
 class:noBackground
 
-
-
 // Larven Multi mit Erfahrung a
-
 *UgRLErfahrung1a
 		name:Brüter
 		desc:<.> Erhöht die Produktion von Larven um <b>3</b> %.
@@ -10463,7 +10547,6 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der Bienen um <b>10</b> %.
 		icon:icons[0,4] icons[3,10]
 		req:1790000000000000000000000000 Insekten:earned and UgBIBiene11
-
 *UgBIBiene12a
 		name:Maya
 		desc:<.> Erhöht die Produktion der Bienen um <b>10</b> %.
@@ -10476,72 +10559,51 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der Bienen um <b>10</b> %.
 		icon:icons[0,4] icons[4,1]
 		req:UgBIPBiene1
-		class:noBackground
-
 *UgBIPBiene2a
 		name:BienenPanzer II
 		desc:<.> Erhöht die Produktion der Bienen um <b>10</b> %.
 		icon:icons[0,4] icons[4,1]
 		req:UgBIPBiene2
-		class:noBackground
-
 *UgBIPBiene3a
 		name:BienenPanzer III
 		desc:<.> Erhöht die Produktion der Bienen um <b>10</b> %.
 		icon:icons[0,4] icons[4,1]
 		req:UgBIPBiene3
-		class:noBackground
-
 *UgBIPBiene4a
 		name:BienenPanzer IV
 		desc:<.> Erhöht die Produktion der Bienen um <b>10</b> %.
 		icon:icons[0,4] icons[4,1]
 		req:UgBIPBiene4
-		class:noBackground
-
 *UgBIPBiene5a
 		name:BienenPanzer V
 		desc:<.> Erhöht die Produktion der Bienen um <b>10</b> %.
 		icon:icons[0,4] icons[4,1]
 		req:UgBIPBiene5
-		class:noBackground
-
 *UgBIPBiene6a
 		name:BienenPanzer VI
 		desc:<.> Erhöht die Produktion der Bienen um <b>10</b> %.
 		icon:icons[0,4] icons[4,1]
 		req:UgBIPBiene6
-		class:noBackground
-
 *UgBIPBiene7a
 		name:BienenPanzer VII
 		desc:<.> Erhöht die Produktion der Bienen um <b>10</b> %.
 		icon:icons[0,4] icons[4,1]
 		req:UgBIPBiene7
-		class:noBackground
-
 *UgBIPBiene8a
 		name:BienenPanzer VIII
 		desc:<.> Erhöht die Produktion der Bienen um <b>10</b> %.
 		icon:icons[0,4] icons[4,1]
 		req:UgBIPBiene8
-		class:noBackground
-
 *UgBIPBiene9a
 		name:BienenPanzer IX
 		desc:<.> Erhöht die Produktion der Bienen um <b>10</b> %.
 		icon:icons[0,4] icons[4,1]
 		req:UgBIPBiene9
-		class:noBackground
-
 *UgBIPBiene10a
 		name:BienenPanzer X
 		desc:<.> Erhöht die Produktion der Bienen um <b>10</b> %.
 		icon:icons[0,4] icons[4,1]
 		req:UgBIPBiene10
-		class:noBackground
-
-
 
 *UgBIRoteAmeise1a
 		name:RoteAmeisenSalat
@@ -12220,7 +12282,6 @@ class:noBackground
 		icon:icons[2,2] icons[3,11]
 		req:896000000000000000000000000 BauMaterial:earned and UgbBWurzelnF12
 	
-	
 //4a	
 
 *UgbBSteine1a
@@ -12347,62 +12408,62 @@ class:noBackground
 		
 *UgbBDreck1a
 		name:Nasser Dreck
-		desc:<.> Erhöht die Produktion von Dreck um <b>10</b> %.
+		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
 		icon:icons[2,4] icons[3,0]
 		req:UgbBDreck1
 *UgbBDreck2a
 		name:Staubiger Dreck
-		desc:<.> Erhöht die Produktion von Dreck um <b>10</b> %.
+		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
 		icon:icons[2,4] icons[3,1]
 		req:UgbBDreck2
 *UgbBDreck3a
 		name:Matschiger Dreck
-		desc:<.> Erhöht die Produktion von Dreck um <b>10</b> %.
+		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
 		icon:icons[2,4] icons[3,2]
 		req:UgbBDreck3
 *UgbBDreck4a
 		name:Klumpiger Dreck
-		desc:<.> Erhöht die Produktion von Dreck um <b>10</b> %.
+		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
 		icon:icons[2,4] icons[3,3]
 		req:UgbBDreck4
 *UgbBDreck5a
 		name:Viel Dreck
-		desc:<.> Erhöht die Produktion von Dreck um <b>10</b> %.
+		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
 		icon:icons[2,4] icons[3,4]
 		req:UgbBDreck5
 *UgbBDreck6a
 		name:Grober Dreck
-		desc:<.> Erhöht die Produktion von Dreck um <b>10</b> %.
+		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
 		icon:icons[2,4] icons[3,5]
 		req:UgbBDreck6
 *UgbBDreck7a
 		name:Feiner Dreck
-		desc:<.> Erhöht die Produktion von Dreck um <b>10</b> %.
+		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
 		icon:icons[2,4] icons[3,6]
 		req:UgbBDreck7
 *UgbBDreck8a
 		name:Drecks Sack
-		desc:<.> Erhöht die Produktion von Dreck um <b>10</b> %.
+		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
 		icon:icons[2,4] icons[3,7]
 		req:UgbBDreck8
 *UgbBDreck9a
 		name:Harter Dreck
-		desc:<.> Erhöht die Produktion von Dreck um <b>10</b> %.
+		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
 		icon:icons[2,4] icons[3,8]
 		req:UgbBDreck9
 *UgbBDreck10a
 		name:Dreckonia
-		desc:<.> Erhöht die Produktion von Dreck um <b>10</b> %.
+		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
 		icon:icons[2,4] icons[3,9]
 		req:UgbBDreck10
 *UgbBDreck11a
 		name:Humus
-		desc:<.> Erhöht die Produktion von Dreck um <b>10</b> %.
+		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
 		icon:icons[2,4] icons[3,10]
 		req:UgbBDreck11
 *UgbBDreck12a
 		name:Lehm
-		desc:<.> Erhöht die Produktion von Dreck um <b>10</b> %.
+		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
 		icon:icons[2,4] icons[3,11]
 		req:UgbBDreck12
 		
