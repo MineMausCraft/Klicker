@@ -841,12 +841,12 @@ Shinies
 	class:bigButton
 //1
 *luckyFly
-        frequency:600
-        frequency variation:600
-		movement:onRight moveLeft fade bounce:0.05
-		icon:iconsgr[2,0]
-        on click:yield Nahrung*0.01% Nahrung
-        on click:toast Du hast der kleinen Fliege <b>[Nahrung*0.01%]</b> Nahrung geklaut!
+    frequency:600
+    frequency variation:600
+	movement:onRight moveLeft fade bounce:0.05
+	icon:iconsgr[2,0]
+    on click:yield Nahrung*0.01% Nahrung
+    on click:toast Du hast der kleinen Fliege <b>[Nahrung*0.01%]</b> Nahrung geklaut!
 //2 
 *luckyBug
     frequency:700
@@ -1092,7 +1092,7 @@ Shinies
 Buildings
 	*TEMPLATE
 		on click:anim glow
-
+		always hidden
 
 // **** BOOST MULTI ****	
 // 1-1 / 2-0.5 / 3-0.33333333 / 4-0.25 / 5-0.2 / 6-0.16666667 / 7-0.14285714 / 8-0.125 / 9-0.11111111 / 10-0.1 / 11-0.09090909
@@ -1103,58 +1103,49 @@ Buildings
 		cost:0 Larven
 		passive:multiply yield of Larven by 7
 		passive:multiply yield of LarveButton by 0.14285714
-		always hidden	
 *BInsektenMulti
 		name:Insekten x11
 		desc:Insekten Boost
 		cost:0 Larven
 		passive:multiply yield of Insekten by 11
 		passive:multiply yield of InsektenButton by 0.09090909
-		always hidden
 *BBauMaterialMulti
 		name:BauMaterial x5
 		desc:BauMaterial Boost
 		cost:0 Larven
 		passive:multiply yield of BauMaterial by 5
 		passive:multiply yield of TreeButton by 0.2
-		always hidden
 *BLarven333
 		name:Larven x333
 		desc:Larven Boost
 		cost:0 Larven
 		passive:multiply yield of LarveButton by 333
-		always hidden
 *BLarven666
 		name:Larven x666
 		desc:Larven Boost
 		cost:0 Larven
 		passive:multiply yield of LarveButton by 666
-		always hidden
 *BInsekten333
 		name:Insekten x333
 		desc:Insekten Boost
 		cost:0 Larven
 		passive:multiply yield of InsektenButton by 333
-		always hidden
 *BInsekten666
 		name:Insekten x666
 		desc:Insekten Boost
 		cost:0 Larven
 		passive:multiply yield of InsektenButton by 666
-		always hidden
 *BBauMaterial333
 		name:BauMaterial x333
 		desc:BauMaterial Boost
 		cost:0 Larven
 		passive:multiply yield of TreeButton by 333
-		always hidden
 *BBauMaterial666
 		name:BauMaterial x666
 		desc:BauMaterial Boost
 		cost:0 Larven
 		passive:multiply yield of TreeButton by 666	
- 		always hidden
-
+TEMPLATE
 		
 *Erfolg|Erfolge
 		name:Erfolg|Erfolge
