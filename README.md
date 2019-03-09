@@ -1145,7 +1145,6 @@ Buildings
 		desc:BauMaterial Boost
 		cost:0 Larven
 		passive:multiply yield of TreeButton by 666	
-*TEMPLATE
 		
 *Erfolg|Erfolge
 		name:Erfolg|Erfolge
@@ -1153,7 +1152,6 @@ Buildings
 		class:noBackground
         no tooltip
 		no buy
-
 
 //Nahrungs Gebäude -----------------
 
