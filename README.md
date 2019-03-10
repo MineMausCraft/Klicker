@@ -15,7 +15,7 @@ Settings
 	spritesheet:iconsb, 48 by 48, https://i.imgur.com/j79ZDuT.png
 	
 	spritesheet:iconsgr, 128 by 128, https://i.imgur.com/rIBALOu.png
-	spritesheet:iconskl, 40 by 40, https://i.imgur.com/GiXFNjR.png
+	spritesheet:iconskl, 40 by 40, https://i.imgur.com/jc4VRNy.png
 	stylesheet:https://pastebin.com/raw/8iFdUmTb
 	on start:SuperB=2
 	
