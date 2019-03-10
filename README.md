@@ -715,7 +715,7 @@ Buttons
       class:OPButton
 	  req:10000 Insekten
 	  cost:10000 Insekten
-	  on click:if (Insekten>10000) yield ((pow((Insekten:earned)/10), 0.3)-(Evo:earned)) Evo
+	  on click:if (Insekten>10000) yield ((pow((Insekten:earned)/10), 0.3)-Evo:earned) Evo
 	  
 *statusbar
 	  tag:booster
