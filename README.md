@@ -3,8 +3,8 @@ Let's make a game!
 	by:MineMausCraft and Wollä!
 	desc:Erstelle eine große Insektenkolonie!
 	created:16/02/2019
-	updated:07/03/2019
-	version:3
+	updated:10/03/2019
+	version:4
 
 Settings
 	background:https://i.imgur.com/wCNA1I9.jpg
@@ -12,7 +12,7 @@ Settings
 	building cost refund:50%
 	spritesheet:icons, 48 by 48, https://i.imgur.com/dJSgs3Y.png
 	spritesheet:iconsa, 48 by 48, https://i.imgur.com/Bbff71y.png
-	spritesheet:iconsb, 48 by 48, https://i.imgur.com/NG2x5U2.png
+	spritesheet:iconsb, 48 by 48, https://i.imgur.com/j79ZDuT.png
 	
 	spritesheet:iconsgr, 128 by 128, https://i.imgur.com/rIBALOu.png
 	spritesheet:iconskl, 40 by 40, https://i.imgur.com/GiXFNjR.png
@@ -7567,8 +7567,7 @@ Upgrades
 		cost:325 Dreck
 		passive:multiply yield of Dreck by 1.75
 		req:92300000000000000000000000000 BauMaterial:earned and 300 Dreck
- 
-//6 AltesBuch|AlteBuecher a
+//6 AltesBuch|AlteBuecher 
 *TEMPLATE
 		tag:upgrades
 		on tick:if (have this) hide this
@@ -7580,126 +7579,126 @@ Upgrades
 		desc:<.> Erhöht die Produktion der AltenBücher um <b>75</b> %.
 *UgbBAltesBuch1
 		name:Buchtest
-		icon:icons[2,4] icons[3,0]
+		icon:iconsb[19,0]
 		cost:9230000 BauMaterial,10 Dreck
 		req:9230000 BauMaterial:earned and 9 Dreck
 *UgbBAltesBuch2
 		name:Der Dunkle Turm
-		icon:icons[2,4] icons[3,1]
+		icon:iconsb[19,1]
 		cost:923000000 BauMaterial,20 Dreck
 		req:923000000 BauMaterial:earned and UgbBAltesBuch1
 *UgbBAltesBuch3
 		name:Schwarz
-		icon:icons[2,4] icons[3,2]
+		icon:iconsb[19,2]
 		cost:92300000000 BauMaterial,30 Dreck
 		req:92300000000 BauMaterial:earned and UgbBAltesBuch2
 *UgbBAltesBuch4
 		name:Drei
-		icon:icons[2,4] icons[3,3]
+		icon:iconsb[19,3]
 		cost:9230000000000 BauMaterial,40 Dreck
 		req:9230000000000 BauMaterial:earned and UgbBAltesBuch3
 *UgbBAltesBuch5
 		name:Tod
-		icon:icons[2,4] icons[3,4]
+		icon:iconsb[19,4]
 		cost:923000000000000 BauMaterial,50 Dreck
 		req:923000000000000 BauMaterial:earned and UgbBAltesBuch4
 *UgbBAltesBuch6
 		name:Glas
-		icon:icons[2,4] icons[3,5]
+		icon:iconsb[19,5]
 		cost:92300000000000000 BauMaterial,75 Dreck
 		req:92300000000000000 BauMaterial:earned and UgbBAltesBuch5
 *UgbBAltesBuch7
 		name:Wind
-		icon:icons[2,4] icons[3,6]
+		icon:iconsb[19,6]
 		cost:9230000000000000000 BauMaterial,100 Dreck
 		req:9230000000000000000 BauMaterial:earned and UgbBAltesBuch6
 *UgbBAltesBuch8
 		name:Wolfsmond
-		icon:icons[2,4] icons[3,7]
+		icon:iconsb[19,7]
 		cost:923000000000000000000 BauMaterial,125 Dreck
 		req:923000000000000000000 BauMaterial:earned and UgbBAltesBuch7
 *UgbBAltesBuch9
-		name:Susana
-		icon:icons[2,4] icons[3,8]
+		name:Susannah
+		icon:iconsb[19,8]
 		cost:92300000000000000000000 BauMaterial,150 Dreck
 		req:92300000000000000000000 BauMaterial:earned and UgbBAltesBuch8
 *UgbBAltesBuch10
 		name:Carrie
-		icon:icons[2,4] icons[3,9]
+		icon:iconsb[19,9]
 		cost:9230000000000000000000000 BauMaterial,175 Dreck
 		req:9230000000000000000000000 BauMaterial:earned and UgbBAltesBuch9
 *UgbBAltesBuch11
 		name:Brennen muß Salem
-		icon:icons[2,4] icons[3,10]
+		icon:iconsb[19,10]
 		cost:923000000000000000000000000 BauMaterial,200 Dreck
 		req:923000000000000000000000000 BauMaterial:earned and UgbBAltesBuch10
 *UgbBAltesBuch12
 		name:Shining
-		icon:icons[2,4] icons[3,11]
+		icon:iconsb[19,11]
 		cost:92300000000000000000000000000 BauMaterial,225 Dreck
 		req:92300000000000000000000000000 BauMaterial:earned and UgbBAltesBuch11
 
 *UgbBAltesBuchF1
-		name:The STand
-		icon:icons[5,5] icons[2,4] icons[3,0]
+		name:The Stand
+		icon:icons[5,5] iconsb[18,0]
 		cost:10 AltesBuch
 		req:9230000 BauMaterial:earned
 *UgbBAltesBuchF2
 		name:Das Letzte Gefecht
-		icon:icons[5,5] icons[2,4] icons[3,1]
+		icon:icons[5,5] iconsb[18,1]
 		cost:50 AltesBuch
 		req:923000000 BauMaterial:earned and UgbBAltesBuchF1
 *UgbBAltesBuchF3
 		name:Nachtschicht
-		icon:icons[5,5] icons[2,4] icons[3,2]
+		icon:icons[5,5] iconsb[18,2]
 		cost:100 AltesBuch
 		req:92300000000 BauMaterial:earned and UgbBAltesBuchF2
 *UgbBAltesBuchF4
 		name:Deadzone
-		icon:icons[5,5] icons[2,4] icons[3,3]
+		icon:icons[5,5] iconsb[18,3]
 		cost:125 AltesBuch
 		req:9230000000000 BauMaterial:earned and UgbBAltesBuchF3
 *UgbBAltesBuchF5
 		name:Feuerkind
-		icon:icons[5,5] icons[2,4] icons[3,4]
+		icon:icons[5,5] iconsb[18,4]
 		cost:150 AltesBuch
 		req:923000000000000 BauMaterial:earned and UgbBAltesBuchF4
 *UgbBAltesBuchF6
 		name:Cujo
-		icon:icons[5,5] icons[2,4] icons[3,5]
+		icon:icons[5,5] iconsb[18,5]
 		cost:175 AltesBuch
 		req:92300000000000000 BauMaterial:earned and UgbBAltesBuchF5
 *UgbBAltesBuchF7
 		name:Frühling
-		icon:icons[5,5] icons[2,4] icons[3,6]
+		icon:icons[5,5] iconsb[18,6]
 		cost:200 AltesBuch
 		req:9230000000000000000 BauMaterial:earned and UgbBAltesBuchF6
 *UgbBAltesBuchF8
 		name:Sommer
-		icon:icons[5,5] icons[2,4] icons[3,7]
+		icon:icons[5,5] iconsb[18,7]
 		cost:225 AltesBuch
 		req:923000000000000000000 BauMaterial:earned and UgbBAltesBuchF7
 *UgbBAltesBuchF9
 		name:Herbst und Tod
-		icon:icons[5,5] icons[2,4] icons[3,8]
+		icon:icons[5,5] iconsb[18,8]
 		cost:250 AltesBuch
 		req:92300000000000000000000 BauMaterial:earned and UgbBAltesBuchF8
 *UgbBAltesBuchF10
 		name:Christine
-		icon:icons[5,5] icons[2,4] icons[3,9]
+		icon:icons[5,5] iconsb[18,9]
 		cost:275 AltesBuch
 		req:9230000000000000000000000 BauMaterial:earned and UgbBAltesBuchF9
 *UgbBAltesBuchF11
 		name:Friedhof der Kuscheltiere
-		icon:icons[5,5] icons[2,4] icons[3,10]
+		icon:icons[5,5] iconsb[18,10]
 		cost:300 AltesBuch
 		req:923000000000000000000000000 BauMaterial:earned and UgbBAltesBuchF10
 *UgbBAltesBuchF12
 		name:Der Talisman
-		icon:icons[5,5] icons[2,4] icons[3,11]
+		icon:icons[5,5] iconsb[18,11]
 		cost:325 AltesBuch
 		req:92300000000000000000000000000 BauMaterial:earned and UgbBAltesBuchF11
-*TEMPLATE		
+*TEMPLATE
 		
 *TEMPLATE
 no buy
@@ -7868,23 +7867,7 @@ class:noBackground
 		icon:icons[6,6]
 		req:1110000 Erfahrung and UgRBErfahrung10
 		
-		
-		
-		
-		
-	
-		
-
-
-
-
-
-
 //Sammler Upgrades a----------------------------------------------------
-
-
-
-	
 //1a 	
 	
 *UgBIPSammlerA1a
@@ -7892,108 +7875,78 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA1
-		class:noBackground
 *UgBIPSammlerA2a
 		name:SammlerAmeisenPanzer II
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA2
-		class:noBackground
 *UgBIPSammlerA3a
 		name:SammlerAmeisenPanzer III
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA3
-		class:noBackground
 *UgBIPSammlerA4a
 		name:SammlerAmeisenPanzer IV
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA4
-		class:noBackground
 *UgBIPSammlerA5a
 		name:SammlerAmeisenPanzer V
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA5
-		class:noBackground
 *UgBIPSammlerA6a
 		name:SammlerAmeisenPanzer VI
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA6
-		class:noBackground
 *UgBIPSammlerA7a
 		name:SammlerAmeisenPanzer VII
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA7
-		class:noBackground
 *UgBIPSammlerA8a
 		name:SammlerAmeisenPanzer VIII
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA8
-		class:noBackground
 *UgBIPSammlerA9a
 		name:SammlerAmeisenPanzer IX
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA9
-		class:noBackground
 *UgBIPSammlerA10a
 		name:SammlerAmeisenPanzer X
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA10
-		class:noBackground
 *UgBIPSammlerA11a
 		name:SammlerAmeisenPanzer XI
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA11
-		class:noBackground
 *UgBIPSammlerA12a
 		name:SammlerAmeisenPanzer XII
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA12
-		class:noBackground
 *UgBIPSammlerA13a
 		name:SammlerAmeisenPanzer XIII
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA13
-		class:noBackground
 *UgBIPSammlerA14a
 		name:SammlerAmeisenPanzer XIV
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA14
-		class:noBackground
 *UgBIPSammlerA15a
 		name:SammlerAmeisenPanzer XV
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA15
-		class:noBackground		
-
-
-
-
-
-
 
 //Larven Upgrades a ----------------------------
-
-
-
-
-
-
-		
-		
-		
 
 *UgRLMandala1a
 		name:Ein buntes Mandala
@@ -8100,10 +8053,6 @@ class:noBackground
 		desc:<.> Erhöht die Produktion von Larven um <b>1</b> %.
 		icon:iconsa[8,20]
 		req:2500000000000000 Larven:earned and UgRLMandala21
-					
-
-		
-		
 
 *UgRLNudelK1a
 		name:Bandnudel
@@ -12530,7 +12479,111 @@ class:noBackground
 		desc:<.> Erhöht die Produktion von Dreck um <b>75</b> %.
 		icon:icons[2,4] icons[3,11]
 		req:92300000000000000000000000000 BauMaterial:earned and UgbBDreckF12
-		
+
+//6 AltesBuch|AlteBuecher a
+*TEMPLATE
+		no buy
+		tag:owned
+		class:noBackground
+		desc:<.> Erhöht die Produktion der AltenBücher um <b>75</b> %.
+*UgbBAltesBuch1a
+		name:Buchtest
+		icon:iconsb[19,0]
+		req:UgbBAltesBuch1
+*UgbBAltesBuch2a
+		name:Der Dunkle Turm
+		icon:iconsb[19,1]
+		req:923000000 BauMaterial:earned and UgbBAltesBuch2
+*UgbBAltesBuch3a
+		name:Schwarz
+		icon:iconsb[19,2]
+		req:92300000000 BauMaterial:earned and UgbBAltesBuch3
+*UgbBAltesBuch4a
+		name:Drei
+		icon:iconsb[19,3]
+		req:9230000000000 BauMaterial:earned and UgbBAltesBuch4
+*UgbBAltesBuch5a
+		name:Tod
+		icon:iconsb[19,4]
+		req:923000000000000 BauMaterial:earned and UgbBAltesBuch5
+*UgbBAltesBuch6a
+		name:Glas
+		icon:iconsb[19,5]
+		req:92300000000000000 BauMaterial:earned and UgbBAltesBuch6
+*UgbBAltesBuch7a
+		name:Wind
+		icon:iconsb[19,6]
+		req:9230000000000000000 BauMaterial:earned and UgbBAltesBuch7
+*UgbBAltesBuch8a
+		name:Wolfsmond
+		icon:iconsb[19,7]
+		req:923000000000000000000 BauMaterial:earned and UgbBAltesBuch8
+*UgbBAltesBuch9a
+		name:Susana
+		icon:iconsb[19,8]
+		req:92300000000000000000000 BauMaterial:earned and UgbBAltesBuch9
+*UgbBAltesBuch10a
+		name:Carrie
+		icon:iconsb[19,9]
+		req:9230000000000000000000000 BauMaterial:earned and UgbBAltesBuch10
+*UgbBAltesBuch11a
+		name:Brennen muß Salem
+		icon:iconsb[19,10]
+		req:923000000000000000000000000 BauMaterial:earned and UgbBAltesBuch11
+*UgbBAltesBuch12a
+		name:Shining
+		icon:iconsb[19,11]
+		req:92300000000000000000000000000 BauMaterial:earned and UgbBAltesBuch12
+
+*UgbBAltesBuchF1a
+		name:The Stand
+		icon:icons[5,5] iconsb[18,0]
+		req:UgbBAltesBuchF1
+*UgbBAltesBuchF2a
+		name:Das Letzte Gefecht
+		icon:icons[5,5] iconsb[18,1]
+		req:923000000 BauMaterial:earned and UgbBAltesBuchF2
+*UgbBAltesBuchF3a
+		name:Nachtschicht
+		icon:icons[5,5] iconsb[18,2]
+		req:92300000000 BauMaterial:earned and UgbBAltesBuchF3
+*UgbBAltesBuchF4a
+		name:Deadzone
+		icon:icons[5,5] iconsb[18,3]
+		req:9230000000000 BauMaterial:earned and UgbBAltesBuchF4
+*UgbBAltesBuchF5a
+		name:Feuerkind
+		icon:icons[5,5] iconsb[18,4]
+		req:923000000000000 BauMaterial:earned and UgbBAltesBuchF5
+*UgbBAltesBuchF6a
+		name:Cujo
+		icon:icons[5,5] iconsb[18,5]
+		req:92300000000000000 BauMaterial:earned and UgbBAltesBuchF6
+*UgbBAltesBuchF7a
+		name:Frühling
+		icon:icons[5,5] iconsb[18,6]
+		req:9230000000000000000 BauMaterial:earned and UgbBAltesBuchF7
+*UgbBAltesBuchF8a
+		name:Sommer
+		icon:icons[5,5] iconsb[18,7]
+		req:923000000000000000000 BauMaterial:earned and UgbBAltesBuchF8
+*UgbBAltesBuchF9a
+		name:Herbst und Tod
+		icon:icons[5,5] iconsb[18,8]
+		req:92300000000000000000000 BauMaterial:earned and UgbBAltesBuchF9
+*UgbBAltesBuchF10a
+		name:Christine
+		icon:icons[5,5] iconsb[18,9]
+		req:9230000000000000000000000 BauMaterial:earned and UgbBAltesBuchF10
+*UgbBAltesBuchF11a
+		name:Friedhof der Kuscheltiere
+		icon:icons[5,5] iconsb[18,10]
+		req:923000000000000000000000000 BauMaterial:earned and UgbBAltesBuchF11
+*UgbBAltesBuchF12a
+		name:Der Talisman
+		icon:icons[5,5] iconsb[18,11]
+		req:92300000000000000000000000000 BauMaterial:earned and UgbBAltesBuchF12
+*TEMPLATE		
 // Erfolge --Achievements-------------------------------------------------------------------------------			
 		
 Achievements
@@ -12539,8 +12592,7 @@ Achievements
 		class:noBackground
 		on earn:yield 1 Erfolg
 
-// Upgrades haben Achievments
-
+// Upgrades haben Achievments------------------------------------------------------------------------------
 *UHaben1
 		name:19!
 		desc:Habe 19 Upgrades
@@ -12647,8 +12699,7 @@ Achievements
 		req:1000 upgradesII:earned
 		icon:iconsb[17,20]
 		
-//klick Achievements
-
+//klick Achievements ---------------------------------------------------------------------------------
 *KIAchiev1
 		name:Click it!
 		desc:Klick das Insekt ein mal!
@@ -13016,12 +13067,9 @@ Achievements
 		req:1000000000000000000000000000000000000 BauMaterial:earned
 		icon:icons[5,0] icons[5,3]
 		
-
-//  BH- Buildings haben   Achievements---------
+//  BH- Buildings haben   Achievements-----------------------------------------------------
 // Nahrungs buildings
-
 //1
-
 *BHSammler1
 		name:Sammelsurium
 		desc:Habe eine SammlerAmeise
@@ -13129,9 +13177,7 @@ Achievements
 		icon:icons[9,20]
 
 // Larven Buildings Achievements--------------------------
-  
 //1  
-
 *BHRaupe1
 		name:Gelbe Raupe
 		desc:Habe eine Raupe
@@ -13239,7 +13285,6 @@ Achievements
 		icon:icons[18,20]
 
 //2		
-
 *BHBienenstock1
 		name:Honig
 		desc:Habe einen Bienenstock
@@ -13347,7 +13392,6 @@ Achievements
 		icon:icons[19,20]
 		
 //3		
-
 *BHTermitenbau1
 		name:Termitenhügel
 		desc:Habe einen Termitenbau
@@ -13453,8 +13497,8 @@ Achievements
 		desc:Habe 950 Termitenbauten
 		req:950 Termitenbau
 		icon:icons[20,20]
+		
 //4		
-
 *BHBlatt1
 		name:Kleines Blatt
 		desc:Habe eine Blatt
@@ -13562,7 +13606,6 @@ Achievements
 		icon:iconsa[0,20]
 		
 //5
-
 *BHWNest1
 		name:Wespig
 		desc:Habe ein WespenNest
@@ -13670,7 +13713,6 @@ Achievements
 		icon:iconsb[5,20]
 		
 //6
-
 *BHVApfel1
 		name:Grumbelchen
 		desc:Habe einen VerfaultenApfel
@@ -13778,7 +13820,6 @@ Achievements
 		icon:iconsb[6,20]
 		
 //7
-
 *BHANest1
 		name:Erste Sichtung
 		desc:Habe ein AltesNest
@@ -13886,7 +13927,6 @@ Achievements
 		icon:iconsb[7,20]
 
 //8
-
 *BHSchuh1
 		name:Lackschuh
 		desc:Habe einen ÜberwuchertenSchuh
@@ -13993,10 +14033,8 @@ Achievements
 		req:950 UeberwucherterSchuh
 		icon:iconsb[8,20]
 				
-
 // Insekten achievments -----------------------------------		
 //1
-
 *BHAmeise1
 		name:Magd
 		desc:Habe eine Ameise
@@ -14103,10 +14141,7 @@ Achievements
 		req:950 Ameise
 		icon:iconsa[11,20]
 	
-
-
 //2
-
 *BHTermite1
 		name:Nasen Termite
 		desc:Habe eine Termite
@@ -14213,7 +14248,6 @@ Achievements
 		req:950 Termite
 		icon:iconsa[12,20]
 //3
-
 *BHFliege1
 		name:Bssssssssss
 		desc:Habe eine Fliege
@@ -14321,7 +14355,6 @@ Achievements
 		icon:iconsa[13,20]	
 
 //4
-
 *BHKaefer1
 		name:Käfermobil
 		desc:Habe einen Käfer
@@ -14429,7 +14462,6 @@ Achievements
 		icon:iconsa[14,20]
 
 //5
-
 *BHBiene1
 		name:Biene!
 		desc:Habe eine Biene
@@ -14536,10 +14568,7 @@ Achievements
 		req:950 Biene
 		icon:iconsb[10,20]
 				
-		
-
 //6
-
 *BHRoteAmeise1
 		name:Feuerrot!
 		desc:Habe eine RoteAmeise
@@ -14647,7 +14676,6 @@ Achievements
 		icon:iconsb[11,20]
 		
 //7
-
 *BHGrKaefer1
 		name:Buntkäfer
 		desc:Habe einen GroßenKäfer
@@ -14755,7 +14783,6 @@ Achievements
 		icon:iconsb[12,20]
 		
 //8
-
 *BHSchmetterling1
 		name:Zipfelfalter
 		desc:Habe einen Schmetterling
@@ -14863,7 +14890,6 @@ Achievements
 		icon:iconsb[13,20]
 
 //9
-
 *BHSchabe1
 		name:Kleine Schaben
 		desc:Habe eine Schabe
@@ -14970,7 +14996,6 @@ Achievements
 		req:950 Schabe
 		icon:iconsb[14,20]
 //10
-
 *BHSkorpion1
 		name:Rotbrauner Kaiserskorpion 
 		desc:Habe einen Skorpion
@@ -15078,7 +15103,6 @@ Achievements
 		icon:iconsb[15,20]
 
 //11
-
 *BMoskito1
 		name:Ein Stecher!
 		desc:Habe einen Moskito
@@ -15185,12 +15209,8 @@ Achievements
 		req:950 Moskito
 		icon:iconsb[16,20]
 				
-		
 // Baumateial Achievements -------------------------
-
-
 //1
-
 *BHGras1
 		name:Ein Gras
 		desc:Habe eine Gras
@@ -15298,7 +15318,6 @@ Achievements
 		icon:iconsa[15,20]
 		
 //2
-
 *BHAst1
 		name:Astreich
 		desc:Habe einen Ast
@@ -15406,7 +15425,6 @@ Achievements
 		icon:iconsa[16,20]
 
 //3
-
 *BHWurzel1
 		name:Tiefwurzler
 		desc:Habe eine Wurzel
@@ -15514,7 +15532,6 @@ Achievements
 		icon:iconsa[17,20]
 
 //4
-
 *BHStein1
 		name:Stone
 		desc:Habe einen Stein
@@ -15622,7 +15639,6 @@ Achievements
 		icon:iconsa[18,20]
 		
 //5
-
 *BHDreck1
 		name:Dreckonia
 		desc:Habe Dreck
@@ -15728,3 +15744,110 @@ Achievements
 		desc:Habe 950 Dreck
 		req:950 Dreck
 		icon:iconsa[19,20]
+		
+//6 Achievments AltesBuch
+*BHAltesBuch1
+		name:Im Morgengrauen
+		desc:Habe ein AltesBuch
+		req:1 AltesBuch
+		icon:iconsb[20,0]
+*BHAltesBuch2
+		name:Der Gesang des Todes
+		desc:Habe 19 AlteBücher
+		req:19 AltesBuch
+		icon:iconsb[20,1]
+*BHAltesBuch3
+		name:Es
+		desc:Habe 50 AlteBücher
+		req:50 AltesBuch
+		icon:iconsb[20,2]
+*BHAltesBuch4
+		name:Die Augen des Drachen
+		desc:Habe 100 AlteBücher
+		req:100 AltesBuch
+		icon:iconsb[20,3]
+*BHAltesBuch5
+		name:Sie
+		desc:Habe 150 AlteBücher
+		req:150 AltesBuch
+		icon:iconsb[20,4]
+*BHAltesBuch6
+		name:Das Monstrum
+		desc:Habe 200 AlteBücher
+		req:200 AltesBuch
+		icon:iconsb[20,5]
+*BHAltesBuch7
+		name:Stark
+		desc:Habe 250 AlteBücher
+		req:250 AltesBuch
+		icon:iconsb[20,6]
+*BHAltesBuch8
+		name:Langoliers
+		desc:Habe 300 AlteBücher
+		req:300 AltesBuch
+		icon:iconsb[20,7]
+*BHAltesBuch9
+		name:Nachts
+		desc:Habe 350 AlteBücher
+		req:350 AltesBuch
+		icon:iconsb[20,8]
+*BHAltesBuch10
+		name:In einer kleinen Stadt
+		desc:Habe 400 AlteBücher
+		req:400 AltesBuch
+		icon:iconsb[20,9]
+*BHAltesBuch11
+		name:Das Spiel
+		desc:Habe 450 AlteBücher
+		req:450 AltesBuch
+		icon:iconsb[20,10]
+*BHAltesBuch12
+		name:Dolores
+		desc:Habe 500 AlteBücher
+		req:500 AltesBuch
+		icon:iconsb[20,11]
+*BHAltesBuch13
+		name:Schlaflos
+		desc:Habe 550 AlteBücher
+		req:550 AltesBuch
+		icon:iconsb[20,12]
+*BHAltesBuch14
+		name:Das Bild
+		desc:Habe 600 AlteBücher
+		req:600 AltesBuch
+		icon:iconsb[20,13]
+*BHAltesBuch15
+		name:Desperation
+		desc:Habe 650 AlteBücher
+		req:650 AltesBuch
+		icon:iconsb[20,14]
+*BHAltesBuch16
+		name:The Green Mile
+		desc:Habe 700 AlteBücher
+		req:700 AltesBuch
+		icon:iconsb[20,15]
+*BHAltesBuch17
+		name:Sara
+		desc:Habe 750 AlteBücher
+		req:750 AltesBuch
+		icon:iconsb[20,16]
+*BHAltesBuch18
+		name:Das Mädchen
+		desc:Habe 800 AlteBücher
+		req:800 AltesBuch
+		icon:iconsb[20,17]
+*BHAltesBuch19
+		name:Atlantis
+		desc:Habe 850 AlteBücher
+		req:850 AltesBuch
+		icon:iconsb[20,18]
+*BHAltesBuch20
+		name:Duddits
+		desc:Habe 900 AlteBücher
+		req:900 AltesBuch
+		icon:iconsb[20,19]
+*BHAltesBuch21
+		name:Friedhof des Grauens
+		desc:Habe 950 AlteBücher
+		req:950 AltesBuch
+		icon:iconsb[20,20]		
