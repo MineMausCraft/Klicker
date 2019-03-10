@@ -810,10 +810,10 @@ Resources
 		icon:icons[6,2]
 		class:noBackground
 		show earned	
-		on earn:lose Larven and Raupe
-		on earn:lose Insekten
-		on earn:lose BauMaterial
-		on earn:lose Nahrung
+		on earn:lose Larven,lose Raupe
+		on earn:lose Insekten Blatt
+		on earn:lose BauMaterial,Bienenstock
+		on earn:lose Nahrung lose Gras
 		on earn:lose Erfahrung
 		
 		
