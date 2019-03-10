@@ -712,14 +712,14 @@ Buttons
       show clicks 
       class:OPButton 
 	  req:10000 Insekten
-	  on click:if (Insekten>10000)yield ((Insekten:earned)/1000000) Evos
+	  on click:if (Insekten>10000) yield ((Insekten:earned)/1000000) Evos
 	  cost:10000 Insekten
-	  on click:if (Insekten>10000)lose Insekten
-	  on click:if (Insekten>10000)lose Larven
-	  on click:if (Insekten>10000)lose BauMaterial
-	  on click:if (Insekten>10000)lose Erfahrung
-	  on click:if (Insekten>10000)lose Nahrung
-	  on click:if (Insekten>10000)lose Raupen
+	  on click:if (Insekten>10000) lose Insekten
+	  on click:if (Insekten>10000) lose SammlerAmeise
+	  on click:if (Insekten>10000) lose BauMaterial
+	  on click:if (Insekten>10000) lose Erfahrung
+	  on click:if (Insekten>10000) lose Nahrung
+	  on click:if (Insekten>10000) lose Raupen
 	  
 
 *statusbar
