@@ -713,6 +713,14 @@ Buttons
       class:OPButton 
 	  req:1000000 Insekten:earned
 	  on click:yield ((Insekten:earned)/1000000) Evos
+	  cost:1000000 Insekten
+	  on click:lose Insekten
+	  on click:lose Larven
+	  on click:lose BauMaterial
+	  on click:lose Erfahrung
+	  on click:lose Nahrung
+	  on click:lose Raupen
+	  
 
 *statusbar
 	  tag:booster
