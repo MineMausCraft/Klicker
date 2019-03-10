@@ -722,7 +722,7 @@ Buttons
       no text
       show clicks     
       cost:100 Larven
-      no text
+      no text 
       class:statusbar
 	
 *TeichButton
