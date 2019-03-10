@@ -391,7 +391,7 @@ Buttons
         desc:Nur Buff1
         icon:iconskl[1,15]
         class:SuperButton37
-        text:Tada38
+        text:Tada37
         no tooltip
       on click:anim icon wobble
       on click:yield 1 BauMaterial
