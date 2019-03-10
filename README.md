@@ -719,7 +719,7 @@ Buttons
 	  on click:if (Insekten>10000) lose BauMaterial
 	  on click:if (Insekten>10000) lose Erfahrung
 	  on click:if (Insekten>10000) lose Nahrung
-	  on click:if (Insekten>10000) lose Raupen
+	  on click:if (Insekten>10000) lose Raupen SammlerAmeise
 	  
 
 *statusbar
