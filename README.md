@@ -716,6 +716,9 @@ Buttons
 	  req:1000000000 Insekten
 	  cost:1000000000 Insekten
 	  on click:if (Insekten>1000000000) yield (pow(Insekten:earned/1000000000,0.3)-Evo:earned) Evo
+	  passive:multiply yield of Larven by ((Evo*1/100)+1)
+	  passive:multiply yield of Insekten by ((Evo*1/100)+1)
+  	  passive:multiply yield of BauMaterial by ((Evo*1/100)+1)
 *statusbar
 	  tag:booster
  	  name:sooooooLang
@@ -807,11 +810,13 @@ Resources
 		icon:icons[6,2]
 		class:noBackground
 		show earned	
-		on earn:lose Raupe
+		on earn:lose Larven and Raupe
 		on earn:lose Insekten
 		on earn:lose BauMaterial
 		on earn:lose Nahrung
 		on earn:lose Erfahrung
+		
+		
 		
 		
 		
