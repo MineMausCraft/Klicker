@@ -714,7 +714,7 @@ Buttons
       class:OPButton
 	  req:100000 Insekten
 	  cost:100000 Insekten
-	  on click:if (Insekten>10000) yield ((Insekten:earned)/10e6) Evos
+	  on click:if (Insekten>100000) yield ((((Insekten:earned)/10e6)e0.3)-Evo:earned) Evo
 	  
 *statusbar
 	  tag:booster
@@ -806,6 +806,7 @@ Resources
 		name:Evolutions Punkte
 		icon:icons[6,2]
 		class:noBackground
+		show earned	
 		on earn:lose Raupe
 		on earn:lose Insekten
 		on earn:lose BauMaterial
