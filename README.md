@@ -593,6 +593,7 @@ Buttons
       icon:https://i.imgur.com/nPpMXuV.png
       no text
 	  class:TreeButton
+	  on click:lose Evo
 
 *BrutkammerButton    
       name:Brutkammer
@@ -714,8 +715,7 @@ Buttons
 	  req:100000 Insekten
 	  on click:if (Insekten>100000) yield ((Insekten:earned)/1000000) Evos
 	  cost:100000 Insekten
-	  on click:lose Evo
-
+	  
 *statusbar
 	  tag:booster
  	  name:sooooooLang
