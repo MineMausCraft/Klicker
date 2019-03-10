@@ -713,9 +713,10 @@ Buttons
       class:OPButton
 	  req:1000 Insekten
 //	  on click:if (Insekten>100000) yield ((Insekten:earned)/1000000) Evos
-	  on click:if (Insekten>100e2) yield ((Insekten:earned)/1000000) Evos
+//	  on click:if (Insekten>10e12*(((Evo:earned)+1)e3-(Evo:earned)e3) yield ((Insekten:earned)/1000000) Evos
+	  on click:if (Insekten>10e12) yield (((Insekten:earned)/10e12)*1.7) Evo
 	  
-	  cost:1000 Insekten
+	  cost:(10e12*(((Evo:earned)+1)e3-(Evo:earned)e3)) Insekten
 	  
 *statusbar
 	  tag:booster
@@ -15867,4 +15868,3 @@ Achievements
 		desc:Habe 950 AlteBücher
 		req:950 AltesBuch
 		icon:iconsb[20,20]		
- 
