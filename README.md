@@ -712,9 +712,9 @@ Buttons
       no text
       show clicks 
       class:OPButton
-	  req:100000 Insekten
-	  cost:100000 Insekten
-	  on click:if (Insekten>100000) yield ((pow((Insekten:earned)/100), 0.3)-Evo:earned) Evo
+	  req:1000 Insekten
+	  cost:1000 Insekten
+	  on click:if (Insekten>1000) yield ((pow((Insekten:earned)/10), 0.3)-Evo:earned) Evo
 	  
 *statusbar
 	  tag:booster
@@ -8208,87 +8208,67 @@ class:noBackground
         desc:<.> Beim Klicken der Larve bekommst du <b>1</b> Larve mehr!
         icon:iconsa[10,5]
         req:1000000 Larve:earned and UgRLMinecraftk6
-
-				
-		
-		
-					
-			
-
 		
 *UgBLRaupe1a
 		name:Raupen Tango
 		desc:<.> Erhöht die Produktion der Raupen um <b>10</b> %.
 		icon:icons[1,0] icons[3,0]
 		req:UgBLRaupe1
-
 *UgBLRaupe2a
 		name:Raupenmarsch
 		desc:<.> Erhöht die Produktion der Raupen um <b>10</b> %.
 		icon:icons[1,0] icons[3,1]
 		req:10000 Larven:earned and UgBLRaupe2
-				
 *UgBLRaupe3a
 		name:Raupenparty
 		desc:<.> Erhöht die Produktion der Raupen um <b>10</b> %.
 		icon:icons[1,0] icons[3,2]
 		req:1000000 Larven:earned and UgBLRaupe3
-
 *UgBLRaupe4a
 		name:Raupenmusik
 		desc:<.> Erhöht die Produktion der Raupen um <b>10</b> %.
 		icon:icons[1,0] icons[3,3]
 		req:100000000 Larven:earned and UgBLRaupe4
-		
 *UgBLRaupe5a
 		name:Raupastik
 		desc:<.> Erhöht die Produktion der Raupen um <b>10</b> %.
 		icon:icons[1,0] icons[3,4]
 		req:10000000000 Larven:earned and UgBLRaupe5
-		
 *UgBLRaupe6a
 		name:Raupenpuppe
 		desc:<.> Erhöht die Produktion der Raupen um <b>10</b> %.
 		icon:icons[1,0] icons[3,5]
 		req:1000000000000 Larven:earned and UgBLRaupe6
-		
 *UgBLRaupe7a
 		name:Raupenmania
 		desc:<.> Erhöht die Produktion der Raupen um <b>10</b> %.
 		icon:icons[1,0] icons[3,6]
 		req:100000000000000 Larven:earned and UgBLRaupe7
-		
 *UgBLRaupe8a
 		name:Raupengesang
 		desc:<.> Erhöht die Produktion der Raupen um <b>10</b> %.
 		icon:icons[1,0] icons[3,7]
 		req:10000000000000000 Larven:earned and UgBLRaupe8
-		
 *UgBLRaupe9a
 		name:Raupenlolli
 		desc:<.> Erhöht die Produktion der Raupen um <b>10</b> %.
 		icon:icons[1,0] icons[3,8]
 		req:1000000000000000000 Larven:earned and UgBLRaupe9
-		
 *UgBLRaupe10a
 		name:Raupensymphonie
 		desc:<.> Erhöht die Produktion der Raupen um <b>10</b> %.
 		icon:icons[1,0] icons[3,9]
 		req:100000000000000000000 Larven:earned and UgBLRaupe10
-		
 *UgBLRaupe11a
 		name:Raupenklatschen
 		desc:<.> Erhöht die Produktion der Raupen um <b>10</b> %.
 		icon:icons[1,0] icons[3,10]
 		req:10000000000000000000000 Larven:earned and UgBLRaupe11
-		
 *UgBLRaupe12a
 		name:Raupenwetter
 		desc:<.> Erhöht die Produktion der Raupen um <b>10</b> %.
 		icon:icons[1,0] icons[3,11]
 		req:1000000000000000000000000 Larven:earned and UgBLRaupe12
-		
-				
 	
 *UgBLRaupeF1a
 		name:Raupenpanzer
@@ -8365,8 +8345,6 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[5,5] icons[1,0] icons[8,12]
 		req:350 Raupen and UgBLRaupeF15	
-						
-
 		
 *UgBLBienenstock1a
 		name:Bienenwabe
@@ -8430,7 +8408,6 @@ class:noBackground
 		req:9000000000000000000000000 Larven:earned and UgBLBienenstock12
 
 //2a
-	
 *UgBLBienenstF1a
 		name:Stroh Verkleidung
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
@@ -8506,9 +8483,7 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
 		icon:icons[5,5] icons[1,1] icons[8,12]
 		req:350 Bienenstock and UgBLBienenstF15
-		
-
-
+//3a
 *UgBLTermitenbau1a
 		name:Termitenpolka
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>10</b> %.
@@ -8569,9 +8544,7 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>10</b> %.
 		icon:icons[1,2] icons[3,11]
 		req:8100000000000000000000000000 Larven:earned and UgBLTermitenbau12
-
 //3
-	
 *UgBLTermitenbF1a
 		name:Stroh Verkleidung
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>75</b> %.
@@ -8647,8 +8620,7 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der Termitenbauten um <b>75</b> %.
 		icon:icons[11,14]
 		req:350 Termitenbau and UgBLTermitenbF15
-				
-
+//4a
 *UgBLBlatt1a
 		name:Ahornblatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>10</b> %.
@@ -8709,9 +8681,7 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der Blätter um <b>10</b> %.
 		icon:icons[1,3] icons[3,11]
 		req:2600000000000000000000000000 Larven:earned and UgBLBlatt12
-		
 //4a
-	
 *UgBLBlattF1a
 		name:Ahorn Blatt
 		desc:<.> Erhöht die Produktion der Blätter um <b>75</b> %.
@@ -8802,9 +8772,7 @@ class:noBackground
 		icon:icons[12,14]
 		req:350 Blatt and UgBLBlattF15
 		class:noBackground
-		
 //5a
-
 *UgBLWNest1a
 		name:Bssst!
 		desc:<.> Erhöht die Produktion der WespenNester um <b>10</b> %.
@@ -8865,104 +8833,83 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der WespenNester um <b>10</b> %.
 		icon:icons[1,4] icons[3,11]
 		req:14560000000000000000000000000 Larven:earned and UgBLWNest12
-
 //5a
-	
 *UgBLWespenNestF1a
 		name:Kleine Verstärkung
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,0]
 		req:UgBLWespenNestF1
-		class:noBackground
 *UgBLWespenNestF2a
 		name:Holz Vertäfelung
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,1] 
 		req:25 WespenNest and UgBLWespenNestF2
-		class:noBackground
 *UgBLWespenNestF3a
 		name:Strauch Schutz
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,2]
 		req:50 WespenNest and UgBLWespenNestF3
-		class:noBackground
 *UgBLWespenNestF4a
 		name:Äste Rahmen
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,3]
 		req:75 WespenNest and UgBLWespenNestF4
-		class:noBackground
 *UgBLWespenNestF5a
 		name:Dornen
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,4]
 		req:100 WespenNest and UgBLWespenNestF5
-		class:noBackground
 *UgBLWespenNestF6a
 		name:Dickere Wände
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,5]
 		req:125 WespenNest and UgBLWespenNestF6
-		class:noBackground
 *UgBLWespenNestF7a
 		name:Brutplätze
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,6]
 		req:150 WespenNest and UgBLWespenNestF7
-		class:noBackground
 *UgBLWespenNestF8a
 		name:Zweiter Eingang
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,7]
 		req:175 WespenNest and UgBLWespenNestF8
-		class:noBackground
 *UgBLWespenNestF9a
 		name:Harte Schale
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,8]
 		req:200 WespenNest and UgBLWespenNestF9
-		class:noBackground
 *UgBLWespenNestF10a
 		name:Windschutz
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,9]
 		req:225 WespenNest and UgBLWespenNestF10
-		class:noBackground
 *UgBLWespenNestF11a
 		name:Ein paar Zweige mehr
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,10]
 		req:250 WespenNest and UgBLWespenNestF11
-		class:noBackground
 *UgBLWespenNestF12a
 		name:Nestbauerinnen
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,11]
 		req:275 WespenNest and UgBLWespenNestF12
-		class:noBackground
 *UgBLWespenNestF13a
 		name:Wespen Königin
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,12]
 		req:300 WespenNest and UgBLWespenNestF13
-		class:noBackground
 *UgBLWespenNestF14a
 		name:Wespen Prinzessin
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,13]
 		req:325 WespenNest and UgBLWespenNestF14
-		class:noBackground
 *UgBLWespenNestF15a
 		name:Wespen Staat
 		desc:<.> Erhöht die Produktion der WespenNester um <b>75</b> %.
 		icon:icons[13,14]
 		req:350 WespenNest and UgBLWespenNestF15
-		class:noBackground
-				
-
 //6a
-
-
 *UgBLVApfel1a
 		name:Verfaulter Elstar
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>10</b> %.
@@ -9023,107 +8970,83 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>10</b> %.
 		icon:icons[1,5] icons[3,11]
 		req:1658000000000000000000000000000 Larven:earned and UgBLVApfel12
-		
-
-
 //6a
-	
 *UgBLVApfelF1a
 		name:Brauner Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,0]
 		req:UgBLVApfelF1
-		class:noBackground
 *UgBLVApfelF2a
 		name:Schrumpeliger Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,1] 
 		req:25 VerfaulterApfel and UgBLVApfelF2
-		class:noBackground
 *UgBLVApfelF3a
 		name:Angeschlagener Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,2]
 		req:50 VerfaulterApfel and UgBLVApfelF3
-		class:noBackground
 *UgBLVApfelF4a
 		name:Matschiger Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,3]
 		req:75 VerfaulterApfel and UgBLVApfelF4
-		class:noBackground
 *UgBLVApfelF5a
 		name:Angefressener Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,4]
 		req:100 VerfaulterApfel and UgBLVApfelF5
-		class:noBackground
 *UgBLVApfelF6a
 		name:Fauliger Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,5]
 		req:125 VerfaulterApfel and UgBLVApfelF6
-		class:noBackground
 *UgBLVApfelF7a
 		name:Stinkender Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,6]
 		req:150 VerfaulterApfel and UgBLVApfelF7
-		class:noBackground
 *UgBLVApfelF8a
 		name:Weicher Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,7]
 		req:175 VerfaulterApfel and UgBLVApfelF8
-		class:noBackground
 *UgBLVApfelF9a
 		name:Fester Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,8]
 		req:200 VerfaulterApfel and UgBLVApfelF9
-		class:noBackground
 *UgBLVApfelF10a
 		name:Großer Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,9]
 		req:225 VerfaulterApfel and UgBLVApfelF10
-		class:noBackground
 *UgBLVApfelF11a
 		name:Ein Stück Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,10]
 		req:250 VerfaulterApfel and UgBLVApfelF11
-		class:noBackground
 *UgBLVApfelF12a
 		name:Mehliger Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,11]
 		req:275 VerfaulterApfel and UgBLVApfelF12
-		class:noBackground
 *UgBLVApfelF13a
 		name:Alter Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,12]
 		req:300 VerfaulterApfel and UgBLVApfelF13
-		class:noBackground
 *UgBLVApfelF14a
 		name:Grüner Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,13]
 		req:325 VerfaulterApfel and UgBLVApfelF14
-		class:noBackground
 *UgBLVApfelF15a
 		name:Runder Apfel
 		desc:<.> Erhöht die Produktion der VerfaultenÄpfel um <b>75</b> %.
 		icon:icons[14,14]
 		req:350 VerfaulterApfel and UgBLVApfelF15	
-		class:noBackground
-								
-	
-
 //7a
-
-
 *UgBLANest1a
 		name:VogelNest
 		desc:<.> Erhöht die Produktion der AltenNester um <b>10</b> %.
