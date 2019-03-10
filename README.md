@@ -704,13 +704,15 @@ Buttons
         no tooltip
 		
 *OPButton    
-      name:Bssst
+      name:Evolutions Starter
       desc:Ein bssssst 
       on click:anim icon wobble
       icon:https://imgur.com/7ulsbid.png
       no text
-      show clicks      
+      show clicks 
       class:OPButton 
+	  req:1000000 Insekten:earned
+	  on click:yield ((Insekten:earned)/1000000) Evos
 
 *statusbar
 	  tag:booster
@@ -798,6 +800,10 @@ Resources
         class:noBackground
         no tooltip
         always hidden
+*Evo|Evos
+		name:Evolutions Punkte
+		icon:icons[6,2]
+		class:noBackground
 		
 // Gebäudeproduktions Ressourcen		------------------------------------------
 
