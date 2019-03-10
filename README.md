@@ -710,17 +710,10 @@ Buttons
       icon:https://imgur.com/7ulsbid.png
       no text
       show clicks 
-      class:OPButton 
+      class:OPButton
 	  req:10000 Insekten
-	  on click:if (Insekten>10000) yield ((Insekten:earned)/1000000) Evos
-	  cost:1000 Insekten
-	  on click:if (Insekten>10000) lose Raupe
-	  on click:if lose Larve
-	  on click:if (Insekten>10000) lose BauMaterial
-	  on click:if (Insekten>10000) lose Erfahrung
-	  on click:if (Insekten>10000) lose Nahrung
-	  on click:if (Insekten>10000) lose Insekten
-	  
+	  on click:if (Insekten>1000) yield ((Insekten:earned)/10000) Evos
+	  cost:10000 Insekten
 
 *statusbar
 	  tag:booster
@@ -812,6 +805,13 @@ Resources
 		name:Evolutions Punkte
 		icon:icons[6,2]
 		class:noBackground
+		on earn:lose Raupe
+		on earn:lose Insekten
+		on earn:lose BauMaterial
+		on earn:lose Nahrung
+		on earn:lose Erfahrung
+		
+		
 		
 // Gebäudeproduktions Ressourcen		------------------------------------------
 
