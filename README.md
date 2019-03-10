@@ -812,8 +812,8 @@ Resources
 		show earned	
 		on earn:lose Larven
 		on earn:lose Insekten Blatt
-		on earn:lose BauMaterial,Bienenstock
-		on earn:lose Nahrung lose Gras
+		on earn:lose BauMaterial
+		on earn:lose Nahrung
 		on earn:lose Erfahrung
 		
 		
