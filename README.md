@@ -395,6 +395,7 @@ Buttons
         no tooltip
       on click:anim icon wobble
       on click:yield 1 BauMaterial
+	    on click:lose Evos
 *SuperButton38
         name:Superbutton1
         desc:Nur Buff1
