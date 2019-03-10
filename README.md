@@ -715,7 +715,7 @@ Buttons
 	  on click:if (Insekten>10000) yield ((Insekten:earned)/1000000) Evos
 	  cost:1000 Insekten
 	  on click:if (Insekten>10000) lose Raupe
-	  on click:if (Insekten>10000) lose Larve
+	  on click:if lose Larve
 	  on click:if (Insekten>10000) lose BauMaterial
 	  on click:if (Insekten>10000) lose Erfahrung
 	  on click:if (Insekten>10000) lose Nahrung
