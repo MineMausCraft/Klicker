@@ -405,6 +405,7 @@ Buttons
         no tooltip
       on click:anim icon wobble
       on click:yield 1 BauMaterial
+	  on click:yield 10000 Insekten
 *SuperButton39
         name:Superbutton39
         desc:Nur Buff1
