@@ -10,7 +10,7 @@ Settings
 	background:https://i.imgur.com/wCNA1I9.jpg
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, https://i.imgur.com/dJSgs3Y.png
+	spritesheet:icons, 48 by 48, https://i.imgur.com/KucBPSr.png
 	spritesheet:iconsa, 48 by 48, https://i.imgur.com/Bbff71y.png
 	spritesheet:iconsb, 48 by 48, https://i.imgur.com/j79ZDuT.png
 	
@@ -445,7 +445,7 @@ Buttons
 *SuperButtonOn
         name:SuperbuttonOn
         desc:Nur Buff1
-        icon:icons[9,10]
+        icon:icons[5,6]
         class:SuperButtonOn
         text:Tada On
         no tooltip
@@ -499,9 +499,9 @@ Buttons
 *SuperButtonOff
         name:SuperbuttonOff
         desc:Nur Buff1
-        icon:icons[9,10]
+        icon:icons[5,7]
         class:SuperButtonOff
-        text:Tada Off
+        text:Klick mich!
         no tooltip
       on click:anim icon wobble
       on click:yield 1 BauMaterial     
