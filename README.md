@@ -840,6 +840,13 @@ Resources
 *Ivanp
 *Eimerp
 
+// Limit Ressourcen
+*TEMPLATE
+		always hidden
+		
+*Raupenlimit
+	start with:50
+
 //Shinies ---------------------------------------------------------------------------------------------------------
 Shinies
 
@@ -1206,6 +1213,7 @@ Buildings
 	on tick:yield 0.3 Raupep
 	on earn:yield 0.1 Erfahrung
     req:1 Larve:earned   
+	Limit:(Raupenlimit)
 //2
 *Bienenstock
     name:Bienenstock|Bienenstöcke
@@ -1716,6 +1724,15 @@ Upgrades
         icon:icons[4,3] icons[4,1]
         cost:10 InsektenPanzer
         req:1 Insekten
+		
+*UgLimitRaupe
+        tag:limitupgrades
+        name:50 Raupen
+        desc:<.> Vergrößre deine Kolonie auf mehr als 50 Raupen!
+        icon:icons[5,4]
+        cost:160000 Insekten
+        req:40 Raupen:earned	
+		on earn:yield 50 Raupenlimit
 
 
 	*TEMPLATE
