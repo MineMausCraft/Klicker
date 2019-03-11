@@ -851,6 +851,7 @@ Resources
 *Termitenbaulimit
 *Blattlimit
 *WNestlimit
+*VApfellimit
 
 
 //Shinies ---------------------------------------------------------------------------------------------------------
