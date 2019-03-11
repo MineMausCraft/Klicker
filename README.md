@@ -445,7 +445,7 @@ Buttons
 *SuperButtonOn
         name:SuperbuttonOn
         desc:Nur Buff1
-        icon:iconskl[2,1]
+        icon:iconskl[2,2]
         class:SuperButtonOn
         text:Tada On
         no tooltip
@@ -499,7 +499,7 @@ Buttons
 *SuperButtonOff
         name:SuperbuttonOff
         desc:Nur Buff1
-        icon:iconskl[2,2]
+        icon:iconskl[2,1]
         class:SuperButtonOff
         text:Klick mich!
         no tooltip
@@ -2400,84 +2400,84 @@ Upgrades
 		icon:icons[1,0] icons[3,0]
 		cost:1000 Larven,1 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:1000 Larven:earned
+		req:10 Raupen
 *UgBLRaupe2
 		name:Raupenmarsch
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,1]
 		cost:10000 Larven,10 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:10000 Larven:earned and UgBLRaupe1
+		req:25 Raupen and UgBLRaupe1
 *UgBLRaupe3
 		name:Raupenparty
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,2]
 		cost:1000000 Larven,100 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:1000000 Larven:earned and UgBLRaupe2
+		req:50 Raupen and UgBLRaupe2
 *UgBLRaupe4
 		name:Raupenmusik
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,3]
 		cost:100000000 Larven,1000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:100000000 Larven:earned and UgBLRaupe3
+		req:75 Raupen Larven:earned and UgBLRaupe3
 *UgBLRaupe5
 		name:Raupastik
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,4]
 		cost:10000000000 Larven,10000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:10000000000 Larven:earned and UgBLRaupe4
+		req:100 Raupen Larven:earned and UgBLRaupe4
 *UgBLRaupe6
 		name:Raupenpuppe
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,5]
 		cost:1000000000000 Larven,100000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:1000000000000 Larven:earned and UgBLRaupe5
+		req:125 Raupen Larven:earned and UgBLRaupe5
 *UgBLRaupe7
 		name:Raupenmania
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,6]
 		cost:100000000000000 Larven,1000000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:100000000000000 Larven:earned and UgBLRaupe6
+		req:150 Raupen Larven:earned and UgBLRaupe6
 *UgBLRaupe8
 		name:Raupengesang
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,7]
 		cost:10000000000000000 Larven,10000000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:10000000000000000 Larven:earned and UgBLRaupe7
+		req:175 Raupen Larven:earned and UgBLRaupe7
 *UgBLRaupe9
 		name:Raupenlolli
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,8]
 		cost:1000000000000000000 Larven,100000000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:1000000000000000000 Larven:earned and UgBLRaupe8
+		req:200 Raupen Larven:earned and UgBLRaupe8
 *UgBLRaupe10
 		name:Raupensymphonie
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,9]
 		cost:100000000000000000000 Larven,1000000000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:100000000000000000000 Larven:earned and UgBLRaupe9
+		req:225 Raupen Larven:earned and UgBLRaupe9
 *UgBLRaupe11
 		name:Raupenklatschen
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,10]
 		cost:10000000000000000000000 Larven,10000000000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:10000000000000000000000 Larven:earned and UgBLRaupe10
+		req:250 Raupen Larven:earned and UgBLRaupe10
 *UgBLRaupe12
 		name:Raupenwetter
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,11]
 		cost:1000000000000000000000000 Larven,100000000000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:1000000000000000000000000 Larven:earned and UgBLRaupe11
+		req:300 Raupen Larven:earned and UgBLRaupe11
 		
 *UgBLRaupeF1
 		name:Raupenpanzer
@@ -2485,7 +2485,7 @@ Upgrades
 		icon:icons[5,5] icons[1,0] icons[8,0]
 		cost:10 Raupen
 		passive:multiply yield of Raupe by 1.75
-		req:100 Larven:earned
+		req:1000 Larven:earned
 *UgBLRaupeF2
 		name:HolzRaupe
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
@@ -2591,84 +2591,84 @@ Upgrades
 		icon:icons[1,1] icons[3,0]
 		cost:12000 Larven,10 Territorien
 		passive:multiply yield of Bienenstock by 1.75
-		req:12000 Larven:earned
+		req:10 Bienenstock
 *UgBLBienenstock2
 		name:Bienenkönigin
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
 		icon:icons[1,1] icons[3,1]
 		cost:90000 Larven,100 Territorien
 		passive:multiply yield of Bienenstock by 1.75
-		req:90000 Larven:earned and UgBLBienenstock1
+		req:25 Bienenstock and UgBLBienenstock1
 *UgBLBienenstock3
 		name:Binentango
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
 		icon:icons[1,1] icons[3,2]
 		cost:9000000 Larven,1000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
-		req:9000000 Larven:earned and UgBLBienenstock2
+		req:50 Bienenstock and UgBLBienenstock2
 *UgBLBienenstock4
 		name:Bienenfieber
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
 		icon:icons[1,1] icons[3,3]
 		cost:900000000 Larven,10000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
-		req:900000000 Larven:earned and UgBLBienenstock3
+		req:75 Bienenstock and UgBLBienenstock3
 *UgBLBienenstock5
 		name:Bienensummen
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
 		icon:icons[1,1] icons[3,4]
 		cost:90000000000 Larven,100000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
-		req:90000000000 Larven:earned and UgBLBienenstock4
+		req:100 Bienenstock and UgBLBienenstock4
 *UgBLBienenstock6
 		name:Bienenparty
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
 		icon:icons[1,1] icons[3,5]
 		cost:9000000000000 Larven,1000000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
-		req:9000000000000 Larven:earned and UgBLBienenstock5
+		req:125 Bienenstock and UgBLBienenstock5
 *UgBLBienenstock7
 		name:Bienenflügel
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
 		icon:icons[1,1] icons[3,6]
 		cost:900000000000000 Larven,10000000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
-		req:900000000000000 Larven:earned and UgBLBienenstock6
+		req:150 Bienenstock and UgBLBienenstock6
 *UgBLBienenstock8
 		name:Bienentorte
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
 		icon:icons[1,1] icons[3,7]
 		cost:90000000000000000 Larven,100000000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
-		req:90000000000000000 Larven:earned and UgBLBienenstock7
+		req:175 Bienenstock and UgBLBienenstock7
 *UgBLBienenstock9
 		name:Bienenkuchen
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
 		icon:icons[1,1] icons[3,8]
 		cost:9000000000000000000 Larven,1000000000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
-		req:9000000000000000000 Larven:earned and UgBLBienenstock8
+		req:200 Bienenstock and UgBLBienenstock8
 *UgBLBienenstock10
 		name:Bienensafari
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
 		icon:icons[1,1] icons[3,9]
 		cost:900000000000000000000 Larven,10000000000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
-		req:900000000000000000000 Larven:earned and UgBLBienenstock9
+		req:225 Bienenstock and UgBLBienenstock9
 *UgBLBienenstock11
 		name:Bienenpolka
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
 		icon:icons[1,1] icons[3,10]
 		cost:90000000000000000000000 Larven,100000000000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
-		req:90000000000000000000000 Larven:earned and UgBLBienenstock10
+		req:250 Bienenstock and UgBLBienenstock10
 *UgBLBienenstock12
 		name:Bientasium
 		desc:<.> Erhöht die Produktion der Bienenstöcke um <b>75</b> %.
 		icon:icons[1,1] icons[3,11]
 		cost:9000000000000000000000000 Larven,1000000000000 Territorien
 		passive:multiply yield of Bienenstock by 1.75
-		req:9000000000000000000000000 Larven:earned and UgBLBienenstock11
+		req:275 Bienenstock and UgBLBienenstock11
 
 //2
 *UgBLBienenstF1
@@ -4460,92 +4460,91 @@ Upgrades
 		icon:icons[0,0] icons[3,0]
 		cost:130 Insekten,60 Larven,10 BauMaterial
 		passive:multiply yield of Ameise by 1.75
-		req:130 Insekten:earned
+		req:10 Ameise
 *UgBIAmeise2
 		name:Ameisenrama
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
 		icon:icons[0,0] icons[3,1]
 		cost:13000 Insekten,6000 Larven,1000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
-		req:13000 Insekten:earned and UgBIAmeise1
+		req:25 Ameise and UgBIAmeise1
 *UgBIAmeise3
 		name:Ameisenstraße
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
 		icon:icons[0,0] icons[3,2]
 		cost:1300000 Insekten,600000 Larven,100000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
-		req:1300000 Insekten:earned and UgBIAmeise2
+		req:50 Ameise and UgBIAmeise2
 *UgBIAmeise4
 		name:Ameisenbrücke
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
 		icon:icons[0,0] icons[3,3]
 		cost:130000000 Insekten,60000000 Larven,10000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
-		req:130000000 Insekten:earned and UgBIAmeise3
+		req:75 Ameise and UgBIAmeise3
 *UgBIAmeise5
 		name:Ameisenhighway
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
 		icon:icons[0,0] icons[3,4]
 		cost:13000000000 Insekten,6000000000 Larven,1000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
-		req:13000000000 Insekten:earned and UgBIAmeise4
+		req:100 Ameise and UgBIAmeise4
 *UgBIAmeise6
 		name:Ameisenkreuzung
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
 		icon:icons[0,0] icons[3,5]
 		cost:1300000000000 Insekten,600000000000 Larven,100000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
-		req:1300000000000 Insekten:earned and UgBIAmeise5
+		req:125 Ameise and UgBIAmeise5
 *UgBIAmeise7
 		name:Ameisenmonopol
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
 		icon:icons[0,0] icons[3,6]
 		cost:130000000000000 Insekten,60000000000000 Larven,10000000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
-		req:130000000000000 Insekten:earned and UgBIAmeise6
+		req:150 Ameise and UgBIAmeise6
 *UgBIAmeise8
 		name:Ameisenunterführung
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
 		icon:icons[0,0] icons[3,7]
 		cost:13000000000000000 Insekten,6000000000000000 Larven,1000000000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
-		req:13000000000000000 Insekten:earned and UgBIAmeise7
+		req:175 Ameise and UgBIAmeise7
 *UgBIAmeise9
 		name:Ameisenboot
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
 		icon:icons[0,0] icons[3,8]
 		cost:1300000000000000000 Insekten,600000000000000000 Larven,100000000000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
-		req:1300000000000000000 Insekten:earned and UgBIAmeise8
+		req:200 Ameise and UgBIAmeise8
 *UgBIAmeise10
 		name:Ameisensalsa
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
 		icon:icons[0,0] icons[3,9]
 		cost:130000000000000000000 Insekten,60000000000000000000 Larven,10000000000000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
-		req:130000000000000000000 Insekten:earned and UgBIAmeise9
-
+		req:225 Ameise and UgBIAmeise9
 *UgBIAmeise11
 		name:Ameisensalat
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
 		icon:icons[0,0] icons[3,10]
 		cost:13000000000000000000000 Insekten,6000000000000000000000 Larven,1000000000000000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
-		req:13000000000000000000000 Insekten:earned and UgBIAmeise10
+		req:250 Ameise and UgBIAmeise10
 *UgBIAmeise12
 		name:Ameisenkönig
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
 		icon:icons[0,0] icons[3,11]
 		cost:1300000000000000000000000 Insekten,600000000000000000000000 Larven,100000000000000000000000 BauMaterial
 		passive:multiply yield of Ameise by 1.75
-		req:1300000000000000000000000 Insekten:earned and UgBIAmeise11
+		req:275 Ameise and UgBIAmeise11
 *UgBIPAmeise1
 		name:AmeisenPanzer I
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
 		icon:icons[0,0] icons[4,1]
 		cost:100 InsektenPanzer
 		passive:multiply yield of Ameise by 1.75
-		req:1 InsektenPanzer
+		req:10 InsektenPanzer
 *UgBIPAmeise2
 		name:AmeisenPanzer II
 		desc:<.> Erhöht die Produktion der Ameisen um <b>75</b> %.
@@ -4616,84 +4615,84 @@ Upgrades
 		icon:icons[0,1] icons[3,0]
 		cost:1348 Insekten,697 Larven,343 BauMaterial
 		passive:multiply yield of Termite by 1.75
-		req:1400 Insekten:earned and 1 Termite
+		req:10 Termite and 1 Termite
 *UgBITermite2
 		name:Termitarium
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
 		icon:icons[0,1] icons[3,1]
 		cost:13480000 Insekten,6970000 Larven,3430000 BauMaterial
 		passive:multiply yield of Termite by 1.75
-		req:14000000 Insekten:earned and UgBITermite1
+		req:25 Termite and UgBITermite1
 *UgBITermite3
 		name:Termitenkette
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
 		icon:icons[0,1] icons[3,2]
 		cost:1348000000 Insekten,697000000 Larven,343000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
-		req:1400000000 Insekten:earned and UgBITermite2
+		req:50 Termite and UgBITermite2
 *UgBITermite4
 		name:Termitenpuder
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
 		icon:icons[0,1] icons[3,3]
 		cost:134800000000 Insekten,69700000000 Larven,34300000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
-		req:140000000000 Insekten:earned and UgBITermite3
+		req:75 Termite and UgBITermite3
 *UgBITermite5
 		name:Termitenwache
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
 		icon:icons[0,1] icons[3,4]
 		cost:13480000000000 Insekten,6970000000000 Larven,3430000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
-		req:14000000000000 Insekten:earned and UgBITermite4
+		req:100 Termite and UgBITermite4
 *UgBITermite6
 		name:Termitenmarmelade
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
 		icon:icons[0,1] icons[3,5]
 		cost:1348000000000000 Insekten,697000000000000 Larven,343000000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
-		req:1400000000000000 Insekten:earned and UgBITermite5
+		req:125 Termite and UgBITermite5
 *UgBITermite7
 		name:Termitenbrot
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
 		icon:icons[0,1] icons[3,6]
 		cost:134800000000000000 Insekten,69700000000000000 Larven,34300000000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
-		req:140000000000000000 Insekten:earned and UgBITermite6
+		req:150 Termite and UgBITermite6
 *UgBITermite8
 		name:Termitenlink
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
 		icon:icons[0,1] icons[3,7]
 		cost:13480000000000000000 Insekten,6970000000000000000 Larven,3430000000000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
-		req:14000000000000000000 Insekten:earned and UgBITermite7
+		req:175 Termite and UgBITermite7
 *UgBITermite9
 		name:Termitendisko
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
 		icon:icons[0,1] icons[3,8]
 		cost:1348000000000000000000 Insekten,697000000000000000000 Larven,343000000000000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
-		req:1400000000000000000000 Insekten:earned and UgBITermite8
+		req:200 Termite and UgBITermite8
 *UgBITermite10
 		name:Termitenküche
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
 		icon:icons[0,1] icons[3,9]
 		cost:134800000000000000000000 Insekten,69700000000000000000000 Larven,34300000000000000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
-		req:140000000000000000000000 Insekten:earned and UgBITermite9
+		req:225 Termite and UgBITermite9
 *UgBITermite11
 		name:Termitenwalzer
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
 		icon:icons[0,1] icons[3,10]
 		cost:13480000000000000000000000 Insekten,6970000000000000000000000 Larven,3430000000000000000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
-		req:14000000000000000000000000 Insekten:earned and UgBITermite10
+		req:250 Termite and UgBITermite10
 *UgBITermite12
 		name:Termitenkuscheln
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
 		icon:icons[0,1] icons[3,11]
 		cost:1348000000000000000000000000 Insekten,697000000000000000000000000 Larven,343000000000000000000000000 BauMaterial
 		passive:multiply yield of Termite by 1.75
-		req:1400000000000000000000000000 Insekten:earned and UgBITermite11
+		req:275 Termite and UgBITermite11
 
 *UgBIPTermite1
 		name:TermitenPanzer I
@@ -4701,7 +4700,7 @@ Upgrades
 		icon:icons[0,1] icons[4,1]
 		cost:1430 InsektenPanzer
 		passive:multiply yield of Termite by 1.75
-		req:1 InsektenPanzer and 1 Termite
+		req:10 InsektenPanzer and 10 Termite
 *UgBIPTermite2
 		name:TermitenPanzer II
 		desc:<.> Erhöht die Produktion der Termiten um <b>75</b> %.
