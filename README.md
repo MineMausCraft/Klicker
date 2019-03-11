@@ -1233,6 +1233,7 @@ Buildings
  	on tick:lose 1 Nahrung
 	on earn:yield 1 Erfahrung
 	req:112 Larven:earned 
+	Limit:(Bienenstocklimit)
 //3
 *Termitenbau
     name:Termitenbau
@@ -1245,6 +1246,7 @@ Buildings
 	on tick:lose 5 Nahrung
 	on earn:yield 1 Erfahrung
 	req:1232 Larven:earned  
+	Limit:(Termitenbaulimit)
  //4
 *Blatt
     name:Blatt|Blätter
@@ -1257,6 +1259,7 @@ Buildings
 	on tick:lose 10 Nahrung
 	on earn:yield 1 Erfahrung
 	req:13440 Larven:earned 
+	Limit:(Blattlimit)
 //5
 *WespenNest|WespenNester
     name:WespenNest|WespenNester
@@ -1268,7 +1271,8 @@ Buildings
 	on tick:lose 15 BauMaterial
 	on tick:lose 50 Nahrung
 	on earn:yield 1 Erfahrung
-    req:145600 Larven:earned   
+    req:145600 Larven:earned
+	Limit:(WNestlimit)
 //6
 *VerfaulterApfel|VerfaulteAepfel
     name:VerfaulterApfel|VerfaulteÄpfel
@@ -1280,7 +1284,8 @@ Buildings
    	on tick:lose 80 BauMaterial
 	on tick:lose 75 Nahrung
 	on earn:yield 1 Erfahrung
-    req:1568000 Larven:earned   
+    req:1568000 Larven:earned  
+	Limit:(VApfellimit)
 //7
 *AltesNest|AlteNester
     name:AltesNest|AlteNester
@@ -1418,6 +1423,8 @@ Buildings
     on tick:yield 0.2 Insekten
     req:1 Insekten:earned
 	on earn:yield 0.1 Erfahrung
+	Limit:(Insektenlimit)
+	
 //2
 *Termite|Termiten
     name:Termite|Termiten
@@ -1579,6 +1586,7 @@ Buildings
     on tick:yield 0.1 BauMaterial
     req:1 BauMaterial:earned
 	on earn:yield 0.1 Erfahrung
+	Limit:(Graslimit)
  //2
 *Ast|Aeste
     name:Ast|Äste
