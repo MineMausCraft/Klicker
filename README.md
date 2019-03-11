@@ -1438,7 +1438,7 @@ Buildings
     req:14 Insekten:earned and UpgITermitorium
  	on tick:lose 1 BauMaterial
 	on earn:yield 1 Erfahrung
-	Limit:(*Termitenlimit)
+	Limit:(Termitenlimit)
 //3
 *Fliege|Fliegen
     name:Fliege|Fliegen
