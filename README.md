@@ -811,14 +811,15 @@ Resources
 		class:noBackground
 		show earned	
 		on earn:lose Larven
-		on earn:lose SammlerAmeise Raupe Bienenstock Termitenbau Blatt
-		on earn:lose Ameise Termite Fliege Kaefer Biene
-		on earn:lose Gras Ast Wurzel Stein Dreck AltesBuch
-		on earn:lose UgRLErfahrung1 UgRLErfahrung2 UgRLErfahrung3
 		on earn:lose Insekten
 		on earn:lose BauMaterial
 		on earn:lose Nahrung
 		on earn:lose Erfahrung
+		on earn:lose Raupe
+		on earn:lose Bienenstock
+		on earn:lose Termitenbau
+		on earn:lose Blatt
+		on earn:lose WespenNest
 		on earn:lose UgRIErfahrung1
 		
 		
