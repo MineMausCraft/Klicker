@@ -1731,7 +1731,7 @@ Upgrades
         desc:<.> Vergrößre deine Kolonie auf mehr als 50 Raupen!
         icon:icons[5,4]
         cost:160000 Insekten
-        req:40 Raupen:earned	
+        req:40 Raupen	
 		on earn:yield 50 Raupenlimit
 
 
