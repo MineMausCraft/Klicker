@@ -2421,63 +2421,63 @@ Upgrades
 		icon:icons[1,0] icons[3,3]
 		cost:100000000 Larven,1000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:75 Raupen Larven:earned and UgBLRaupe3
+		req:75 Raupen and UgBLRaupe3
 *UgBLRaupe5
 		name:Raupastik
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,4]
 		cost:10000000000 Larven,10000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:100 Raupen Larven:earned and UgBLRaupe4
+		req:100 Raupen and UgBLRaupe4
 *UgBLRaupe6
 		name:Raupenpuppe
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,5]
 		cost:1000000000000 Larven,100000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:125 Raupen Larven:earned and UgBLRaupe5
+		req:125 Raupen and UgBLRaupe5
 *UgBLRaupe7
 		name:Raupenmania
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,6]
 		cost:100000000000000 Larven,1000000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:150 Raupen Larven:earned and UgBLRaupe6
+		req:150 Raupen and UgBLRaupe6
 *UgBLRaupe8
 		name:Raupengesang
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,7]
 		cost:10000000000000000 Larven,10000000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:175 Raupen Larven:earned and UgBLRaupe7
+		req:175 Raupen and UgBLRaupe7
 *UgBLRaupe9
 		name:Raupenlolli
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,8]
 		cost:1000000000000000000 Larven,100000000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:200 Raupen Larven:earned and UgBLRaupe8
+		req:200 Raupen and UgBLRaupe8
 *UgBLRaupe10
 		name:Raupensymphonie
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,9]
 		cost:100000000000000000000 Larven,1000000000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:225 Raupen Larven:earned and UgBLRaupe9
+		req:225 Raupen and UgBLRaupe9
 *UgBLRaupe11
 		name:Raupenklatschen
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,10]
 		cost:10000000000000000000000 Larven,10000000000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:250 Raupen Larven:earned and UgBLRaupe10
+		req:250 Raupen and UgBLRaupe10
 *UgBLRaupe12
 		name:Raupenwetter
 		desc:<.> Erhöht die Produktion der Raupen um <b>75</b> %.
 		icon:icons[1,0] icons[3,11]
 		cost:1000000000000000000000000 Larven,100000000000 Territorien
 		passive:multiply yield of Raupe by 1.75
-		req:300 Raupen Larven:earned and UgBLRaupe11
+		req:300 Raupen and UgBLRaupe11
 		
 *UgBLRaupeF1
 		name:Raupenpanzer
