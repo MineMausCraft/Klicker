@@ -10,7 +10,7 @@ Settings
 	background:https://i.imgur.com/wCNA1I9.jpg
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, https://i.imgur.com/KucBPSr.png
+	spritesheet:icons, 48 by 48, https://i.imgur.com/IoDXVCG.png
 	spritesheet:iconsa, 48 by 48, https://i.imgur.com/Bbff71y.png
 	spritesheet:iconsb, 48 by 48, https://i.imgur.com/j79ZDuT.png
 	
@@ -1709,13 +1709,16 @@ Buildings
 	on earn:yield 1 Erfahrung
 //--------------------------------------------------------------------------------------------------------------------
 *important
-	on tick:show :Upgrades
-	on tick:hide :Upgrades:owned
-	on tick:show tag:prestige
-	always hidden
+		on tick:show :Upgrades
+		on tick:hide :Upgrades:owned
+		on tick:show tag:prestige
+		always hidden
 	
 Upgrades
-
+*TEMPLATE
+		class:noBackground
+		on click:anim glow
+		on earn:hide this
 //Muster für limit
 	*UgLimitOOO
         tag:limitupgrades
@@ -1725,14 +1728,39 @@ Upgrades
         cost:10 InsektenPanzer
         req:1 Insekten
 		
-*UgLimitRaupe
+*UgLimitRaupe1
         tag:limitupgrades
-        name:50 Raupen
-        desc:<.> Vergrößre deine Kolonie auf mehr als 50 Raupen!
-        icon:icons[5,4]
+        name:100 Raupen
+        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Raupen!
+        icon:icons[5,8] icons[5,4]
         cost:160000 Insekten
         req:40 Raupen	
 		on earn:yield 50 Raupenlimit
+*UgLimitRaupe2
+        tag:limitupgrades
+        name:150 Raupen
+        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Raupen!
+        icon:icons[5,8] icons[5,4]
+        cost:160000000 Insekten
+        req:80 Raupen	
+		on earn:yield 50 Raupenlimit
+*UgLimitRaupe3
+        tag:limitupgrades
+        name:200 Raupen
+        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Raupen!
+        icon:icons[5,8] icons[5,4]
+        cost:160000000000 Insekten
+        req:140 Raupen	
+		on earn:yield 50 Raupenlimit
+*UgLimitRaupe4
+        tag:limitupgrades
+        name:250 Raupen
+        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Raupen!
+        icon:icons[5,8] icons[5,4]
+        cost:160000000000 Insekten
+        req:190 Raupen	
+		on earn:yield 50 Raupenlimit
+		
 
 
 	*TEMPLATE
