@@ -810,11 +810,11 @@ Resources
 		icon:icons[6,2]
 		class:noBackground
 		show earned	
-		on earn:lose Larven Gras
-		on earn:lose Insekten Blatt
-		on earn:lose BauMaterial
-		on earn:lose Nahrung
-		on earn:lose Erfahrung
+		on earn:lose Larven Insekten BauMaterial Nahrung Erfahrung 
+		on earn:lose SammlerAmeise Raupe Bienenstock Termitenbau Blatt
+		on earn:lose Ameise Termite Fliege Kaefer Biene
+		on earn:lose Gras Ast Wurzel Stein Dreck AltesBuch
+		on earn:lose UgRLErfahrung1 UgRLErfahrung2 UgRLErfahrung3
 		
 		
 		
