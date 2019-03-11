@@ -15,7 +15,7 @@ Settings
 	spritesheet:iconsb, 48 by 48, https://i.imgur.com/j79ZDuT.png
 	
 	spritesheet:iconsgr, 128 by 128, https://i.imgur.com/rIBALOu.png
-	spritesheet:iconskl, 40 by 40, https://i.imgur.com/jc4VRNy.png
+	spritesheet:iconskl, 40 by 40, https://i.imgur.com/3b23vbA.png
 	stylesheet:https://pastebin.com/raw/8iFdUmTb
 	on start:SuperB=2
 	
@@ -445,7 +445,7 @@ Buttons
 *SuperButtonOn
         name:SuperbuttonOn
         desc:Nur Buff1
-        icon:icons[5,6]
+        icon:iconskl[2,1]
         class:SuperButtonOn
         text:Tada On
         no tooltip
@@ -499,7 +499,7 @@ Buttons
 *SuperButtonOff
         name:SuperbuttonOff
         desc:Nur Buff1
-        icon:icons[5,7]
+        icon:iconskl[2,2]
         class:SuperButtonOff
         text:Klick mich!
         no tooltip
