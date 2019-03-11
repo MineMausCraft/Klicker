@@ -1423,7 +1423,7 @@ Buildings
     on tick:yield 0.2 Insekten
     req:1 Insekten:earned
 	on earn:yield 0.1 Erfahrung
-	Limit:(Insektenlimit)
+	Limit:(Ameisenlimit)
 	
 //2
 *Termite|Termiten
