@@ -852,6 +852,9 @@ Resources
 *Blattlimit
 *WNestlimit
 *VApfellimit
+*Termitenlimit
+*Fliegenlimit
+*Kaefernlimit
 
 
 //Shinies ---------------------------------------------------------------------------------------------------------
@@ -1435,6 +1438,7 @@ Buildings
     req:14 Insekten:earned and UpgITermitorium
  	on tick:lose 1 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(*Termitenlimit)
 //3
 *Fliege|Fliegen
     name:Fliege|Fliegen
@@ -1445,6 +1449,7 @@ Buildings
     req:1540 Insekten:earned and UpgISchmeisfliege
  	on tick:lose 2 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(Fliegenlimit)
 //4
 *Kaefer
     name:Käfer
@@ -1455,6 +1460,7 @@ Buildings
     req:16800 Insekten:earned and UpgIBuggy
  	on tick:lose 3 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(Kaefernlimit)
 //5
 *Biene|Bienen
     name:Biene|Bienen
@@ -1735,11 +1741,11 @@ Upgrades
 		on click:anim glow
 		on earn:hide this
 		on earn:yield 1 upgradesII
+		tag:limitupgrades
 		
 	
 // Larven Limit --------------------------------------------------------------------------------		
 *UgLimitRaupe1
-        tag:limitupgrades
         name:100 Raupen
         desc:<.> Vergrößre deine Kolonie auf bis zu 100 Raupen!
         icon:icons[5,8] icons[5,4]
@@ -1747,7 +1753,6 @@ Upgrades
         req:40 Raupen
 		on earn:yield 50 Raupenlimit
 *UgLimitRaupe2
-        tag:limitupgrades
         name:150 Raupen
         desc:<.> Vergrößre deine Kolonie auf bis zu 150 Raupen!
         icon:icons[5,8] icons[5,4]
@@ -1755,7 +1760,6 @@ Upgrades
         req:80 Raupen	
 		on earn:yield 50 Raupenlimit
 *UgLimitRaupe3
-        tag:limitupgrades
         name:200 Raupen
         desc:<.> Vergrößre deine Kolonie auf bis zu 200 Raupen!
         icon:icons[5,8] icons[5,4]
@@ -1763,7 +1767,6 @@ Upgrades
         req:140 Raupen	
 		on earn:yield 50 Raupenlimit
 *UgLimitRaupe4
-        tag:limitupgrades
         name:250 Raupen
         desc:<.> Vergrößre deine Kolonie auf bis zu 250 Raupen!
         icon:icons[5,8] icons[5,4]
@@ -1772,7 +1775,6 @@ Upgrades
 		on earn:yield 50 Raupenlimit
 		
 *UgLimitBienenstock1
-        tag:limitupgrades
         name:100 Bienenstock
         desc:<.> Vergrößre deine Kolonie auf bis zu 100 Bienenstöcke!
         icon:icons[5,8] icons[1,1]
@@ -1780,7 +1782,6 @@ Upgrades
         req:40 Bienenstock
 		on earn:yield 50 Bienenstocklimit
 *UgLimitBienenstock2
-        tag:limitupgrades
         name:150 Bienenstock
         desc:<.> Vergrößre deine Kolonie auf bis zu 150 Bienenstöcke!
         icon:icons[5,8] icons[1,1]
@@ -1788,7 +1789,6 @@ Upgrades
         req:80 Bienenstock	
 		on earn:yield 50 Bienenstocklimit
 *UgLimitBienenstock3
-        tag:limitupgrades
         name:200 Bienenstock
         desc:<.> Vergrößre deine Kolonie auf bis zu 200 Bienenstöcke!
         icon:icons[5,8] icons[1,1]
@@ -1796,7 +1796,6 @@ Upgrades
         req:140 Bienenstock	
 		on earn:yield 50 Bienenstocklimit
 *UgLimitBienenstock4
-        tag:limitupgrades
         name:250 Bienenstock
         desc:<.> Vergrößre deine Kolonie auf bis zu 250 Bienenstöcke!
         icon:icons[5,8] icons[1,1]
@@ -1805,7 +1804,6 @@ Upgrades
 		on earn:yield 50 Bienenstocklimit
 		
 *UgLimitTermitenbau1
-        tag:limitupgrades
         name:100 Termitenbau
         desc:<.> Vergrößre deine Kolonie auf bis zu 100 Termitenbauten!
         icon:icons[5,8] icons[1,2]
@@ -1813,7 +1811,6 @@ Upgrades
         req:40 Termitenbau
 		on earn:yield 50 Termitenbaulimit
 *UgLimitTermitenbau2
-        tag:limitupgrades
         name:150 Termitenbau
         desc:<.> Vergrößre deine Kolonie auf bis zu 150 Termitenbauten!
         icon:icons[5,8] icons[1,2]
@@ -1821,7 +1818,6 @@ Upgrades
         req:80 Termitenbau	
 		on earn:yield 50 Termitenbaulimit
 *UgLimitTermitenbau3
-        tag:limitupgrades
         name:200 Termitenbau
         desc:<.> Vergrößre deine Kolonie auf bis zu 200 Termitenbauten!
         icon:icons[5,8] icons[1,2]
@@ -1829,7 +1825,6 @@ Upgrades
         req:140 Termitenbau	
 		on earn:yield 50 Termitenbaulimit
 *UgLimitTermitenbau4
-        tag:limitupgrades
         name:250 Termitenbau
         desc:<.> Vergrößre deine Kolonie auf bis zu 250 Termitenbauten!
         icon:icons[5,8] icons[1,2]
@@ -1838,7 +1833,6 @@ Upgrades
 		on earn:yield 50 Termitenbaulimit
 
 *UgLimitBlatt1
-        tag:limitupgrades
         name:100 Blatt
         desc:<.> Vergrößre deine Kolonie auf bis zu 100 Blätter!
         icon:icons[5,8] icons[1,3]
@@ -1846,7 +1840,6 @@ Upgrades
         req:40 Blatt
 		on earn:yield 50 Blattlimit
 *UgLimitBlatt2
-        tag:limitupgrades
         name:150 Blatt
         desc:<.> Vergrößre deine Kolonie auf bis zu 150 Blätter!
         icon:icons[5,8] icons[1,3]
@@ -1854,7 +1847,6 @@ Upgrades
         req:80 Blatt	
 		on earn:yield 50 Blattlimit
 *UgLimitBlatt3
-        tag:limitupgrades
         name:200 Blatt
         desc:<.> Vergrößre deine Kolonie auf bis zu 200 Blätter!
         icon:icons[5,8] icons[1,3]
@@ -1862,7 +1854,6 @@ Upgrades
         req:140 Blatt	
 		on earn:yield 50 Blattlimit
 *UgLimitBlatt4
-        tag:limitupgrades
         name:250 Blatt
         desc:<.> Vergrößre deine Kolonie auf bis zu 250 Blätter!
         icon:icons[5,8] icons[1,3]
@@ -1871,7 +1862,6 @@ Upgrades
 		on earn:yield 50 Blattlimit
 
 *UgLimitWNest1
-        tag:limitupgrades
         name:100 WespenNest
         desc:<.> Vergrößre deine Kolonie auf bis zu 100 WespenNester!
         icon:icons[5,8] icons[1,4]
@@ -1879,7 +1869,6 @@ Upgrades
         req:40 WespenNest
 		on earn:yield 50 WNestlimit
 *UgLimitWNest2
-        tag:limitupgrades
         name:150 WespenNest
         desc:<.> Vergrößre deine Kolonie auf bis zu 150 WespenNester!
         icon:icons[5,8] icons[1,4]
@@ -1887,7 +1876,6 @@ Upgrades
         req:80 WespenNest	
 		on earn:yield 50 WNestlimit
 *UgLimitWNest3
-        tag:limitupgrades
         name:200 WespenNest
         desc:<.> Vergrößre deine Kolonie auf bis zu 200 WespenNester!
         icon:icons[5,8] icons[1,4]
@@ -1895,7 +1883,6 @@ Upgrades
         req:140 WespenNest	
 		on earn:yield 50 WNestlimit
 *UgLimitWNest4
-        tag:limitupgrades
         name:250 WespenNest
         desc:<.> Vergrößre deine Kolonie auf bis zu 250 WespenNester!
         icon:icons[5,8] icons[1,4]
@@ -1904,7 +1891,6 @@ Upgrades
 		on earn:yield 50 WNestlimit
 
 *UgLimitVApfel1
-        tag:limitupgrades
         name:100 VerfaulterApfel
         desc:<.> Vergrößre deine Kolonie auf bis zu 100 VerfaulteÄpfel!
         icon:icons[5,8] icons[1,5]
@@ -1912,7 +1898,6 @@ Upgrades
         req:40 VerfaulterApfel
 		on earn:yield 50 VApfellimit
 *UgLimitVApfel2
-        tag:limitupgrades
         name:150 VerfaulterApfel
         desc:<.> Vergrößre deine Kolonie auf bis zu 150 VerfaulteÄpfel!
         icon:icons[5,8] icons[1,5]
@@ -1920,7 +1905,6 @@ Upgrades
         req:80 VerfaulterApfel	
 		on earn:yield 50 VApfellimit
 *UgLimitVApfel3
-        tag:limitupgrades
         name:200 VerfaulterApfel
         desc:<.> Vergrößre deine Kolonie auf bis zu 200 VerfaulteÄpfel!
         icon:icons[5,8] icons[1,5]
@@ -1928,7 +1912,6 @@ Upgrades
         req:140 VerfaulterApfel	
 		on earn:yield 50 VApfellimit
 *UgLimitVApfel4
-        tag:limitupgrades
         name:250 VerfaulterApfel
         desc:<.> Vergrößre deine Kolonie auf bis zu 250 VerfaulteÄpfel!
         icon:icons[5,8] icons[1,5]
@@ -1939,7 +1922,6 @@ Upgrades
 	
 // Insekten Limits -------------------------------------------------------------------------------------------		
 *UgLimitAmeise1
-        tag:limitupgrades
         name:100 Ameisen
         desc:<.> Vergrößre deine Kolonie auf bis zu 100 Ameisen!
         icon:icons[5,8] icons[0,0]
@@ -1947,7 +1929,6 @@ Upgrades
         req:40 Ameisen
 		on earn:yield 50 Ameisenlimit
 *UgLimitAmeise2
-        tag:limitupgrades
         name:150 Ameisen
         desc:<.> Vergrößre deine Kolonie auf bis zu 150 Ameisen!
         icon:icons[5,8] icons[0,0]
@@ -1955,7 +1936,6 @@ Upgrades
         req:80 Ameisen	
 		on earn:yield 50 Ameisenlimit
 *UgLimitAmeise3
-        tag:limitupgrades
         name:200 Ameisen
         desc:<.> Vergrößre deine Kolonie auf bis zu 200 Ameisen!
         icon:icons[5,8] icons[0,0]
@@ -1963,17 +1943,103 @@ Upgrades
         req:140 Ameisen	
 		on earn:yield 50 Ameisenlimit
 *UgLimitAmeise4
-        tag:limitupgrades
         name:250 Ameisen
         desc:<.> Vergrößre deine Kolonie auf bis zu 250 Ameisen!
         icon:icons[5,8] icons[0,0]
         cost:140000000000000 Insekten
         req:190 Ameisen	
 		on earn:yield 50 Ameisenlimit
+
+*UgLimitTermite1
+        name:100 Termite
+        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Termiten!
+        icon:icons[5,8] icons[5,4]
+        cost:140000 Insekten
+        req:40 Termite
+		on earn:yield 50 Termitenlimit
+*UgLimitTermite2
+        name:150 Termite
+        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Termiten!
+        icon:icons[5,8] icons[5,4]
+        cost:140000000 Insekten
+        req:80 Termite	
+		on earn:yield 50 Termitenlimit
+*UgLimitTermite3
+        name:200 Termite
+        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Termiten!
+        icon:icons[5,8] icons[5,4]
+        cost:140000000000 Insekten
+        req:140 Termite	
+		on earn:yield 50 Termitenlimit
+*UgLimitTermite4
+        name:250 Termite
+        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Termiten!
+        icon:icons[5,8] icons[5,4]
+        cost:140000000000000 Insekten
+        req:190 Termite	
+		on earn:yield 50 Termitenlimit
+
+*UgLimitFliege1
+        name:100 Fliege
+        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Fliegen!
+        icon:icons[5,8] icons[5,4]
+        cost:1540000 Insekten
+        req:40 Fliege
+		on earn:yield 50 Fliegenlimit
+*UgLimitFliege2
+        name:150 Fliege
+        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Fliegen!
+        icon:icons[5,8] icons[5,4]
+        cost:1540000000 Insekten
+        req:80 Fliege	
+		on earn:yield 50 Fliegenlimit
+*UgLimitFliege3
+        name:200 Fliege
+        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Fliegen!
+        icon:icons[5,8] icons[5,4]
+        cost:1540000000000 Insekten
+        req:1540 Fliege	
+		on earn:yield 50 Fliegenlimit
+*UgLimitFliege4
+        name:250 Fliege
+        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Fliegen!
+        icon:icons[5,8] icons[5,4]
+        cost:1540000000000000 Insekten
+        req:190 Fliege	
+		on earn:yield 50 Fliegenlimit
+
+*UgLimitKaefer1
+        name:100 Kaefer
+        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Käfern!
+        icon:icons[5,8] icons[5,4]
+        cost:16800000 Insekten
+        req:40 Kaefer
+		on earn:yield 50 Kaefernlimit
+*UgLimitKaefer2
+        name:150 Kaefer
+        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Käfern!
+        icon:icons[5,8] icons[5,4]
+        cost:16800000000 Insekten
+        req:80 Kaefer	
+		on earn:yield 50 Kaefernlimit
+*UgLimitKaefer3
+        name:200 Kaefer
+        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Käfern!
+        icon:icons[5,8] icons[5,4]
+        cost:16800000000000 Insekten
+        req:140 Kaefer	
+		on earn:yield 50 Kaefernlimit
+*UgLimitKaefer4
+        name:250 Kaefer
+        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Käfern!
+        icon:icons[5,8] icons[5,4]
+        cost:16800000000000000 Insekten
+        req:190 Kaefer	
+		on earn:yield 50 Kaefernlimit
+								
 		
 // BauMaterial Limit	-------------------------------------------------------------------------------------------------------
 *UgLimitGras1
-        tag:limitupgrades
         name:100 Gras
         desc:<.> Vergrößre deine Kolonie auf bis zu 100 Gräser!
         icon:icons[5,8] icons[2,0]
@@ -1981,7 +2047,6 @@ Upgrades
         req:40 Gras
 		on earn:yield 50 Graslimit
 *UgLimitGras2
-        tag:limitupgrades
         name:150 Gras
         desc:<.> Vergrößre deine Kolonie auf bis zu 150 Gräser!
         icon:icons[5,8] icons[2,0]
@@ -1989,7 +2054,6 @@ Upgrades
         req:80 Gras	
 		on earn:yield 50 Graslimit
 *UgLimitGras3
-        tag:limitupgrades
         name:200 Gras
         desc:<.> Vergrößre deine Kolonie auf bis zu 200 Gräser!
         icon:icons[5,8] icons[2,0]
@@ -1997,7 +2061,6 @@ Upgrades
         req:140 Gras	
 		on earn:yield 50 Graslimit
 *UgLimitGras4
-        tag:limitupgrades
         name:250 Gras
         desc:<.> Vergrößre deine Kolonie auf bis zu 250 Gräser!
         icon:icons[5,8] icons[2,0]
@@ -2006,7 +2069,7 @@ Upgrades
 		on earn:yield 50 Graslimit		
 
 
-	*TEMPLATE
+*TEMPLATE
 		tag:upgrades
 		on tick:if (have this) hide this
 		on earn:hide this
