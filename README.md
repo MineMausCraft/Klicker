@@ -856,7 +856,10 @@ Resources
 *Fliegenlimit
 *Kaefernlimit
 *Astlimit
-
+*Wurzellimit
+*Steinlimit
+*Drecklimit
+*ABuchlimit
 
 //Shinies ---------------------------------------------------------------------------------------------------------
 Shinies
@@ -1613,6 +1616,7 @@ Buildings
     on tick:yield 6 BauMaterial
     req:943 BauMaterial:earned
 	on earn:yield 1 Erfahrung
+	Limit:(Wurzellimit)
  //4
 *Stein|Steine
     name:Stein|Steine
@@ -1622,6 +1626,7 @@ Buildings
     on tick:yield 36 BauMaterial
     req:9191 BauMaterial:earned
 	on earn:yield 1 Erfahrung
+	Limit:(Steinlimit)
  //5
 *Dreck
     name:Dreck
@@ -1631,6 +1636,7 @@ Buildings
     on tick:yield 180 BauMaterial
     req:90000 BauMaterial:earned
 	on earn:yield 1 Erfahrung
+	Limit:(Drecklimit)
  //6
  *AltesBuch|AlteBuecher
 	name:AltesBuch|AlteBücher
@@ -1640,6 +1646,7 @@ Buildings
 	on tick:yield 969 BauMaterial
 	req:969231 BauMaterial:earned
 	on earn:yield 1 Erfahrung
+	Limit:(ABuchlimit)
  //7
  *Karnickel
 	name:Karnickel
@@ -2098,6 +2105,123 @@ Upgrades
         cost:187000000000000 Insekten
         req:190 Ast	
 		on earn:yield 50 Astlimit
+
+*UgLimitWurzel1
+        name:100 Wurzel
+        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Wurzeln!
+        icon:icons[5,8] icons[2,2]
+        cost:953000 Insekten
+        req:40 Wurzel
+		on earn:yield 50 Wurzellimit
+*UgLimitWurzel2
+        name:150 Wurzel
+        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Wurzeln!
+        icon:icons[5,8] icons[2,2]
+        cost:953000000 Insekten
+        req:80 Wurzel	
+		on earn:yield 50 Wurzellimit
+*UgLimitWurzel3
+        name:200 Wurzel
+        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Wurzeln!
+        icon:icons[5,8] icons[2,2]
+        cost:953000000000 Insekten
+        req:140 Wurzel	
+		on earn:yield 50 Wurzellimit
+*UgLimitWurzel4
+        name:250 Wurzel
+        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Wurzeln!
+        icon:icons[5,8] icons[2,2]
+        cost:953000000000000 Insekten
+        req:190 Wurzel	
+		on earn:yield 50 Wurzellimit
+
+*UgLimitStein1
+        name:100 Stein
+        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Steine!
+        icon:icons[5,8] icons[2,3]
+        cost:10400000 Insekten
+        req:40 Stein
+		on earn:yield 50 Steinlimit
+*UgLimitStein2
+        name:150 Stein
+        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Steine!
+        icon:icons[5,8] icons[2,3]
+        cost:10400000000 Insekten
+        req:80 Stein	
+		on earn:yield 50 Steinlimit
+*UgLimitStein3
+        name:200 Stein
+        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Steine!
+        icon:icons[5,8] icons[2,3]
+        cost:10400000000000 Insekten
+        req:140 Stein	
+		on earn:yield 50 Steinlimit
+*UgLimitStein4
+        name:250 Stein
+        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Steine!
+        icon:icons[5,8] icons[2,3]
+        cost:10400000000000000 Insekten
+        req:190 Stein	
+		on earn:yield 50 Steinlimit
+
+*UgLimitDreck1
+        name:100 Dreck
+        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Dreck!
+        icon:icons[5,8] icons[2,4]
+        cost:112667000 Insekten
+        req:40 Dreck
+		on earn:yield 50 Drecklimit
+*UgLimitDreck2
+        name:150 Dreck
+        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Dreck!
+        icon:icons[5,8] icons[2,4]
+        cost:112667000000 Insekten
+        req:80 Dreck	
+		on earn:yield 50 Drecklimit
+*UgLimitDreck3
+        name:200 Dreck
+        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Dreck!
+        icon:icons[5,8] icons[2,4]
+        cost:112667000000000 Insekten
+        req:140 Dreck	
+		on earn:yield 50 Drecklimit
+*UgLimitDreck4
+        name:250 Dreck
+        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Dreck!
+        icon:icons[5,8] icons[2,4]
+        cost:112667000000000000 Insekten
+        req:190 Dreck	
+		on earn:yield 50 Drecklimit
+
+*UgLimitABuch1
+        name:100 AltesBuch
+        desc:<.> Vergrößre deine Kolonie auf bis zu 100 AlteBücher!
+        icon:icons[5,8] icons[2,5]
+        cost:1213333000 Insekten
+        req:40 AltesBuch
+		on earn:yield 50 ABuchlimit
+*UgLimitABuch2
+        name:150 AltesBuch
+        desc:<.> Vergrößre deine Kolonie auf bis zu 150 AlteBücher!
+        icon:icons[5,8] icons[2,5]
+        cost:1213333000000 Insekten
+        req:80 AltesBuch	
+		on earn:yield 50 ABuchlimit
+*UgLimitABuch3
+        name:200 AltesBuch
+        desc:<.> Vergrößre deine Kolonie auf bis zu 200 AlteBücher!
+        icon:icons[5,8] icons[2,5]
+        cost:1213333000000000 Insekten
+        req:140 AltesBuch	
+		on earn:yield 50 ABuchlimit
+*UgLimitABuch4
+        name:250 AltesBuch
+        desc:<.> Vergrößre deine Kolonie auf bis zu 250 AlteBücher!
+        icon:icons[5,8] icons[2,5]
+        cost:1213333000000000000 Insekten
+        req:190 AltesBuch	
+		on earn:yield 50 ABuchlimit
+						
 				
 
 
