@@ -443,11 +443,10 @@ Buttons
       on click:anim icon wobble
       on click:yield 1 BauMaterial
 *SuperButtonOn
-        name:SuperbuttonOn
-        desc:Nur Buff1
+		name:EvolutionsKnopf
+        desc:KLicke hier wenn du deine Evolutions Punkte ausgeben möchtest.
         icon:iconskl[2,2]
         class:SuperButtonOn
-        no tooltip
       on click:anim icon wobble
       on click:yield 1 BauMaterial
         on click:show SuperButton
@@ -496,11 +495,10 @@ Buttons
         on click:show SuperButtonOff
         on click:hide SuperButtonOn        
 *SuperButtonOff
-        name:SuperbuttonOff
-        desc:Nur Buff1
+		name:OK
+        desc:Wenn du fertig bist klicke hier um zur Insektenkolonie zurück zu kehren!
         icon:iconskl[2,1]
         class:SuperButtonOff
-        no tooltip
       on click:anim icon wobble
       on click:yield 1 BauMaterial     
         on click:hide SuperButton
