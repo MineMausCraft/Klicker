@@ -713,9 +713,9 @@ Buttons
       no text
       show clicks 
       class:OPButton
-	  req:1000000000 Insekten
-	  cost:1000000000 Insekten
-	  on click:if (Insekten>1000000000) yield (pow(Insekten:earned/1000000000,0.3)-Evo:earned) Evo
+	  req:1000000000000 Insekten
+	  cost:1000000000000 Insekten
+	  on click:if (Insekten>1000000000000) yield (pow(Insekten:earned/1000000000000,0.3)-Evo:earned) Evo
 	  passive:multiply yield of Larven by ((Evo*1/100)+1)
 	  passive:multiply yield of Insekten by ((Evo*1/100)+1)
   	  passive:multiply yield of BauMaterial by ((Evo*1/100)+1)
@@ -746,7 +746,7 @@ Resources
 *upgradesII
    		tag:upgradesII
     	name:Unlocked
-  		desc:[upgradesII]/825 //([((upgradesII/795)*100)]%)
+  		desc:[upgradesII]/900 //([((upgradesII/900)*100)]%)
 		
 *Zeit
         name:Zeit
@@ -1475,6 +1475,7 @@ Buildings
     req:182000 Insekten:earned and UpgIBienenqueen
 	on tick:lose 15 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(Bienenlimit)
 //6
 *RoteAmeise|RoteAmeisen
     name:RoteAmeise|RoteAmeisen
@@ -1485,6 +1486,7 @@ Buildings
     req:1960000 Insekten:earned and UpgIRoteAmeise
 	on tick:lose 80 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(RoteAmeisenlimit)
 //7
 *GrosserKaefer|GrosseKaefer
     name:GroßerKäfer|GroßeKäfer
@@ -1495,6 +1497,7 @@ Buildings
     req:28000000 Insekten:earned and UpgIGrosserBug
   	on tick:lose 300 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(GrKaeferlimit)
 //8
 *Schmetterling|Schmetterlinge
     name:Schmetterling|Schmetterlinge
@@ -1505,6 +1508,7 @@ Buildings
     req:420000000 Insekten:earned and UpgISchmetterl
   	on tick:lose 1201 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(Schmetterlimit)
 //9
 *Schabe|Schaben
     name:Schabe|Schaben
@@ -1656,6 +1660,7 @@ Buildings
 	on tick:yield 5400 BauMaterial
 	req:13846154 BauMaterial:earned
 	on earn:yield 1 Erfahrung
+	Limit:(Karnickellimit)
  //8
  *Sonnenblume|Sonnenblumen
 	name:Sonnenblume|Sonnenblumen
@@ -1665,6 +1670,7 @@ Buildings
 	on tick:yield 30462 BauMaterial
 	req:228461538 BauMaterial:earned
 	on earn:yield 1 Erfahrung
+	Limit:(Sonnenblumenlimit)
  //9
  *Fred|Freds
 	name:Fred der Maulwurf
@@ -1674,6 +1680,7 @@ Buildings
 	on tick:yield 167538 BauMaterial
 	req:3286331361 BauMaterial:earned
 	on earn:yield 1 Erfahrung
+	Limit:(Fredslimit)
  //10
  *Blumenbusch|Blumenbuesche
 	name:Blumenbusch|Blumenbüsche
@@ -1683,6 +1690,7 @@ Buildings
 	on tick:yield 1031006 BauMaterial
 	req:48328402367 BauMaterial:earned
 	on earn:yield 1 Erfahrung
+	Limit:(Bbuschlimit)
  //11
  *Wollmaus|Wollmaeuse
 	name:Wollmaus|Wollmäuse
@@ -1756,28 +1764,28 @@ Upgrades
 // Larven Limit --------------------------------------------------------------------------------		
 *UgLimitRaupe1
         name:100 Raupen
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Raupen!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Raupen!
         icon:icons[5,8] icons[5,4]
         cost:1600000 Insekten
         req:40 Raupen
 		on earn:yield 50 Raupenlimit
 *UgLimitRaupe2
         name:150 Raupen
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Raupen!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Raupen!
         icon:icons[5,8] icons[5,4]
         cost:1600000000 Insekten
         req:80 Raupen	
 		on earn:yield 50 Raupenlimit
 *UgLimitRaupe3
         name:200 Raupen
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Raupen!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Raupen!
         icon:icons[5,8] icons[5,4]
         cost:1600000000000 Insekten
         req:140 Raupen	
 		on earn:yield 50 Raupenlimit
 *UgLimitRaupe4
         name:250 Raupen
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Raupen!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Raupen!
         icon:icons[5,8] icons[5,4]
         cost:1600000000000000 Insekten
         req:190 Raupen	
@@ -1785,28 +1793,28 @@ Upgrades
 		
 *UgLimitBienenstock1
         name:100 Bienenstock
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Bienenstöcke!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Bienenstöcke!
         icon:icons[5,8] icons[1,1]
         cost:1160000 Insekten
         req:40 Bienenstock
 		on earn:yield 50 Bienenstocklimit
 *UgLimitBienenstock2
         name:150 Bienenstock
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Bienenstöcke!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Bienenstöcke!
         icon:icons[5,8] icons[1,1]
         cost:1160000000 Insekten
         req:80 Bienenstock	
 		on earn:yield 50 Bienenstocklimit
 *UgLimitBienenstock3
         name:200 Bienenstock
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Bienenstöcke!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Bienenstöcke!
         icon:icons[5,8] icons[1,1]
         cost:1160000000000 Insekten
         req:140 Bienenstock	
 		on earn:yield 50 Bienenstocklimit
 *UgLimitBienenstock4
         name:250 Bienenstock
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Bienenstöcke!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Bienenstöcke!
         icon:icons[5,8] icons[1,1]
         cost:1160000000000000 Insekten
         req:190 Bienenstock	
@@ -1814,28 +1822,28 @@ Upgrades
 		
 *UgLimitTermitenbau1
         name:100 Termitenbau
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Termitenbauten!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Termitenbauten!
         icon:icons[5,8] icons[1,2]
         cost:160000000 Insekten
         req:40 Termitenbau
 		on earn:yield 50 Termitenbaulimit
 *UgLimitTermitenbau2
         name:150 Termitenbau
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Termitenbauten!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Termitenbauten!
         icon:icons[5,8] icons[1,2]
         cost:160000000000 Insekten
         req:80 Termitenbau	
 		on earn:yield 50 Termitenbaulimit
 *UgLimitTermitenbau3
         name:200 Termitenbau
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Termitenbauten!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Termitenbauten!
         icon:icons[5,8] icons[1,2]
         cost:160000000000000 Insekten
         req:140 Termitenbau	
 		on earn:yield 50 Termitenbaulimit
 *UgLimitTermitenbau4
         name:250 Termitenbau
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Termitenbauten!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Termitenbauten!
         icon:icons[5,8] icons[1,2]
         cost:160000000000000000 Insekten
         req:190 Termitenbau	
@@ -1843,28 +1851,28 @@ Upgrades
 
 *UgLimitBlatt1
         name:100 Blatt
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Blätter!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Blätter!
         icon:icons[5,8] icons[1,3]
         cost:134000000 Insekten
         req:40 Blatt
 		on earn:yield 50 Blattlimit
 *UgLimitBlatt2
         name:150 Blatt
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Blätter!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Blätter!
         icon:icons[5,8] icons[1,3]
         cost:160000000000 Insekten
         req:80 Blatt	
 		on earn:yield 50 Blattlimit
 *UgLimitBlatt3
         name:200 Blatt
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Blätter!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Blätter!
         icon:icons[5,8] icons[1,3]
         cost:160000000000000 Insekten
         req:140 Blatt	
 		on earn:yield 50 Blattlimit
 *UgLimitBlatt4
         name:250 Blatt
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Blätter!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Blätter!
         icon:icons[5,8] icons[1,3]
         cost:160000000000000000 Insekten
         req:190 Blatt	
@@ -1872,28 +1880,28 @@ Upgrades
 
 *UgLimitWNest1
         name:100 WespenNest
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 WespenNester!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 WespenNester!
         icon:icons[5,8] icons[1,4]
         cost:1456000000 Insekten
         req:40 WespenNest
 		on earn:yield 50 WNestlimit
 *UgLimitWNest2
         name:150 WespenNest
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 WespenNester!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 WespenNester!
         icon:icons[5,8] icons[1,4]
         cost:1456000000000 Insekten
         req:80 WespenNest	
 		on earn:yield 50 WNestlimit
 *UgLimitWNest3
         name:200 WespenNest
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 WespenNester!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 WespenNester!
         icon:icons[5,8] icons[1,4]
         cost:1456000000000000 Insekten
         req:140 WespenNest	
 		on earn:yield 50 WNestlimit
 *UgLimitWNest4
         name:250 WespenNest
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 WespenNester!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 WespenNester!
         icon:icons[5,8] icons[1,4]
         cost:1456000000000000000 Insekten
         req:190 WespenNest	
@@ -1901,28 +1909,28 @@ Upgrades
 
 *UgLimitVApfel1
         name:100 VerfaulterApfel
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 VerfaulteÄpfel!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 VerfaulteÄpfel!
         icon:icons[5,8] icons[1,5]
         cost:15680000000 Insekten
         req:40 VerfaulterApfel
 		on earn:yield 50 VApfellimit
 *UgLimitVApfel2
         name:150 VerfaulterApfel
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 VerfaulteÄpfel!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 VerfaulteÄpfel!
         icon:icons[5,8] icons[1,5]
         cost:15680000000000 Insekten
         req:80 VerfaulterApfel	
 		on earn:yield 50 VApfellimit
 *UgLimitVApfel3
         name:200 VerfaulterApfel
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 VerfaulteÄpfel!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 VerfaulteÄpfel!
         icon:icons[5,8] icons[1,5]
         cost:15680000000000000 Insekten
         req:140 VerfaulterApfel	
 		on earn:yield 50 VApfellimit
 *UgLimitVApfel4
         name:250 VerfaulterApfel
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 VerfaulteÄpfel!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 VerfaulteÄpfel!
         icon:icons[5,8] icons[1,5]
         cost:15680000000000000000 Insekten
         req:190 VerfaulterApfel	
@@ -1932,28 +1940,28 @@ Upgrades
 // Insekten Limits -------------------------------------------------------------------------------------------		
 *UgLimitAmeise1
         name:100 Ameisen
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Ameisen!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Ameisen!
         icon:icons[5,8] icons[0,0]
         cost:1400000 Insekten
         req:40 Ameisen
 		on earn:yield 50 Ameisenlimit
 *UgLimitAmeise2
         name:150 Ameisen
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Ameisen!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Ameisen!
         icon:icons[5,8] icons[0,0]
         cost:1400000000 Insekten
         req:80 Ameisen	
 		on earn:yield 50 Ameisenlimit
 *UgLimitAmeise3
         name:200 Ameisen
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Ameisen!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Ameisen!
         icon:icons[5,8] icons[0,0]
         cost:1400000000000 Insekten
         req:140 Ameisen	
 		on earn:yield 50 Ameisenlimit
 *UgLimitAmeise4
         name:250 Ameisen
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Ameisen!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Ameisen!
         icon:icons[5,8] icons[0,0]
         cost:1400000000000000 Insekten
         req:190 Ameisen	
@@ -1961,28 +1969,28 @@ Upgrades
 
 *UgLimitTermite1
         name:100 Termite
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Termiten!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Termiten!
         icon:icons[5,8] icons[0,1]
         cost:1400000 Insekten
         req:40 Termite
 		on earn:yield 50 Termitenlimit
 *UgLimitTermite2
         name:150 Termite
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Termiten!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Termiten!
         icon:icons[5,8] icons[0,1]
         cost:1400000000 Insekten
         req:80 Termite	
 		on earn:yield 50 Termitenlimit
 *UgLimitTermite3
         name:200 Termite
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Termiten!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Termiten!
         icon:icons[5,8] icons[0,1]
         cost:1400000000000 Insekten
         req:140 Termite	
 		on earn:yield 50 Termitenlimit
 *UgLimitTermite4
         name:250 Termite
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Termiten!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Termiten!
         icon:icons[5,8] icons[0,1]
         cost:1400000000000000 Insekten
         req:190 Termite	
@@ -1990,28 +1998,28 @@ Upgrades
 
 *UgLimitFliege1
         name:100 Fliege
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Fliegen!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Fliegen!
         icon:icons[5,8] icons[0,2]
         cost:15400000 Insekten
         req:40 Fliege
 		on earn:yield 50 Fliegenlimit
 *UgLimitFliege2
         name:150 Fliege
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Fliegen!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Fliegen!
         icon:icons[5,8] icons[0,2]
         cost:15400000000 Insekten
         req:80 Fliege	
 		on earn:yield 50 Fliegenlimit
 *UgLimitFliege3
         name:200 Fliege
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Fliegen!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Fliegen!
         icon:icons[5,8] icons[0,2]
         cost:15400000000000 Insekten
         req:1540 Fliege	
 		on earn:yield 50 Fliegenlimit
 *UgLimitFliege4
         name:250 Fliege
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Fliegen!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Fliegen!
         icon:icons[5,8] icons[0,2]
         cost:15400000000000000 Insekten
         req:190 Fliege	
@@ -2019,59 +2027,175 @@ Upgrades
 
 *UgLimitKaefer1
         name:100 Kaefer
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Käfern!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Käfern!
         icon:icons[5,8] icons[0,3]
         cost:168000000 Insekten
         req:40 Kaefer
 		on earn:yield 50 Kaefernlimit
 *UgLimitKaefer2
         name:150 Kaefer
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Käfern!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Käfern!
         icon:icons[5,8] icons[0,3]
         cost:168000000000 Insekten
         req:80 Kaefer	
 		on earn:yield 50 Kaefernlimit
 *UgLimitKaefer3
         name:200 Kaefer
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Käfern!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Käfern!
         icon:icons[5,8] icons[0,3]
         cost:168000000000000 Insekten
         req:140 Kaefer	
 		on earn:yield 50 Kaefernlimit
 *UgLimitKaefer4
         name:250 Kaefer
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Käfern!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Käfern!
         icon:icons[5,8] icons[0,3]
         cost:168000000000000000 Insekten
         req:190 Kaefer	
 		on earn:yield 50 Kaefernlimit
-								
+
+*UgLimitBiene1
+        name:100 Bienen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Bienen!
+        icon:icons[5,8] icons[0,4]
+        cost:182000000 Insekten
+        req:40 Biene
+		on earn:yield 50 Bienenlimit
+*UgLimitBiene2
+        name:150 Bienen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Bienen!
+        icon:icons[5,8] icons[0,4]
+        cost:182000000000 Insekten
+        req:80 Biene
+		on earn:yield 50 Bienenlimit
+*UgLimitBiene3
+        name:200 Bienen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Bienen!
+        icon:icons[5,8] icons[0,4]
+        cost:182000000000000 Insekten
+        req:140 Biene
+		on earn:yield 50 Bienenlimit
+*UgLimitBiene4
+        name:250 Bienen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Bienen!
+        icon:icons[5,8] icons[0,4]
+        cost:182000000000000000 Insekten
+        req:190 Biene
+		on earn:yield 50 Bienenlimit
+
+*UgLimitRAmeise1
+        name:100 RoteAmeisen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 RoteAmeisen!
+        icon:icons[5,8] icons[0,5]
+        cost:1960000000 Insekten
+        req:40 RoteAmeise
+		on earn:yield 50 RoteAmeisenlimit
+*UgLimitRAmeise2
+        name:150 RoteAmeisen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 RoteAmeisen!
+        icon:icons[5,8] icons[0,5]
+        cost:1960000000000 Insekten
+        req:80 RoteAmeise
+		on earn:yield 50 RoteAmeisenlimit
+*UgLimitRAmeise3
+        name:200 RoteAmeisen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 RoteAmeisen!
+        icon:icons[5,8] icons[0,5]
+        cost:1960000000000000 Insekten
+        req:140 RoteAmeise
+		on earn:yield 50 RoteAmeisenlimit
+*UgLimitRAmeise4
+        name:250 RoteAmeisen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 RoteAmeisen!
+        icon:icons[5,8] icons[0,5]
+        cost:1960000000000000000 Insekten
+        req:190 RoteAmeise
+		on earn:yield 50 RoteAmeisenlimit
+
+*UgLimitGrKaefer1
+        name:100 GroßeKäfer
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 GroßeKäfer!
+        icon:icons[5,8] icons[0,6]
+        cost:28000000000 Insekten
+        req:40 GrosserKaefer
+		on earn:yield 50 GrKaeferlimit
+*UgLimitGrKaefer2
+        name:150 GroßeKäfer
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 GroßeKäfer!
+        icon:icons[5,8] icons[0,6]
+        cost:28000000000000 Insekten
+        req:80 GrosserKaefer
+		on earn:yield 50 GrKaeferlimit
+*UgLimitGrKaefer3
+        name:200 GroßeKäfer
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 GroßeKäfer!
+        icon:icons[5,8] icons[0,6]
+        cost:28000000000000000 Insekten
+        req:140 GrosserKaefer
+		on earn:yield 50 GrKaeferlimit
+*UgLimitGrKaefer4
+        name:250 GroßeKäfer
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 GroßeKäfer!
+        icon:icons[5,8] icons[0,6]
+        cost:28000000000000000000 Insekten
+        req:190 GrosserKaefer
+		on earn:yield 50 GrKaeferlimit
+
+*UgLimitSchmetter1
+        name:100 Schmetterlinge
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Schmetterlinge!
+        icon:icons[5,8] icons[0,7]
+        cost:420000000000 Insekten
+        req:40 Schmetterlinge
+		on earn:yield 50 Schmetterlimit
+*UgLimitSchmetter2
+        name:150 Schmetterlinge
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Schmetterlinge!
+        icon:icons[5,8] icons[0,7]
+        cost:420000000000000 Insekten
+        req:80 Schmetterlinge
+		on earn:yield 50 Schmetterlimit
+*UgLimitSchmetter3
+        name:200 Schmetterlinge
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Schmetterlinge!
+        icon:icons[5,8] icons[0,7]
+        cost:420000000000000000 Insekten
+        req:140 Schmetterlinge
+		on earn:yield 50 Schmetterlimit
+*UgLimitSchmetter4
+        name:250 Schmetterlinge
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Schmetterlinge!
+        icon:icons[5,8] icons[0,7]
+        cost:420000000000000000000 Insekten
+        req:190 Schmetterlinge
+		on earn:yield 50 Schmetterlimit
+														
 		
 // BauMaterial Limit	-------------------------------------------------------------------------------------------------------
 *UgLimitGras1
         name:100 Gras
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Gräser!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Gräser!
         icon:icons[5,8] icons[2,0]
         cost:1300000 Insekten
         req:40 Gras
 		on earn:yield 50 Graslimit
 *UgLimitGras2
         name:150 Gras
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Gräser!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Gräser!
         icon:icons[5,8] icons[2,0]
         cost:1300000000 Insekten
         req:80 Gras	
 		on earn:yield 50 Graslimit
 *UgLimitGras3
         name:200 Gras
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Gräser!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Gräser!
         icon:icons[5,8] icons[2,0]
         cost:1300000000000 Insekten
         req:140 Gras	
 		on earn:yield 50 Graslimit
 *UgLimitGras4
         name:250 Gras
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Gräser!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Gräser!
         icon:icons[5,8] icons[2,0]
         cost:1300000000000000 Insekten
         req:190 Gras	
@@ -2079,28 +2203,28 @@ Upgrades
 
 *UgLimitAst1
         name:100 Ast
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Äste!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Äste!
         icon:icons[5,8] icons[2,1]
         cost:1870000 Insekten
         req:40 Ast
 		on earn:yield 50 Astlimit
 *UgLimitAst2
         name:150 Ast
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Äste!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Äste!
         icon:icons[5,8] icons[2,1]
         cost:1870000000 Insekten
         req:80 Ast	
 		on earn:yield 50 Astlimit
 *UgLimitAst3
         name:200 Ast
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Äste!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Äste!
         icon:icons[5,8] icons[2,1]
         cost:1870000000000 Insekten
         req:140 Ast	
 		on earn:yield 50 Astlimit
 *UgLimitAst4
         name:250 Ast
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Äste!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Äste!
         icon:icons[5,8] icons[2,1]
         cost:1870000000000000 Insekten
         req:190 Ast	
@@ -2108,28 +2232,28 @@ Upgrades
 
 *UgLimitWurzel1
         name:100 Wurzel
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Wurzeln!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Wurzeln!
         icon:icons[5,8] icons[2,2]
         cost:9530000 Insekten
         req:40 Wurzel
 		on earn:yield 50 Wurzellimit
 *UgLimitWurzel2
         name:150 Wurzel
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Wurzeln!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Wurzeln!
         icon:icons[5,8] icons[2,2]
         cost:9530000000 Insekten
         req:80 Wurzel	
 		on earn:yield 50 Wurzellimit
 *UgLimitWurzel3
         name:200 Wurzel
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Wurzeln!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Wurzeln!
         icon:icons[5,8] icons[2,2]
         cost:9530000000000 Insekten
         req:140 Wurzel	
 		on earn:yield 50 Wurzellimit
 *UgLimitWurzel4
         name:250 Wurzel
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Wurzeln!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Wurzeln!
         icon:icons[5,8] icons[2,2]
         cost:9530000000000000 Insekten
         req:190 Wurzel	
@@ -2137,28 +2261,28 @@ Upgrades
 
 *UgLimitStein1
         name:100 Stein
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Steine!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Steine!
         icon:icons[5,8] icons[2,3]
         cost:104000000 Insekten
         req:40 Stein
 		on earn:yield 50 Steinlimit
 *UgLimitStein2
         name:150 Stein
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Steine!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Steine!
         icon:icons[5,8] icons[2,3]
         cost:104000000000 Insekten
         req:80 Stein	
 		on earn:yield 50 Steinlimit
 *UgLimitStein3
         name:200 Stein
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Steine!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Steine!
         icon:icons[5,8] icons[2,3]
         cost:104000000000000 Insekten
         req:140 Stein	
 		on earn:yield 50 Steinlimit
 *UgLimitStein4
         name:250 Stein
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Steine!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Steine!
         icon:icons[5,8] icons[2,3]
         cost:104000000000000000 Insekten
         req:190 Stein	
@@ -2166,28 +2290,28 @@ Upgrades
 
 *UgLimitDreck1
         name:100 Dreck
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 Dreck!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Dreck!
         icon:icons[5,8] icons[2,4]
         cost:112667000 Insekten
         req:40 Dreck
 		on earn:yield 50 Drecklimit
 *UgLimitDreck2
         name:150 Dreck
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 Dreck!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Dreck!
         icon:icons[5,8] icons[2,4]
         cost:1126670000000 Insekten
         req:80 Dreck	
 		on earn:yield 50 Drecklimit
 *UgLimitDreck3
         name:200 Dreck
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 Dreck!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Dreck!
         icon:icons[5,8] icons[2,4]
         cost:1126670000000000 Insekten
         req:140 Dreck	
 		on earn:yield 50 Drecklimit
 *UgLimitDreck4
         name:250 Dreck
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 Dreck!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Dreck!
         icon:icons[5,8] icons[2,4]
         cost:1126670000000000000 Insekten
         req:190 Dreck	
@@ -2195,36 +2319,149 @@ Upgrades
 
 *UgLimitABuch1
         name:100 AltesBuch
-        desc:<.> Vergrößre deine Kolonie auf bis zu 100 AlteBücher!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 AlteBücher!
         icon:icons[5,8] icons[2,5]
         cost:12133330000 Insekten
         req:40 AltesBuch
 		on earn:yield 50 ABuchlimit
 *UgLimitABuch2
         name:150 AltesBuch
-        desc:<.> Vergrößre deine Kolonie auf bis zu 150 AlteBücher!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 AlteBücher!
         icon:icons[5,8] icons[2,5]
         cost:12133330000000 Insekten
         req:80 AltesBuch	
 		on earn:yield 50 ABuchlimit
 *UgLimitABuch3
         name:200 AltesBuch
-        desc:<.> Vergrößre deine Kolonie auf bis zu 200 AlteBücher!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 AlteBücher!
         icon:icons[5,8] icons[2,5]
         cost:12133330000000000 Insekten
         req:140 AltesBuch	
 		on earn:yield 50 ABuchlimit
 *UgLimitABuch4
         name:250 AltesBuch
-        desc:<.> Vergrößre deine Kolonie auf bis zu 250 AlteBücher!
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 AlteBücher!
         icon:icons[5,8] icons[2,5]
         cost:12133330000000000000 Insekten
         req:190 AltesBuch	
 		on earn:yield 50 ABuchlimit
-						
-				
 
+*UgLimitKarnickel1
+        name:100 Karnickel
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Karnickel!
+        icon:icons[5,8] icons[2,6]
+        cost:17333333000 Insekten
+        req:40 Karnickel
+		on earn:yield 50 Karnickellimit
+*UgLimitKarnickel2
+        name:150 Karnickel
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Karnickel!
+        icon:icons[5,8] icons[2,6]
+        cost:17333333000000 Insekten
+        req:80 Karnickel	
+		on earn:yield 50 Karnickellimit
+*UgLimitKarnickel3
+        name:200 Karnickel
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Karnickel!
+        icon:icons[5,8] icons[2,6]
+        cost:17333333000000000 Insekten
+        req:140 Karnickel	
+		on earn:yield 50 Karnickellimit
+*UgLimitKarnickel4
+        name:250 Karnickel
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Karnickel!
+        icon:icons[5,8] icons[2,6]
+        cost:17333333000000000000 Insekten
+        req:190 Karnickel	
+		on earn:yield 50 Karnickellimit
 
+*UgLimitSonnenblume1
+        name:100 Sonnenblume
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Sonnenblumen!
+        icon:icons[5,8] icons[2,7]
+        cost:286000000000 Insekten
+        req:40 Sonnenblume
+		on earn:yield 50 Sonnenblumenlimit
+*UgLimitSonnenblume2
+        name:150 Sonnenblume
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Sonnenblumen!
+        icon:icons[5,8] icons[2,7]
+        cost:286000000000000 Insekten
+        req:80 Sonnenblume	
+		on earn:yield 50 Sonnenblumenlimit
+*UgLimitSonnenblume3
+        name:200 Sonnenblume
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Sonnenblumen!
+        icon:icons[5,8] icons[2,7]
+        cost:286000000000000000 Insekten
+        req:140 Sonnenblume	
+		on earn:yield 50 Sonnenblumenlimit
+*UgLimitSonnenblume4
+        name:250 Sonnenblume
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Sonnenblumen!
+        icon:icons[5,8] icons[2,7]
+        cost:286000000000000000000 Insekten
+        req:190 Sonnenblume	
+		on earn:yield 50 Sonnenblumenlimit
+
+*UgLimitFred1
+        name:100 Fred
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Freds!
+        icon:icons[5,8] icons[2,8]
+        cost:4420000000000 Insekten
+        req:40 Fred
+		on earn:yield 50 Fredslimit
+*UgLimitFred2
+        name:150 Fred
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Freds!
+        icon:icons[5,8] icons[2,8]
+        cost:4420000000000000 Insekten
+        req:80 Fred	
+		on earn:yield 50 Fredslimit
+*UgLimitFred3
+        name:200 Fred
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Freds!
+        icon:icons[5,8] icons[2,8]
+        cost:4420000000000000000 Insekten
+        req:140 Fred	
+		on earn:yield 50 Fredslimit
+*UgLimitFred4
+        name:250 Fred
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Freds!
+        icon:icons[5,8] icons[2,8]
+        cost:4420000000000000000000 Insekten
+        req:190 Fred	
+		on earn:yield 50 Fredslimit
+
+*UgLimitBbusch1
+        name:100 Blumenbüsche
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Blumenbüsche!
+        icon:icons[5,8] icons[2,9]
+        cost:65000000000000 Insekten
+        req:40 Blumenbusch
+		on earn:yield 50 Bbuschlimit
+*UgLimitBbusch2
+        name:150 Blumenbüsche
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Blumenbüsche!
+        icon:icons[5,8] icons[2,9]
+        cost:65000000000000000 Insekten
+        req:80 Blumenbusch	
+		on earn:yield 50 Bbuschlimit
+*UgLimitBbusch3
+        name:200 Blumenbüsche
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Blumenbüsche!
+        icon:icons[5,8] icons[2,9]
+        cost:65000000000000000000 Insekten
+        req:140 Blumenbusch	
+		on earn:yield 50 Bbuschlimit
+*UgLimitBbusch4
+        name:250 Blumenbüsche
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Blumenbüsche!
+        icon:icons[5,8] icons[2,9]
+        cost:65000000000000000000000 Insekten
+        req:190 Blumenbusch	
+		on earn:yield 50 Bbuschlimit
+			
 *TEMPLATE
 		tag:upgrades
 		on tick:if (have this) hide this
