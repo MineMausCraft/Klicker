@@ -40,7 +40,7 @@ Layout
     names:hide
  *limtupgrades
                 contains:tag:limitupgrades
-                header:Limited Upgrades
+                header:Kolonie Erweiterung
                 in:upgrades
                 costs:hide
                 names:hide	
