@@ -15,7 +15,7 @@ Settings
 	spritesheet:iconsb, 48 by 48, https://i.imgur.com/j79ZDuT.png
 	
 	spritesheet:iconsgr, 128 by 128, https://i.imgur.com/rIBALOu.png
-	spritesheet:iconskl, 40 by 40, https://i.imgur.com/3b23vbA.png
+	spritesheet:iconskl, 40 by 40, https://i.imgur.com/sn7cIq5.png
 	stylesheet:https://pastebin.com/raw/8iFdUmTb
 	on start:SuperB=2
 	
@@ -445,8 +445,9 @@ Buttons
 *SuperButtonOn
 		name:EvolutionsKnopf
         desc:KLicke hier wenn du deine Evolutions Punkte ausgeben möchtest.
-        icon:iconskl[2,2]
+        icon:iconskl[6,1]
         class:SuperButtonOn
+		no text
       on click:anim icon wobble
       on click:yield 1 BauMaterial
         on click:show SuperButton
@@ -497,8 +498,9 @@ Buttons
 *SuperButtonOff
 		name:OK
         desc:Wenn du fertig bist klicke hier um zur Insektenkolonie zurück zu kehren!
-        icon:iconskl[2,1]
+        icon:iconskl[4,1]
         class:SuperButtonOff
+		no text
       on click:anim icon wobble
       on click:yield 1 BauMaterial     
         on click:hide SuperButton
