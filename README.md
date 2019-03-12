@@ -447,7 +447,6 @@ Buttons
         desc:Nur Buff1
         icon:iconskl[2,2]
         class:SuperButtonOn
-        text:Tada On
         no tooltip
       on click:anim icon wobble
       on click:yield 1 BauMaterial
@@ -501,7 +500,6 @@ Buttons
         desc:Nur Buff1
         icon:iconskl[2,1]
         class:SuperButtonOff
-        text:Klick mich!
         no tooltip
       on click:anim icon wobble
       on click:yield 1 BauMaterial     
@@ -868,6 +866,12 @@ Resources
 *RoteAmeisenlimit
 *GrKaeferlimit
 *Schmetterlimit
+*Schabenlimit
+*Skorpionlimit
+*ANestlimit
+*Schuhlimit
+*Pizzenlimit
+*Ivanslimit
 
 //Shinies ---------------------------------------------------------------------------------------------------------
 Shinies
@@ -1313,6 +1317,7 @@ Buildings
    	on tick:lose 300 BauMaterial
 	on tick:lose 100 Nahrung
 	on earn:yield 1 Erfahrung
+	Limit:(ANestlimit)
 //8
 *UeberwucherterSchuh|UeberwucherteSchuhe
     name:ÜberwucherterSchuh|ÜberwucherteSchuhe
@@ -1325,6 +1330,7 @@ Buildings
  	on tick:lose 1201 BauMaterial
 	on tick:lose 125 Nahrung
 	on earn:yield 1 Erfahrung
+	Limit:(Schuhlimit)
 //9
 *Pizza|Pizzen
     name:Pizza|Pizzen
@@ -1337,6 +1343,7 @@ Buildings
  	on tick:lose 10000 BauMaterial
 	on tick:lose 150 Nahrung
 	on earn:yield 1 Erfahrung
+	Limit:(Pizzenlimit)
 //10
 *SchneckeIvan|SchneckenIvan
     name:SchneckeIvan|SchneckenIvan
@@ -1349,6 +1356,7 @@ Buildings
  	on tick:lose 50000 BauMaterial
 	on tick:lose 175 Nahrung
 	on earn:yield 1 Erfahrung
+	Limit:(Ivanslimit)
 //11
 *WasserEimer
     name:WasserEimer
@@ -1527,6 +1535,7 @@ Buildings
     req:6490909091 Insekten:earned and UpgISchabe
  	on tick:lose 10000 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(Schabenlimit)
 //10
 *Skorpion|Skorpione
     name:Skorpion|Skorpione
@@ -1537,6 +1546,7 @@ Buildings
     req:95454545455 Insekten:earned and UpgISkorion
 	on tick:lose 50000 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(Skorpionlimit)
 //11
 *Moskito|Moskitos
     name:Mücke|Mücken
@@ -1943,7 +1953,123 @@ Upgrades
         cost:15680000000000000000 Insekten
         req:190 VerfaulterApfel	
 		on earn:yield 50 VApfellimit
-					
+
+*UgLimitANest1
+        name:100 AlteNester
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 AlteNester!
+        icon:icons[5,8] icons[1,6]
+        cost:22400000000 Insekten
+        req:40 AltesNest
+		on earn:yield 50 ANestlimit
+*UgLimitANest2
+        name:150 AlteNester
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 AlteNester!
+        icon:icons[5,8] icons[1,6]
+        cost:22400000000000 Insekten
+        req:80 AltesNest
+		on earn:yield 50 ANestlimit
+*UgLimitANest3
+        name:200 AlteNester
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 AlteNester!
+        icon:icons[5,8] icons[1,6]
+        cost:22400000000000000 Insekten
+        req:140 AltesNest
+		on earn:yield 50 ANestlimit
+*UgLimitANest4
+        name:250 AlteNester
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 AlteNester!
+        icon:icons[5,8] icons[1,6]
+        cost:22400000000000000000 Insekten
+        req:190 AltesNest
+		on earn:yield 50 ANestlimit
+
+*UgLimitSchuh1
+        name:100 UeberwucherterSchuh
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Schuhe!
+        icon:icons[5,8] icons[1,7]
+        cost:22400000000 Insekten
+        req:40 UeberwucherterSchuh
+		on earn:yield 50 Schuhlimit
+*UgLimitSchuh2
+        name:150 UeberwucherterSchuh
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Schuhe!
+        icon:icons[5,8] icons[1,7]
+        cost:22400000000000 Insekten
+        req:80 UeberwucherterSchuh
+		on earn:yield 50 Schuhlimit
+*UgLimitSchuh3
+        name:200 UeberwucherterSchuh
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Schuhe!
+        icon:icons[5,8] icons[1,7]
+        cost:22400000000000000 Insekten
+        req:140 UeberwucherterSchuh
+		on earn:yield 50 Schuhlimit
+*UgLimitSchuh4
+        name:250 UeberwucherterSchuh
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Schuhe!
+        icon:icons[5,8] icons[1,7]
+        cost:22400000000000000000 Insekten
+        req:190 UeberwucherterSchuh
+		on earn:yield 50 Schuhlimit
+
+*UgLimitPizza1
+        name:100 Pizzen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Pizzen!
+        icon:icons[5,8] icons[1,8]
+        cost:5712000000000 Insekten
+        req:40 Pizzen
+		on earn:yield 50 Pizzenlimit
+*UgLimitPizza2
+        name:150 Pizzen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Pizzen!
+        icon:icons[5,8] icons[1,8]
+        cost:5712000000000000 Insekten
+        req:80 Pizzen
+		on earn:yield 50 Pizzenlimit
+*UgLimitPizza3
+        name:200 Pizzen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Pizzen!
+        icon:icons[5,8] icons[1,8]
+        cost:5712000000000000000 Insekten
+        req:140 Pizzen
+		on earn:yield 50 Pizzenlimit
+*UgLimitPizza4
+        name:250 Pizzen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Pizzen!
+        icon:icons[5,8] icons[1,8]
+        cost:5712000000000000000000 Insekten
+        req:190 Pizzen
+		on earn:yield 50 Pizzenlimit
+
+*UgLimitIvan1
+        name:100 SchneckenIvan
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Ivans!
+        icon:icons[5,8] icons[1,9]
+        cost:84000000000000 Insekten
+        req:40 SchneckenIvan
+		on earn:yield 50 Ivanslimit
+*UgLimitIvan2
+        name:150 SchneckenIvan
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Ivans!
+        icon:icons[5,8] icons[1,9]
+        cost:84000000000000000 Insekten
+        req:80 SchneckenIvan
+		on earn:yield 50 Ivanslimit
+*UgLimitIvan3
+        name:200 SchneckenIvan
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Ivans!
+        icon:icons[5,8] icons[1,9]
+        cost:84000000000000000000 Insekten
+        req:140 SchneckenIvan
+		on earn:yield 50 Ivanslimit
+*UgLimitIvan4
+        name:250 SchneckenIvan
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Ivans!
+        icon:icons[5,8] icons[1,9]
+        cost:84000000000000000000000 Insekten
+        req:190 SchneckenIvan
+		on earn:yield 50 Ivanslimit
+											
 	
 // Insekten Limits -------------------------------------------------------------------------------------------		
 *UgLimitAmeise1
@@ -2177,6 +2303,65 @@ Upgrades
         cost:420000000000000000000 Insekten
         req:190 Schmetterlinge
 		on earn:yield 50 Schmetterlimit
+
+*UgLimitSchabe1
+        name:100 Schaben
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Schaben!
+        icon:icons[5,8] icons[0,8]
+        cost:6490909091000 Insekten
+        req:40 Schaben
+		on earn:yield 50 Schabenlimit
+*UgLimitSchabe2
+        name:150 Schaben
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Schaben!
+        icon:icons[5,8] icons[0,8]
+        cost:6490909091000000 Insekten
+        req:80 Schaben
+		on earn:yield 50 Schabenlimit
+*UgLimitSchabe3
+        name:200 Schaben
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Schaben!
+        icon:icons[5,8] icons[0,8]
+        cost:6490909091000000000 Insekten
+        req:140 Schaben
+		on earn:yield 50 Schabenlimit
+*UgLimitSchabe4
+        name:250 Schaben
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Schaben!
+        icon:icons[5,8] icons[0,8]
+        cost:6490909091000000000000 Insekten
+        req:190 Schaben
+		on earn:yield 50 Schabenlimit
+
+*UgLimitSkorpion1
+        name:100 Skorpione
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Skorpione!
+        icon:icons[5,8] icons[0,9]
+        cost:95454545455000 Insekten
+        req:40 Skorpion
+		on earn:yield 50 Skorpionlimit
+*UgLimitSkorpion2
+        name:150 Skorpione
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Skorpione!
+        icon:icons[5,8] icons[0,9]
+        cost:95454545455000000 Insekten
+        req:80 Skorpion
+		on earn:yield 50 Skorpionlimit
+*UgLimitSkorpion3
+        name:200 Skorpione
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Skorpione!
+        icon:icons[5,8] icons[0,9]
+        cost:95454545455000000000 Insekten
+        req:140 Skorpion
+		on earn:yield 50 Skorpionlimit
+*UgLimitSkorpion4
+        name:250 Skorpione
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Skorpione!
+        icon:icons[5,8] icons[0,9]
+        cost:95454545455000000000000 Insekten
+        req:190 Skorpion
+		on earn:yield 50 Skorpionlimit
+				
 														
 		
 // BauMaterial Limit	-------------------------------------------------------------------------------------------------------
