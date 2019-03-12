@@ -860,6 +860,14 @@ Resources
 *Steinlimit
 *Drecklimit
 *ABuchlimit
+*Karnickellimit
+*Sonnenblumenlimit
+*Fredslimit
+*Bbuschlimit
+*Bienenlimit
+*RoteAmeisenlimit
+*GrKaeferlimit
+*Schmetterlimit
 
 //Shinies ---------------------------------------------------------------------------------------------------------
 Shinies
