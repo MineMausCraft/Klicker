@@ -750,7 +750,7 @@ Resources
         desc:Als Timer für alles
         class:noBackground
 		on tick:yield 1 Zeit
-        always hidden
+		always hidden	
 
 *Larve|Larven
         name:Larve|Larven
@@ -807,7 +807,7 @@ Resources
 		name:Spielzeit
 		desc:Zählt die Sekunden die du spielst!
 		class:noBackground
-		
+		always hidden	
 			
 *Evo|Evos
 		name:Evolutions Punkte
