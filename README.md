@@ -8717,7 +8717,7 @@ Upgrades
 		name:Löwenkopfkaninchen
 		icon:iconsc[0,9]
 		cost:17333333000000000000000000 BauMaterial,175 AltesBuch
-		req:UgbBKarnickel9
+		req:17333333000000000000000000 BauMaterial:earned and UgbBKarnickel9
 *UgbBKarnickel11
 		name:Riesenkarnickel
 		icon:iconsc[0,10]
@@ -13643,7 +13643,7 @@ class:noBackground
 		name:Löwenkopfkaninchen
 		icon:iconsc[0,9]
 		cost:17333333000000000000000000 BauMaterial,175 AltesBuch
-		req:17333333000000000000000000 BauMaterial:earned and UgbBKarnickel0
+		req:17333333000000000000000000 BauMaterial:earned and UgbBKarnickel10
 *UgbBKarnickel11a
 		name:Riesenkarnickel
 		icon:iconsc[0,10]
