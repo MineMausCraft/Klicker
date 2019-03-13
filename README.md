@@ -13,7 +13,7 @@ Settings
 	spritesheet:icons, 48 by 48, https://i.imgur.com/IoDXVCG.png
 	spritesheet:iconsa, 48 by 48, https://i.imgur.com/Bbff71y.png
 	spritesheet:iconsb, 48 by 48, https://i.imgur.com/j79ZDuT.png
-	spritesheet:iconsc, 48 by 48, https://i.imgur.com/O1YsOkP.png
+	spritesheet:iconsc, 48 by 48, https://i.imgur.com/gtA2gUf.png
 	
 	spritesheet:iconsgr, 128 by 128, https://i.imgur.com/rIBALOu.png
 	spritesheet:iconskl, 40 by 40, https://i.imgur.com/sn7cIq5.png
@@ -396,7 +396,6 @@ Buttons
         no tooltip
       on click:anim icon wobble
       on click:yield 1 BauMaterial
-	    on click:lose Evos
 *SuperButton38
         name:Superbutton1
         desc:Nur Buff1
@@ -406,7 +405,6 @@ Buttons
         no tooltip
       on click:anim icon wobble
       on click:yield 1 BauMaterial
-	  on click:yield 10000 Insekten
 *SuperButton39
         name:Superbutton39
         desc:Nur Buff1
@@ -415,7 +413,6 @@ Buttons
         text:Tada39
         no tooltip
       on click:anim icon wobble
-      on click:yield 1 Evo
 *SuperButton40
         name:Superbutton40
         desc:Nur Buff1
@@ -718,6 +715,7 @@ Buttons
 	  passive:multiply yield of Larven by ((Evo*1/100)+1)
 	  passive:multiply yield of Insekten by ((Evo*1/100)+1)
   	  passive:multiply yield of BauMaterial by ((Evo*1/100)+1)
+	  on tick:yield 1 Spielzeit
 *statusbar
 	  tag:booster
  	  name:sooooooLang
@@ -804,6 +802,13 @@ Resources
         class:noBackground
         no tooltip
         always hidden
+		
+*Spielzeit|Spielzeiten
+		name:Spielzeit
+		desc:Zählt die Sekunden die du spielst!
+		class:noBackground
+		
+			
 *Evo|Evos
 		name:Evolutions Punkte
 		icon:icons[6,2]
@@ -8921,7 +8926,139 @@ Upgrades
 		icon:icons[5,5] iconsc[4,11]
 		cost:325 Sonnenblume
 		req:2860000000000000000000000000000 BauMaterial:earned and UgbBSonnenblumeF11
+//9 Fred|Freds
 *TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Fred by 1.75
+		desc:<.> Erhöht die Produktion der Freds um <b>75</b> %.
+//		4420000000
+*UgbBFred1
+		name:Maulwurf
+		icon:iconsc[6,0]
+		cost:4420000000 BauMaterial,10 Sonnenblume
+		req:4420000000 BauMaterial:earned and 9 Fred
+*UgbBFred2
+		name:Freds Bruder
+		icon:iconsc[6,1]
+		cost:442000000000 BauMaterial,20 Sonnenblume
+		req:442000000000 BauMaterial:earned and UgbBFred1
+*UgbBFred3
+		name:Freds Schwester
+		icon:iconsc[6,2]
+		cost:44200000000000 BauMaterial,30 Sonnenblume
+		req:44200000000000 BauMaterial:earned and UgbBFred2
+*UgbBFred4
+		name:Freds Tante
+		icon:iconsc[6,3]
+		cost:4420000000000000 BauMaterial,40 Sonnenblume
+		req:4420000000000000 BauMaterial:earned and UgbBFred3
+*UgbBFred5
+		name:Freds Onkel
+		icon:iconsc[6,4]
+		cost:442000000000000000 BauMaterial,50 Sonnenblume
+		req:442000000000000000 BauMaterial:earned and UgbBFred4
+*UgbBFred6
+		name:Freds Vater
+		icon:iconsc[6,5]
+		cost:44200000000000000000 BauMaterial,75 Sonnenblume
+		req:44200000000000000000 BauMaterial:earned and UgbBFred5
+*UgbBFred7
+		name:Freds Mutti
+		icon:iconsc[6,6]
+		cost:4420000000000000000000 BauMaterial,100 Sonnenblume
+		req:4420000000000000000000 BauMaterial:earned and UgbBFred6
+*UgbBFred8
+		name:Freds Oma
+		icon:iconsc[6,7]
+		cost:442000000000000000000000 BauMaterial,125 Sonnenblume
+		req:442000000000000000000000 BauMaterial:earned and UgbBFred7
+*UgbBFred9
+		name:Freds Opa
+		icon:iconsc[6,8]
+		cost:44200000000000000000000000 BauMaterial,150 Sonnenblume
+		req:44200000000000000000000000 BauMaterial:earned and UgbBFred8
+*UgbBFred10
+		name:Freds Kusine
+		icon:iconsc[6,9]
+		cost:4420000000000000000000000000 BauMaterial,175 Sonnenblume
+		req:4420000000000000000000000000 BauMaterial:earned and UgbBFred9
+*UgbBFred11
+		name:Freds Kusin
+		icon:iconsc[6,10]
+		cost:442000000000000000000000000000 BauMaterial,200 Sonnenblume
+		req:442000000000000000000000000000 BauMaterial:earned and UgbBFred10
+*UgbBFred12
+		name:Freds Großkusin
+		icon:iconsc[6,11]
+		cost:44200000000000000000000000000000 BauMaterial,225 Sonnenblume
+		req:44200000000000000000000000000000 BauMaterial:earned and UgbBFred11
+
+*UgbBFredF1
+		name:Schärfere Krallen
+		icon:icons[5,5] iconsc[7,0]
+		cost:10 Fred
+		req:4420000000 BauMaterial:earned
+*UgbBFredF2
+		name:Größere Pfoten
+		icon:icons[5,5] iconsc[7,1]
+		cost:50 Fred
+		req:442000000000 BauMaterial:earned and UgbBFredF1
+*UgbBFredF3
+		name:Dickere Augen
+		icon:icons[5,5] iconsc[7,2]
+		cost:100 Fred
+		req:44200000000000 BauMaterial:earned and UgbBFredF2
+*UgbBFredF4
+		name:Bessere Sehstärke
+		icon:icons[5,5] iconsc[7,3]
+		cost:125 Fred
+		req:4420000000000000 BauMaterial:earned and UgbBFredF3
+*UgbBFredF5
+		name:Stärkere Beine
+		icon:icons[5,5] iconsc[7,4]
+		cost:150 Fred
+		req:442000000000000000 BauMaterial:earned and UgbBFredF4
+*UgbBFredF6
+		name:Buddeln II
+		icon:icons[5,5] iconsc[7,5]
+		cost:175 Fred
+		req:44200000000000000000 BauMaterial:earned and UgbBFredF5
+*UgbBFredF7
+		name:Schnelleres Buddeln
+		icon:icons[5,5] iconsc[7,6]
+		cost:200 Fred
+		req:4420000000000000000000 BauMaterial:earned and UgbBFredF6
+*UgbBFredF8
+		name:Mehr Schub
+		icon:icons[5,5] iconsc[7,7]
+		cost:225 Fred
+		req:442000000000000000000000 BauMaterial:earned and UgbBFredF7
+*UgbBFredF9
+		name:Spitzhacke
+		icon:icons[5,5] iconsc[7,8]
+		cost:250 Fred
+		req:44200000000000000000000000 BauMaterial:earned and UgbBFredF8
+*UgbBFredF10
+		name:Schaufelpfoten
+		icon:icons[5,5] iconsc[7,9]
+		cost:275 Fred
+		req:4420000000000000000000000000 BauMaterial:earned and UgbBFredF9
+*UgbBFredF11
+		name:Bohrerzehen
+		icon:icons[5,5] iconsc[7,10]
+		cost:300 Fred
+		req:442000000000000000000000000000 BauMaterial:earned and UgbBFredF10
+*UgbBFredF12
+		name:Drilldüsen
+		icon:icons[5,5] iconsc[7,11]
+		cost:325 Fred
+		req:44200000000000000000000000000000 BauMaterial:earned and UgbBFredF11
+
 		
 *TEMPLATE
 no buy
@@ -13936,6 +14073,109 @@ class:noBackground
 		name:Morscher Stengel
 		icon:icons[5,5] iconsc[4,11]
 		req:2860000000000000000000000000000 BauMaterial:earned and UgbBSonnenblumeF12
+//9 Fred|Freds
+*TEMPLATE
+		no buy
+		tag:owned
+		class:noBackground
+		desc:<.> Erhöht die Produktion der Freds um <b>75</b> %.
+*UgbBFred1a
+		name:Maulwurf
+		icon:iconsc[6,0]
+		req:UgbBFred1
+*UgbBFred2a
+		name:Freds Bruder
+		icon:iconsc[6,1]
+		req:442000000000 BauMaterial:earned and UgbBFred2
+*UgbBFred3a
+		name:Freds Schwester
+		icon:iconsc[6,2]
+		req:44200000000000 BauMaterial:earned and UgbBFred3
+*UgbBFred4a
+		name:Freds Tante
+		icon:iconsc[6,3]
+		req:4420000000000000 BauMaterial:earned and UgbBFred4
+*UgbBFred5a
+		name:Freds Onkel
+		icon:iconsc[6,4]
+		req:442000000000000000 BauMaterial:earned and UgbBFred5
+*UgbBFred6a
+		name:Freds Vater
+		icon:iconsc[6,5]
+		req:44200000000000000000 BauMaterial:earned and UgbBFred6
+*UgbBFred7a
+		name:Freds Mutti
+		icon:iconsc[6,6]
+		req:4420000000000000000000 BauMaterial:earned and UgbBFred7
+*UgbBFred8a
+		name:Freds Oma
+		icon:iconsc[6,7]
+		req:442000000000000000000000 BauMaterial:earned and UgbBFred8
+*UgbBFred9a
+		name:Freds Opa
+		icon:iconsc[6,8]
+		req:44200000000000000000000000 BauMaterial:earned and UgbBFred9
+*UgbBFred10a
+		name:Freds Kusine
+		icon:iconsc[6,9]
+		req:4420000000000000000000000000 BauMaterial:earned and UgbBFred10
+*UgbBFred11a
+		name:Freds Kusin
+		icon:iconsc[6,10]
+		req:442000000000000000000000000000 BauMaterial:earned and UgbBFred11
+*UgbBFred12a
+		name:Freds Großkusin
+		icon:iconsc[6,11]
+		req:44200000000000000000000000000000 BauMaterial:earned and UgbBFred12
+
+*UgbBFredF1a
+		name:Schärfere Krallen
+		icon:icons[5,5] iconsc[7,0]
+		req:UgbBFredF1
+*UgbBFredF2a
+		name:Größere Pfoten
+		icon:icons[5,5] iconsc[7,1]
+		req:442000000000 BauMaterial:earned and UgbBFredF2
+*UgbBFredF3a
+		name:Dickere Augen
+		icon:icons[5,5] iconsc[7,2]
+		req:44200000000000 BauMaterial:earned and UgbBFredF3
+*UgbBFredF4a
+		name:Bessere Sehstärke
+		icon:icons[5,5] iconsc[7,3]
+		req:4420000000000000 BauMaterial:earned and UgbBFredF4
+*UgbBFredF5a
+		name:Stärkere Beine
+		icon:icons[5,5] iconsc[7,4]
+		req:442000000000000000 BauMaterial:earned and UgbBFredF5
+*UgbBFredF6a
+		name:Buddeln II
+		icon:icons[5,5] iconsc[7,5]
+		req:44200000000000000000 BauMaterial:earned and UgbBFredF6
+*UgbBFredF7a
+		name:Schnelleres Buddeln
+		icon:icons[5,5] iconsc[7,6]
+		req:4420000000000000000000 BauMaterial:earned and UgbBFredF7
+*UgbBFredF8a
+		name:Mehr Schub
+		icon:icons[5,5] iconsc[7,7]
+		req:442000000000000000000000 BauMaterial:earned and UgbBFredF8
+*UgbBFredF9a
+		name:Spitzhacke
+		icon:icons[5,5] iconsc[7,8]
+		req:44200000000000000000000000 BauMaterial:earned and UgbBFredF9
+*UgbBFredF10a
+		name:Schaufelpfoten
+		icon:icons[5,5] iconsc[7,9]
+		req:4420000000000000000000000000 BauMaterial:earned and UgbBFredF10
+*UgbBFredF11a
+		name:Bohrerzehen
+		icon:icons[5,5] iconsc[7,10]
+		req:442000000000000000000000000000 BauMaterial:earned and UgbBFredF11
+*UgbBFredF12a
+		name:Drilldüsen
+		icon:icons[5,5] iconsc[7,11]
+		req:44200000000000000000000000000000 BauMaterial:earned and UgbBFredF12
 *TEMPLATE
 // Erfolge --Achievements-------------------------------------------------------------------------------			
 		
@@ -13944,6 +14184,38 @@ Achievements
 		on click:anim glow
 		class:noBackground
 		on earn:yield 1 Erfolg
+		
+*AchievSpielzeit1
+		name:1 Stunde
+		desc:Du hast 1 Stunde gespielt!
+		req:3600 Spielzeit
+		icon:iconsc[9,0]
+*AchievSpielzeit2
+		name:2 Stunden
+		desc:Du hast 2 Stunden gespielt!
+		req:7200 Spielzeit
+		icon:iconsc[9,0]
+*AchievSpielzeit3
+		name:4 Stunden
+		desc:Du hast 4 Stunden gespielt!
+		req:14400 Spielzeit
+		icon:iconsc[9,0]
+*AchievSpielzeit4
+		name:6 Stunden
+		desc:Du hast 6 Stunden gespielt!
+		req:21600 Spielzeit
+		icon:iconsc[9,0]
+*AchievSpielzeit5
+		name:8 Stunde
+		desc:Du hast 8 Stunde gespielt!
+		req:28800 Spielzeit
+		icon:iconsc[9,0]
+*AchievSpielzeit6
+		name:10 Stunde
+		desc:Du hast 10 Stunden gespielt!
+		req:36000 Spielzeit
+		icon:iconsc[9,0]		
+					
 
 // Upgrades haben Achievments------------------------------------------------------------------------------
 *UHaben1
@@ -17296,7 +17568,7 @@ Achievements
 		desc:Habe 800 Karnickel
 		req:800 Karnickel
 		icon:iconsc[2,17]
-*BHKarnickel19
+*BHKarnickel19^^
 		name:General Woundwort
 		desc:Habe 850 Karnickel
 		req:850 Karnickel
@@ -17417,3 +17689,109 @@ Achievements
 		desc:Habe 950 Sonnenblumen
 		req:950 Sonnenblumen
 		icon:iconsc[5,20]	
+//9 Fred
+*BHFred1
+		name:Der Wühler
+		desc:Habe einn Fred
+		req:1 Fred
+		icon:iconsc[8,0]
+*BHFred2
+		name:Feuerstein
+		desc:Habe 19 Fred
+		req:19 Fred
+		icon:iconsc[8,1]
+*BHFred3
+		name:Wilma
+		desc:Habe 50 Fred
+		req:50 Fred
+		icon:iconsc[8,2]
+*BHFred4
+		name:Barnie
+		desc:Habe 100 Fred
+		req:100 Fred
+		icon:iconsc[8,3]
+*BHFred5
+		name:Geröllsteiner
+		desc:Habe 150 Fred
+		req:150 Fred
+		icon:iconsc[8,4]
+*BHFred6
+		name:Der Buddler
+		desc:Habe 200 Fred
+		req:200 Fred
+		icon:iconsc[8,5]
+*BHFred7
+		name:Der Bagger
+		desc:Habe 250 Fred
+		req:250 Fred
+		icon:iconsc[8,6]
+*BHFred8
+		name:Der Ausschachter
+		desc:Habe 300 Fred
+		req:300 Fred
+		icon:iconsc[8,7]
+*BHFred9
+		name:Der Kanalbauer
+		desc:Habe 350 Fred
+		req:350 Fred
+		icon:iconsc[8,8]
+*BHFred10
+		name:Der Unterirdische Gänge Bauer
+		desc:Habe 400 Fred
+		req:400 Fred
+		icon:iconsc[8,9]
+*BHFred11
+		name:Der Haufen macher
+		desc:Habe 450 Fred
+		req:450 Fred
+		icon:iconsc[8,10]
+*BHFred12
+		name:Der Umwühler
+		desc:Habe 500 Fred
+		req:500 Fred
+		icon:iconsc[8,11]
+*BHFred13
+		name:Der Unten Durch Buddler
+		desc:Habe 550 Fred
+		req:550 Fred
+		icon:iconsc[8,12]
+*BHFred14
+		name:Der Haufenkönig
+		desc:Habe 600 Fred
+		req:600 Fred
+		icon:iconsc[8,13]
+*BHFred15
+		name:Der Haufenmeister
+		desc:Habe 650 Fred
+		req:650 Fred
+		icon:iconsc[8,14]
+*BHFred16
+		name:Der Dreckfinder
+		desc:Habe 700 Fred
+		req:700 Fred
+		icon:iconsc[8,15]
+*BHFred17
+		name:Der Dreckbuddler
+		desc:Habe 750 Fred
+		req:750 Fred
+		icon:iconsc[8,16]
+*BHFred18
+		name:Der Erdbauer
+		desc:Habe 800 Fred
+		req:800 Fred
+		icon:iconsc[8,17]
+*BHFred19
+		name:Der Erbauer
+		desc:Habe 850 Fred
+		req:850 Fred
+		icon:iconsc[8,18]
+*BHFred20
+		name:Der Hügelerklimmer
+		desc:Habe 900 Fred
+		req:900 Fred
+		icon:iconsc[8,19]
+*BHFred21
+		name:Der Hügelgott
+		desc:Habe 950 Fred
+		req:950 Fred
+		icon:iconsc[8,20]
