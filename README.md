@@ -13,6 +13,7 @@ Settings
 	spritesheet:icons, 48 by 48, https://i.imgur.com/IoDXVCG.png
 	spritesheet:iconsa, 48 by 48, https://i.imgur.com/Bbff71y.png
 	spritesheet:iconsb, 48 by 48, https://i.imgur.com/j79ZDuT.png
+	spritesheet:iconsc, 48 by 48, https://i.imgur.com/O1YsOkP.png
 	
 	spritesheet:iconsgr, 128 by 128, https://i.imgur.com/rIBALOu.png
 	spritesheet:iconskl, 40 by 40, https://i.imgur.com/sn7cIq5.png
@@ -8539,63 +8540,63 @@ Upgrades
 *UgbBAltesBuch1
 		name:Buchtest
 		icon:iconsb[19,0]
-		cost:9230000 BauMaterial,10 Dreck
-		req:9230000 BauMaterial:earned and 9 Dreck
+		cost:12133330 BauMaterial,10 Dreck
+		req:12133330 BauMaterial:earned and 9 AltesBuch
 *UgbBAltesBuch2
 		name:Der Dunkle Turm
 		icon:iconsb[19,1]
-		cost:923000000 BauMaterial,20 Dreck
-		req:923000000 BauMaterial:earned and UgbBAltesBuch1
+		cost:1213333000 BauMaterial,20 Dreck
+		req:1213333000 BauMaterial:earned and UgbBAltesBuch1
 *UgbBAltesBuch3
 		name:Schwarz
 		icon:iconsb[19,2]
-		cost:92300000000 BauMaterial,30 Dreck
-		req:92300000000 BauMaterial:earned and UgbBAltesBuch2
+		cost:121333300000 BauMaterial,30 Dreck
+		req:121333300000 BauMaterial:earned and UgbBAltesBuch2
 *UgbBAltesBuch4
 		name:Drei
 		icon:iconsb[19,3]
-		cost:9230000000000 BauMaterial,40 Dreck
-		req:9230000000000 BauMaterial:earned and UgbBAltesBuch3
+		cost:12133330000000 BauMaterial,40 Dreck
+		req:12133330000000 BauMaterial:earned and UgbBAltesBuch3
 *UgbBAltesBuch5
 		name:Tod
 		icon:iconsb[19,4]
-		cost:923000000000000 BauMaterial,50 Dreck
-		req:923000000000000 BauMaterial:earned and UgbBAltesBuch4
+		cost:1213333000000000 BauMaterial,50 Dreck
+		req:1213333000000000 BauMaterial:earned and UgbBAltesBuch4
 *UgbBAltesBuch6
 		name:Glas
 		icon:iconsb[19,5]
-		cost:92300000000000000 BauMaterial,75 Dreck
-		req:92300000000000000 BauMaterial:earned and UgbBAltesBuch5
+		cost:121333300000000000 BauMaterial,75 Dreck
+		req:121333300000000000 BauMaterial:earned and UgbBAltesBuch5
 *UgbBAltesBuch7
 		name:Wind
 		icon:iconsb[19,6]
-		cost:9230000000000000000 BauMaterial,100 Dreck
-		req:9230000000000000000 BauMaterial:earned and UgbBAltesBuch6
+		cost:12133330000000000000 BauMaterial,100 Dreck
+		req:12133330000000000000 BauMaterial:earned and UgbBAltesBuch6
 *UgbBAltesBuch8
 		name:Wolfsmond
 		icon:iconsb[19,7]
-		cost:923000000000000000000 BauMaterial,125 Dreck
-		req:923000000000000000000 BauMaterial:earned and UgbBAltesBuch7
+		cost:1213333000000000000000 BauMaterial,125 Dreck
+		req:1213333000000000000000 BauMaterial:earned and UgbBAltesBuch7
 *UgbBAltesBuch9
 		name:Susannah
 		icon:iconsb[19,8]
-		cost:92300000000000000000000 BauMaterial,150 Dreck
-		req:92300000000000000000000 BauMaterial:earned and UgbBAltesBuch8
+		cost:121333300000000000000000 BauMaterial,150 Dreck
+		req:121333300000000000000000 BauMaterial:earned and UgbBAltesBuch8
 *UgbBAltesBuch10
 		name:Carrie
 		icon:iconsb[19,9]
-		cost:9230000000000000000000000 BauMaterial,175 Dreck
-		req:9230000000000000000000000 BauMaterial:earned and UgbBAltesBuch9
+		cost:12133330000000000000000000 BauMaterial,175 Dreck
+		req:12133330000000000000000000 BauMaterial:earned and UgbBAltesBuch9
 *UgbBAltesBuch11
 		name:Brennen muß Salem
 		icon:iconsb[19,10]
-		cost:923000000000000000000000000 BauMaterial,200 Dreck
-		req:923000000000000000000000000 BauMaterial:earned and UgbBAltesBuch10
+		cost:1213333000000000000000000000 BauMaterial,200 Dreck
+		req:1213333000000000000000000000 BauMaterial:earned and UgbBAltesBuch10
 *UgbBAltesBuch12
 		name:Shining
 		icon:iconsb[19,11]
-		cost:92300000000000000000000000000 BauMaterial,225 Dreck
-		req:92300000000000000000000000000 BauMaterial:earned and UgbBAltesBuch11
+		cost:121333300000000000000000000000 BauMaterial,225 Dreck
+		req:121333300000000000000000000000 BauMaterial:earned and UgbBAltesBuch11
 
 *UgbBAltesBuchF1
 		name:The Stand
@@ -8657,6 +8658,137 @@ Upgrades
 		icon:icons[5,5] iconsb[18,11]
 		cost:325 AltesBuch
 		req:92300000000000000000000000000 BauMaterial:earned and UgbBAltesBuchF11
+//7 Karnickel 
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Karnickel by 1.75
+		desc:<.> Erhöht die Produktion der Karnickel um <b>75</b> %.
+*UgbBKarnickel1
+		name:Häschen
+		icon:iconsc[0,0]
+		cost:17333333 BauMaterial,10 AltesBuch
+		req:17333333 BauMaterial:earned and 9 Karnickel
+*UgbBKarnickel2
+		name:Rammler
+		icon:iconsc[0,1]
+		cost:1733333300 BauMaterial,20 AltesBuch
+		req:1733333300 BauMaterial:earned and UgbBKarnickel1
+*UgbBKarnickel3
+		name:Bunny
+		icon:iconsc[0,2]
+		cost:173333330000 BauMaterial,30 AltesBuch
+		req:173333330000 BauMaterial:earned and UgbBKarnickel2
+*UgbBKarnickel4
+		name:Mümmler
+		icon:iconsc[0,3]
+		cost:17333333000000 BauMaterial,40 AltesBuch
+		req:17333333000000 BauMaterial:earned and UgbBKarnickel3
+*UgbBKarnickel5
+		name:Kaninchen
+		icon:iconsc[0,4]
+		cost:1733333300000000 BauMaterial,50 AltesBuch
+		req:1733333300000000 BauMaterial:earned and UgbBKarnickel4
+*UgbBKarnickel6
+		name:Hase
+		icon:iconsc[0,5]
+		cost:173333330000000000 BauMaterial,75 AltesBuch
+		req:173333330000000000 BauMaterial:earned and UgbBKarnickel5
+*UgbBKarnickel7
+		name:Alaska Kaninchen
+		icon:iconsc[0,6]
+		cost:17333333000000000000 BauMaterial,100 AltesBuch
+		req:17333333000000000000 BauMaterial:earned and UgbBKarnickel6
+*UgbBKarnickel8
+		name:Widderkaninchen
+		icon:iconsc[0,7]
+		cost:1733333300000000000000 BauMaterial,125 AltesBuch
+		req:1733333300000000000000 BauMaterial:earned and UgbBKarnickel7
+*UgbBKarnickel9
+		name:Lohkaninchen
+		icon:iconsc[0,8]
+		cost:173333330000000000000000 BauMaterial,150 AltesBuch
+		req:173333330000000000000000 BauMaterial:earned and UgbBKarnickel8
+*UgbBKarnickel10
+		name:Löwenkopfkaninchen
+		icon:iconsc[0,9]
+		cost:17333333000000000000000000 BauMaterial,175 AltesBuch
+		req:17333333000000000000000000 BauMaterial:earned and UgbBKarnickel9
+*UgbBKarnickel11
+		name:Riesenkarnickel
+		icon:iconsc[0,10]
+		cost:1733333300000000000000000000 BauMaterial,200 AltesBuch
+		req:1733333300000000000000000000 BauMaterial:earned and UgbBKarnickel10
+*UgbBKarnickel12
+		name:Deutsche Riesen
+		icon:iconsc[0,11]
+		cost:173333330000000000000000000000 BauMaterial,225 AltesBuch
+		req:173333330000000000000000000000 BauMaterial:earned and UgbBKarnickel11
+
+*UgbBKarnickelF1
+		name:Helle Großsilber
+		icon:icons[5,5] iconsc[1,0]
+		cost:10 Karnickel
+		req:17333333 BauMaterial:earned
+*UgbBKarnickelF2
+		name:Rote Neuseeländer
+		icon:icons[5,5] iconsc[1,1]
+		cost:50 Karnickel
+		req:1733333300 BauMaterial:earned and UgbBKarnickelF1
+*UgbBKarnickelF3
+		name:Kalifornier
+		icon:icons[5,5] iconsc[1,2]
+		cost:100 Karnickel
+		req:173333330000 BauMaterial:earned and UgbBKarnickelF2
+*UgbBKarnickelF4
+		name:Kleinschecken
+		icon:icons[5,5] iconsc[1,3]
+		cost:125 Karnickel
+		req:17333333000000 BauMaterial:earned and UgbBKarnickelF3
+*UgbBKarnickelF5
+		name:Buschkaninchen
+		icon:icons[5,5] iconsc[1,4]
+		cost:150 Karnickel
+		req:1733333300000000 BauMaterial:earned and UgbBKarnickelF4
+*UgbBKarnickelF6
+		name:Borstenkaninchen
+		icon:icons[5,5] iconsc[1,5]
+		cost:175 Karnickel
+		req:173333330000000000 BauMaterial:earned and UgbBKarnickelF5
+*UgbBKarnickelF7
+		name:Vulkankaninchen
+		icon:icons[5,5] iconsc[1,6]
+		cost:200 Karnickel
+		req:17333333000000000000 BauMaterial:earned and UgbBKarnickelF6
+*UgbBKarnickelF8
+		name:Wildkaninchen
+		icon:icons[5,5] iconsc[1,7]
+		cost:225 Karnickel
+		req:1733333300000000000000 BauMaterial:earned and UgbBKarnickelF7
+*UgbBKarnickelF9
+		name:Hauskaninchen
+		icon:icons[5,5] iconsc[1,8]
+		cost:250 Karnickel
+		req:173333330000000000000000 BauMaterial:earned and UgbBKarnickelF8
+*UgbBKarnickelF10
+		name:Streifenkaninchen
+		icon:icons[5,5] iconsc[1,9]
+		cost:275 Karnickel
+		req:17333333000000000000000000 BauMaterial:earned and UgbBKarnickelF9
+*UgbBKarnickelF11
+		name:Bunolagus
+		icon:icons[5,5] iconsc[1,10]
+		cost:300 Karnickel
+		req:1733333300000000000000000000 BauMaterial:earned and UgbBKarnickelF10
+*UgbBKarnickelF12
+		name:Lepus
+		icon:icons[5,5] iconsc[1,11]
+		cost:325 Karnickel
+		req:173333330000000000000000000000 BauMaterial:earned and UgbBKarnickelF11
 *TEMPLATE
 		
 *TEMPLATE
@@ -13465,7 +13597,111 @@ class:noBackground
 		name:Der Talisman
 		icon:icons[5,5] iconsb[18,11]
 		req:92300000000000000000000000000 BauMaterial:earned and UgbBAltesBuchF12
-*TEMPLATE		
+//7 Karnickel 
+*TEMPLATE
+		no buy
+		tag:owned
+		class:noBackground
+		desc:<.> Erhöht die Produktion der Karnickel um <b>75</b> %.
+*UgbBKarnickel1a
+		name:Häschen
+		icon:iconsc[0,0]
+		req:UgbBKarnickel1
+*UgbBKarnickel2a
+		name:Rammler
+		icon:iconsc[0,1]
+		req:1733333300 BauMaterial:earned and UgbBKarnickel2
+*UgbBKarnickel3a
+		name:Bunny
+		icon:iconsc[0,2]
+		req:173333330000 BauMaterial:earned and UgbBKarnickel3
+*UgbBKarnickel4a
+		name:Mümmler
+		icon:iconsc[0,3]
+		req:17333333000000 BauMaterial:earned and UgbBKarnickel4
+*UgbBKarnickel5a
+		name:Kaninchen
+		icon:iconsc[0,4]
+		req:1733333300000000 BauMaterial:earned and UgbBKarnickel5
+*UgbBKarnickel6a
+		name:Hase
+		icon:iconsc[0,5]
+		req:173333330000000000 BauMaterial:earned and UgbBKarnickel6
+*UgbBKarnickel7a
+		name:Alaska Kaninchen
+		icon:iconsc[0,6]
+		req:17333333000000000000 BauMaterial:earned and UgbBKarnickel7
+*UgbBKarnickel8a
+		name:Widderkaninchen
+		icon:iconsc[0,7]
+		req:1733333300000000000000 BauMaterial:earned and UgbBKarnickel8
+*UgbBKarnickel9a
+		name:Lohkaninchen
+		icon:iconsc[0,8]
+		req:173333330000000000000000 BauMaterial:earned and UgbBKarnickel9
+*UgbBKarnickel10a
+		name:Löwenkopfkaninchen
+		icon:iconsc[0,9]
+		cost:17333333000000000000000000 BauMaterial,175 AltesBuch
+		req:17333333000000000000000000 BauMaterial:earned and UgbBKarnickel0
+*UgbBKarnickel11a
+		name:Riesenkarnickel
+		icon:iconsc[0,10]
+		req:1733333300000000000000000000 BauMaterial:earned and UgbBKarnickel11
+*UgbBKarnickel12a
+		name:Deutsche Riesen
+		icon:iconsc[0,11]
+		req:173333330000000000000000000000 BauMaterial:earned and UgbBKarnickel12
+
+*UgbBKarnickelF1a
+		name:Helle Großsilber
+		icon:icons[5,5] iconsc[1,0]
+		req:UgbBKarnickelF1
+*UgbBKarnickelF2a
+		name:Rote Neuseeländer
+		icon:icons[5,5] iconsc[1,1]
+		req:1733333300 BauMaterial:earned and UgbBKarnickelF2
+*UgbBKarnickelF3a
+		name:Kalifornier
+		icon:icons[5,5] iconsc[1,2]
+		req:173333330000 BauMaterial:earned and UgbBKarnickelF3
+*UgbBKarnickelF4a
+		name:Kleinschecken
+		icon:icons[5,5] iconsc[1,3]
+		req:17333333000000 BauMaterial:earned and UgbBKarnickelF4
+*UgbBKarnickelF5a
+		name:Buschkaninchen
+		icon:icons[5,5] iconsc[1,4]
+		req:1733333300000000 BauMaterial:earned and UgbBKarnickelF5
+*UgbBKarnickelF6a
+		name:Borstenkaninchen
+		icon:icons[5,5] iconsc[1,5]
+		req:173333330000000000 BauMaterial:earned and UgbBKarnickelF6
+*UgbBKarnickelF7a
+		name:Vulkankaninchen
+		icon:icons[5,5] iconsc[1,6]
+		req:17333333000000000000 BauMaterial:earned and UgbBKarnickelF7
+*UgbBKarnickelF8a
+		name:Wildkaninchen
+		icon:icons[5,5] iconsc[1,7]
+		req:1733333300000000000000 BauMaterial:earned and UgbBKarnickelF8
+*UgbBKarnickelF9a
+		name:Hauskaninchen
+		icon:icons[5,5] iconsc[1,8]
+		req:173333330000000000000000 BauMaterial:earned and UgbBKarnickelF9
+*UgbBKarnickelF10a
+		name:Streifenkaninchen
+		icon:icons[5,5] iconsc[1,9]
+		req:17333333000000000000000000 BauMaterial:earned and UgbBKarnickelF10
+*UgbBKarnickelF11a
+		name:Bunolagus
+		icon:icons[5,5] iconsc[1,10]
+		req:1733333300000000000000000000 BauMaterial:earned and UgbBKarnickelF11
+*UgbBKarnickelF12a
+		name:Lepus
+		icon:icons[5,5] iconsc[1,11]
+		req:173333330000000000000000000000 BauMaterial:earned and UgbBKarnickelF12
+*TEMPLATE
 // Erfolge --Achievements-------------------------------------------------------------------------------			
 		
 Achievements
@@ -16732,4 +16968,111 @@ Achievements
 		name:Friedhof des Grauens
 		desc:Habe 950 AlteBücher
 		req:950 AltesBuch
-		icon:iconsb[20,20]		
+		icon:iconsb[20,20]
+		
+//7 Karnickel
+*BHKarnickel1
+		name:Schlappohr
+		desc:Habe ein Karnickel
+		req:1 Karnickel
+		icon:iconsc[2,0]
+*BHKarnickel2
+		name:Stehohr
+		desc:Habe 19 Karnickel
+		req:19 Karnickel
+		icon:iconsc[2,1]
+*BHKarnickel3
+		name:Langohr
+		desc:Habe 50 Karnickel
+		req:50 Karnickel
+		icon:iconsc[2,2]
+*BHKarnickel4
+		name:Kurzohr
+		desc:Habe 100 Karnickel
+		req:100 Karnickel
+		icon:iconsc[2,3]
+*BHKarnickel5
+		name:Langhaarkaninchen
+		desc:Habe 150 Karnickel
+		req:150 Karnickel
+		icon:iconsc[2,4]
+*BHKarnickel6
+		name:Kurzhaarkaninchen
+		desc:Habe 200 Karnickel
+		req:200 Karnickel
+		icon:iconsc[2,5]
+*BHKarnickel7
+		name:Buntes Kaninchen
+		desc:Habe 250 Karnickel
+		req:250 Karnickel
+		icon:iconsc[2,6]
+*BHKarnickel8
+		name:Weises Kaninchen
+		desc:Habe 300 Karnickel
+		req:300 Karnickel
+		icon:iconsc[2,7]
+*BHKarnickel9
+		name:Braunes Kaninchen
+		desc:Habe 350 Karnickel
+		req:350 Karnickel
+		icon:iconsc[2,8]
+*BHKarnickel10
+		name:Großes Karnickel
+		desc:Habe 400 Karnickel
+		req:400 Karnickel
+		icon:iconsc[2,9]
+*BHKarnickel11
+		name:Kleines Karnickel
+		desc:Habe 450 Karnickel
+		req:450 Karnickel
+		icon:iconsc[2,10]
+*BHKarnickel12
+		name:Junges Karnickel
+		desc:Habe 500 Karnickel
+		req:500 Karnickel
+		icon:iconsc[2,11]
+*BHKarnickel13
+		name:Nestflüchter
+		desc:Habe 550 Karnickel
+		req:550 Karnickel
+		icon:iconsc[2,12]
+*BHKarnickel14
+		name:Nesthocker
+		desc:Habe 600 Karnickel
+		req:600 Karnickel
+		icon:iconsc[2,13]
+*BHKarnickel15
+		name:Klopfer
+		desc:Habe 650 Karnickel
+		req:650 Karnickel
+		icon:iconsc[2,14]
+*BHKarnickel16
+		name:Hazel
+		desc:Habe 700 Karnickel
+		req:700 Karnickel
+		icon:iconsc[2,15]
+*BHKarnickel17
+		name:Fiver
+		desc:Habe 750 Karnickel
+		req:750 Karnickel
+		icon:iconsc[2,16]
+*BHKarnickel18
+		name:Bigwig
+		desc:Habe 800 Karnickel
+		req:800 Karnickel
+		icon:iconsc[2,17]
+*BHKarnickel19
+		name:General Woundwort
+		desc:Habe 850 Karnickel
+		req:850 Karnickel
+		icon:iconsc[2,18]
+*BHKarnickel20
+		name:Kassandra
+		desc:Habe 900 Karnickel
+		req:900 Karnickel
+		icon:iconsc[2,19]
+*BHKarnickel21
+		name:Unten Am Fluss
+		desc:Habe 950 Karnickel
+		req:950 Karnickel
+		icon:iconsc[2,20]		
