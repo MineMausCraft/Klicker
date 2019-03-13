@@ -17568,7 +17568,7 @@ Achievements
 		desc:Habe 800 Karnickel
 		req:800 Karnickel
 		icon:iconsc[2,17]
-*BHKarnickel19^^
+*BHKarnickel19
 		name:General Woundwort
 		desc:Habe 850 Karnickel
 		req:850 Karnickel
