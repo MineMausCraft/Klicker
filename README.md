@@ -8789,6 +8789,138 @@ Upgrades
 		icon:icons[5,5] iconsc[1,11]
 		cost:325 Karnickel
 		req:173333330000000000000000000000 BauMaterial:earned and UgbBKarnickelF11
+//8 Sonnenblume|Sonnenblumen
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Sonnenblume by 1.75
+		desc:<.> Erhöht die Produktion der Sonnenblumen um <b>75</b> %.
+//		286000000
+*UgbBSonnenblume1
+		name:Eine Blume
+		icon:iconsc[3,0]
+		cost:286000000 BauMaterial,10 Karnickel
+		req:286000000 BauMaterial:earned and 9 Sonnenblume
+*UgbBSonnenblume2
+		name:Zwei Sonnenblumen
+		icon:iconsc[3,1]
+		cost:28600000000 BauMaterial,20 Karnickel
+		req:28600000000 BauMaterial:earned and UgbBSonnenblume1
+*UgbBSonnenblume3
+		name:Ein Blütenblatt
+		icon:iconsc[3,2]
+		cost:2860000000000 BauMaterial,30 Karnickel
+		req:2860000000000 BauMaterial:earned and UgbBSonnenblume2
+*UgbBSonnenblume4
+		name:Zwei Blütenblätter
+		icon:iconsc[3,3]
+		cost:286000000000000 BauMaterial,40 Karnickel
+		req:286000000000000 BauMaterial:earned and UgbBSonnenblume3
+*UgbBSonnenblume5
+		name:Blumenstrauß
+		icon:iconsc[3,4]
+		cost:28600000000000000 BauMaterial,50 Karnickel
+		req:28600000000000000 BauMaterial:earned and UgbBSonnenblume4
+*UgbBSonnenblume6
+		name:Blumenvase
+		icon:iconsc[3,5]
+		cost:2860000000000000000 BauMaterial,75 Karnickel
+		req:2860000000000000000 BauMaterial:earned and UgbBSonnenblume5
+*UgbBSonnenblume7
+		name:Blumentopf
+		icon:iconsc[3,6]
+		cost:286000000000000000000 BauMaterial,100 Karnickel
+		req:286000000000000000000 BauMaterial:earned and UgbBSonnenblume6
+*UgbBSonnenblume8
+		name:Blümchen
+		icon:iconsc[3,7]
+		cost:28600000000000000000000 BauMaterial,125 Karnickel
+		req:28600000000000000000000 BauMaterial:earned and UgbBSonnenblume7
+*UgbBSonnenblume9
+		name:Drei Sonnenblumen
+		icon:iconsc[3,8]
+		cost:2860000000000000000000000 BauMaterial,150 Karnickel
+		req:2860000000000000000000000 BauMaterial:earned and UgbBSonnenblume8
+*UgbBSonnenblume10
+		name:Blumenladen
+		icon:iconsc[3,9]
+		cost:286000000000000000000000000 BauMaterial,175 Karnickel
+		req:286000000000000000000000000 BauMaterial:earned and UgbBSonnenblume9
+*UgbBSonnenblume11
+		name:Blumenstrauch
+		icon:iconsc[3,10]
+		cost:28600000000000000000000000000 BauMaterial,200 Karnickel
+		req:28600000000000000000000000000 BauMaterial:earned and UgbBSonnenblume10
+*UgbBSonnenblume12
+		name:Blumenarangement
+		icon:iconsc[3,11]
+		cost:2860000000000000000000000000000 BauMaterial,225 Karnickel
+		req:2860000000000000000000000000000 BauMaterial:earned and UgbBSonnenblume11
+
+*UgbBSonnenblumeF1
+		name:Ein Blümlein
+		icon:icons[5,5] iconsc[4,0]
+		cost:10 Sonnenblume
+		req:286000000 BauMaterial:earned
+*UgbBSonnenblumeF2
+		name:Dicker Stengel
+		icon:icons[5,5] iconsc[4,1]
+		cost:50 Sonnenblume
+		req:28600000000 BauMaterial:earned and UgbBSonnenblumeF1
+*UgbBSonnenblumeF3
+		name:Gelbere Blüten
+		icon:icons[5,5] iconsc[4,2]
+		cost:100 Sonnenblume
+		req:2860000000000 BauMaterial:earned and UgbBSonnenblumeF2
+*UgbBSonnenblumeF4
+		name:Mehr Kerne
+		icon:icons[5,5] iconsc[4,3]
+		cost:125 Sonnenblume
+		req:286000000000000 BauMaterial:earned and UgbBSonnenblumeF3
+*UgbBSonnenblumeF5
+		name:Festere Wurzeln
+		icon:icons[5,5] iconsc[4,4]
+		cost:150 Sonnenblume
+		req:28600000000000000 BauMaterial:earned and UgbBSonnenblumeF4
+*UgbBSonnenblumeF6
+		name:Schnelleres Wachstum
+		icon:icons[5,5] iconsc[4,5]
+		cost:175 Sonnenblume
+		req:2860000000000000000 BauMaterial:earned and UgbBSonnenblumeF5
+*UgbBSonnenblumeF7
+		name:Mehr Sonne
+		icon:icons[5,5] iconsc[4,6]
+		cost:200 Sonnenblume
+		req:286000000000000000000 BauMaterial:earned and UgbBSonnenblumeF6
+*UgbBSonnenblumeF8
+		name:Mehr Blüten
+		icon:icons[5,5] iconsc[4,7]
+		cost:225 Sonnenblume
+		req:28600000000000000000000 BauMaterial:earned and UgbBSonnenblumeF7
+*UgbBSonnenblumeF9
+		name:Mehr Blätter
+		icon:icons[5,5] iconsc[4,8]
+		cost:250 Sonnenblume
+		req:2860000000000000000000000 BauMaterial:earned and UgbBSonnenblumeF8
+*UgbBSonnenblumeF10
+		name:Fauliger Stamm
+		icon:icons[5,5] iconsc[4,9]
+		cost:275 Sonnenblume
+		req:286000000000000000000000000 BauMaterial:earned and UgbBSonnenblumeF9
+*UgbBSonnenblumeF11
+		name:Welke Blüte
+		icon:icons[5,5] iconsc[4,10]
+		cost:300 Sonnenblume
+		req:28600000000000000000000000000 BauMaterial:earned and UgbBSonnenblumeF10
+*UgbBSonnenblumeF12
+		name:Morscher Stengel
+		icon:icons[5,5] iconsc[4,11]
+		cost:325 Sonnenblume
+		req:2860000000000000000000000000000 BauMaterial:earned and UgbBSonnenblumeF11
 *TEMPLATE
 		
 *TEMPLATE
@@ -13701,6 +13833,109 @@ class:noBackground
 		name:Lepus
 		icon:icons[5,5] iconsc[1,11]
 		req:173333330000000000000000000000 BauMaterial:earned and UgbBKarnickelF12
+//8 Sonnenblume|Sonnenblumen
+*TEMPLATE
+		no buy
+		tag:owned
+		class:noBackground
+		desc:<.> Erhöht die Produktion der Sonnenblumen um <b>75</b> %.
+*UgbBSonnenblume1a
+		name:Eine Blume
+		icon:iconsc[3,0]
+		req:UgbBSonnenblume1
+*UgbBSonnenblume2a
+		name:Zwei Sonnenblumen
+		icon:iconsc[3,1]
+		req:28600000000 BauMaterial:earned and UgbBSonnenblume2
+*UgbBSonnenblume3a
+		name:Ein Blütenblatt
+		icon:iconsc[3,2]
+		req:2860000000000 BauMaterial:earned and UgbBSonnenblume3
+*UgbBSonnenblume4a
+		name:Zwei Blütenblätter
+		icon:iconsc[3,3]
+		req:286000000000000 BauMaterial:earned and UgbBSonnenblume4
+*UgbBSonnenblume5a
+		name:Blumenstrauß
+		icon:iconsc[3,4]
+		req:28600000000000000 BauMaterial:earned and UgbBSonnenblume5
+*UgbBSonnenblume6a
+		name:Blumenvase
+		icon:iconsc[3,5]
+		req:2860000000000000000 BauMaterial:earned and UgbBSonnenblume6
+*UgbBSonnenblume7a
+		name:Blumentopf
+		icon:iconsc[3,6]
+		req:286000000000000000000 BauMaterial:earned and UgbBSonnenblume7
+*UgbBSonnenblume8a
+		name:Blümchen
+		icon:iconsc[3,7]
+		req:28600000000000000000000 BauMaterial:earned and UgbBSonnenblume8
+*UgbBSonnenblume9a
+		name:Drei Sonnenblumen
+		icon:iconsc[3,8]
+		req:2860000000000000000000000 BauMaterial:earned and UgbBSonnenblume9
+*UgbBSonnenblume10a
+		name:Blumenladen
+		icon:iconsc[3,9]
+		req:286000000000000000000000000 BauMaterial:earned and UgbBSonnenblume10
+*UgbBSonnenblume11a
+		name:Blumenstrauch
+		icon:iconsc[3,10]
+		req:28600000000000000000000000000 BauMaterial:earned and UgbBSonnenblume11
+*UgbBSonnenblume12a
+		name:Blumenarangement
+		icon:iconsc[3,11]
+		req:2860000000000000000000000000000 BauMaterial:earned and UgbBSonnenblume12
+
+*UgbBSonnenblumeF1a
+		name:Ein Blümlein
+		icon:icons[5,5] iconsc[4,0]
+		req:UgbBSonnenblumeF1
+*UgbBSonnenblumeF2a
+		name:Dicker Stengel
+		icon:icons[5,5] iconsc[4,1]
+		req:28600000000 BauMaterial:earned and UgbBSonnenblumeF2
+*UgbBSonnenblumeF3a
+		name:Gelbere Blüten
+		icon:icons[5,5] iconsc[4,2]
+		req:2860000000000 BauMaterial:earned and UgbBSonnenblumeF3
+*UgbBSonnenblumeF4a
+		name:Mehr Kerne
+		icon:icons[5,5] iconsc[4,3]
+		req:286000000000000 BauMaterial:earned and UgbBSonnenblumeF4
+*UgbBSonnenblumeF5a
+		name:Festere Wurzeln
+		icon:icons[5,5] iconsc[4,4]
+		req:28600000000000000 BauMaterial:earned and UgbBSonnenblumeF5
+*UgbBSonnenblumeF6a
+		name:Schnelleres Wachstum
+		icon:icons[5,5] iconsc[4,5]
+		req:2860000000000000000 BauMaterial:earned and UgbBSonnenblumeF6
+*UgbBSonnenblumeF7a
+		name:Mehr Sonne
+		icon:icons[5,5] iconsc[4,6]
+		req:286000000000000000000 BauMaterial:earned and UgbBSonnenblumeF7
+*UgbBSonnenblumeF8a
+		name:Mehr Blüten
+		icon:icons[5,5] iconsc[4,7]
+		req:28600000000000000000000 BauMaterial:earned and UgbBSonnenblumeF8
+*UgbBSonnenblumeF9a
+		name:Mehr Blätter
+		icon:icons[5,5] iconsc[4,8]
+		req:2860000000000000000000000 BauMaterial:earned and UgbBSonnenblumeF9
+*UgbBSonnenblumeF10a
+		name:Fauliger Stamm
+		icon:icons[5,5] iconsc[4,9]
+		req:286000000000000000000000000 BauMaterial:earned and UgbBSonnenblumeF10
+*UgbBSonnenblumeF11a
+		name:Welke Blüte
+		icon:icons[5,5] iconsc[4,10]
+		req:28600000000000000000000000000 BauMaterial:earned and UgbBSonnenblumeF11
+*UgbBSonnenblumeF12a
+		name:Morscher Stengel
+		icon:icons[5,5] iconsc[4,11]
+		req:2860000000000000000000000000000 BauMaterial:earned and UgbBSonnenblumeF12
 *TEMPLATE
 // Erfolge --Achievements-------------------------------------------------------------------------------			
 		
@@ -17076,3 +17311,109 @@ Achievements
 		desc:Habe 950 Karnickel
 		req:950 Karnickel
 		icon:iconsc[2,20]		
+//8 Sonnenblume
+*BHSonnenblumen1
+		name:Blumenliebhaber
+		desc:Habe ein Sonnenblume
+		req:1 Sonnenblumen
+		icon:iconsc[5,0]
+*BHSonnenblumen2
+		name:Florist
+		desc:Habe 19 Sonnenblumen
+		req:19 Sonnenblumen
+		icon:iconsc[5,1]
+*BHSonnenblumen3
+		name:Gärtner
+		desc:Habe 50 Sonnenblumen
+		req:50 Sonnenblumen
+		icon:iconsc[5,2]
+*BHSonnenblumen4
+		name:Grüner Daumen
+		desc:Habe 100 Sonnenblumen
+		req:100 Sonnenblumen
+		icon:iconsc[5,3]
+*BHSonnenblumen5
+		name:Blumenladen
+		desc:Habe 150 Sonnenblumen
+		req:150 Sonnenblumen
+		icon:iconsc[5,4]
+*BHSonnenblumen6
+		name:Blumenwagen
+		desc:Habe 200 Sonnenblumen
+		req:200 Sonnenblumen
+		icon:iconsc[5,5]
+*BHSonnenblumen7
+		name:Blumenkorb
+		desc:Habe 250 Sonnenblumen
+		req:250 Sonnenblumen
+		icon:iconsc[5,6]
+*BHSonnenblumen8
+		name:Gewächshaus
+		desc:Habe 300 Sonnenblumen
+		req:300 Sonnenblumen
+		icon:iconsc[5,7]
+*BHSonnenblumen9
+		name:Treibhaus
+		desc:Habe 350 Sonnenblumen
+		req:350 Sonnenblumen
+		icon:iconsc[5,8]
+*BHSonnenblumen10
+		name:Fleurasier
+		desc:Habe 400 Sonnenblumen
+		req:400 Sonnenblumen
+		icon:iconsc[5,9]
+*BHSonnenblumen11
+		name:Landschaftsgärtner
+		desc:Habe 450 Sonnenblumen
+		req:450 Sonnenblumen
+		icon:iconsc[5,10]
+*BHSonnenblumen12
+		name:Landschaftsbauer
+		desc:Habe 500 Sonnenblumen
+		req:500 Sonnenblumen
+		icon:iconsc[5,11]
+*BHSonnenblumen13
+		name:Friedhofsblumen
+		desc:Habe 550 Sonnenblumen
+		req:550 Sonnenblumen
+		icon:iconsc[5,12]
+*BHSonnenblumen14
+		name:Blumenvertrieb
+		desc:Habe 600 Sonnenblumen
+		req:600 Sonnenblumen
+		icon:iconsc[5,13]
+*BHSonnenblumen15
+		name:Schnittblume
+		desc:Habe 650 Sonnenblumen
+		req:650 Sonnenblumen
+		icon:iconsc[5,14]
+*BHSonnenblumen16
+		name:Blumengroßhandel
+		desc:Habe 700 Sonnenblumen
+		req:700 Sonnenblumen
+		icon:iconsc[5,15]
+*BHSonnenblumen17
+		name:Blumenauktion
+		desc:Habe 750 Sonnenblumen
+		req:750 Sonnenblumen
+		icon:iconsc[5,16]
+*BHSonnenblumen18
+		name:Trockenblume
+		desc:Habe 800 Sonnenblumen
+		req:800 Sonnenblumen
+		icon:iconsc[5,17]
+*BHSonnenblumen19
+		name:Blumenlover
+		desc:Habe 850 Sonnenblumen
+		req:850 Sonnenblumen
+		icon:iconsc[5,18]
+*BHSonnenblumen20
+		name:Blumenbinder
+		desc:Habe 900 Sonnenblumen
+		req:900 Sonnenblumen
+		icon:iconsc[5,19]
+*BHSonnenblumen21
+		name:Botaniker
+		desc:Habe 950 Sonnenblumen
+		req:950 Sonnenblumen
+		icon:iconsc[5,20]	
