@@ -13,7 +13,8 @@ Settings
 	spritesheet:icons, 48 by 48, https://i.imgur.com/7Gu14hz.png
 	spritesheet:iconsa, 48 by 48, https://i.imgur.com/ERLdgPh.png
 	spritesheet:iconsb, 48 by 48, https://i.imgur.com/j79ZDuT.png
-	spritesheet:iconsc, 48 by 48, https://i.imgur.com/gtA2gUf.png
+	spritesheet:iconsc, 48 by 48, https://i.imgur.com/BHbzXDk.png
+	spritesheet:iconsd, 48 by 48, https://i.imgur.com/AHJD8Ml.png
 	
 	spritesheet:iconsgr, 128 by 128, https://i.imgur.com/rIBALOu.png
 	spritesheet:iconskl, 40 by 40, https://i.imgur.com/sn7cIq5.png
@@ -1364,9 +1365,9 @@ Buildings
 	on earn:yield 1 Erfahrung
 	Limit:(Ivanslimit)
 //11
-*WasserEimer
-    name:WasserEimer
-    desc:Ein wunderbares zuhause für Wasser liebende Larven!<//><b><.></b> Produziert <b>10212766</b> Lps. Aktuell: <b>[Eimerp:ps/WasserEimer]</b> Lps <//><b><.></b> Produktion aktuell: <b>[Eimerp:ps]</b> Lps <//><b><.></b> Verbrauch: <b>300000</b> Bps und <b>200</b> Nps<//><.> Gesamter Vb: <b>[WasserEimer*300000]</b>/Bps und <b>[WasserEimer*200]</b>/Nps
+*Eimer
+    name:Eimer
+    desc:Ein wunderbares zuhause für Wasser liebende Larven!<//><b><.></b> Produziert <b>10212766</b> Lps. Aktuell: <b>[Eimerp:ps/Eimer]</b> Lps <//><b><.></b> Produktion aktuell: <b>[Eimerp:ps]</b> Lps <//><b><.></b> Verbrauch: <b>300000</b> Bps und <b>200</b> Nps<//><.> Gesamter Vb: <b>[Eimer*300000]</b>/Bps und <b>[Eimer*200]</b>/Nps
     icon:icons[1,10]
     cost:1120000000000 Larven, 112000000000 Nahrung, 1000000000 Territorien
     on tick:yield 10212766 Larven
@@ -5202,7 +5203,155 @@ Upgrades
 		name:Schneckenpaarung
 		icon:icons[5,5] iconsc[11,14]
 		cost:350 SchneckeIvan
-		req:350 SchneckeIvan and UgBLSchneckeIvanF14		
+		req:350 SchneckeIvan and UgBLSchneckeIvanF14
+//11 Eimer
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Eimer by 1.75
+		desc:<.> Erhöht die Produktion der Eimer um <b>75</b> %.
+//		1120000000000
+*UgBLEimer1
+		name:Ein Eimer voll Schlamm
+		icon:iconsc[13,0]
+		cost:11200000000000 Larven, 1120000000000 Nahrung,1000000000 Territorien
+		req:11200000000000 Larven:earned and 10 Eimer
+*UgBLEimer2
+		name:Ein Kaputter Eimer
+		icon:iconsc[13,1]
+		cost:1120000000000000 Larven, 112000000000000 Nahrung,10000000000 Territorien
+		req:1120000000000000 Larven:earned and UgBLEimer1
+*UgBLEimer3
+		name:Holzeimer
+		icon:iconsc[13,2]
+		cost:112000000000000000 Larven, 11200000000000000 Nahrung,100000000000 Territorien
+		req:112000000000000000 Larven:earned and UgBLEimer2
+*UgBLEimer4
+		name:Ein Eimer voll Abfall
+		icon:iconsc[13,3]
+		cost:11200000000000000000 Larven, 1120000000000000000 Nahrung,1000000000000 Territorien
+		req:11200000000000000000 Larven:earned and UgBLEimer3
+*UgBLEimer5
+		name:Ein Eimer voll Dreckwasser
+		icon:iconsc[13,4]
+		cost:1120000000000000000000 Larven, 112000000000000000000 Nahrung,10000000000000 Territorien
+		req:1120000000000000000000 Larven:earned and UgBLEimer4
+*UgBLEimer6
+		name:Ein Eimer voll verfaulter Früchte
+		icon:iconsc[13,5]
+		cost:112000000000000000000000 Larven, 11200000000000000000000 Nahrung,100000000000000 Territorien
+		req:112000000000000000000000 Larven:earned and UgBLEimer5
+*UgBLEimer7
+		name:Ein Eimer voller Pferdemist
+		icon:iconsc[13,6]
+		cost:11200000000000000000000000 Larven, 1120000000000000000000000 Nahrung,1000000000000000 Territorien
+		req:11200000000000000000000000 Larven:earned and UgBLEimer6
+*UgBLEimer8
+		name:Ein Eimer voll mit verrottenden Blumen
+		icon:iconsc[13,7]
+		cost:1120000000000000000000000000 Larven, 112000000000000000000000000 Nahrung,10000000000000000 Territorien
+		req:1120000000000000000000000000 Larven:earned and UgBLEimer7
+*UgBLEimer9
+		name:Ein Eimer voll Obst
+		icon:iconsc[13,8]
+		cost:112000000000000000000000000000 Larven, 11200000000000000000000000000 Nahrung,100000000000000000 Territorien
+		req:112000000000000000000000000000 Larven:earned and UgBLEimer8
+*UgBLEimer10
+		name:Ein Eimer voll Schlacke
+		icon:iconsc[13,9]
+		cost:11200000000000000000000000000000 Larven, 1120000000000000000000000000000 Nahrung,1000000000000000000 Territorien
+		req:11200000000000000000000000000000 Larven:earned and UgBLEimer9
+*UgBLEimer11
+		name:Ein Eimer voll Unkraut
+		icon:iconsc[13,10]
+		cost:1120000000000000000000000000000000 Larven, 112000000000000000000000000000000 Nahrung,10000000000000000000 Territorien
+		req:1120000000000000000000000000000000 Larven:earned and UgBLEimer10
+*UgBLEimer12
+		name:Ein Eimer voll Larven
+		icon:iconsc[13,11]
+		cost:112000000000000000000000000000000000 Larven, 11200000000000000000000000000000000 Nahrung,100000000000000000000 Territorien
+		req:112000000000000000000000000000000000 Larven:earned and UgBLEimer11
+//11
+*UgBLEimerF1
+		name:Ein Eimer voll Blätter
+		icon:icons[5,5] iconsc[14,0]
+		cost:10 Eimer
+		req:10 Eimer
+*UgBLEimerF2
+		name:Ein EImer voll Humus
+		icon:icons[5,5] iconsc[14,1] 
+		cost:25 Eimer
+		req:25 Eimer and UgBLEimerF1
+*UgBLEimerF3
+		name:Ein umgekippter Eimer
+		icon:icons[5,5] iconsc[14,2]
+		cost:50 Eimer
+		req:50 Eimer and UgBLEimerF2
+*UgBLEimerF4
+		name:Ein Eimer voller Löcher
+		icon:icons[5,5] iconsc[14,3]
+		cost:75 Eimer
+		req:75 Eimer and UgBLEimerF3
+*UgBLEimerF5
+		name:Ein Korbeimer
+		icon:icons[5,5] iconsc[14,4]
+		cost:100 Eimer
+		req:100 Eimer and UgBLEimerF4
+*UgBLEimerF6
+		name:Eiin Eimer voll Zweigen
+		icon:icons[5,5] iconsc[14,5]
+		cost:125 Eimer
+		req:125 Eimer and UgBLEimerF5
+*UgBLEimerF7
+		name:Ein Eimer voll Äpfel
+		icon:icons[5,5] iconsc[14,6]
+		cost:150 Eimer
+		req:150 Eimer and UgBLEimerF6
+*UgBLEimerF8
+		name:Ein Eimer vol Bananen
+		icon:icons[5,5] iconsc[14,7]
+		cost:175 Eimer
+		req:175 Eimer and UgBLEimerF7
+*UgBLEimerF9
+		name:Ein Eimer voll Brot
+		icon:icons[5,5] iconsc[14,8]
+		cost:200 Eimer
+		req:200 Eimer and UgBLEimerF8
+*UgBLEimerF10
+		name:Ein Eimer mit Sand
+		icon:icons[5,5] iconsc[14,9]
+		cost:225 Eimer
+		req:225 Eimer and UgBLEimerF9
+*UgBLEimerF11
+		name:Ein Eimer voller Mangos
+		icon:icons[5,5] iconsc[14,10]
+		cost:250 Eimer
+		req:250 Eimer and UgBLEimerF10
+*UgBLEimerF12
+		name:Ein Eimer voll Beeren
+		icon:icons[5,5] iconsc[14,11]
+		cost:275 Eimer
+		req:275 Eimer and UgBLEimerF11
+*UgBLEimerF13
+		name:Ein Eimer voll Salat
+		icon:icons[5,5] iconsc[14,12]
+		cost:300 Eimer
+		req:300 Eimer and UgBLEimerF12
+*UgBLEimerF14
+		name:Ein Eimer voll Radischen
+		icon:icons[5,5] iconsc[14,13]
+		cost:325 Eimer
+		req:325 Eimer and UgBLEimerF13
+*UgBLEimerF15
+		name:Ein Eimer voller Mist
+		icon:icons[5,5] iconsc[14,14]
+		cost:350 Eimer
+		req:350 Eimer and UgBLEimerF14
+*TEMPLATE		
 //Insekten Upgrades-------------------------------------------------------------------------------------------------
 // Upgrade Ressource Insekten		
 *UgRIBlume1
@@ -11076,7 +11225,122 @@ class:noBackground
 		name:Schneckenpaarung
 		icon:icons[5,5] iconsc[11,14]
 		req:350 SchneckeIvan and UgBLSchneckeIvanF15		
-						
+//11 Eimer a
+*TEMPLATE
+		no buy
+		tag:owned
+		class:noBackground
+		desc:<.> Erhöht die Produktion der Eimer um <b>75</b> %.
+*UgBLEimer1a
+		name:Ein Eimer voll Schlamm
+		icon:iconsc[13,0]
+		req:UgBLEimer1
+*UgBLEimer2a
+		name:Ein Kaputter Eimer
+		icon:iconsc[13,1]
+		req:1120000000000000 Larven:earned and UgBLEimer2
+*UgBLEimer3a
+		name:Holzeimer
+		icon:iconsc[13,2]
+		req:112000000000000000 Larven:earned and UgBLEimer3
+*UgBLEimer4a
+		name:Ein Eimer voll Abfall
+		icon:iconsc[13,3]
+		req:11200000000000000000 Larven:earned and UgBLEimer4
+*UgBLEimer5a
+		name:Ein Eimer voll Dreckwasser
+		icon:iconsc[13,4]
+		req:1120000000000000000000 Larven:earned and UgBLEimer5
+*UgBLEimer6a
+		name:Ein Eimer voll verfaulter Früchte
+		icon:iconsc[13,5]
+		req:112000000000000000000000 Larven:earned and UgBLEimer6
+*UgBLEimer7a
+		name:Ein Eimer voller Pferdemist
+		icon:iconsc[13,6]
+		req:11200000000000000000000000 Larven:earned and UgBLEimer7
+*UgBLEimer8a
+		name:Ein Eimer voll mit verrottenden Blumen
+		icon:iconsc[13,7]
+		req:1120000000000000000000000000 Larven:earned and UgBLEimer8
+*UgBLEimer9a
+		name:Ein Eimer voll Obst
+		icon:iconsc[13,8]
+		req:112000000000000000000000000000 Larven:earned and UgBLEimer9
+*UgBLEimer10a
+		name:Ein Eimer voll Schlacke
+		icon:iconsc[13,9]
+		req:11200000000000000000000000000000 Larven:earned and UgBLEimer10
+*UgBLEimer11a
+		name:Ein Eimer voll Unkraut
+		icon:iconsc[13,10]
+		req:1120000000000000000000000000000000 Larven:earned and UgBLEimer11
+*UgBLEimer12a
+		name:Ein Eimer voll Larven
+		icon:iconsc[13,11]
+		req:112000000000000000000000000000000000 Larven:earned and UgBLEimer12
+//11a
+*UgBLEimerF1a
+		name:Ein Eimer voll Blätter
+		icon:icons[5,5] iconsc[14,0]
+		req:UgBLEimerF1
+*UgBLEimerF2a
+		name:Ein EImer voll Humus
+		icon:icons[5,5] iconsc[14,1] 
+		req:25 Eimer and UgBLEimerF2
+*UgBLEimerF3a
+		name:Ein umgekippter Eimer
+		icon:icons[5,5] iconsc[14,2]
+		req:50 Eimer and UgBLEimerF3
+*UgBLEimerF4a
+		name:Ein Eimer voller Löcher
+		icon:icons[5,5] iconsc[14,3]
+		req:75 Eimer and UgBLEimerF4
+*UgBLEimerF5a
+		name:Ein Korbeimer
+		icon:icons[5,5] iconsc[14,4]
+		req:100 Eimer and UgBLEimerF45
+*UgBLEimerF6a
+		name:Eiin Eimer voll Zweigen
+		icon:icons[5,5] iconsc[14,5]
+		req:125 Eimer and UgBLEimerF6
+*UgBLEimerF7a
+		name:Ein Eimer voll Äpfel
+		icon:icons[5,5] iconsc[14,6]
+		req:150 Eimer and UgBLEimerF7
+*UgBLEimerF8a
+		name:Ein Eimer vol Bananen
+		icon:icons[5,5] iconsc[14,7]
+		req:175 Eimer and UgBLEimerF8
+*UgBLEimerF9a
+		name:Ein Eimer voll Brot
+		icon:icons[5,5] iconsc[14,8]
+		req:200 Eimer and UgBLEimerF9
+*UgBLEimerF10a
+		name:Ein Eimer mit Sand
+		icon:icons[5,5] iconsc[14,9]
+		req:225 Eimer and UgBLEimerF10
+*UgBLEimerF11a
+		name:Ein Eimer voller Mangos
+		icon:icons[5,5] iconsc[14,10]
+		req:250 Eimer and UgBLEimerF11
+*UgBLEimerF12a
+		name:Ein Eimer voll Beeren
+		icon:icons[5,5] iconsc[14,11]
+		req:275 Eimer and UgBLEimerF12
+*UgBLEimerF13a
+		name:Ein Eimer voll Salat
+		icon:icons[5,5] iconsc[14,12]
+		req:300 Eimer and UgBLEimerF13
+*UgBLEimerF14a
+		name:Ein Eimer voll Radischen
+		icon:icons[5,5] iconsc[14,13]
+		req:325 Eimer and UgBLEimerF14
+*UgBLEimerF15a
+		name:Ein Eimer voller Mist
+		icon:icons[5,5] iconsc[14,14]
+		req:350 Eimer and UgBLEimerF15
+*TEMPLATE				
 //Insekten Upgrades a
 // Upgrade Ressource Insekten	a	
 *UgRIBlume1a
@@ -11331,16 +11595,7 @@ class:noBackground
         desc:<.> Beim Klicken des Insektes bekommst du <b>1</b> Insekt dazu!
         icon:iconsa[7,5]
         req:1000000 Insekt:earned and UgRILegok6
-
-				
-		
-				
-		
 //Insekten Upgrades a		
-		
-		
-
-
 *UgBIAmeise1a
 		name:Ameisenlimbo
 		desc:<.> Erhöht die Produktion der Ameisen um <b>10</b> %.
@@ -13277,13 +13532,7 @@ class:noBackground
 		desc:<.> Beim Klicken des Baumstammes bekommst du <b>1</b> BauMaterial dazu!
         icon:iconsa[4,5]
         req:1000000 BauMaterial:earned and UgRBPilzk6
-
-		
-		
-		
 //1a			
-	
-
 *UgbBGras1a
 		name:Zittergras
 		desc:<.> Erhöht die Produktion von Gras um <b>10</b> %.
@@ -13414,16 +13663,7 @@ class:noBackground
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
 		icon:icons[2,0] icons[3,12]
 		req:98000000000000000000000000000 BauMaterial:earned and UgbBGrasF13
-
-
-
-
-
-
-
 //1	a
-
-
 *UgbBGrasA1a
 		name:Gras Sammler
 		desc:<.> Erhöht die Produktion von Gras um <b>75</b> %.
@@ -16129,7 +16369,113 @@ Achievements
 		name:Ivans Vermächtnis
 		desc:Habe 950 SchneckenIvan
 		req:950 SchneckeIvan
-		icon:iconsc[12,20]			
+		icon:iconsc[12,20]
+//11 Eimer
+*BHEimer1
+		name:Hozeimer
+		desc:Habe ein Eimer
+		req:1 Eimer
+		icon:iconsc[15,0]
+*BHEimer2
+		name:Eiseneimer
+		desc:Habe 19 Eimer
+		req:19 Eimer
+		icon:iconsc[15,1]
+*BHEimer3
+		name:Alueimer
+		desc:Habe 50 Eimer
+		req:50 Eimer
+		icon:iconsc[15,2]
+*BHEimer4
+		name:Gusseisenereimer
+		desc:Habe 100 Eimer
+		req:100 Eimer
+		icon:iconsc[15,3]
+*BHEimer5
+		name:Roter Eimer
+		desc:Habe 150 Eimer
+		req:150 Eimer
+		icon:iconsc[15,4]
+*BHEimer6
+		name:Kunststoffeimer
+		desc:Habe 200 Eimer
+		req:200 Eimer
+		icon:iconsc[15,5]
+*BHEimer7
+		name:Plastikeimer
+		desc:Habe 250 Eimer
+		req:250 Eimer
+		icon:iconsc[15,6]
+*BHEimer8
+		name:Gerissener Eimer
+		desc:Habe 300 Eimer
+		req:300 Eimer
+		icon:iconsc[15,7]
+*BHEimer9
+		name:Zerbrochener Eimer
+		desc:Habe 350 Eimer
+		req:350 Eimer
+		icon:iconsc[15,8]
+*BHEimer10
+		name:Neuer Eimer
+		desc:Habe 400 Eimer
+		req:400 Eimer
+		icon:iconsc[15,9]
+*BHEimer11
+		name:Ein Haufe Eimer
+		desc:Habe 450 Eimer
+		req:450 Eimer
+		icon:iconsc[15,10]
+*BHEimer12
+		name:Eimerstapel
+		desc:Habe 500 Eimer
+		req:500 Eimer
+		icon:iconsc[15,11]
+*BHEimer13
+		name:Eimerwerfen
+		desc:Habe 550 Eimer
+		req:550 Eimer
+		icon:iconsc[15,12]
+*BHEimer14
+		name:Eimerwall
+		desc:Habe 600 Eimer
+		req:600 Eimer
+		icon:iconsc[15,13]
+*BHEimer15
+		name:Eimerwand
+		desc:Habe 650 Eimer
+		req:650 Eimer
+		icon:iconsc[15,14]
+*BHEimer16
+		name:Eimermauer
+		desc:Habe 700 Eimer
+		req:700 Eimer
+		icon:iconsc[15,15]
+*BHEimer17
+		name:Eimerkette
+		desc:Habe 750 Eimer
+		req:750 Eimer
+		icon:iconsc[15,16]
+*BHEimer18
+		name:Eimerweise
+		desc:Habe 800 Eimer
+		req:800 Eimer
+		icon:iconsc[15,17]
+*BHEimer19
+		name:Eimerreich
+		desc:Habe 850 Eimer
+		req:850 Eimer
+		icon:iconsc[15,18]
+*BHEimer20
+		name:Eimerei
+		desc:Habe 900 Eimer
+		req:900 Eimer
+		icon:iconsc[15,19]
+*BHEimer21
+		name:Eimermacher
+		desc:Habe 950 Eimer
+		req:950 Eimer
+		icon:iconsc[15,20]		
 				
 // Insekten achievments -----------------------------------		
 //1
