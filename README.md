@@ -11299,7 +11299,7 @@ class:noBackground
 *UgBLEimerF5a
 		name:Ein Korbeimer
 		icon:icons[5,5] iconsc[14,4]
-		req:100 Eimer and UgBLEimerF45
+		req:100 Eimer and UgBLEimerF5
 *UgBLEimerF6a
 		name:Eiin Eimer voll Zweigen
 		icon:icons[5,5] iconsc[14,5]
