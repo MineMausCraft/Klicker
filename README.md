@@ -10,8 +10,8 @@ Settings
 	background:https://i.imgur.com/wCNA1I9.jpg
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, https://i.imgur.com/IoDXVCG.png
-	spritesheet:iconsa, 48 by 48, https://i.imgur.com/Bbff71y.png
+	spritesheet:icons, 48 by 48, https://i.imgur.com/7Gu14hz.png
+	spritesheet:iconsa, 48 by 48, https://i.imgur.com/ERLdgPh.png
 	spritesheet:iconsb, 48 by 48, https://i.imgur.com/j79ZDuT.png
 	spritesheet:iconsc, 48 by 48, https://i.imgur.com/gtA2gUf.png
 	
@@ -1218,20 +1218,20 @@ Buildings
     name:SucherAmeise|SucherAmeisen
     desc:Sie sind sehr effizient bei der Nahrungssuche!<//><b><.></b> Produziert <b>260</b> Nps.<//><.> Produktion: <b>[SucherAmeise*260]</b> /Nps 
     icon:icons[4,4]
-    cost:112000 Insekten
-	cost increase:102%
-    on tick:yield 260 Nahrung
-    req:112000 Insekten:earned and 900 SammlerAmeisen
+    cost:1120000000 Insekten
+	cost increase:105%
+    on tick:yield 360 Nahrung
+    req:112000 Insekten:earned and 400 SammlerAmeisen
 	on earn:yield 0.1 Erfahrung
 //3
 *JaegerAmeise|JaegerAmeisen
     name:JägerAmeise|JägerAmeisen
     desc:Sie sind großarte Jäger!<//><b><.></b> Produziert <b>380000</b> Nps.<//><.> Produktion: <b>[JaegerAmeise*380000]</b> /Nps 
     icon:icons[4,5]
-    cost:420000000 Insekten
-	cost increase:102%
+    cost:420000000000 Insekten
+	cost increase:105%
     on tick:yield 380000 Nahrung
-    req:420000000 Insekten:earned and 900 SucherAmeise
+    req:420000000 Insekten:earned and 400 SucherAmeise
 	on earn:yield 0.1 Erfahrung
  
 //Larven Gebäude -------------------------------------------------------------
@@ -5056,6 +5056,153 @@ Upgrades
 		cost:350 Pizza
 		passive:multiply yield of Pizza by 1.75
 		req:350 Pizza and UgBLPizzaF14	
+//10 SchneckeIvan|SchneckenIvan
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of SchneckeIvan by 1.75
+		desc:<.> Erhöht die Produktion der Ivans um <b>75</b> %.
+//		840000000000
+*UgBLSchneckeIvan1
+		name:Stärkeres Schneckenhaus
+		icon:iconsc[10,0]
+		cost:8400000000000 Larven, 840000000000 Nahrung,100000000 Territorien
+		req:8400000000000 Larven:earned
+*UgBLSchneckeIvan2
+		name:Dickere Schale
+		icon:iconsc[10,1]
+		cost:840000000000000 Larven, 84000000000000 Nahrung,1000000000 Territorien
+		req:840000000000000 Larven:earned and UgBLSchneckeIvan1
+*UgBLSchneckeIvan3
+		name:Größeres Schneckenhaus
+		icon:iconsc[10,2]
+		cost:84000000000000000 Larven, 8400000000000000 Nahrung,10000000000 Territorien
+		req:84000000000000000 Larven:earned and UgBLSchneckeIvan2
+*UgBLSchneckeIvan4
+		name:Längere Augen
+		icon:iconsc[10,3]
+		cost:8400000000000000000 Larven, 840000000000000000 Nahrung,100000000000 Territorien
+		req:8400000000000000000 Larven:earned and UgBLSchneckeIvan3
+*UgBLSchneckeIvan5
+		name:Mehr Schleim
+		icon:iconsc[10,4]
+		cost:840000000000000000000 Larven, 84000000000000000000 Nahrung,1000000000000 Territorien
+		req:840000000000000000000 Larven:earned and UgBLSchneckeIvan4
+*UgBLSchneckeIvan6
+		name:Kalkhaufen
+		icon:iconsc[10,5]
+		cost:84000000000000000000000 Larven, 8400000000000000000000 Nahrung,10000000000000 Territorien
+		req:84000000000000000000000 Larven:earned and UgBLSchneckeIvan5
+*UgBLSchneckeIvan7
+		name:Größerer Fuß
+		icon:iconsc[10,6]
+		cost:8400000000000000000000000 Larven, 840000000000000000000000 Nahrung,100000000000000 Territorien
+		req:8400000000000000000000000 Larven:earned and UgBLSchneckeIvan6
+*UgBLSchneckeIvan8
+		name:Kriechen + 1
+		icon:iconsc[10,7]
+		cost:840000000000000000000000000 Larven, 84000000000000000000000000 Nahrung,1000000000000000 Territorien
+		req:840000000000000000000000000 Larven:earned and UgBLSchneckeIvan7
+*UgBLSchneckeIvan9
+		name:Verstecken + 1
+		icon:iconsc[10,8]
+		cost:84000000000000000000000000000 Larven, 8400000000000000000000000000 Nahrung,10000000000000000 Territorien
+		req:84000000000000000000000000000 Larven:earned and UgBLSchneckeIvan8
+*UgBLSchneckeIvan10
+		name:Schleimen + 2
+		icon:iconsc[10,9]
+		cost:8400000000000000000000000000000 Larven, 840000000000000000000000000000 Nahrung,100000000000000000 Territorien
+		req:8400000000000000000000000000000 Larven:earned and UgBLSchneckeIvan9
+*UgBLSchneckeIvan11
+		name:Nacktschnecke!
+		icon:iconsc[10,10]
+		cost:840000000000000000000000000000000 Larven, 84000000000000000000000000000000 Nahrung,1000000000000000000 Territorien
+		req:840000000000000000000000000000000 Larven:earned and UgBLSchneckeIvan10
+*UgBLSchneckeIvan12
+		name:Ivanoid
+		icon:iconsc[10,11]
+		cost:84000000000000000000000000000000000 Larven, 8400000000000000000000000000000000 Nahrung,10000000000000000000 Territorien
+		req:84000000000000000000000000000000000 Larven:earned and UgBLSchneckeIvan11
+//10
+*UgBLSchneckeIvanF1
+		name:Feuchtes Wetter
+		icon:icons[5,5] iconsc[11,0]
+		cost:10 SchneckeIvan
+		req:10 SchneckeIvan
+*UgBLSchneckeIvanF2
+		name:Weinbergschnecke
+		icon:icons[5,5] iconsc[11,1] 
+		cost:25 SchneckeIvan
+		req:25 SchneckeIvan and UgBLSchneckeIvanF1
+*UgBLSchneckeIvanF3
+		name:Kegelschnecke
+		icon:icons[5,5] iconsc[11,2]
+		cost:50 SchneckeIvan
+		req:50 SchneckeIvan and UgBLSchneckeIvanF2
+*UgBLSchneckeIvanF4
+		name:Napfschnecke
+		icon:icons[5,5] iconsc[11,3]
+		cost:75 SchneckeIvan
+		req:75 SchneckeIvan and UgBLSchneckeIvanF3
+*UgBLSchneckeIvanF5
+		name:Schneckenkönig
+		icon:icons[5,5] iconsc[11,4]
+		cost:100 SchneckeIvan
+		req:100 SchneckeIvan and UgBLSchneckeIvanF4
+*UgBLSchneckeIvanF6
+		name:Schneckenkönigin
+		icon:icons[5,5] iconsc[11,5]
+		cost:125 SchneckeIvan
+		req:125 SchneckeIvan and UgBLSchneckeIvanF5
+*UgBLSchneckeIvanF7
+		name:Winterstarre
+		icon:icons[5,5] iconsc[11,6]
+		cost:150 SchneckeIvan
+		req:150 SchneckeIvan and UgBLSchneckeIvanF6
+*UgBLSchneckeIvanF8
+		name:Landdeckelschnecke
+		icon:icons[5,5] iconsc[11,7]
+		cost:175 SchneckeIvan
+		req:175 SchneckeIvan and UgBLSchneckeIvanF7
+*UgBLSchneckeIvanF9
+		name:Landlungenschnecke
+		icon:icons[5,5] iconsc[11,8]
+		cost:200 SchneckeIvan
+		req:200 SchneckeIvan and UgBLSchneckeIvanF8
+*UgBLSchneckeIvanF10
+		name:Glasschnecke
+		icon:icons[5,5] iconsc[11,9]
+		cost:225 SchneckeIvan
+		req:225 SchneckeIvan and UgBLSchneckeIvanF9
+*UgBLSchneckeIvanF11
+		name:Schnegel
+		icon:icons[5,5] iconsc[11,10]
+		cost:250 SchneckeIvan
+		req:250 SchneckeIvan and UgBLSchneckeIvanF10
+*UgBLSchneckeIvanF12
+		name:Nacktkiemer
+		icon:icons[5,5] iconsc[11,11]
+		cost:275 SchneckeIvan
+		req:275 SchneckeIvan and UgBLSchneckeIvanF11
+*UgBLSchneckeIvanF13
+		name:Versteckte Schnecke
+		icon:icons[5,5] iconsc[11,12]
+		cost:300 SchneckeIvan
+		req:300 SchneckeIvan and UgBLSchneckeIvanF12
+*UgBLSchneckeIvanF14
+		name:Schneckenhaufen
+		icon:icons[5,5] iconsc[11,13]
+		cost:325 SchneckeIvan
+		req:325 SchneckeIvan and UgBLSchneckeIvanF13
+*UgBLSchneckeIvanF15
+		name:Schneckenpaarung
+		icon:icons[5,5] iconsc[11,14]
+		cost:350 SchneckeIvan
+		req:350 SchneckeIvan and UgBLSchneckeIvanF14		
 //Insekten Upgrades-------------------------------------------------------------------------------------------------
 // Upgrade Ressource Insekten		
 *UgRIBlume1
@@ -10677,12 +10824,7 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der Schuhe um <b>75</b> %.
 		icon:icons[2,14]
 		req:350 UeberwucherterSchuh and UgBLSchuhF15
-			
-								
-
 //9a
-
-
 *UgBLPizza1a
 		name:Pizza Margherita
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -10743,13 +10885,7 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
 		icon:iconsb[3,11]
 		req:495600000000000000000000000000000 Larven:earned and UgBLPizza12
-		
-
-	
-
-
-//9
-	
+//9a
 *UgBLPizzaF1a
 		name:Pizza Rustika
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
@@ -10825,30 +10961,124 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der Pizzen um <b>75</b> %.
 		icon:icons[5,5] iconsb[4,14]
 		req:350 Pizza and UgBLPizzaF15
+//10 SchneckeIvan|SchneckenIvan  a
+*TEMPLATE
+		no buy
+		tag:owned
+		class:noBackground
+		desc:<.> Erhöht die Produktion der Ivans um <b>75</b> %.
+*UgBLSchneckeIvan1a
+		name:Stärkeres Schneckenhaus
+		icon:iconsc[10,0]
+		req:UgBLSchneckeIvan1
+*UgBLSchneckeIvan2a
+		name:Dickere Schale
+		icon:iconsc[10,1]
+		req:840000000000000 Larven:earned and UgBLSchneckeIvan2
+*UgBLSchneckeIvan3a
+		name:Größeres Schneckenhaus
+		icon:iconsc[10,2]
+		req:84000000000000000 Larven:earned and UgBLSchneckeIvan3
+*UgBLSchneckeIvan4a
+		name:Längere Augen
+		icon:iconsc[10,3]
+		req:8400000000000000000 Larven:earned and UgBLSchneckeIvan4
+*UgBLSchneckeIvan5a
+		name:Mehr Schleim
+		icon:iconsc[10,4]
+		req:840000000000000000000 Larven:earned and UgBLSchneckeIvan5
+*UgBLSchneckeIvan6a
+		name:Kalkhaufen
+		icon:iconsc[10,5]
+		req:84000000000000000000000 Larven:earned and UgBLSchneckeIvan6
+*UgBLSchneckeIvan7a
+		name:Größerer Fuß
+		icon:iconsc[10,6]
+		req:8400000000000000000000000 Larven:earned and UgBLSchneckeIvan7
+*UgBLSchneckeIvan8a
+		name:Kriechen + 1
+		icon:iconsc[10,7]
+		req:840000000000000000000000000 Larven:earned and UgBLSchneckeIvan8
+*UgBLSchneckeIvan9a
+		name:Verstecken + 1
+		icon:iconsc[10,8]
+		req:84000000000000000000000000000 Larven:earned and UgBLSchneckeIvan9
+*UgBLSchneckeIvan10a
+		name:Schleimen + 2
+		icon:iconsc[10,9]
+		req:8400000000000000000000000000000 Larven:earned and UgBLSchneckeIvan10
+*UgBLSchneckeIvan11a
+		name:Nacktschnecke!
+		icon:iconsc[10,10]
+		req:840000000000000000000000000000000 Larven:earned and UgBLSchneckeIvan11
+*UgBLSchneckeIvan12a
+		name:Ivanoid
+		icon:iconsc[10,11]
+		req:84000000000000000000000000000000000 Larven:earned and UgBLSchneckeIvan12
 
-			
-							
-					
-						
-						
-						
-						
-						
-						
-						
-						
-						
+*UgBLSchneckeIvanF1a
+		name:Feuchtes Wetter
+		icon:icons[5,5] iconsc[11,0]
+		req:UgBLSchneckeIvanF1
+*UgBLSchneckeIvanF2a
+		name:Weinbergschnecke
+		icon:icons[5,5] iconsc[11,1] 
+		req:25 SchneckeIvan and UgBLSchneckeIvanF2
+*UgBLSchneckeIvanF3a
+		name:Kegelschnecke
+		icon:icons[5,5] iconsc[11,2]
+		req:50 SchneckeIvan and UgBLSchneckeIvanF3
+*UgBLSchneckeIvanF4a
+		name:Napfschnecke
+		icon:icons[5,5] iconsc[11,3]
+		req:75 SchneckeIvan and UgBLSchneckeIvanF4
+*UgBLSchneckeIvanF5a
+		name:Schneckenkönig
+		icon:icons[5,5] iconsc[11,4]
+		req:100 SchneckeIvan and UgBLSchneckeIvanF5
+*UgBLSchneckeIvanF6a
+		name:Schneckenkönigin
+		icon:icons[5,5] iconsc[11,5]
+		req:125 SchneckeIvan and UgBLSchneckeIvanF6
+*UgBLSchneckeIvanF7a
+		name:Winterstarre
+		icon:icons[5,5] iconsc[11,6]
+		req:150 SchneckeIvan and UgBLSchneckeIvanF7
+*UgBLSchneckeIvanF8a
+		name:Landdeckelschnecke
+		icon:icons[5,5] iconsc[11,7]
+		req:175 SchneckeIvan and UgBLSchneckeIvanF8
+*UgBLSchneckeIvanF9a
+		name:Landlungenschnecke
+		icon:icons[5,5] iconsc[11,8]
+		req:200 SchneckeIvan and UgBLSchneckeIvanF9
+*UgBLSchneckeIvanF10a
+		name:Glasschnecke
+		icon:icons[5,5] iconsc[11,9]
+		req:225 SchneckeIvan and UgBLSchneckeIvanF10
+*UgBLSchneckeIvanF11a
+		name:Schnegel
+		icon:icons[5,5] iconsc[11,10]
+		req:250 SchneckeIvan and UgBLSchneckeIvanF11
+*UgBLSchneckeIvanF12a
+		name:Nacktkiemer
+		icon:icons[5,5] iconsc[11,11]
+		req:275 SchneckeIvan and UgBLSchneckeIvanF12
+*UgBLSchneckeIvanF13a
+		name:Versteckte Schnecke
+		icon:icons[5,5] iconsc[11,12]
+		req:300 SchneckeIvan and UgBLSchneckeIvanF13
+*UgBLSchneckeIvanF14a
+		name:Schneckenhaufen
+		icon:icons[5,5] iconsc[11,13]
+		req:325 SchneckeIvan and UgBLSchneckeIvanF14
+*UgBLSchneckeIvanF15a
+		name:Schneckenpaarung
+		icon:icons[5,5] iconsc[11,14]
+		req:350 SchneckeIvan and UgBLSchneckeIvanF15		
 						
 //Insekten Upgrades a
-
-	
-		
-		
 // Upgrade Ressource Insekten	a	
-		
-		
-		
-
 *UgRIBlume1a
 		name:Ackerwinde
 		desc:<.> Erhöht die Produktion von Insekten um <b>1</b> %.
@@ -14194,27 +14424,57 @@ Achievements
 		name:2 Stunden
 		desc:Du hast 2 Stunden gespielt!
 		req:7200 Spielzeit
-		icon:iconsc[9,0]
+		icon:iconsc[9,1]
 *AchievSpielzeit3
 		name:4 Stunden
 		desc:Du hast 4 Stunden gespielt!
 		req:14400 Spielzeit
-		icon:iconsc[9,0]
+		icon:iconsc[9,02]
 *AchievSpielzeit4
 		name:6 Stunden
 		desc:Du hast 6 Stunden gespielt!
 		req:21600 Spielzeit
-		icon:iconsc[9,0]
+		icon:iconsc[9,03]
 *AchievSpielzeit5
 		name:8 Stunde
 		desc:Du hast 8 Stunde gespielt!
 		req:28800 Spielzeit
-		icon:iconsc[9,0]
+		icon:iconsc[9,4]
 *AchievSpielzeit6
 		name:10 Stunde
 		desc:Du hast 10 Stunden gespielt!
 		req:36000 Spielzeit
-		icon:iconsc[9,0]		
+		icon:iconsc[9,5]
+*AchievSpielzeit7
+		name:12 Stunde
+		desc:Du hast 12 Stunden gespielt!
+		req:43200 Spielzeit
+		icon:iconsc[9,6]
+*AchievSpielzeit8
+		name:14 Stunde
+		desc:Du hast 14 Stunden gespielt!
+		req:50400 Spielzeit
+		icon:iconsc[9,7]
+*AchievSpielzeit9
+		name:16 Stunde
+		desc:Du hast 16 Stunden gespielt!
+		req:57600 Spielzeit
+		icon:iconsc[9,8]
+*AchievSpielzeit10
+		name:18 Stunde
+		desc:Du hast 18 Stunden gespielt!
+		req:64800 Spielzeit
+		icon:iconsc[9,9]
+*AchievSpielzeit11
+		name:20 Stunde
+		desc:Du hast 20 Stunden gespielt!
+		req:72000 Spielzeit
+		icon:iconsc[9,10]
+*AchievSpielzeit12
+		name:25 Stunde
+		desc:Du hast 25 Stunden gespielt!
+		req:90000 Spielzeit
+		icon:iconsc[9,11]	
 					
 
 // Upgrades haben Achievments------------------------------------------------------------------------------
@@ -15657,6 +15917,219 @@ Achievements
 		desc:Habe 950 ÜberwucherteSchuhe
 		req:950 UeberwucherterSchuh
 		icon:iconsb[8,20]
+//9 Pizza
+*BHPizza1
+		name:Teig
+		desc:Habe ein Pizzen
+		req:1 Pizza
+		icon:iconsb[9,0]
+*BHPizza2
+		name:Belag
+		desc:Habe 19 Pizzen
+		req:19 Pizza
+		icon:iconsb[9,1]
+*BHPizza3
+		name:Gewürz
+		desc:Habe 50 Pizzen
+		req:50 Pizza
+		icon:iconsb[9,2]
+*BHPizza4
+		name:Fleisch
+		desc:Habe 100 Pizzen
+		req:100 Pizza
+		icon:iconsb[9,3]
+*BHPizza5
+		name:Mehl
+		desc:Habe 150 Pizzen
+		req:150 Pizza
+		icon:iconsb[9,4]
+*BHPizza6
+		name:Fisch
+		desc:Habe 200 Pizzen
+		req:200 Pizza
+		icon:iconsb[9,5]
+*BHPizza7
+		name:Eier
+		desc:Habe 250 Pizzen
+		req:250 Pizza
+		icon:iconsb[9,6]
+*BHPizza8
+		name:Wasser
+		desc:Habe 300 Pizzen
+		req:300 Pizza
+		icon:iconsb[9,7]
+*BHPizza9
+		name:Pizza Bäcker
+		desc:Habe 350 Pizzen
+		req:350 Pizza
+		icon:iconsb[9,8]
+*BHPizza10
+		name:Pizza Kneter
+		desc:Habe 400 Pizzen
+		req:400 Pizza
+		icon:iconsb[9,9]
+*BHPizza11
+		name:Pizza Ofen
+		desc:Habe 450 Pizzen
+		req:450 Pizza
+		icon:iconsb[9,10]
+*BHPizza12
+		name:Pizza Steinofen
+		desc:Habe 500 Pizzen
+		req:500 Pizza
+		icon:iconsb[9,11]
+*BHPizza13
+		name:Tiefkühlpizza
+		desc:Habe 550 Pizzen
+		req:550 Pizza
+		icon:iconsb[9,12]
+*BHPizza14
+		name:Frische Pizza
+		desc:Habe 600 Pizzen
+		req:600 Pizza
+		icon:iconsb[9,13]
+*BHPizza15
+		name:Pizza Fabrik
+		desc:Habe 650 Pizzen
+		req:650 Pizza
+		icon:iconsb[9,14]
+*BHPizza16
+		name:Pizza Manufaktur
+		desc:Habe 700 Pizzen
+		req:700 Pizza
+		icon:iconsb[9,15]
+*BHPizza17
+		name:Pizzafließband
+		desc:Habe 750 Pizzen
+		req:750 Pizza
+		icon:iconsb[9,16]
+*BHPizza18
+		name:Pizzapackung
+		desc:Habe 800 Pizzen
+		req:800 Pizza
+		icon:iconsb[9,17]
+*BHPizza19
+		name:Lieferdienst Pizza
+		desc:Habe 850 Pizzen
+		req:850 Pizza
+		icon:iconsb[9,18]
+*BHPizza20
+		name:Schnellimbis Pizza
+		desc:Habe 900 Pizzen
+		req:900 Pizza
+		icon:iconsb[9,19]
+*BHPizza21
+		name:Gourmet pizza
+		desc:Habe 950 Pizzen
+		req:950 Pizza
+		icon:iconsb[9,20]			
+		
+//10 SchneckeIvan|SchneckenIvan
+*BHSchneckeIvan1
+		name:Baby Ivan
+		desc:Habe eine SchneckenIvan
+		req:1 SchneckeIvan
+		icon:iconsc[12,0]
+*BHSchneckeIvan2
+		name:Junior Ivan
+		desc:Habe 19 SchneckenIvan
+		req:19 SchneckeIvan
+		icon:iconsc[12,1]
+*BHSchneckeIvan3
+		name:Teenage Ivan
+		desc:Habe 50 SchneckenIvan
+		req:50 SchneckeIvan
+		icon:iconsc[12,2]
+*BHSchneckeIvan4
+		name:Erwachsener Ivan
+		desc:Habe 100 SchneckenIvan
+		req:100 SchneckeIvan
+		icon:iconsc[12,3]
+*BHSchneckeIvan5
+		name:Ivans Frau
+		desc:Habe 150 SchneckenIvan
+		req:150 SchneckeIvan
+		icon:iconsc[12,4]
+*BHSchneckeIvan6
+		name:Ivans Kind
+		desc:Habe 200 SchneckenIvan
+		req:200 SchneckeIvan
+		icon:iconsc[12,5]
+*BHSchneckeIvan7
+		name:Ivans zweites Kind
+		desc:Habe 250 SchneckenIvan
+		req:250 SchneckeIvan
+		icon:iconsc[12,6]
+*BHSchneckeIvan8
+		name:Ivans Brüder
+		desc:Habe 300 SchneckenIvan
+		req:300 SchneckeIvan
+		icon:iconsc[12,7]
+*BHSchneckeIvan9
+		name:Ivans Schwestern
+		desc:Habe 350 SchneckenIvan
+		req:350 SchneckeIvan
+		icon:iconsc[12,8]
+*BHSchneckeIvan10
+		name:Ivans Eltern
+		desc:Habe 400 SchneckenIvan
+		req:400 SchneckeIvan
+		icon:iconsc[12,9]
+*BHSchneckeIvan11
+		name:Ivans Großeltern
+		desc:Habe 450 SchneckenIvan
+		req:450 SchneckeIvan
+		icon:iconsc[12,10]
+*BHSchneckeIvan12
+		name:Ivans Enkel
+		desc:Habe 500 SchneckenIvan
+		req:500 SchneckeIvan
+		icon:iconsc[12,11]
+*BHSchneckeIvan13
+		name:Ivans Kusins
+		desc:Habe 550 SchneckenIvan
+		req:550 SchneckeIvan
+		icon:iconsc[12,12]
+*BHSchneckeIvan14
+		name:Ivans Kusinen
+		desc:Habe 600 SchneckenIvan
+		req:600 SchneckeIvan
+		icon:iconsc[12,13]
+*BHSchneckeIvan15
+		name:Ivans Tanten
+		desc:Habe 650 SchneckenIvan
+		req:650 SchneckeIvan
+		icon:iconsc[12,14]
+*BHSchneckeIvan16
+		name:Ivans Patenonkel
+		desc:Habe 700 SchneckenIvan
+		req:700 SchneckeIvan
+		icon:iconsc[12,15]
+*BHSchneckeIvan17
+		name:Ivans Urenkel
+		desc:Habe 750 SchneckenIvan
+		req:750 SchneckeIvan
+		icon:iconsc[12,16]
+*BHSchneckeIvan18
+		name:Großvater Ivan
+		desc:Habe 800 SchneckenIvan
+		req:800 SchneckeIvan
+		icon:iconsc[12,17]
+*BHSchneckeIvan19
+		name:Rentner Ivan
+		desc:Habe 850 SchneckenIvan
+		req:850 SchneckeIvan
+		icon:iconsc[12,18]
+*BHSchneckeIvan20
+		name:Alter Ivan
+		desc:Habe 900 SchneckenIvan
+		req:900 SchneckeIvan
+		icon:iconsc[12,19]
+*BHSchneckeIvan21
+		name:Ivans Vermächtnis
+		desc:Habe 950 SchneckenIvan
+		req:950 SchneckeIvan
+		icon:iconsc[12,20]			
 				
 // Insekten achievments -----------------------------------		
 //1
