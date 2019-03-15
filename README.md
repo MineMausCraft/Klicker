@@ -1379,7 +1379,7 @@ Buildings
 //12
 *Korb|Koerbe
     name:Korb|Körbe
-    desc:Schmetterlingslarven fühen sich hier pudelwohl!<//><b><.></b> Produziert <b>66382979</b> Lps.<//><.> Produktion: <b>[DahlienBusch*66382979]</b> /Lps <//><.> Verbrauch: <b>2147929</b> Bps und <b>225</b> Nps<//><.> Gesamter Vb: <b>[DahlienBusch*2147929]</b>/Bps und <b>[DahlienBusch*225]</b>/Nps
+    desc:Schmetterlingslarven fühen sich hier pudelwohl!<//><b><.></b> Produziert <b>66382979</b> Lps.<//><.> Produktion: <b>[Korb*66382979]</b> /Lps <//><.> Verbrauch: <b>2147929</b> Bps und <b>225</b> Nps<//><.> Gesamter Vb: <b>[Korb*2147929]</b>/Bps und <b>[Korb*225]</b>/Nps
     icon:icons[1,11]
     cost:15680000000000 Larven, 15680000000000 Nahrung, 10000000000 Territorien
     on tick:yield 66382979 Larven
@@ -7491,7 +7491,7 @@ Upgrades
 	name:WilliWilli
 	desc:Schaltet GroßeKäfer frei.
 	icon:icons[5,5] icons[0,11] icons[4,0]
-	cost:10 DahlienBusch,5 VogelNest
+	cost:10 Korb,5 VogelNest
 	req:UpgIMoskito
 //13
 *UpgILibelle
