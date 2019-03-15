@@ -12,7 +12,7 @@ Settings
 	building cost refund:50%
 	spritesheet:icons, 48 by 48, https://i.imgur.com/7Gu14hz.png
 	spritesheet:iconsa, 48 by 48, https://i.imgur.com/ERLdgPh.png
-	spritesheet:iconsb, 48 by 48, https://i.imgur.com/j79ZDuT.png
+	spritesheet:iconsb, 48 by 48, https://i.imgur.com/EMiAs6j.png
 	spritesheet:iconsc, 48 by 48, https://i.imgur.com/BHbzXDk.png
 	spritesheet:iconsd, 48 by 48, https://i.imgur.com/AHJD8Ml.png
 	
@@ -1217,11 +1217,11 @@ Buildings
 //2
 *SucherAmeise|SucherAmeisen
     name:SucherAmeise|SucherAmeisen
-    desc:Sie sind sehr effizient bei der Nahrungssuche!<//><b><.></b> Produziert <b>260</b> Nps.<//><.> Produktion: <b>[SucherAmeise*260]</b> /Nps 
+    desc:Sie sind sehr effizient bei der Nahrungssuche!<//><b><.></b> Produziert <b>550</b> Nps.<//><.> Produktion: <b>[SucherAmeise*550]</b> /Nps 
     icon:icons[4,4]
     cost:1120000000 Insekten
 	cost increase:105%
-    on tick:yield 360 Nahrung
+    on tick:yield 550 Nahrung
     req:112000 Insekten:earned and 400 SammlerAmeisen
 	on earn:yield 0.1 Erfahrung
 //3
@@ -5498,6 +5498,154 @@ Upgrades
 		icon:icons[5,5] iconsc[17,14]
 		cost:350 Korb
 		req:350 Korb and UgBLKorbF14
+//13 Maruscha|Maruschas
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Maruscha by 1.75
+		desc:<.> Erhöht die Produktion der Maruschas um <b>75</b> %.
+//		190400000000000
+*UgBLMaruscha1
+		name:Stärkere Scheren
+		icon:iconsc[19,0]
+		cost:1904000000000000 Larven, 190400000000000 Nahrung,100000000000 Territorien
+		req:1904000000000000 Larven:earned and 10 Maruscha
+*UgBLMaruscha2
+		name:Dickerer Panzer
+		icon:iconsc[19,1]
+		cost:190400000000000000 Larven, 19040000000000000 Nahrung,1000000000000 Territorien
+		req:190400000000000000 Larven:earned and UgBLMaruscha1
+*UgBLMaruscha3
+		name:Schnelleres Krabbeln
+		icon:iconsc[19,2]
+		cost:19040000000000000000 Larven, 1904000000000000000 Nahrung,10000000000000 Territorien
+		req:19040000000000000000 Larven:earned and UgBLMaruscha2
+*UgBLMaruscha4
+		name:Bessere Fühler
+		icon:iconsc[19,3]
+		cost:1904000000000000000000 Larven, 190400000000000000000 Nahrung,100000000000000 Territorien
+		req:1904000000000000000000 Larven:earned and UgBLMaruscha3
+*UgBLMaruscha5
+		name:Merh Schwimmkraft
+		icon:iconsc[19,4]
+		cost:190400000000000000000000 Larven, 19040000000000000000000 Nahrung,1000000000000000 Territorien
+		req:190400000000000000000000 Larven:earned and UgBLMaruscha4
+*UgBLMaruscha6
+		name:Sprinten + 1
+		icon:iconsc[19,5]
+		cost:19040000000000000000000000 Larven, 1904000000000000000000000 Nahrung,10000000000000000 Territorien
+		req:19040000000000000000000000 Larven:earned and UgBLMaruscha5
+*UgBLMaruscha7
+		name:Längeres Luftanhalten
+		icon:iconsc[19,6]
+		cost:1904000000000000000000000000 Larven, 190400000000000000000000000 Nahrung,100000000000000000 Territorien
+		req:1904000000000000000000000000 Larven:earned and UgBLMaruscha6
+*UgBLMaruscha8
+		name:Sensilbere Fühler
+		icon:iconsc[19,7]
+		cost:190400000000000000000000000000 Larven, 19040000000000000000000000000 Nahrung,1000000000000000000 Territorien
+		req:190400000000000000000000000000 Larven:earned and UgBLMaruscha7
+*UgBLMaruscha9
+		name:Bessere Augen
+		icon:iconsc[19,8]
+		cost:19040000000000000000000000000000 Larven, 1904000000000000000000000000000 Nahrung,10000000000000000000 Territorien
+		req:19040000000000000000000000000000 Larven:earned and UgBLMaruscha8
+*UgBLMaruscha10
+		name:Höhren + 1
+		icon:iconsc[19,9]
+		cost:1904000000000000000000000000000000 Larven, 190400000000000000000000000000000 Nahrung,100000000000000000000 Territorien
+		req:1904000000000000000000000000000000 Larven:earned and UgBLMaruscha9
+*UgBLMaruscha11
+		name:Krabbeln mal zwei
+		icon:iconsc[19,10]
+		cost:190400000000000000000000000000000000 Larven, 19040000000000000000000000000000000 Nahrung,1000000000000000000000 Territorien
+		req:190400000000000000000000000000000000 Larven:earned and UgBLMaruscha10
+*UgBLMaruscha12
+		name:Panzersicher
+		icon:iconsc[19,11]
+		cost:19040000000000000000000000000000000000 Larven, 1904000000000000000000000000000000000 Nahrung,1000000000000000000000 Territorien
+		req:19040000000000000000000000000000000000 Larven:earned and UgBLMaruscha11
+//13
+*UgBLMaruschaF1
+		name:Bessere Kruste
+		icon:icons[5,5] iconsc[20,0]
+		cost:10 Maruscha
+		req:10 Maruscha
+*UgBLMaruschaF2
+		name:Bessere Verdauung
+		icon:icons[5,5] iconsc[20,1] 
+		cost:25 Maruscha
+		req:25 Maruscha and UgBLMaruschaF1
+*UgBLMaruschaF3
+		name:Schnellere Produktion
+		icon:icons[5,5] iconsc[20,2]
+		cost:50 Maruscha
+		req:50 Maruscha and UgBLMaruschaF2
+*UgBLMaruschaF4
+		name:Schärfere Glubschaugen
+		icon:icons[5,5] iconsc[20,3]
+		cost:75 Maruscha
+		req:75 Maruscha and UgBLMaruschaF3
+*UgBLMaruschaF5
+		name:Scharfe Zangen
+		icon:icons[5,5] iconsc[20,4]
+		cost:100 Maruscha
+		req:100 Maruscha and UgBLMaruschaF4
+*UgBLMaruschaF6
+		name:Schnelle Beine
+		icon:icons[5,5] iconsc[20,5]
+		cost:125 Maruscha
+		req:125 Maruscha and UgBLMaruschaF5
+*UgBLMaruschaF7
+		name:Mehr Füße
+		icon:icons[5,5] iconsc[20,6]
+		cost:150 Maruscha
+		req:150 Maruscha and UgBLMaruschaF6
+*UgBLMaruschaF8
+		name:Füßlinge
+		icon:icons[5,5] iconsc[20,7]
+		cost:175 Maruscha
+		req:175 Maruscha and UgBLMaruschaF7
+*UgBLMaruschaF9
+		name:Vorwärts + 1
+		icon:icons[5,5] iconsc[20,8]
+		cost:200 Maruscha
+		req:200 Maruscha and UgBLMaruschaF8
+*UgBLMaruschaF10
+		name:Verteidigung mal 2
+		icon:icons[5,5] iconsc[20,9]
+		cost:225 Maruscha
+		req:225 Maruscha and UgBLMaruschaF9
+*UgBLMaruschaF11
+		name:Tarnfarbe
+		icon:icons[5,5] iconsc[20,10]
+		cost:250 Maruscha
+		req:250 Maruscha and UgBLMaruschaF10
+*UgBLMaruschaF12
+		name:Besserer Halt
+		icon:icons[5,5] iconsc[20,11]
+		cost:275 Maruscha
+		req:275 Maruscha and UgBLMaruschaF11
+*UgBLMaruschaF13
+		name:Besserer Geruchssinn
+		icon:icons[5,5] iconsc[20,12]
+		cost:300 Maruscha
+		req:300 Maruscha and UgBLMaruschaF12
+*UgBLMaruschaF14
+		name:Lauscher
+		icon:icons[5,5] iconsc[20,13]
+		cost:325 Maruscha
+		req:325 Maruscha and UgBLMaruschaF13
+*UgBLMaruschaF15
+		name:Schörfere Zähne
+		icon:icons[5,5] iconsc[20,14]
+		cost:350 Maruscha
+		req:350 Maruscha and UgBLMaruschaF14
+				
 		
 //Insekten Upgrades-------------------------------------------------------------------------------------------------
 // Upgrade Ressource Insekten		
@@ -11617,6 +11765,124 @@ class:noBackground
 		name:Picknick Tisch
 		icon:icons[5,5] iconsc[17,14]
 		req:350 Korb and UgBLKorbF15
+//13 Maruscha a
+*TEMPLATE
+		no buy
+		tag:owned
+		class:noBackground
+		desc:<.> Erhöht die Produktion der Maruschas um <b>75</b> %.
+
+*UgBLMaruscha1a
+		name:Stärkere Scheren
+		icon:iconsc[19,0]
+		req:UgBLMaruscha1
+*UgBLMaruscha2a
+		name:Dickerer Panzer
+		icon:iconsc[19,1]
+		req:190400000000000000 Larven:earned and UgBLMaruscha2
+*UgBLMaruscha3a
+		name:Schnelleres Krabbeln
+		icon:iconsc[19,2]
+		req:19040000000000000000 Larven:earned and UgBLMaruscha3
+*UgBLMaruscha4a
+		name:Bessere Fühler
+		icon:iconsc[19,3]
+		req:1904000000000000000000 Larven:earned and UgBLMaruscha4
+*UgBLMaruscha5a
+		name:Merh Schwimmkraft
+		icon:iconsc[19,4]
+		req:190400000000000000000000 Larven:earned and UgBLMaruscha5
+*UgBLMaruscha6a
+		name:Sprinten + 1
+		icon:iconsc[19,5]
+		req:19040000000000000000000000 Larven:earned and UgBLMaruscha6
+*UgBLMaruscha7a
+		name:Längeres Luftanhalten
+		icon:iconsc[19,6]
+		req:1904000000000000000000000000 Larven:earned and UgBLMaruscha7
+*UgBLMaruscha8a
+		name:Sensilbere Fühler
+		icon:iconsc[19,7]
+		req:190400000000000000000000000000 Larven:earned and UgBLMaruscha8
+*UgBLMaruscha9a
+		name:Bessere Augen
+		icon:iconsc[19,8]
+		req:19040000000000000000000000000000 Larven:earned and UgBLMaruscha9
+*UgBLMaruscha10a
+		name:Höhren + 1
+		icon:iconsc[19,9]
+		req:1904000000000000000000000000000000 Larven:earned and UgBLMaruscha10
+*UgBLMaruscha11a
+		name:Krabbeln mal zwei
+		icon:iconsc[19,10]
+		req:190400000000000000000000000000000000 Larven:earned and UgBLMaruscha11
+*UgBLMaruscha12a
+		name:Panzersicher
+		icon:iconsc[19,11]
+		req:19040000000000000000000000000000000000 Larven:earned and UgBLMaruscha12
+//13a
+*UgBLMaruschaF1a
+		name:Bessere Kruste
+		icon:icons[5,5] iconsc[20,0]
+		req:UgBLMaruschaF1
+*UgBLMaruschaF2a
+		name:Bessere Verdauung
+		icon:icons[5,5] iconsc[20,1] 
+		req:25 Maruscha and UgBLMaruschaF2
+*UgBLMaruschaF3a
+		name:Schnellere Produktion
+		icon:icons[5,5] iconsc[20,2]
+		req:50 Maruscha and UgBLMaruschaF3
+*UgBLMaruschaF4a
+		name:Schärfere Glubschaugen
+		icon:icons[5,5] iconsc[20,3]
+		req:75 Maruscha and UgBLMaruschaF4
+*UgBLMaruschaF5a
+		name:Scharfe Zangen
+		icon:icons[5,5] iconsc[20,4]
+		req:100 Maruscha and UgBLMaruschaF5
+*UgBLMaruschaF6a
+		name:Schnelle Beine
+		icon:icons[5,5] iconsc[20,5]
+		req:125 Maruscha and UgBLMaruschaF6
+*UgBLMaruschaF7a
+		name:Mehr Füße
+		icon:icons[5,5] iconsc[20,6]
+		req:150 Maruscha and UgBLMaruschaF7
+*UgBLMaruschaF8a
+		name:Füßlinge
+		icon:icons[5,5] iconsc[20,7]
+		req:175 Maruscha and UgBLMaruschaF8
+*UgBLMaruschaF9a
+		name:Vorwärts + 1
+		icon:icons[5,5] iconsc[20,8]
+		req:200 Maruscha and UgBLMaruschaF9
+*UgBLMaruschaF10a
+		name:Verteidigung mal 2
+		icon:icons[5,5] iconsc[20,9]
+		req:225 Maruscha and UgBLMaruschaF10
+*UgBLMaruschaF11a
+		name:Tarnfarbe
+		icon:icons[5,5] iconsc[20,10]
+		req:250 Maruscha and UgBLMaruschaF11
+*UgBLMaruschaF12a
+		name:Besserer Halt
+		icon:icons[5,5] iconsc[20,11]
+		req:275 Maruscha and UgBLMaruschaF12
+*UgBLMaruschaF13a
+		name:Besserer Geruchssinn
+		icon:icons[5,5] iconsc[20,12]
+		req:300 Maruscha and UgBLMaruschaF13
+*UgBLMaruschaF14a
+		name:Lauscher
+		icon:icons[5,5] iconsc[20,13]
+		req:325 Maruscha and UgBLMaruschaF14
+*UgBLMaruschaF15a
+		name:Schörfere Zähne
+		icon:icons[5,5] iconsc[20,14]
+		req:350 Maruscha and UgBLMaruschaF15
+*TEMPLATE
+		
 		
 *TEMPLATE			
 		no buy
@@ -16856,7 +17122,113 @@ Achievements
 		name:PicknickManufaktur
 		desc:Habe 950 Körbe
 		req:950 Korb
-		icon:iconsc[18,20]			
+		icon:iconsc[18,20]		
+//13 Maruscha|Maruschas
+*BHMaruscha1
+		name:Zwergkrebs
+		desc:Habe eine Maruscha
+		req:1 Maruscha
+		icon:iconsd[0,0]
+*BHMaruscha2
+		name:Blauer Floridakrebs
+		desc:Habe 19 Maruschas
+		req:19 Maruscha
+		icon:iconsd[0,1]
+*BHMaruscha3
+		name:Cambarellus
+		desc:Habe 50 Maruschas
+		req:50 Maruscha
+		icon:iconsd[0,2]
+*BHMaruscha4
+		name:Texanus Zwergkrebs
+		desc:Habe 100 Maruschas
+		req:100 Maruscha
+		icon:iconsd[0,3]
+*BHMaruscha5
+		name:Edelkrebs
+		desc:Habe 150 Maruschas
+		req:150 Maruscha
+		icon:iconsd[0,4]
+*BHMaruscha6
+		name:Knabenkrebs
+		desc:Habe 200 Maruschas
+		req:200 Maruscha
+		icon:iconsd[0,5]
+*BHMaruscha7
+		name:
+		desc:Habe 250 Maruschas
+		req:250 Maruscha
+		icon:iconsd[0,6]
+*BHMaruscha8
+		name:
+		desc:Habe 300 Maruschas
+		req:300 Maruscha
+		icon:iconsd[0,7]
+*BHMaruscha9
+		name:Montezuma Krebs
+		desc:Habe 350 Maruschas
+		req:350 Maruscha
+		icon:iconsd[0,8]
+*BHMaruscha10
+		name:Aprikosenkrebs
+		desc:Habe 400 Maruschas
+		req:400 Maruscha
+		icon:iconsd[0,9]
+*BHMaruscha11
+		name:Schokozwergkrebs
+		desc:Habe 450 Maruschas
+		req:450 Maruscha
+		icon:iconsd[0,10]
+*BHMaruscha12
+		name:Tigerkrebs
+		desc:Habe 500 Maruschas
+		req:500 Maruscha
+		icon:iconsd[0,11]
+*BHMaruscha13
+		name:Blue Moon
+		desc:Habe 550 Maruschas
+		req:550 Maruscha
+		icon:iconsd[0,12]
+*BHMaruscha14
+		name:Blue Claw Tigerkrebs
+		desc:Habe 600 Maruschas
+		req:600 Maruscha
+		icon:iconsd[0,13]
+*BHMaruscha15
+		name:Languste
+		desc:Habe 650 Maruschas
+		req:650 Maruscha
+		icon:iconsd[0,14]
+*BHMaruscha16
+		name:Hummer
+		desc:Habe 700 Maruschas
+		req:700 Maruscha
+		icon:iconsd[0,15]
+*BHMaruscha17
+		name:Skorpionkrebs
+		desc:Habe 750 Maruschas
+		req:750 Maruscha
+		icon:iconsd[0,16]
+*BHMaruscha18
+		name:Flusskrebs
+		desc:Habe 800 Maruschas
+		req:800 Maruscha
+		icon:iconsd[0,17]
+*BHMaruscha19
+		name:Mangovenkrabbe
+		desc:Habe 850 Maruschas
+		req:850 Maruscha
+		icon:iconsd[0,18]
+*BHMaruscha20
+		name:Red Devil
+		desc:Habe 900 Maruschas
+		req:900 Maruscha
+		icon:iconsd[0,19]
+*BHMaruscha21
+		name:Pantherkrabbe
+		desc:Habe 950 Maruschas
+		req:950 Maruscha
+		icon:iconsd[0,20]			
 				
 // Insekten achievments -----------------------------------		
 //1
