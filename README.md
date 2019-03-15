@@ -5351,7 +5351,154 @@ Upgrades
 		icon:icons[5,5] iconsc[14,14]
 		cost:350 Eimer
 		req:350 Eimer and UgBLEimerF14
-*TEMPLATE		
+//12 Korb|Koerbe
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Korb by 1.75
+		desc:<.> Erhöht die Produktion der Körbe um <b>75</b> %.
+//		15680000000000
+*UgBLKorb1
+		name:Mehr Obst
+		icon:iconsc[16,0]
+		cost:156800000000000 Larven, 15680000000000 Nahrung,10000000000 Territorien
+		req:156800000000000 Larven:earned and 10 Korb
+*UgBLKorb2
+		name:Mehr Früchte
+		icon:iconsc[16,1]
+		cost:15680000000000000 Larven, 1568000000000000 Nahrung,100000000000 Territorien
+		req:15680000000000000 Larven:earned and UgBLKorb1
+*UgBLKorb3
+		name:Altes Obst
+		icon:iconsc[16,2]
+		cost:1568000000000000000 Larven, 156800000000000000 Nahrung,1000000000000 Territorien
+		req:1568000000000000000 Larven:earned and UgBLKorb2
+*UgBLKorb4
+		name:Alte Früchte
+		icon:iconsc[16,3]
+		cost:156800000000000000000 Larven, 15680000000000000000 Nahrung,10000000000000 Territorien
+		req:156800000000000000000 Larven:earned and UgBLKorb3
+*UgBLKorb5
+		name:Altes Laub
+		icon:iconsc[16,4]
+		cost:15680000000000000000000 Larven, 1568000000000000000000 Nahrung,100000000000000 Territorien
+		req:15680000000000000000000 Larven:earned and UgBLKorb4
+*UgBLKorb6
+		name:Alte Bananen
+		icon:iconsc[16,5]
+		cost:1568000000000000000000000 Larven, 156800000000000000000000 Nahrung,1000000000000000 Territorien
+		req:1568000000000000000000000 Larven:earned and UgBLKorb5
+*UgBLKorb7
+		name:Alte Äpfel
+		icon:iconsc[16,6]
+		cost:156800000000000000000000000 Larven, 15680000000000000000000000 Nahrung,10000000000000000 Territorien
+		req:156800000000000000000000000 Larven:earned and UgBLKorb6
+*UgBLKorb8
+		name:Alte Pfirsiche
+		icon:iconsc[16,7]
+		cost:15680000000000000000000000000 Larven, 1568000000000000000000000000 Nahrung,100000000000000000 Territorien
+		req:15680000000000000000000000000 Larven:earned and UgBLKorb7
+*UgBLKorb9
+		name:Altes Brot
+		icon:iconsc[16,8]
+		cost:1568000000000000000000000000000 Larven, 156800000000000000000000000000 Nahrung,1000000000000000000 Territorien
+		req:1568000000000000000000000000000 Larven:earned and UgBLKorb8
+*UgBLKorb10
+		name:Mehr Sandwiches
+		icon:iconsc[16,9]
+		cost:156800000000000000000000000000000 Larven, 15680000000000000000000000000000 Nahrung,10000000000000000000 Territorien
+		req:156800000000000000000000000000000 Larven:earned and UgBLKorb9
+*UgBLKorb11
+		name:Marmeladenbrot
+		icon:iconsc[16,10]
+		cost:15680000000000000000000000000000000 Larven, 1568000000000000000000000000000000 Nahrung,100000000000000000000 Territorien
+		req:15680000000000000000000000000000000 Larven:earned and UgBLKorb10
+*UgBLKorb12
+		name:Toast mit honig
+		icon:iconsc[16,11]
+		cost:1568000000000000000000000000000000000 Larven, 156800000000000000000000000000000000 Nahrung,1000000000000000000000 Territorien
+		req:1568000000000000000000000000000000000 Larven:earned and UgBLKorb11
+//11
+*UgBLKorbF1
+		name:Verfaulte Weintrauben
+		icon:icons[5,5] iconsc[17,0]
+		cost:10 Korb
+		req:10 Korb
+*UgBLKorbF2
+		name:Gammliger Korb
+		icon:icons[5,5] iconsc[17,1] 
+		cost:25 Korb
+		req:25 Korb and UgBLKorbF1
+*UgBLKorbF3
+		name:Alte Beeren
+		icon:icons[5,5] iconsc[17,2]
+		cost:50 Korb
+		req:50 Korb and UgBLKorbF2
+*UgBLKorbF4
+		name:Mehr Nüsse
+		icon:icons[5,5] iconsc[17,3]
+		cost:75 Korb
+		req:75 Korb and UgBLKorbF3
+*UgBLKorbF5
+		name:Matschiges Obst
+		icon:icons[5,5] iconsc[17,4]
+		cost:100 Korb
+		req:100 Korb and UgBLKorbF4
+*UgBLKorbF6
+		name:Alte Ananass
+		icon:icons[5,5] iconsc[17,5]
+		cost:125 Korb
+		req:125 Korb and UgBLKorbF5
+*UgBLKorbF7
+		name:Alte Kiwis
+		icon:icons[5,5] iconsc[17,6]
+		cost:150 Korb
+		req:150 Korb and UgBLKorbF6
+*UgBLKorbF8
+		name:Alte Salami
+		icon:icons[5,5] iconsc[17,7]
+		cost:175 Korb
+		req:175 Korb and UgBLKorbF7
+*UgBLKorbF9
+		name:Alte Wurst
+		icon:icons[5,5] iconsc[17,8]
+		cost:200 Korb
+		req:200 Korb and UgBLKorbF8
+*UgBLKorbF10
+		name:Altes Wurstbrot
+		icon:icons[5,5] iconsc[17,9]
+		cost:225 Korb
+		req:225 Korb and UgBLKorbF9
+*UgBLKorbF11
+		name:Verschimmeltes Brot
+		icon:icons[5,5] iconsc[17,10]
+		cost:250 Korb
+		req:250 Korb and UgBLKorbF10
+*UgBLKorbF12
+		name:Altes Hühnchen
+		icon:icons[5,5] iconsc[17,11]
+		cost:275 Korb
+		req:275 Korb and UgBLKorbF11
+*UgBLKorbF13
+		name:Alte Waffel
+		icon:icons[5,5] iconsc[17,12]
+		cost:300 Korb
+		req:300 Korb and UgBLKorbF12
+*UgBLKorbF14
+		name:Trockenes Brot
+		icon:icons[5,5] iconsc[17,13]
+		cost:325 Korb
+		req:325 Korb and UgBLKorbF13
+*UgBLKorbF15
+		name:Picknick Tisch
+		icon:icons[5,5] iconsc[17,14]
+		cost:350 Korb
+		req:350 Korb and UgBLKorbF14
+		
 //Insekten Upgrades-------------------------------------------------------------------------------------------------
 // Upgrade Ressource Insekten		
 *TEMPLATE
@@ -11354,12 +11501,127 @@ class:noBackground
 		name:Ein Eimer voller Mist
 		icon:icons[5,5] iconsc[14,14]
 		req:350 Eimer and UgBLEimerF15
-*TEMPLATE			
-
+//12 Korb a
+*TEMPLATE
 		no buy
 		tag:owned
 		class:noBackground
+		desc:<.> Erhöht die Produktion der Körbe um <b>75</b> %.
 
+*UgBLKorb1a
+		name:Mehr Obst
+		icon:iconsc[16,0]
+		req:UgBLKorb1
+*UgBLKorb2a
+		name:Mehr Früchte
+		icon:iconsc[16,1]
+		req:15680000000000000 Larven:earned and UgBLKorb2
+*UgBLKorb3a
+		name:Altes Obst
+		icon:iconsc[16,2]
+		req:1568000000000000000 Larven:earned and UgBLKorb3
+*UgBLKorb4a
+		name:Alte Früchte
+		icon:iconsc[16,3]
+		req:156800000000000000000 Larven:earned and UgBLKorb4
+*UgBLKorb5a
+		name:Altes Laub
+		icon:iconsc[16,4]
+		req:15680000000000000000000 Larven:earned and UgBLKorb5
+*UgBLKorb6a
+		name:Alte Bananen
+		icon:iconsc[16,5]
+		req:1568000000000000000000000 Larven:earned and UgBLKorb6
+*UgBLKorb7a
+		name:Alte Äpfel
+		icon:iconsc[16,6]
+		req:156800000000000000000000000 Larven:earned and UgBLKorb7
+*UgBLKorb8a
+		name:Alte Pfirsiche
+		icon:iconsc[16,7]
+		req:15680000000000000000000000000 Larven:earned and UgBLKorb8
+*UgBLKorb9a
+		name:Altes Brot
+		icon:iconsc[16,8]
+		req:1568000000000000000000000000000 Larven:earned and UgBLKorb9
+*UgBLKorb10a
+		name:Mehr Sandwiches
+		icon:iconsc[16,9]
+		req:156800000000000000000000000000000 Larven:earned and UgBLKorb10
+*UgBLKorb11a
+		name:Marmeladenbrot
+		icon:iconsc[16,10]
+		req:15680000000000000000000000000000000 Larven:earned and UgBLKorb11
+*UgBLKorb12a
+		name:Toast mit honig
+		icon:iconsc[16,11]
+		req:1568000000000000000000000000000000000 Larven:earned and UgBLKorb12
+//11a
+*UgBLKorbF1a
+		name:Verfaulte Weintrauben
+		icon:icons[5,5] iconsc[17,0]
+		req:UgBLKorbF1
+*UgBLKorbF2a
+		name:Gammliger Korb
+		icon:icons[5,5] iconsc[17,1] 
+		req:25 Korb and UgBLKorbF2
+*UgBLKorbF3a
+		name:Alte Beeren
+		icon:icons[5,5] iconsc[17,2]
+		req:50 Korb and UgBLKorbF3
+*UgBLKorbF4a
+		name:Mehr Nüsse
+		icon:icons[5,5] iconsc[17,3]
+		req:75 Korb and UgBLKorbF4
+*UgBLKorbF5a
+		name:Matschiges Obst
+		icon:icons[5,5] iconsc[17,4]
+		req:100 Korb and UgBLKorbF5
+*UgBLKorbF6a
+		name:Alte Ananass
+		icon:icons[5,5] iconsc[17,5]
+		req:125 Korb and UgBLKorbF6
+*UgBLKorbF7a
+		name:Alte Kiwis
+		icon:icons[5,5] iconsc[17,6]
+		req:150 Korb and UgBLKorbF7
+*UgBLKorbF8a
+		name:Alte Salami
+		icon:icons[5,5] iconsc[17,7]
+		req:175 Korb and UgBLKorbF8
+*UgBLKorbF9a
+		name:Alte Wurst
+		icon:icons[5,5] iconsc[17,8]
+		req:200 Korb and UgBLKorbF9
+*UgBLKorbF10a
+		name:Altes Wurstbrot
+		icon:icons[5,5] iconsc[17,9]
+		req:225 Korb and UgBLKorbF10
+*UgBLKorbF11a
+		name:Verschimmeltes Brot
+		icon:icons[5,5] iconsc[17,10]
+		req:250 Korb and UgBLKorbF11
+*UgBLKorbF12a
+		name:Altes Hühnchen
+		icon:icons[5,5] iconsc[17,11]
+		req:275 Korb and UgBLKorbF12
+*UgBLKorbF13a
+		name:Alte Waffel
+		icon:icons[5,5] iconsc[17,12]
+		req:300 Korb and UgBLKorbF13
+*UgBLKorbF14a
+		name:Trockenes Brot
+		icon:icons[5,5] iconsc[17,13]
+		req:325 Korb and UgBLKorbF14
+*UgBLKorbF15a
+		name:Picknick Tisch
+		icon:icons[5,5] iconsc[17,14]
+		req:350 Korb and UgBLKorbF15
+		
+*TEMPLATE			
+		no buy
+		tag:owned
+		class:noBackground
 
 //Insekten Upgrades a
 // Upgrade Ressource Insekten	a	
@@ -16488,7 +16750,113 @@ Achievements
 		name:Eimermacher
 		desc:Habe 950 Eimer
 		req:950 Eimer
-		icon:iconsc[15,20]		
+		icon:iconsc[15,20]
+//12 Korb|Koerbe
+*BHKorb1
+		name:Korberfinder
+		desc:Habe einen Korb
+		req:1 Korb
+		icon:iconsc[18,0]
+*BHKorb2
+		name:Korbmaler
+		desc:Habe 19 Körbe
+		req:19 Korb
+		icon:iconsc[18,1]
+*BHKorb3
+		name:Körbchen
+		desc:Habe 50 Körbe
+		req:50 Korb
+		icon:iconsc[18,2]
+*BHKorb4
+		name:Hundekorb
+		desc:Habe 100 Körbe
+		req:100 Korb
+		icon:iconsc[18,3]
+*BHKorb5
+		name:Katzenkorb
+		desc:Habe 150 Körbe
+		req:150 Korb
+		icon:iconsc[18,4]
+*BHKorb6
+		name:Korbion
+		desc:Habe 200 Körbe
+		req:200 Korb
+		icon:iconsc[18,5]
+*BHKorb7
+		name:Korbhaber
+		desc:Habe 250 Körbe
+		req:250 Korb
+		icon:iconsc[18,6]
+*BHKorb8
+		name:Früchtekorb
+		desc:Habe 300 Körbe
+		req:300 Korb
+		icon:iconsc[18,7]
+*BHKorb9
+		name:Obstkorb
+		desc:Habe 350 Körbe
+		req:350 Korb
+		icon:iconsc[18,8]
+*BHKorb10
+		name:Blumenkorb
+		desc:Habe 400 Körbe
+		req:400 Korb
+		icon:iconsc[18,9]
+*BHKorb11
+		name:Die Kunst der Körbe
+		desc:Habe 450 Körbe
+		req:450 Korb
+		icon:iconsc[18,10]
+*BHKorb12
+		name:Korbladen
+		desc:Habe 500 Körbe
+		req:500 Korb
+		icon:iconsc[18,11]
+*BHKorb13
+		name:Korbbauer
+		desc:Habe 550 Körbe
+		req:550 Korb
+		icon:iconsc[18,12]
+*BHKorb14
+		name:Korbwiederverwertung
+		desc:Habe 600 Körbe
+		req:600 Korb
+		icon:iconsc[18,13]
+*BHKorb15
+		name:Korbwerkstatt
+		desc:Habe 650 Körbe
+		req:650 Korb
+		icon:iconsc[18,14]
+*BHKorb16
+		name:Picknickkorb Binder
+		desc:Habe 700 Körbe
+		req:700 Korb
+		icon:iconsc[18,15]
+*BHKorb17
+		name:Picknickkorb Flechter
+		desc:Habe 750 Körbe
+		req:750 Korb
+		icon:iconsc[18,16]
+*BHKorb18
+		name:Picknickkorb Bauer
+		desc:Habe 800 Körbe
+		req:800 Korb
+		icon:iconsc[18,17]
+*BHKorb19
+		name:Picknickkorb Macher
+		desc:Habe 850 Körbe
+		req:850 Korb
+		icon:iconsc[18,18]
+*BHKorb20
+		name:Picknickkorb Fabrik
+		desc:Habe 900 Körbe
+		req:900 Korb
+		icon:iconsc[18,19]
+*BHKorb21
+		name:PicknickManufaktur
+		desc:Habe 950 Körbe
+		req:950 Korb
+		icon:iconsc[18,20]			
 				
 // Insekten achievments -----------------------------------		
 //1
