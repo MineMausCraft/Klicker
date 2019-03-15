@@ -1377,8 +1377,8 @@ Buildings
 	on tick:lose 200 Nahrung
 	on earn:yield 1 Erfahrung
 //12
-*DahlienBusch|DahlienBuesche
-    name:DahlienBusch|DahlienBüsche
+*Korb|Koerbe
+    name:Korb|Körbe
     desc:Schmetterlingslarven fühen sich hier pudelwohl!<//><b><.></b> Produziert <b>66382979</b> Lps.<//><.> Produktion: <b>[DahlienBusch*66382979]</b> /Lps <//><.> Verbrauch: <b>2147929</b> Bps und <b>225</b> Nps<//><.> Gesamter Vb: <b>[DahlienBusch*2147929]</b>/Bps und <b>[DahlienBusch*225]</b>/Nps
     icon:icons[1,11]
     cost:15680000000000 Larven, 15680000000000 Nahrung, 10000000000 Territorien
@@ -5354,6 +5354,13 @@ Upgrades
 *TEMPLATE		
 //Insekten Upgrades-------------------------------------------------------------------------------------------------
 // Upgrade Ressource Insekten		
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
 *UgRIBlume1
 		name:Ackerwinde
 		desc:<.> Erhöht die Produktion von Insekten um <b>1</b> %.
@@ -7516,6 +7523,13 @@ Upgrades
 	req:UpgIMistroller
 //BauMaterial Upgrades-----------------------------------------------------------------------------------
 //Upgrades Ressource Baumaterial	
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
 *UgRBKiesel1
 		name:Dacit
 		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
@@ -11449,13 +11463,6 @@ class:noBackground
 		icon:iconsa[5,20]
 		req:2500000000000000 Insekten:earned and UgRIBlume21
 		
-		
-		
-	
-		
-
-		
-
 *UgRINuss1a
 		name:Mandeln
         desc:<.> Beim Klicken des Insektes bekommst du <b>2</b> mal so viel!
