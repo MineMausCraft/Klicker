@@ -1379,8 +1379,8 @@ Buildings
 //12
 *Korb|Koerbe
     name:Korb|Körbe
-    desc:Schmetterlingslarven fühen sich hier pudelwohl!<//><b><.></b> Produziert <b>66382979</b> Lps.<//><.> Produktion: <b>[Korb*66382979]</b> /Lps <//><.> Verbrauch: <b>2147929</b> Bps und <b>225</b> Nps<//><.> Gesamter Vb: <b>[Korb*2147929]</b>/Bps und <b>[Korb*225]</b>/Nps
-    icon:icons[1,11]
+    desc:Ein Korb voller toller Dinge die Larven glücklich machen!<//><b><.></b> Produziert <b>66382979</b> Lps.<//><.> Produktion: <b>[Korb*66382979]</b> /Lps <//><.> Verbrauch: <b>2147929</b> Bps und <b>225</b> Nps<//><.> Gesamter Vb: <b>[Korb*2147929]</b>/Bps und <b>[Korb*225]</b>/Nps
+    icon:iconsc[18,0]
     cost:15680000000000 Larven, 15680000000000 Nahrung, 10000000000 Territorien
     on tick:yield 66382979 Larven
     req:15680000000000 Larven:earned
@@ -11354,7 +11354,13 @@ class:noBackground
 		name:Ein Eimer voller Mist
 		icon:icons[5,5] iconsc[14,14]
 		req:350 Eimer and UgBLEimerF15
-*TEMPLATE				
+*TEMPLATE			
+
+		no buy
+		tag:owned
+		class:noBackground
+
+
 //Insekten Upgrades a
 // Upgrade Ressource Insekten	a	
 *UgRIBlume1a
