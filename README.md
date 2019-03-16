@@ -10,7 +10,7 @@ Settings
 	background:https://i.imgur.com/wCNA1I9.jpg
 	building cost increase:115%
 	building cost refund:50%
-	spritesheet:icons, 48 by 48, https://i.imgur.com/7Gu14hz.png
+	spritesheet:icons, 48 by 48, https://i.imgur.com/r453shX.png
 	spritesheet:iconsa, 48 by 48, https://i.imgur.com/ERLdgPh.png
 	spritesheet:iconsb, 48 by 48, https://i.imgur.com/EMiAs6j.png
 	spritesheet:iconsc, 48 by 48, https://i.imgur.com/BHbzXDk.png
@@ -22,10 +22,10 @@ Settings
 	on start:SuperB=2
 	
 Layout
-	*main
+    *main
   contains:res, buttons
   *res
-    contains:Resources
+    contains:tag:Resa, tag:Resb, tag:Resc, tag:Resd, tag:Rese, tag:Resf, Resources
     class:fullWidth
   *buttons
     contains:Buttons
@@ -42,10 +42,18 @@ Layout
     names:hide
  *limtupgrades
                 contains:tag:limitupgrades
-                header:Kolonie Erweiterung
+                header:Limited Upgrades
                 in:upgrades
                 costs:hide
-                names:hide	
+                names:hide 
+                   
+*ownedupgrades
+    contains:tag:owned
+    header:Owned Upgrades
+    in:upgrades
+    costs:hide
+    names:hide
+	
 					
 *ownedupgrades
 	contains:tag:owned
@@ -717,14 +725,35 @@ Buttons
 	  passive:multiply yield of Insekten by ((Evo*1/100)+1)
   	  passive:multiply yield of BauMaterial by ((Evo*1/100)+1)
 	  on tick:yield 1 Spielzeit
-*statusbar
-	  tag:booster
- 	  name:sooooooLang
+	  
+*statusbarL
+      tag:boosterL
+      name:sooooooLang
       no text
-      show clicks     
-      cost:100 Larven
+      icon:https://imgur.com/RbsKtW1.png
+      show clicks    
+      cost:1 Larven
       no text
-      class:statusbar
+      class:noBackground statusbarL
+*statusbarI
+      tag:boosterI
+      name:sooooooLang
+      no text
+      icon:https://imgur.com/Obtdo5Y.png
+      show clicks    
+      cost:1 Larven
+      no text
+      class:noBackground statusbarI
+*statusbarB
+      tag:boosterB
+      name:sooooooLang
+      no text
+      icon:https://imgur.com/AiQHq7x.png
+      show clicks    
+      cost:1 Larven
+      no text
+      class:noBackground statusbarB
+	  
 	
 *TeichButton
 		name:Teich
@@ -1401,7 +1430,7 @@ Buildings
 //14
 *Gelbfisch|Gelbfische
 	name:Gelbfisch|Gelbfische
-	desc:Dieser Gelbfisch ist geschickt im Larven fangen!<//><b><.></b> Produziert <b>2961702128</b> Lps.<//><.> Produktion: <b>[Gelbfisch*2961702128]</b> /Lps <//><.> Verbrauch: <b>85256259</b> Bps und <b>275</b> Nps<//><.> Gesamter Vb: <b>[Gelbfisch*85256259]</b>/Bps und <b>[Gelbfisch*275]</b>/Nps
+	desc:Dieser Gelbfisch ist geschickt im Larven fangen und ausbrüten!<//><b><.></b> Produziert <b>2961702128</b> Lps.<//><.> Produktion: <b>[Gelbfisch*2961702128]</b> /Lps <//><.> Verbrauch: <b>85256259</b> Bps und <b>275</b> Nps<//><.> Gesamter Vb: <b>[Gelbfisch*85256259]</b>/Bps und <b>[Gelbfisch*275]</b>/Nps
 	icon:icons[1,13]
 	cost:2352000000000000 Larven, 235200000000000 Nahrung, 1000000000000 Territorien
 	on tick:yield 2961702128 Larven
@@ -1421,9 +1450,9 @@ Buildings
 	on tick:lose 300 Nahrung
 	on earn:yield 1 Erfahrung
 //16
-*Banane|Bananen
-	name:Banane|Bananen
-	desc:Bananen sind süß und safig, ein prima ort für unsere Larven!<//><b><.></b> Produziert <b>153191489362</b> Lps.<//><.> Produktion: <b>[Banane*153191489362]</b> /Lps <//><.> Verbrauch: <b>4163677742</b> Bps und <b>325</b> Nps<//><.> Gesamter Vb: <b>[Banane*4163677742]</b>/Bps und <b>[Banane*325]</b>/Nps
+*Topf|Toepfe
+	name:Topf|Töpfe
+	desc:Töpfe sind fruchtbar und feucht und dunkel, ein prima Ort für unsere Larven!<//><b><.></b> Produziert <b>153191489362</b> Lps.<//><.> Produktion: <b>[Topf*153191489362]</b> /Lps <//><.> Verbrauch: <b>4163677742</b> Bps und <b>325</b> Nps<//><.> Gesamter Vb: <b>[Topf*4163677742]</b>/Bps und <b>[Topf*325]</b>/Nps
 	icon:icons[1,15]
 	cost:364560000000000000 Larven, 36456000000000000 Nahrung, 100000000000000 Territorien
 	on tick:yield 153191489362 Larven
