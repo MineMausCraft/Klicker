@@ -717,11 +717,12 @@ Buttons
 	  passive:multiply yield of Larven by ((Evo*1/100)+1)
 	  passive:multiply yield of Insekten by ((Evo*1/100)+1)
   	  passive:multiply yield of BauMaterial by ((Evo*1/100)+1)
+  	  passive:multiply yield of Nahrung by ((Evo*1/100)+1)
 	  on tick:yield 1 Spielzeit
 	  passive:multiply yield of Larven by ((Spielzeit/3600*1/100)+1)
 	  passive:multiply yield of Insekten by ((Spielzeit/3600*1/100)+1)
    	  passive:multiply yield of BauMaterial by ((Spielzeit/3600*1/100)+1)
-	  
+   	  passive:multiply yield of Nahrung by ((Spielzeit/3600*1/100)+1)
 *statusbarL
       tag:boosterL
       name:sooooooLang
@@ -763,7 +764,7 @@ Buttons
 		passive:multiply yield of Larven by ((Erfolge*1/100)+1)
 		passive:multiply yield of Insekten by ((Erfolge*1/100)+1)
 		passive:multiply yield of BauMaterial by ((Erfolge*1/100)+1)
-		
+		passive:multiply yield of Nahrung by ((Erfolge*1/100)+1)
 Resources
 
 *upgradesII
