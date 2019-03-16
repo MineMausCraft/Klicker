@@ -718,6 +718,9 @@ Buttons
 	  passive:multiply yield of Insekten by ((Evo*1/100)+1)
   	  passive:multiply yield of BauMaterial by ((Evo*1/100)+1)
 	  on tick:yield 1 Spielzeit
+	  passive:multiply yield of Larven by ((Spielzeit/3600*1/100)+1)
+	  passive:multiply yield of Insekten by ((Spielzeit/3600*1/100)+1)
+   	  passive:multiply yield of BauMaterial by ((Spielzeit/3600*1/100)+1)
 	  
 *statusbarL
       tag:boosterL
@@ -836,9 +839,6 @@ Resources
 		desc:Zählt die Sekunden die du spielst!
 		class:noBackground
 		always hidden	
-		passive:multiply yield of Larven by ((Spielzeit/3600*1/100)+1)
-		passive:multiply yield of Insekten by ((Spielzeit/3600*1/100)+1)
-		passive:multiply yield of BauMaterial by ((Spielzeit/3600*1/100)+1)
 *Evo|Evos
 		name:Evolutions Punkte
 		icon:icons[6,2]
