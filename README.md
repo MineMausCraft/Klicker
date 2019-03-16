@@ -54,13 +54,6 @@ Layout
     costs:hide
     names:hide
 	
-					
-*ownedupgrades
-	contains:tag:owned
-	header:Owned Upgrades
-	in:upgrades
-	costs:hide
-	names:hide
 
 Buttons
 
