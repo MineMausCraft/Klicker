@@ -836,9 +836,9 @@ Resources
 		desc:Zählt die Sekunden die du spielst!
 		class:noBackground
 		always hidden	
-		passive:multiply yield of Larven by (Spielzeit/3600*1/100)+1
-		passive:multiply yield of Insekten by (Spielzeit/3600*1/100)+1
-		passive:multiply yield of BauMaterial by (Spielzeit/3600*1/100)+1
+		passive:multiply yield of Larven by ((Spielzeit/3600*1/100)+1)
+		passive:multiply yield of Insekten by ((Spielzeit/3600*1/100)+1)
+		passive:multiply yield of BauMaterial by ((Spielzeit/3600*1/100)+1)
 *Evo|Evos
 		name:Evolutions Punkte
 		icon:icons[6,2]
