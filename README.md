@@ -656,7 +656,7 @@ Buttons
 
 *TerritoriumButton    
         name:Territorium
-        desc:Die Welt gehört Dir! <//><.>Macht aus <b>1000</b> Baumaterial <b>1</B> Territorium
+        desc:Die Welt gehört Dir! <//><.>Macht aus <b>1000</b> BauMaterial <b>1</B> Territorium
         on click:anim icon wobble
         icon:https://i.imgur.com/asXnnnQ.png
         no text
@@ -836,7 +836,9 @@ Resources
 		desc:Zählt die Sekunden die du spielst!
 		class:noBackground
 		always hidden	
-			
+		passive:multiply yield of Larven by (Spielzeit/3600*1/100)+1
+		passive:multiply yield of Insekten by (Spielzeit/3600*1/100)+1
+		passive:multiply yield of BauMaterial by (Spielzeit/3600*1/100)+1
 *Evo|Evos
 		name:Evolutions Punkte
 		icon:icons[6,2]
@@ -1497,7 +1499,7 @@ Buildings
 //3
 *Fliege|Fliegen
     name:Fliege|Fliegen
-    desc:kleine Fliegen<//><b><.></b> Produziert <b>7</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Fliegen*7]</b> /Ips <//><.> Verbrauch: <b>2</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Fliege*2]</b>/Bps
+    desc:kleine Fliegen<//><b><.></b> Produziert <b>7</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Fliegen*7]</b> /Ips <//><.> Verbrauch: <b>2</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[Fliege*2]</b>/Bps
     icon:icons[0,2]
     cost:1540 Insekten,770 Larven,385 BauMaterial
     on tick:yield 7 Insekten
@@ -1508,7 +1510,7 @@ Buildings
 //4
 *Kaefer
     name:Käfer
-    desc:Kleine Käfer<//><b><.></b> Produziert <b>39</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Kaefer*39]</b> /Ips <//><.> Verbrauch: <b>3</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Kaefer*3]</b>/Bps
+    desc:Kleine Käfer<//><b><.></b> Produziert <b>39</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Kaefer*39]</b> /Ips <//><.> Verbrauch: <b>3</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[Kaefer*3]</b>/Bps
     icon:icons[0,3]
     cost:16800 Insekten,8400 Larven, 4200 BauMaterial
     on tick:yield 39 Insekten
@@ -1519,7 +1521,7 @@ Buildings
 //5
 *Biene|Bienen
     name:Biene|Bienen
-    desc:Kleine Biene<//><b><.></b> Produziert <b>217</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Biene*217]</b> /Ips <//><.> Verbrauch: <b>15</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Biene*15]</b>/Bps
+    desc:Kleine Biene<//><b><.></b> Produziert <b>217</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Biene*217]</b> /Ips <//><.> Verbrauch: <b>15</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[Biene*15]</b>/Bps
     icon:icons[0,4]
     cost:182000 Insekten,91000 Larven,45500 BauMaterial
     on tick:yield 217 Insekten
@@ -1530,7 +1532,7 @@ Buildings
 //6
 *RoteAmeise|RoteAmeisen
     name:RoteAmeise|RoteAmeisen
-    desc:Fleißige rote Ameisen<//><b><.></b> Produziert <b>1168</b> Insekt pro Sekunde.<//><.> Produktion: <b>[RoteAmeise*1168]</b> /Ips <//><.> Verbrauch: <b>80</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[RoteAmeise*80]</b>/Bps
+    desc:Fleißige rote Ameisen<//><b><.></b> Produziert <b>1168</b> Insekt pro Sekunde.<//><.> Produktion: <b>[RoteAmeise*1168]</b> /Ips <//><.> Verbrauch: <b>80</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[RoteAmeise*80]</b>/Bps
     icon:icons[0,5]
     cost:1960000 Insekten,980000 Larven,490000 BauMaterial
     on tick:yield 1168 Insekten
@@ -1541,7 +1543,7 @@ Buildings
 //7
 *GrosserKaefer|GrosseKaefer
     name:GroßerKäfer|GroßeKäfer
-    desc:So groß!<//><b>Effect:</b><.>Produziert <b>6506</b> Insekt pro Sekunde.<//><.> Produktion: <b>[GrosserKaefer*6506]</b> /Ips <//><.> Verbrauch: <b>300</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[GrosserKaefer*300]</b>/Bps
+    desc:So groß!<//><b>Effect:</b><.>Produziert <b>6506</b> Insekt pro Sekunde.<//><.> Produktion: <b>[GrosserKaefer*6506]</b> /Ips <//><.> Verbrauch: <b>300</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[GrosserKaefer*300]</b>/Bps
     icon:icons[0,6]
     cost:28000000 Insekten,14000000 Larven,7000000 BauMaterial
     on tick:yield 6506 Insekten
@@ -1552,7 +1554,7 @@ Buildings
 //8
 *Schmetterling|Schmetterlinge
     name:Schmetterling|Schmetterlinge
-    desc:Bunte Schmetterlinge<//><b><.></b> Produziert <b>36698</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Schmetterling*36698]</b> /Ips <//><.> Verbrauch: <b>1201</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Schmetterling*1201]</b>/Bps
+    desc:Bunte Schmetterlinge<//><b><.></b> Produziert <b>36698</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Schmetterling*36698]</b> /Ips <//><.> Verbrauch: <b>1201</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[Schmetterling*1201]</b>/Bps
     icon:icons[0,7]
     cost:420000000 Insekten,210000000 Larven,105000000 BauMaterial
     on tick:yield 36698 Insekten
@@ -1563,9 +1565,9 @@ Buildings
 //9
 *Schabe|Schaben
     name:Schabe|Schaben
-    desc:So flach sie sind!<//><b><.></b> Produziert <b>216851</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Schabe*216851]</b> /Ips <//><.> Verbrauch: <b>10000</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Schabe*10000]</b>/Bps
+    desc:So flach sie sind!<//><b><.></b> Produziert <b>216851</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Schabe*216851]</b> /Ips <//><.> Verbrauch: <b>10000</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[Schabe*10000]</b>/Bps
     icon:icons[0,8]
-    cost:6490909091 Insekten,3245454545 Larven,1622727273 BauBaterial
+    cost:6490909091 Insekten,3245454545 Larven,1622727273 BauMaterial
     on tick:yield 216851 Insekten
     req:6490909091 Insekten:earned and UpgISchabe
  	on tick:lose 10000 BauMaterial
@@ -1574,9 +1576,9 @@ Buildings
 //10
 *Skorpion|Skorpione
     name:Skorpion|Skorpione
-    desc:Aus der heißen Wüste er kommt!<//><b><.></b> Produziert <b>1322791</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Skorpion*1322791]</b> /Ips <//><.> Verbrauch: <b>50000</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Skorpion*50000]</b>/Bps
+    desc:Aus der heißen Wüste er kommt!<//><b><.></b> Produziert <b>1322791</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Skorpion*1322791]</b> /Ips <//><.> Verbrauch: <b>50000</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[Skorpion*50000]</b>/Bps
     icon:icons[0,9]
-    cost:95454545455 Insekten,47727272727 Larven,23863636364 Baumaterial
+    cost:95454545455 Insekten,47727272727 Larven,23863636364 BauMaterial
     on tick:yield 1322791 Insekten
     req:95454545455 Insekten:earned and UpgISkorion
 	on tick:lose 50000 BauMaterial
@@ -1585,7 +1587,7 @@ Buildings
 //11
 *Moskito|Moskitos
     name:Mücke|Mücken
-    desc:Sie bringen so viel Blut!<//><b><.></b> Produziert <b>8267447</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Moskito*8267447]</b> /Ips <//><.> Verbrauch: <b>300000</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Moskito*300000]</b>/Bps
+    desc:Sie bringen so viel Blut!<//><b><.></b> Produziert <b>8267447</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Moskito*8267447]</b> /Ips <//><.> Verbrauch: <b>300000</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[Moskito*300000]</b>/Bps
     icon:icons[0,10]
     cost:1272727272727 Insekten,636363636364 Larven,318181818182 BauMaterial
     on tick:yield 8267447 Insekten
@@ -1595,7 +1597,7 @@ Buildings
 //12
 *Willi|Willis
     name:Willi|Willis
-    desc:Er war immer ein kluger Grashüpfer!<//><b><.></b> Produziert <b>53738404</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Willi*53738404]</b> /Ips <//><.> Verbrauch: <b>2147929</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Willi*2147929]</b>/Bps
+    desc:Er war immer ein kluger Grashüpfer!<//><b><.></b> Produziert <b>53738404</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Willi*53738404]</b> /Ips <//><.> Verbrauch: <b>2147929</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[Willi*2147929]</b>/Bps
     icon:icons[0,11]
     cost:17818181818182 Insekten,8909090909091 Larven,4454545454545 BauMaterial
     on tick:yield 53738404 Insekten
@@ -1604,7 +1606,7 @@ Buildings
 	on earn:yield 1 Erfahrung
 //13
 *Libelle|Libellen
-    name:Libelle|Libellen<//><b><.></b> Produziert <b>355500213</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Libelle*355500213]</b> /Ips <//><.> Verbrauch: <b>12887574</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Libelle*12887574]</b>/Bps
+    name:Libelle|Libellen<//><b><.></b> Produziert <b>355500213</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Libelle*355500213]</b> /Ips <//><.> Verbrauch: <b>12887574</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[Libelle*12887574]</b>/Bps
     desc:Brumm Brumm!
     icon:icons[0,12]
     cost:216363636363636 Insekten,108181818181818 Larven,54090909090909 BauMaterial
@@ -1615,7 +1617,7 @@ Buildings
 //14
 *Gluehwurm|Gluehwuermchen
     name:Glühwurm|Glühwürmchen
-    desc:Möge es dir ein Licht sein an dunklen Orten, wenn alle anderen Lichter ausgehen.<//><b><.></b> Produziert <b>2397559574</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Gluehwurm*2397559574]</b> /Ips <//><.> Verbrauch: <b>85256259</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Gluehwurm*85256259]</b>/Bps
+    desc:Möge es dir ein Licht sein an dunklen Orten, wenn alle anderen Lichter ausgehen.<//><b><.></b> Produziert <b>2397559574</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Gluehwurm*2397559574]</b> /Ips <//><.> Verbrauch: <b>85256259</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[Gluehwurm*85256259]</b>/Bps
     icon:icons[0,13]
     cost:2672727272727270 Insekten,1336363636363640 Larven,668181818181818 BauMaterial
     on tick:yield 2397559574 Insekten
@@ -1625,7 +1627,7 @@ Buildings
 //15
 *Mistroller
     name:Mistroller
-    desc:Er macht aus Mist Leben!<//><b><.></b> Produziert <b>17361638298</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Mistroller*17361638298]</b> /Ips <//><.> Verbrauch: <b>574984069</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Mistroller*574984069]</b>/Bps
+    desc:Er macht aus Mist Leben!<//><b><.></b> Produziert <b>17361638298</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Mistroller*17361638298]</b> /Ips <//><.> Verbrauch: <b>574984069</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[Mistroller*574984069]</b>/Bps
     icon:icons[0,14]
     cost:33090909090909100 Insekten,16545454545454500 Larven,8272727272727270 BauMaterial
     on tick:yield 17361638298 Insekten
@@ -1635,7 +1637,7 @@ Buildings
 //16
 *Nachtfalter
     name:Nachtfalter
-    desc:Er sucht das Licht!<//><b><.></b> Produziert <b>124011702128</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Nachtfalter*124011702128]</b> /Ips <//><.> Verbrauch: <b>4163677742</b> Baumaterial pro Sekunde <//><.> Gesamter Vb: <b>[Nachtfalter*4163677742]</b>/Bps
+    desc:Er sucht das Licht!<//><b><.></b> Produziert <b>124011702128</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Nachtfalter*124011702128]</b> /Ips <//><.> Verbrauch: <b>4163677742</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[Nachtfalter*4163677742]</b>/Bps
     icon:icons[0,15]
     cost:394545454545455000 Insekten,197272727272727000 Larven,98636363636363700 BauMaterial
     on tick:yield 124011702128 Insekten
@@ -1643,7 +1645,7 @@ Buildings
 	on tick:lose 4163677742 BauMaterial
 	on earn:yield 1 Erfahrung
 	
-// Baumaterial Gebäude ----------------------------------------------------
+// BauMaterial Gebäude ----------------------------------------------------
  //1 
 *Gras
     name:Gras
@@ -1756,7 +1758,7 @@ Buildings
  //12
  *VogelNest|VogelNester
 	name:VogelNest|VogelNester
-	desc:Ein unendlicher Vorrat an Baumaterial lagert hier!<//><b><.></b> Produziert <b>38662722</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[VogelNest*38662722]</b> /Bps
+	desc:Ein unendlicher Vorrat an BauMaterial lagert hier!<//><b><.></b> Produziert <b>38662722</b> BauMaterial pro Sekunde.<//><.> Produktion: <b>[VogelNest*38662722]</b> /Bps
 	icon:icons[2,11]
 	cost:12133333333333 BauMaterial
 	on tick:yield 38662722 BauMaterial
@@ -7952,7 +7954,7 @@ Upgrades
 	cost:10 Banane,5 CreepyTree
 	req:UpgIMistroller
 //BauMaterial Upgrades-----------------------------------------------------------------------------------
-//Upgrades Ressource Baumaterial	
+//Upgrades Ressource BauMaterial	
 *TEMPLATE
 		tag:upgrades
 		on tick:if (have this) hide this
@@ -7962,147 +7964,147 @@ Upgrades
 		class:noBackground
 *UgRBKiesel1
 		name:Dacit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,0]
 		cost:999999 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:50000 BauMaterial:earned
 *UgRBKiesel2
 		name:Hornstein
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,1]
 		cost:5000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:250000 BauMaterial:earned and UgRBKiesel1
 *UgRBKiesel3
 		name:Aplit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,2]
 		cost:10000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:500000 BauMaterial:earned and UgRBKiesel2
 *UgRBKiesel4
 		name:Eklogit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,3]
 		cost:50000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:2500000 BauMaterial:earned and UgRBKiesel3
 *UgRBKiesel5
 		name:Essexit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,4]
 		cost:100000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:5000000 BauMaterial:earned and UgRBKiesel4
 *UgRBKiesel6
 		name:Felsit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,5]
 		cost:500000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:25000000 BauMaterial:earned and UgRBKiesel5
 *UgRBKiesel7
 		name:Arkose
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,6]
 		cost:1000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:50000000 BauMaterial:earned and UgRBKiesel6
 *UgRBKiesel8
 		name:Jumillit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,7]
 		cost:5000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:250000000 BauMaterial:earned and UgRBKiesel7
 *UgRBKiesel9
 		name:Lava
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,8]
 		cost:10000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:500000000 BauMaterial:earned and UgRBKiesel8
 *UgRBKiesel10
 		name:Kaolin
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,9]
 		cost:50000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:2500000000 BauMaterial:earned and UgRBKiesel9
 *UgRBKiesel11
 		name:Impaktit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,10]
 		cost:100000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:5000000000 BauMaterial:earned and UgRBKiesel10
 *UgRBKiesel12
 		name:Löss
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,11]
 		cost:500000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:25000000000 BauMaterial:earned and UgRBKiesel11
 *UgRBKiesel13
 		name:Kalktuff
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,12]
 		cost:1000000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:50000000000 BauMaterial:earned and UgRBKiesel12
 *UgRBKiesel14
 		name:Weißschiefer
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,13]
 		cost:5000000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:250000000000 BauMaterial:earned and UgRBKiesel13
 *UgRBKiesel15
 		name:Suevit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,14]
 		cost:10000000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:UgRBKiesel14
 *UgRBKiesel16
 		name:Migmatit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,15]
 		cost:50000000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:5000000000000 BauMaterial:earned and UgRBKiesel15
 *UgRBKiesel17
 		name:MORB
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,16]
 		cost:100000000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:25000000000000 BauMaterial:earned and UgRBKiesel16
 *UgRBKiesel18
 		name:Tektit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,17]
 		cost:500000000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:50000000000000 BauMaterial:earned and UgRBKiesel17
 *UgRBKiesel19
 		name:Schiefer
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,18]
 		cost:1000000000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:250000000000000 BauMaterial:earned and UgRBKiesel18
 *UgRBKiesel20
 		name:Rogenstein
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,19]
 		cost:5000000000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
 		req:500000000000000 BauMaterial:earned and UgRBKiesel19
 *UgRBKiesel21
 		name:Mylonit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,20]
 		cost:10000000000000000 BauMaterial
 		passive:multiply yield of BauMaterial by 1.01
@@ -14044,114 +14046,114 @@ class:noBackground
 
 
 
-//Upgrades Ressource Baumaterial	a
+//Upgrades Ressource BauMaterial	a
 		
 
 		
 		
 *UgRBKiesel1a
 		name:Dacit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,0]
 		req:UgRBKiesel1
 *UgRBKiesel2a
 		name:Hornstein
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,1]
 		req:250000 BauMaterial:earned and UgRBKiesel2
 *UgRBKiesel3a
 		name:Aplit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,2]
 		req:500000 BauMaterial:earned and UgRBKiesel3
 *UgRBKiesel4a
 		name:Eklogit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,3]
 		req:2500000 BauMaterial:earned and UgRBKiesel4
 *UgRBKiesel5a
 		name:Essexit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,4]
 		req:5000000 BauMaterial:earned and UgRBKiesel5
 *UgRBKiesel6a
 		name:Felsit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,5]
 		req:25000000 BauMaterial:earned and UgRBKiesel6
 *UgRBKiesel7a
 		name:Arkose
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,6]
 		req:50000000 BauMaterial:earned and UgRBKiesel7
 *UgRBKiesel8a
 		name:Jumillit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,7]
 		req:250000000 BauMaterial:earned and UgRBKiesel8
 *UgRBKiesel9a
 		name:Lava
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,8]
 		req:500000000 BauMaterial:earned and UgRBKiesel9
 *UgRBKiesel10a
 		name:Kaolin
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,9]
 		req:2500000000 BauMaterial:earned and UgRBKiesel10
 *UgRBKiesel11a
 		name:Impaktit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,10]
 		req:5000000000 BauMaterial:earned and UgRBKiesel11
 *UgRBKiesel12a
 		name:Löss
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,11]
 		req:25000000000 BauMaterial:earned and UgRBKiesel12
 *UgRBKiesel13a
 		name:Kalktuff
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,12]
 		req:50000000000 BauMaterial:earned and UgRBKiesel13
 *UgRBKiesel14a
 		name:Weißschiefer
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,13]
 		req:250000000000 BauMaterial:earned and UgRBKiesel14
 *UgRBKiesel15a
 		name:Suevit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,14]
 		req:UgRBKiesel15
 *UgRBKiesel16a
 		name:Migmatit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,15]
 		req:5000000000000 BauMaterial:earned and UgRBKiesel16
 *UgRBKiesel17a
 		name:MORB
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,16]
 		req:25000000000000 BauMaterial:earned and UgRBKiesel17
 *UgRBKiesel18a
 		name:Tektit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,17]
 		req:50000000000000 BauMaterial:earned and UgRBKiesel18
 *UgRBKiesel19a
 		name:Schiefer
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,18]
 		req:250000000000000 BauMaterial:earned and UgRBKiesel19
 *UgRBKiesel20a
 		name:Rogenstein
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,19]
 		req:500000000000000 BauMaterial:earned and UgRBKiesel20
 *UgRBKiesel21a
 		name:Mylonit
-		desc:<.> Erhöht die Produktion von Baumaterial um <b>1</b> %.
+		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,20]
 		req:2500000000000000 BauMaterial:earned and UgRBKiesel21	
 		
