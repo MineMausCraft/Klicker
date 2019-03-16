@@ -788,6 +788,7 @@ Resources
         icon:icons[1,0]
         class:noBackground
         show earned
+		tag:Resa
 		
 *Insekt|Insekten
 		name:Insekt|Insekten
@@ -795,6 +796,7 @@ Resources
 		icon:icons[0,0]
 		class:noBackground
 		show earned
+		tag:Resb
 		
 *BauMaterial
         name:BauMaterial
@@ -802,20 +804,23 @@ Resources
         icon:icons[5,0]
         class:noBackground
         show earned
+		tag:Resc
 
 *Nahrung
 		name:Nahrung
 		desc:Deine Kolonie braucht viel Nahrung um zu wachsen!
 		icon:icons[4,2]
 		class:noBackground
-		show earned		
+		show earned
+		tag:Resd
 		
 *Erfahrung
 		name:Erfahrung
 		desc:Du bekommst Erfahrung indem du Gebäude kaufst!
 		icon:icons[6,1]
 		class:noBackground
-		show earned		
+		show earned
+		tag:Rese
 		
 *InsektenPanzer|InsektenPanzer
 		name:InsektenPanzer|InsektenPanzer
@@ -843,7 +848,8 @@ Resources
 		name:Evolutions Punkte
 		icon:icons[6,2]
 		class:noBackground
-		show earned	
+		show earned
+		tag:Resf
 		on earn:lose Larven
 		on earn:lose Insekten
 		on earn:lose BauMaterial
