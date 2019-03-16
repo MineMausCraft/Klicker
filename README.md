@@ -3024,8 +3024,115 @@ Upgrades
 		cost:1000000000000000000000 InsektenPanzer
 		passive:multiply yield of SammlerAmeise by 1.75
 		req:UgBIPSammlerA14
+//2 SucherAmeise|SucherAmeisen
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of SucherAmeisen by 1.75
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
 
+*UgBIPSucherA1
+		name:SucherAmeisenPanzer I
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:100000000 InsektenPanzer
+		req:100000000 InsektenPanzer
+*UgBIPSucherA2
+		name:SucherAmeisenPanzer II
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:1000000000 InsektenPanzer
+		req:UgBIPSucherA1
+*UgBIPSucherA3
+		name:SucherAmeisenPanzer III
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:100000000000 InsektenPanzer
+		req:UgBIPSucherA2
+*UgBIPSucherA4
+		name:SucherAmeisenPanzer IV
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:1000000000000 InsektenPanzer
+		req:UgBIPSucherA3
+*UgBIPSucherA5
+		name:SucherAmeisenPanzer V
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:10000000000000 InsektenPanzer
+		req:UgBIPSucherA4
+*UgBIPSucherA6
+		name:SucherAmeisenPanzer VI
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:100000000000000 InsektenPanzer
+		req:UgBIPSucherA5
+*UgBIPSucherA7
+		name:SucherAmeisenPanzer VII
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:1000000000000000 InsektenPanzer
+		req:UgBIPSucherA6
+*UgBIPSucherA8
+		name:SucherAmeisenPanzer VIII
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:10000000000000000 InsektenPanzer
+		req:UgBIPSucherA7
+*UgBIPSucherA9
+		name:SucherAmeisenPanzer IX
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:100000000000000000 InsektenPanzer
+		req:UgBIPSucherA8
+*UgBIPSucherA10
+		name:SucherAmeisenPanzer X
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:1000000000000000000 InsektenPanzer
+		req:UgBIPSucherA9
+*UgBIPSucherA11
+		name:SucherAmeisenPanzer XI
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:100000000000000000000 InsektenPanzer
+		req:UgBIPSucherA10
+*UgBIPSucherA12
+		name:SucherAmeisenPanzer XII
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:10000000000000000000000 InsektenPanzer
+		req:UgBIPSucherA11
+*UgBIPSucherA13
+		name:SucherAmeisenPanzer XIII
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:1000000000000000000000000 InsektenPanzer
+		req:UgBIPSucherA12
+*UgBIPSucherA14
+		name:SucherAmeisenPanzer XIV
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:100000000000000000000000000 InsektenPanzer
+		req:UgBIPSucherA13
+*UgBIPSucherA15
+		name:SucherAmeisenPanzer XV
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:10000000000000000000000000000 InsektenPanzer
+		req:UgBIPSucherA14
 //Larvenupgrades ---------------------------------------------------------------------------------------
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
 
 *UgRLMandala1
 		name:Ein buntes Mandala
@@ -9938,9 +10045,94 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der SammlerAmeisen um <b>75</b> %.
 		icon:icons[4,3] icons[4,1]
 		req:UgBIPSammlerA15
+//2 SucherAmeise|SucherAmeisen a
+*TEMPLATE
+		no buy
+		tag:owned
+		class:noBackground
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
 
+*UgBIPSucherA1a
+		name:SucherAmeisenPanzer I
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		req:UgBIPSucherA1
+*UgBIPSucherA2a
+		name:SucherAmeisenPanzer II
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		req:UgBIPSucherA2
+*UgBIPSucherA3a
+		name:SucherAmeisenPanzer III
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		req:UgBIPSucherA3
+*UgBIPSucherA4a
+		name:SucherAmeisenPanzer IV
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		req:UgBIPSucherA4
+*UgBIPSucherA5a
+		name:SucherAmeisenPanzer V
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		req:UgBIPSucherA5
+*UgBIPSucherA6a
+		name:SucherAmeisenPanzer VI
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		req:UgBIPSucherA6
+*UgBIPSucherA7a
+		name:SucherAmeisenPanzer VII
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		req:UgBIPSucherA7
+*UgBIPSucherA8a
+		name:SucherAmeisenPanzer VIII
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		req:UgBIPSucherA8
+*UgBIPSucherA9a
+		name:SucherAmeisenPanzer IX
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		req:UgBIPSucherA9
+*UgBIPSucherA10a
+		name:SucherAmeisenPanzer X
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		req:UgBIPSucherA10
+*UgBIPSucherA11a
+		name:SucherAmeisenPanzer XI
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		req:UgBIPSucherA11
+*UgBIPSucherA12a
+		name:SucherAmeisenPanzer XII
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		cost:10000000000000000000000 InsektenPanzer
+		req:UgBIPSucherA12
+*UgBIPSucherA13a
+		name:SucherAmeisenPanzer XIII
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		req:UgBIPSucherA13
+*UgBIPSucherA14a
+		name:SucherAmeisenPanzer XIV
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		req:UgBIPSucherA14
+*UgBIPSucherA15a
+		name:SucherAmeisenPanzer XV
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+		icon:icons[4,4] icons[4,1]
+		req:UgBIPSucherA15
 //Larven Upgrades a ----------------------------
-
+*TEMPLATE
+		no buy
+		tag:owned
+		class:noBackground	
 *UgRLMandala1a
 		name:Ein buntes Mandala
 		desc:<.>Etwas Kunst belebt die Larven Produktion! <//><.> Erhöht die Produktion von Larven um <b>1</b> %.
