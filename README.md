@@ -714,10 +714,10 @@ Buttons
 	  req:1000000000000 Insekten
 	  cost:1000000000000 Insekten
 	  on click:if (Insekten>1000000000000) yield (pow(Insekten:earned/1000000000000,0.3)-Evo:earned) Evo
-	  passive:multiply yield of Larven by ((Evo*1/100)+1)
-	  passive:multiply yield of Insekten by ((Evo*1/100)+1)
-  	  passive:multiply yield of BauMaterial by ((Evo*1/100)+1)
-  	  passive:multiply yield of Nahrung by ((Evo*1/100)+1)
+	  passive:multiply yield of Larven by ((Evo:earned*1/100)+1)
+	  passive:multiply yield of Insekten by ((Evo:earned*1/100)+1)
+  	  passive:multiply yield of BauMaterial by ((Evo:earned*1/100)+1)
+  	  passive:multiply yield of Nahrung by ((Evo:earned*1/100)+1)
 	  on tick:yield 1 Spielzeit
 	  passive:multiply yield of Larven by ((Spielzeit/3600*1/100)+1)
 	  passive:multiply yield of Insekten by ((Spielzeit/3600*1/100)+1)
