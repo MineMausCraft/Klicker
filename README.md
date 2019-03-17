@@ -3,7 +3,7 @@ Let's make a game!
 	by:MineMausCraft and Wollä!
 	desc:Erstelle eine große Insektenkolonie!
 	created:16/02/2019
-	updated:10/03/2019
+	updated:17/03/2019
 	version:4
 
 Settings
@@ -997,7 +997,7 @@ Shinies
 	    on click:
         if (chance(1%))
             lose Zeit
-            show tag:booster
+            show tag:boosterI
             yield BInsektenMulti  
 			toast Insektenproduktion x7!
         else
@@ -1014,7 +1014,7 @@ Shinies
 	    on click:
         if (chance(1%))
             lose Zeit
-            show tag:booster
+            show tag:boosterB
             yield BBauMaterial666
 			toast Holzfäller!
         else
@@ -1032,7 +1032,7 @@ Shinies
 	    on click:
         if (chance(1%))
             lose Zeit
-            show tag:booster
+            show tag:boosterB
             yield BBauMaterial333
 			toast Kettensäge!
         else
@@ -1050,7 +1050,7 @@ Shinies
 	    on click:
         if (chance(1%))
             lose Zeit
-            show tag:booster
+            show tag:boosterI
             yield BInsekten666
 			toast Insekten klicken mal 666!
         else
@@ -1068,7 +1068,7 @@ Shinies
 	    on click:
         if (chance(1%))
             lose Zeit
-            show tag:booster
+            show tag:boosterI
             yield BInsekten333  
 			toast Klick das Insekt!
         else
@@ -1086,7 +1086,7 @@ Shinies
 	    on click:
         if (chance(1%))
             lose Zeit
-            show tag:booster
+            show tag:boosterL
             yield BLarven666 
 			toast Massenschlüpfen!
         else
@@ -1104,7 +1104,7 @@ Shinies
 	    on click:
         if (chance(1%))
             lose Zeit
-            show tag:booster
+            show tag:boosterL
             yield BLarven333
 			toast Klick die Larve, klicken bringt 333 mal so viel!
         else
@@ -1122,7 +1122,7 @@ Shinies
 	    on click:
         if (chance(7%))
             lose Zeit
-            show tag:booster
+            show tag:boosterB
             yield BBauMaterialMulti
 			toast Sägewerk!
         else
@@ -1140,7 +1140,7 @@ Shinies
     on click:
         if (chance(7%))
             lose Zeit
-            show tag:booster
+            show tag:boosterL
             yield BLarvenMulti
 			toast Larvenproduktion mal 7!
         else
@@ -1158,7 +1158,7 @@ Shinies
     on click:
         if (chance(7%))
             lose Zeit
-            show tag:booster
+            show tag:boosterI
             yield BInsektenMulti
 			toast Du produzierst 7 mal so viele Insekten!
         else
@@ -3128,6 +3128,169 @@ Upgrades
 		icon:icons[4,4] icons[4,1]
 		cost:10000000000000000000000000000 InsektenPanzer
 		req:UgBIPSucherA14
+//2 SucherAmeise|SucherAmeisen
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of SucherAmeisen by 1.75
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+//1120000000
+*UgBISucherA1
+		name:Nase + 1
+		icon:iconsd[19,0]
+		cost:11200000000 Insekten
+		req:100000000 Insekten
+*UgBISucherA2
+		name:Geruch + 1
+		icon:iconsd[19,1]
+		cost:112000000000 Insekten
+		req:UgBISucherA1
+*UgBISucherA3
+		name:Nasensonde
+		icon:iconsd[19,2]
+		cost:11200000000000 Insekten
+		req:UgBISucherA2
+*UgBISucherA4
+		name:Nasensensor
+		icon:iconsd[19,3]
+		cost:112000000000000 Insekten
+		req:UgBISucherA3
+*UgBISucherA5
+		name:Geruchsverstärkung
+		icon:iconsd[19,4]
+		cost:1120000000000000 Insekten
+		req:UgBISucherA4
+*UgBISucherA6
+		name:Gasaufnahme
+		icon:iconsd[19,5]
+		cost:11200000000000000 Insekten
+		req:UgBISucherA5
+*UgBISucherA7
+		name:Brillen
+		icon:iconsd[19,6]
+		cost:112000000000000000 Insekten
+		req:UgBISucherA6
+*UgBISucherA8
+		name:Kontaktlinsen
+		icon:iconsd[19,7]
+		cost:1120000000000000000 Insekten
+		req:UgBISucherA7
+*UgBISucherA9
+		name:Sehen + 1
+		icon:iconsd[19,8]
+		cost:11200000000000000000 Insekten
+		req:UgBISucherA8
+*UgBISucherA10
+		name:Bessere Zoom
+		icon:iconsd[19,9]
+		cost:112000000000000000000 Insekten
+		req:UgBISucherA9
+*UgBISucherA11
+		name:Weitsicht
+		icon:iconsd[19,10]
+		cost:11200000000000000000000 Insekten
+		req:UgBISucherA10
+*UgBISucherA12
+		name:Peripheres Sehen 
+		icon:iconsd[19,11]
+		cost:1120000000000000000000000 Insekten
+		req:UgBISucherA11
+*UgBISucherA13
+		name:Bessere Spuren
+		icon:iconsd[19,12]
+		cost:112000000000000000000000000 Insekten
+		req:UgBISucherA12
+*UgBISucherA14
+		name:Spuren Ortung
+		icon:iconsd[19,13]
+		cost:11200000000000000000000000000 Insekten
+		req:UgBISucherA13
+*UgBISucherA15
+		name:Radar
+		icon:iconsd[19,14]
+		cost:1120000000000000000000000000000 Insekten
+		req:UgBISucherA14
+
+*UgBISucherAf1
+		name:Ortungssystem
+		icon:iconsd[20,0]
+		cost:10 SucherAmeisen
+		req:10 SucherAmeisen
+*UgBISucherAf2
+		name:Wärmesensoren
+		icon:iconsd[20,1]
+		cost:25 SucherAmeisen
+		req:UgBISucherA1
+*UgBISucherAf3
+		name:Sensoren
+		icon:iconsd[20,2]
+		cost:50 SucherAmeisen
+		req:UgBISucherA2
+*UgBISucherAf4
+		name:Lauscher
+		icon:iconsd[20,3]
+		cost:75 SucherAmeisen
+		req:UgBISucherA3
+*UgBISucherAf5
+		name:Senibles Gehör
+		icon:iconsd[20,4]
+		cost:100 SucherAmeisen
+		req:UgBISucherA4
+*UgBISucherAf6
+		name:Geruchswahrnehmung + 1
+		icon:iconsd[20,5]
+		cost:125 SucherAmeisen
+		req:UgBISucherA5
+*UgBISucherAf7
+		name:Nachtsichtgerät
+		icon:iconsd[20,6]
+		cost:150 SucherAmeisen
+		req:UgBISucherA6
+*UgBISucherAf8
+		name:Hörgerät
+		icon:iconsd[20,7]
+		cost:175 SucherAmeisen
+		req:UgBISucherA7
+*UgBISucherAf9
+		name:Mikrofon
+		icon:iconsd[20,8]
+		cost:200 SucherAmeisen
+		req:UgBISucherA8
+*UgBISucherAf10
+		name:Superaugen
+		icon:iconsd[20,9]
+		cost:225 SucherAmeisen
+		req:UgBISucherA9
+*UgBISucherAf11
+		name:Supernase
+		icon:iconsd[20,10]
+		cost:250 SucherAmeisen
+		req:UgBISucherA10
+*UgBISucherAf12
+		name:Superohren
+		icon:iconsd[20,11]
+		cost:275 SucherAmeisen
+		req:UgBISucherA11
+*UgBISucherAf13
+		name:Augastisch
+		icon:iconsd[20,12]
+		cost:300 SucherAmeisen
+		req:UgBISucherA12
+*UgBISucherAf14
+		name:Näseln
+		icon:iconsd[20,13]
+		cost:325 SucherAmeisen
+		req:UgBISucherA13
+*UgBISucherAf15
+		name:Höhrprobe
+		icon:iconsd[20,14]
+		cost:350 SucherAmeisen
+		req:UgBISucherA14		
+
 //Larvenupgrades ---------------------------------------------------------------------------------------
 *TEMPLATE
 		tag:upgrades
@@ -10131,6 +10294,134 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
 		icon:icons[4,4] icons[4,1]
 		req:UgBIPSucherA15
+//2 SucherAmeise|SucherAmeisen a
+*TEMPLATE
+		no buy
+		tag:owned
+		class:noBackground
+		desc:<.> Erhöht die Produktion der SucherAmeisen um <b>75</b> %.
+*UgBISucherA1a
+		name:Nase + 1
+		icon:iconsd[19,0]
+		req:UgBISucherA1
+*UgBISucherA2a
+		name:Geruch + 1
+		icon:iconsd[19,1]
+		req:UgBISucherA2
+*UgBISucherA3a
+		name:Nasensonde
+		icon:iconsd[19,2]
+		req:UgBISucherA3
+*UgBISucherA4a
+		name:Nasensensor
+		icon:iconsd[19,3]
+		req:UgBISucherA4
+*UgBISucherA5a
+		name:Geruchsverstärkung
+		icon:iconsd[19,4]
+		req:UgBISucherA5
+*UgBISucherA6a
+		name:Gasaufnahme
+		icon:iconsd[19,5]
+		req:UgBISucherA6
+*UgBISucherA7a
+		name:Brillen
+		icon:iconsd[19,6]
+		req:UgBISucherA7
+*UgBISucherA8a
+		name:Kontaktlinsen
+		icon:iconsd[19,7]
+		req:UgBISucherA8
+*UgBISucherA9a
+		name:Sehen + 1
+		icon:iconsd[19,8]
+		req:UgBISucherA9
+*UgBISucherA10a
+		name:Bessere Zoom
+		icon:iconsd[19,9]
+		req:UgBISucherA10
+*UgBISucherA11a
+		name:Weitsicht
+		icon:iconsd[19,10]
+		req:UgBISucherA11
+*UgBISucherA12a
+		name:Peripheres Sehen 
+		icon:iconsd[19,11]
+		req:UgBISucherA12
+*UgBISucherA13a
+		name:Bessere Spuren
+		icon:iconsd[19,12]
+		req:UgBISucherA13
+*UgBISucherA14a
+		name:Spuren Ortung
+		icon:iconsd[19,13]
+		req:UgBISucherA14
+*UgBISucherA15a
+		name:Radar
+		icon:iconsd[19,14]
+		req:UgBISucherA15
+
+*UgBISucherAf1a
+		name:Ortungssystem
+		icon:iconsd[20,0]
+		req:UgBISucherAf1
+*UgBISucherAf2a
+		name:Wärmesensoren
+		icon:iconsd[20,1]
+		req:UgBISucherA2
+*UgBISucherAf3a
+		name:Sensoren
+		icon:iconsd[20,2]
+		req:UgBISucherA3
+*UgBISucherAf4a
+		name:Lauscher
+		icon:iconsd[20,3]
+		req:UgBISucherA4
+*UgBISucherAf5a
+		name:Senibles Gehör
+		icon:iconsd[20,4]
+		req:UgBISucherA5
+*UgBISucherAf6a
+		name:Geruchswahrnehmung + 1
+		icon:iconsd[20,5]
+		req:UgBISucherA6
+*UgBISucherAf7a
+		name:Nachtsichtgerät
+		icon:iconsd[20,6]
+		req:UgBISucherA7
+*UgBISucherAf8a
+		name:Hörgerät
+		icon:iconsd[20,7]
+		req:UgBISucherA8
+*UgBISucherAf9a
+		name:Mikrofon
+		icon:iconsd[20,8]
+		req:UgBISucherA9
+*UgBISucherAf10a
+		name:Superaugen
+		icon:iconsd[20,9]
+		req:UgBISucherA10
+*UgBISucherAf11a
+		name:Supernase
+		icon:iconsd[20,10]
+		req:UgBISucherA11
+*UgBISucherAf12a
+		name:Superohren
+		icon:iconsd[20,11]
+		req:UgBISucherA12
+*UgBISucherAf13a
+		name:Augastisch
+		icon:iconsd[20,12]
+		req:UgBISucherA13
+*UgBISucherAf14a
+		name:Näseln
+		icon:iconsd[20,13]
+		req:UgBISucherA14
+*UgBISucherAf15a
+		name:Höhrprobe
+		icon:iconsd[20,14]
+		req:UgBISucherA15	
+		
 //Larven Upgrades a ----------------------------
 *TEMPLATE
 		no buy
@@ -16064,6 +16355,113 @@ Achievements
 		desc:Habe 950 SammlerAmeisen
 		req:950 SammlerAmeise
 		icon:icons[9,20]
+		
+//2 SucherAmeise|SucherAmeisen
+*BHSucherAmeise1
+		name:Ein Sucher
+		desc:Habe eine SucherAmeise
+		req:1 SucherAmeise
+		icon:iconse[0,0]
+*BHSucherAmeise2
+		name:Schnüffler
+		desc:Habe 19 SucherAmeisen
+		req:19 SucherAmeise
+		icon:iconse[0,1]
+*BHSucherAmeise3
+		name:Spürhund
+		desc:Habe 50 SucherAmeisen
+		req:50 SucherAmeise
+		icon:iconse[0,2]
+*BHSucherAmeise4
+		name:Trüffelnase
+		desc:Habe 100 SucherAmeisen
+		req:100 SucherAmeise
+		icon:iconse[0,3]
+*BHSucherAmeise5
+		name:Trüffelschwein
+		desc:Habe 150 SucherAmeisen
+		req:150 SucherAmeise
+		icon:iconse[0,4]
+*BHSucherAmeise6
+		name:Drogenhund
+		desc:Habe 200 SucherAmeisen
+		req:200 SucherAmeise
+		icon:iconse[0,5]
+*BHSucherAmeise7
+		name:Fander
+		desc:Habe 250 SucherAmeisen
+		req:250 SucherAmeise
+		icon:iconse[0,6]
+*BHSucherAmeise8
+		name:Detektiv
+		desc:Habe 300 SucherAmeisen
+		req:300 SucherAmeise
+		icon:iconse[0,7]
+*BHSucherAmeise9
+		name:Spürnase
+		desc:Habe 350 SucherAmeisen
+		req:350 SucherAmeise
+		icon:iconse[0,8]
+*BHSucherAmeise10
+		name:Privatdetektiv
+		desc:Habe 400 SucherAmeisen
+		req:400 SucherAmeise
+		icon:iconse[0,9]
+*BHSucherAmeise11
+		name:Wünschelrutengeher
+		desc:Habe 450 SucherAmeisen
+		req:450 SucherAmeise
+		icon:iconse[0,10]
+*BHSucherAmeise12
+		name:Finder
+		desc:Habe 500 SucherAmeisen
+		req:500 SucherAmeise
+		icon:iconse[0,11]
+*BHSucherAmeise13
+		name:Gefunden
+		desc:Habe 550 SucherAmeisen
+		req:550 SucherAmeise
+		icon:iconse[0,12]
+*BHSucherAmeise14
+		name:Weitsucher
+		desc:Habe 600 SucherAmeisen
+		req:600 SucherAmeise
+		icon:iconse[0,13]
+*BHSucherAmeise15
+		name:Nahsucher
+		desc:Habe 650 SucherAmeisen
+		req:650 SucherAmeise
+		icon:iconse[0,14]
+*BHSucherAmeise16
+		name:Nachsuche
+		desc:Habe 700 SucherAmeisen
+		req:700 SucherAmeise
+		icon:iconse[0,15]
+*BHSucherAmeise17
+		name:Dackel
+		desc:Habe 750 SucherAmeisen
+		req:750 SucherAmeise
+		icon:iconse[0,16]
+*BHSucherAmeise18
+		name:Suchtastisch!
+		desc:Habe 800 SucherAmeisen
+		req:800 SucherAmeise
+		icon:iconse[0,17]
+*BHSucherAmeise19
+		name:Suchtropisch!
+		desc:Habe 850 SucherAmeisen
+		req:850 SucherAmeise
+		icon:iconse[0,18]
+*BHSucherAmeise20
+		name:SuchimGras!
+		desc:Habe 900 SucherAmeisen
+		req:900 SucherAmeise
+		icon:iconse[0,19]
+*BHSucherAmeise21
+		name:Finderlohn
+		desc:Habe 950 SucherAmeisen
+		req:950 SucherAmeise
+		icon:iconse[0,20]			
 
 // Larven Buildings Achievements--------------------------
 //1  
@@ -17378,12 +17776,12 @@ Achievements
 		req:200 Maruscha
 		icon:iconsd[0,5]
 *BHMaruscha7
-		name:
+		name:Glückskrebs
 		desc:Habe 250 Maruschas
 		req:250 Maruscha
 		icon:iconsd[0,6]
 *BHMaruscha8
-		name:
+		name:Krabbe! Krabbe! Krabbe!
 		desc:Habe 300 Maruschas
 		req:300 Maruscha
 		icon:iconsd[0,7]
