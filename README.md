@@ -15,6 +15,7 @@ Settings
 	spritesheet:iconsb, 48 by 48, https://i.imgur.com/EMiAs6j.png
 	spritesheet:iconsc, 48 by 48, https://i.imgur.com/BHbzXDk.png
 	spritesheet:iconsd, 48 by 48, https://i.imgur.com/AHJD8Ml.png
+	spritesheet:iconse, 48 by 48, https://i.imgur.com/AHJD8Ml.png
 	
 	spritesheet:iconsgr, 128 by 128, https://i.imgur.com/rIBALOu.png
 	spritesheet:iconskl, 40 by 40, https://i.imgur.com/sn7cIq5.png
