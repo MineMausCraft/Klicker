@@ -12887,7 +12887,7 @@ class:noBackground
 		icon:iconsd[7,11]
 		req:2352000000000000000000000000000000000000 Larven:earned and UgBLGelbfisch12
 //14a
-*UgBLGelbfischF1
+*UgBLGelbfischF1a
 		name:Zwergbuntbarsch
 		icon:icons[5,5] iconsd[8,0]
 		req:UgBLGelbfischF1
