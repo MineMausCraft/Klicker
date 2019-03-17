@@ -1249,11 +1249,11 @@ Buildings
 //2
 *SucherAmeise|SucherAmeisen
     name:SucherAmeise|SucherAmeisen
-    desc:Sie sind sehr effizient bei der Nahrungssuche!<//><b><.></b> Produziert <b>350</b> Nps.<//><.> Produktion: <b>[SucherAmeise*350]</b> /Nps 
+    desc:Sie sind sehr effizient bei der Nahrungssuche!<//><b><.></b> Produziert <b>150</b> Nps.<//><.> Produktion: <b>[SucherAmeise150]</b> /Nps 
     icon:icons[4,4]
     cost:1120000000 Insekten
 	cost increase:105%
-    on tick:yield 350 Nahrung
+    on tick:yield 150 Nahrung
     req:112000 Insekten:earned and BHSammler10
 	on earn:yield 0.1 Erfahrung
 //3
