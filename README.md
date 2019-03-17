@@ -1254,7 +1254,7 @@ Buildings
     cost:1120000000 Insekten
 	cost increase:105%
     on tick:yield 350 Nahrung
-    req:112000 Insekten:earned and 400 SammlerAmeisen
+    req:112000 Insekten:earned and BHSammler10
 	on earn:yield 0.1 Erfahrung
 //3
 *JaegerAmeise|JaegerAmeisen
