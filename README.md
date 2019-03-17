@@ -1241,7 +1241,7 @@ Buildings
     desc:Fleißge SammlerAmeisen die Nahrung in die Kolonie bringen!<//><b><.></b> Produziert <b>1</b> Nps. Aktuell: <b>[SammlerAp:ps/SammlerAmeise]</b> Nps<//><.> Produktion aktuell: <b>[SammlerAp:ps]</b> Nps
     icon:icons[4,3]
     cost:18 Insekten
-	cost increase:113%
+	cost increase:110%
     on tick:yield 1 Nahrung
 	on tick:yield 1 SammlerAp
     req:1000 Insekten:earned   
@@ -1252,7 +1252,7 @@ Buildings
     desc:Sie sind sehr effizient bei der Nahrungssuche!<//><b><.></b> Produziert <b>150</b> Nps.<//><.> Produktion: <b>[SucherAmeise*150]</b> /Nps 
     icon:icons[4,4]
     cost:1120000000 Insekten
-	cost increase:113%
+	cost increase:110%
     on tick:yield 150 Nahrung
     req:112000 Insekten:earned and BHSammler10
 	on earn:yield 0.1 Erfahrung
@@ -3117,77 +3117,77 @@ Upgrades
 
 *UgBISammlerAf1
 		name:Schneller Laufen
-		icon:iconse[2,0]
+		icon:icons[5,5] iconse[2,0]
 		cost:10 SammlerAmeisen
 		req:10 SammlerAmeisen
 *UgBISammlerAf2
 		name:Schneller Sammeln
-		icon:iconse[2,1]
+		icon:icons[5,5] iconse[2,1]
 		cost:50 SammlerAmeisen
 		req:UgBISammlerA1
 *UgBISammlerAf3
 		name:Rucksack
-		icon:iconse[2,2]
+		icon:icons[5,5] iconse[2,2]
 		cost:100 SammlerAmeisen
 		req:UgBISammlerA2
 *UgBISammlerAf4
 		name:Tasche
-		icon:iconse[2,3]
+		icon:icons[5,5] iconse[2,3]
 		cost:150 SammlerAmeisen
 		req:UgBISammlerA3
 *UgBISammlerAf5
 		name:Trolli
-		icon:iconse[2,4]
+		icon:icons[5,5] iconse[2,4]
 		cost:200 SammlerAmeisen
 		req:UgBISammlerA4
 *UgBISammlerAf6
 		name:Koffer
-		icon:iconse[2,5]
+		icon:icons[5,5] iconse[2,5]
 		cost:250 SammlerAmeisen
 		req:UgBISammlerA5
 *UgBISammlerAf7
 		name:Tüte
-		icon:iconse[2,6]
+		icon:icons[5,5] iconse[2,6]
 		cost:300 SammlerAmeisen
 		req:UgBISammlerA6
 *UgBISammlerAf8
 		name:Handtasche
-		icon:iconse[2,7]
+		icon:icons[5,5] iconse[2,7]
 		cost:350 SammlerAmeisen
 		req:UgBISammlerA7
 *UgBISammlerAf9
 		name:Beutel
-		icon:iconse[2,8]
+		icon:icons[5,5] iconse[2,8]
 		cost:400 SammlerAmeisen
 		req:UgBISammlerA8
 *UgBISammlerAf10
 		name:Brusttasche
-		icon:iconse[2,9]
+		icon:icons[5,5] iconse[2,9]
 		cost:450 SammlerAmeisen
 		req:UgBISammlerA9
 *UgBISammlerAf11
 		name:Bauchtasche
-		icon:iconse[2,10]
+		icon:icons[5,5] iconse[2,10]
 		cost:500 SammlerAmeisen
 		req:UgBISammlerA10
 *UgBISammlerAf12
 		name:Kropf
-		icon:iconse[2,11]
+		icon:icons[5,5] iconse[2,11]
 		cost:550 SammlerAmeisen
 		req:UgBISammlerA11
 *UgBISammlerAf13
 		name:Schubkarre
-		icon:iconse[2,12]
+		icon:icons[5,5] iconse[2,12]
 		cost:600 SammlerAmeisen
 		req:UgBISammlerA12
 *UgBISammlerAf14
 		name:Tragekorb
-		icon:iconse[2,13]
+		icon:icons[5,5] iconse[2,13]
 		cost:650 SammlerAmeisen
 		req:UgBISammlerA13
 *UgBISammlerAf15
 		name:Umhängetasche
-		icon:iconse[2,14]
+		icon:icons[5,5] iconse[2,14]
 		cost:700 SammlerAmeisen
 		req:UgBISammlerA14		
 		
@@ -3381,77 +3381,77 @@ Upgrades
 
 *UgBISucherAf1
 		name:Ortungssystem
-		icon:iconsd[20,0]
+		icon:icons[5,5] iconsd[20,0]
 		cost:50 SucherAmeisen
 		req:10 SucherAmeisen
 *UgBISucherAf2
 		name:Wärmesensoren
-		icon:iconsd[20,1]
+		icon:icons[5,5] iconsd[20,1]
 		cost:100 SucherAmeisen
 		req:UgBISucherA1
 *UgBISucherAf3
 		name:Sensoren
-		icon:iconsd[20,2]
+		icon:icons[5,5] iconsd[20,2]
 		cost:150 SucherAmeisen
 		req:UgBISucherA2
 *UgBISucherAf4
 		name:Lauscher
-		icon:iconsd[20,3]
+		icon:icons[5,5] iconsd[20,3]
 		cost:200 SucherAmeisen
 		req:UgBISucherA3
 *UgBISucherAf5
 		name:Senibles Gehör
-		icon:iconsd[20,4]
+		icon:icons[5,5] iconsd[20,4]
 		cost:250 SucherAmeisen
 		req:UgBISucherA4
 *UgBISucherAf6
 		name:Geruchswahrnehmung + 1
-		icon:iconsd[20,5]
+		icon:icons[5,5] iconsd[20,5]
 		cost:300 SucherAmeisen
 		req:UgBISucherA5
 *UgBISucherAf7
 		name:Nachtsichtgerät
-		icon:iconsd[20,6]
+		icon:icons[5,5] iconsd[20,6]
 		cost:350 SucherAmeisen
 		req:UgBISucherA6
 *UgBISucherAf8
 		name:Hörgerät
-		icon:iconsd[20,7]
+		icon:icons[5,5] iconsd[20,7]
 		cost:400 SucherAmeisen
 		req:UgBISucherA7
 *UgBISucherAf9
 		name:Mikrofon
-		icon:iconsd[20,8]
+		icon:icons[5,5] iconsd[20,8]
 		cost:450 SucherAmeisen
 		req:UgBISucherA8
 *UgBISucherAf10
 		name:Superaugen
-		icon:iconsd[20,9]
+		icon:icons[5,5] iconsd[20,9]
 		cost:500 SucherAmeisen
 		req:UgBISucherA9
 *UgBISucherAf11
 		name:Supernase
-		icon:iconsd[20,10]
+		icon:icons[5,5] iconsd[20,10]
 		cost:550 SucherAmeisen
 		req:UgBISucherA10
 *UgBISucherAf12
 		name:Superohren
-		icon:iconsd[20,11]
+		icon:icons[5,5] iconsd[20,11]
 		cost:600 SucherAmeisen
 		req:UgBISucherA11
 *UgBISucherAf13
 		name:Augastisch
-		icon:iconsd[20,12]
+		icon:icons[5,5] iconsd[20,12]
 		cost:650 SucherAmeisen
 		req:UgBISucherA12
 *UgBISucherAf14
 		name:Näseln
-		icon:iconsd[20,13]
+		icon:icons[5,5] iconsd[20,13]
 		cost:700 SucherAmeisen
 		req:UgBISucherA13
 *UgBISucherAf15
 		name:Höhrprobe
-		icon:iconsd[20,14]
+		icon:icons[5,5] iconsd[20,14]
 		cost:750 SucherAmeisen
 		req:UgBISucherA14		
 
@@ -10444,64 +10444,63 @@ class:noBackground
 
 *UgBISammlerAf1a
 		name:Schneller Laufen
-		icon:iconse[2,0]
+		icon:icons[5,5] iconse[2,0]
 		req:UgBISammlerAf1
 *UgBISammlerAf2a
 		name:Schneller Sammeln
-		icon:iconse[2,1]
+		icon:icons[5,5] iconse[2,1]
 		req:UgBISammlerA2
 *UgBISammlerAf3a
 		name:Rucksack
-		icon:iconse[2,2]
+		icon:icons[5,5] iconse[2,2]
 		req:UgBISammlerA3
 *UgBISammlerAf4a
 		name:Tasche
-		icon:iconse[2,3]
+		icon:icons[5,5] iconse[2,3]
 		req:UgBISammlerA4
 *UgBISammlerAf5a
 		name:Trolli
-		icon:iconse[2,4]
-		cost:100 SammlerAmeisen
+		icon:icons[5,5] iconse[2,4]
 		req:UgBISammlerA5
 *UgBISammlerAf6a
 		name:Koffer
-		icon:iconse[2,5]
+		icon:icons[5,5] iconse[2,5]
 		req:UgBISammlerA6
 *UgBISammlerAf7a
 		name:Tüte
-		icon:iconse[2,6]
+		icon:icons[5,5] iconse[2,6]
 		req:UgBISammlerA7
 *UgBISammlerAf8a
 		name:Handtasche
-		icon:iconse[2,7]
+		icon:icons[5,5] iconse[2,7]
 		req:UgBISammlerA8
 *UgBISammlerAf9a
 		name:Beutel
-		icon:iconse[2,8]
+		icon:icons[5,5] iconse[2,8]
 		req:UgBISammlerA9
 *UgBISammlerAf10a
 		name:Brusttasche
-		icon:iconse[2,9]
+		icon:icons[5,5] iconse[2,9]
 		req:UgBISammlerA10
 *UgBISammlerAf11a
 		name:Bauchtasche
-		icon:iconse[2,10]
+		icon:icons[5,5] iconse[2,10]
 		req:UgBISammlerA11
 *UgBISammlerAf12a
 		name:Kropf
-		icon:iconse[2,11]
+		icon:icons[5,5] iconse[2,11]
 		req:UgBISammlerA12
 *UgBISammlerAf13a
 		name:Schubkarre
-		icon:iconse[2,12]
+		icon:icons[5,5] iconse[2,12]
 		req:UgBISammlerA13
 *UgBISammlerAf14a
 		name:Tragekorb
-		icon:iconse[2,13]
+		icon:icons[5,5] iconse[2,13]
 		req:UgBISammlerA14
 *UgBISammlerAf15a
 		name:Umhängetasche
-		icon:iconse[2,14]
+		icon:icons[5,5] iconse[2,14]
 		req:UgBISammlerA15
 *TEMPLATE		
 //2 SucherAmeise|SucherAmeisen a
@@ -10656,63 +10655,63 @@ class:noBackground
 
 *UgBISucherAf1a
 		name:Ortungssystem
-		icon:iconsd[20,0]
+		icon:icons[5,5] iconsd[20,0]
 		req:UgBISucherAf1
 *UgBISucherAf2a
 		name:Wärmesensoren
-		icon:iconsd[20,1]
+		icon:icons[5,5] iconsd[20,1]
 		req:UgBISucherA2
 *UgBISucherAf3a
 		name:Sensoren
-		icon:iconsd[20,2]
+		icon:icons[5,5] iconsd[20,2]
 		req:UgBISucherA3
 *UgBISucherAf4a
 		name:Lauscher
-		icon:iconsd[20,3]
+		icon:icons[5,5] iconsd[20,3]
 		req:UgBISucherA4
 *UgBISucherAf5a
 		name:Senibles Gehör
-		icon:iconsd[20,4]
+		icon:icons[5,5] iconsd[20,4]
 		req:UgBISucherA5
 *UgBISucherAf6a
 		name:Geruchswahrnehmung + 1
-		icon:iconsd[20,5]
+		icon:icons[5,5] iconsd[20,5]
 		req:UgBISucherA6
 *UgBISucherAf7a
 		name:Nachtsichtgerät
-		icon:iconsd[20,6]
+		icon:icons[5,5] iconsd[20,6]
 		req:UgBISucherA7
 *UgBISucherAf8a
 		name:Hörgerät
-		icon:iconsd[20,7]
+		icon:icons[5,5] iconsd[20,7]
 		req:UgBISucherA8
 *UgBISucherAf9a
 		name:Mikrofon
-		icon:iconsd[20,8]
+		icon:icons[5,5] iconsd[20,8]
 		req:UgBISucherA9
 *UgBISucherAf10a
 		name:Superaugen
-		icon:iconsd[20,9]
+		icon:icons[5,5] iconsd[20,9]
 		req:UgBISucherA10
 *UgBISucherAf11a
 		name:Supernase
-		icon:iconsd[20,10]
+		icon:icons[5,5] iconsd[20,10]
 		req:UgBISucherA11
 *UgBISucherAf12a
 		name:Superohren
-		icon:iconsd[20,11]
+		icon:icons[5,5] iconsd[20,11]
 		req:UgBISucherA12
 *UgBISucherAf13a
 		name:Augastisch
-		icon:iconsd[20,12]
+		icon:icons[5,5] iconsd[20,12]
 		req:UgBISucherA13
 *UgBISucherAf14a
 		name:Näseln
-		icon:iconsd[20,13]
+		icon:icons[5,5] iconsd[20,13]
 		req:UgBISucherA14
 *UgBISucherAf15a
 		name:Höhrprobe
-		icon:iconsd[20,14]
+		icon:icons[5,5] iconsd[20,14]
 		req:UgBISucherA15	
 		
 //Larven Upgrades a ----------------------------
