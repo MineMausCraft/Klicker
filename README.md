@@ -6110,7 +6110,153 @@ Upgrades
 		icon:icons[5,5] iconsc[20,14]
 		cost:350 Maruscha
 		req:350 Maruscha and UgBLMaruschaF14
-				
+//14 Gelbfisch|Gelbfische
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Gelbfisch by 1.75
+		desc:<.> Erhöht die Produktion der Gelbfische um <b>75</b> %.
+//		23520000000000000
+*UgBLGelbfisch1
+		name:Große Flosse
+		icon:iconsd[7,0]
+		cost:235200000000000000 Larven, 23520000000000000 Nahrung,1000000000000 Territorien
+		req:235200000000000000 Larven:earned and 10 Gelbfisch
+*UgBLGelbfisch2
+		name:Schneller Schwingen
+		icon:iconsd[7,1]
+		cost:23520000000000000000 Larven, 2352000000000000000 Nahrung,10000000000000 Territorien
+		req:23520000000000000000 Larven:earned and UgBLGelbfisch1
+*UgBLGelbfisch3
+		name:Mehr Schub
+		icon:iconsd[7,2]
+		cost:2352000000000000000000 Larven, 235200000000000000000 Nahrung,100000000000000 Territorien
+		req:2352000000000000000000 Larven:earned and UgBLGelbfisch2
+*UgBLGelbfisch4
+		name:Langer Atem
+		icon:iconsd[7,3]
+		cost:235200000000000000000000 Larven, 23520000000000000000000 Nahrung,1000000000000000 Territorien
+		req:235200000000000000000000 Larven:earned and UgBLGelbfisch3
+*UgBLGelbfisch5
+		name:Aalstrichschmerle
+		icon:iconsd[7,4]
+		cost:23520000000000000000000000 Larven, 2352000000000000000000000 Nahrung,10000000000000000 Territorien
+		req:23520000000000000000000000 Larven:earned and UgBLGelbfisch4
+*UgBLGelbfisch6
+		name:Panzerwels
+		icon:iconsd[7,5]
+		cost:2352000000000000000000000000 Larven, 235200000000000000000000000 Nahrung,100000000000000000 Territorien
+		req:2352000000000000000000000000 Larven:earned and UgBLGelbfisch5
+*UgBLGelbfisch7
+		name:Großschuppensalmler
+		icon:iconsd[7,6]
+		cost:235200000000000000000000000000 Larven, 23520000000000000000000000000 Nahrung,1000000000000000000 Territorien
+		req:235200000000000000000000000000 Larven:earned and UgBLGelbfisch6
+*UgBLGelbfisch8
+		name:Messerfisch
+		icon:iconsd[7,7]
+		cost:23520000000000000000000000000000 Larven, 2352000000000000000000000000000 Nahrung,10000000000000000000 Territorien
+		req:23520000000000000000000000000000 Larven:earned and UgBLGelbfisch7
+*UgBLGelbfisch9
+		name:Mondsalmler
+		icon:iconsd[7,8]
+		cost:2352000000000000000000000000000000 Larven, 235200000000000000000000000000000 Nahrung,100000000000000000000 Territorien
+		req:2352000000000000000000000000000000 Larven:earned and UgBLGelbfisch8
+*UgBLGelbfisch10
+		name:Schlangenkopffisch
+		icon:iconsd[7,9]
+		cost:235200000000000000000000000000000000 Larven, 23520000000000000000000000000000000 Nahrung,1000000000000000000000 Territorien
+		req:235200000000000000000000000000000000 Larven:earned and UgBLGelbfisch9
+*UgBLGelbfisch11
+		name:Schmetterlingsbuntbarsch
+		icon:iconsd[7,10]
+		cost:23520000000000000000000000000000000000 Larven, 2352000000000000000000000000000000000 Nahrung,10000000000000000000000 Territorien
+		req:23520000000000000000000000000000000000 Larven:earned and UgBLGelbfisch10
+*UgBLGelbfisch12
+		name:Schmetterlingsfisch
+		icon:iconsd[7,11]
+		cost:2352000000000000000000000000000000000000 Larven, 235200000000000000000000000000000000000 Nahrung,10000000000000000000000 Territorien
+		req:2352000000000000000000000000000000000000 Larven:earned and UgBLGelbfisch11
+//14
+*UgBLGelbfischF1
+		name:Zwergbuntbarsch
+		icon:icons[5,5] iconsd[8,0]
+		cost:10 Gelbfisch
+		req:10 Gelbfisch
+*UgBLGelbfischF2
+		name:Maulbrüter
+		icon:icons[5,5] iconsd[8,1] 
+		cost:25 Gelbfisch
+		req:25 Gelbfisch and UgBLGelbfischF1
+*UgBLGelbfischF3
+		name:Skalar
+		icon:icons[5,5] iconsd[8,2]
+		cost:50 Gelbfisch
+		req:50 Gelbfisch and UgBLGelbfischF2
+*UgBLGelbfischF4
+		name:Angolabarbe
+		icon:icons[5,5] iconsd[8,3]
+		cost:75 Gelbfisch
+		req:75 Gelbfisch and UgBLGelbfischF3
+*UgBLGelbfischF5
+		name:Amerikanische Seezunge
+		icon:icons[5,5] iconsd[8,4]
+		cost:100 Gelbfisch
+		req:100 Gelbfisch and UgBLGelbfischF4
+*UgBLGelbfischF6
+		name:Malawibuntbarsch
+		icon:icons[5,5] iconsd[8,5]
+		cost:125 Gelbfisch
+		req:125 Gelbfisch and UgBLGelbfischF5
+*UgBLGelbfischF7
+		name:Black Molly
+		icon:icons[5,5] iconsd[8,6]
+		cost:150 Gelbfisch
+		req:150 Gelbfisch and UgBLGelbfischF6
+*UgBLGelbfischF8
+		name:Blattfisch
+		icon:icons[5,5] iconsd[8,7]
+		cost:175 Gelbfisch
+		req:175 Gelbfisch and UgBLGelbfischF7
+*UgBLGelbfischF9
+		name:Diskus
+		icon:icons[5,5] iconsd[8,8]
+		cost:200 Gelbfisch
+		req:200 Gelbfisch and UgBLGelbfischF8
+*UgBLGelbfischF10
+		name:Antennenwels
+		icon:icons[5,5] iconsd[8,9]
+		cost:225 Gelbfisch
+		req:225 Gelbfisch and UgBLGelbfischF9
+*UgBLGelbfischF11
+		name:Fadenfisch
+		icon:icons[5,5] iconsd[8,10]
+		cost:250 Gelbfisch
+		req:250 Gelbfisch and UgBLGelbfischF10
+*UgBLGelbfischF12
+		name:Neon
+		icon:icons[5,5] iconsd[8,11]
+		cost:275 Gelbfisch
+		req:275 Gelbfisch and UgBLGelbfischF11
+*UgBLGelbfischF13
+		name:Phantomwels
+		icon:icons[5,5] iconsd[8,12]
+		cost:300 Gelbfisch
+		req:300 Gelbfisch and UgBLGelbfischF12
+*UgBLGelbfischF14
+		name:Prachtkärpfling
+		icon:icons[5,5] iconsd[8,13]
+		cost:325 Gelbfisch
+		req:325 Gelbfisch and UgBLGelbfischF13
+*UgBLGelbfischF15
+		name:Regenbogenfisch
+		icon:icons[5,5] iconsd[8,14]
+		cost:350 Gelbfisch
+		req:350 Gelbfisch and UgBLGelbfischF14
 		
 //Insekten Upgrades-------------------------------------------------------------------------------------------------
 // Upgrade Ressource Insekten		
@@ -12687,9 +12833,120 @@ class:noBackground
 		name:Schörfere Zähne
 		icon:icons[5,5] iconsc[20,14]
 		req:350 Maruscha and UgBLMaruschaF15
+//14 Gelbfisch|Gelbfische a
 *TEMPLATE
-		
-		
+		no buy
+		tag:owned
+		desc:<.> Erhöht die Produktion der Gelbfische um <b>75</b> %.
+*UgBLGelbfisch1a
+		name:Große Flosse
+		icon:iconsd[7,0]
+		req:UgBLGelbfisch1
+*UgBLGelbfisch2a
+		name:Schneller Schwingen
+		icon:iconsd[7,1]
+		req:23520000000000000000 Larven:earned and UgBLGelbfisch2
+*UgBLGelbfisch3a
+		name:Mehr Schub
+		icon:iconsd[7,2]
+		req:2352000000000000000000 Larven:earned and UgBLGelbfisch3
+*UgBLGelbfisch4a
+		name:Langer Atem
+		icon:iconsd[7,3]
+		req:235200000000000000000000 Larven:earned and UgBLGelbfisch4
+*UgBLGelbfisch5a
+		name:Aalstrichschmerle
+		icon:iconsd[7,4]
+		req:23520000000000000000000000 Larven:earned and UgBLGelbfisch5
+*UgBLGelbfisch6a
+		name:Panzerwels
+		icon:iconsd[7,5]
+		req:2352000000000000000000000000 Larven:earned and UgBLGelbfisch6
+*UgBLGelbfisch7a
+		name:Großschuppensalmler
+		icon:iconsd[7,6]
+		req:235200000000000000000000000000 Larven:earned and UgBLGelbfisch7
+*UgBLGelbfisch8a
+		name:Messerfisch
+		icon:iconsd[7,7]
+		req:23520000000000000000000000000000 Larven:earned and UgBLGelbfisch8
+*UgBLGelbfisch9a
+		name:Mondsalmler
+		icon:iconsd[7,8]
+		req:2352000000000000000000000000000000 Larven:earned and UgBLGelbfisch9
+*UgBLGelbfisch10a
+		name:Schlangenkopffisch
+		icon:iconsd[7,9]
+		req:235200000000000000000000000000000000 Larven:earned and UgBLGelbfisch10
+*UgBLGelbfisch11a
+		name:Schmetterlingsbuntbarsch
+		icon:iconsd[7,10]
+		req:23520000000000000000000000000000000000 Larven:earned and UgBLGelbfisch11
+*UgBLGelbfisch12a
+		name:Schmetterlingsfisch
+		icon:iconsd[7,11]
+		req:2352000000000000000000000000000000000000 Larven:earned and UgBLGelbfisch12
+//14a
+*UgBLGelbfischF1
+		name:Zwergbuntbarsch
+		icon:icons[5,5] iconsd[8,0]
+		req:UgBLGelbfischF1
+*UgBLGelbfischF2a
+		name:Maulbrüter
+		icon:icons[5,5] iconsd[8,1] 
+		req:25 Gelbfisch and UgBLGelbfischF2
+*UgBLGelbfischF3a
+		name:Skalar
+		icon:icons[5,5] iconsd[8,2]
+		req:50 Gelbfisch and UgBLGelbfischF3
+*UgBLGelbfischF4a
+		name:Angolabarbe
+		icon:icons[5,5] iconsd[8,3]
+		req:75 Gelbfisch and UgBLGelbfischF4
+*UgBLGelbfischF5a
+		name:Amerikanische Seezunge
+		icon:icons[5,5] iconsd[8,4]
+		req:100 Gelbfisch and UgBLGelbfischF5
+*UgBLGelbfischF6a
+		name:Malawibuntbarsch
+		icon:icons[5,5] iconsd[8,5]
+		req:125 Gelbfisch and UgBLGelbfischF6
+*UgBLGelbfischF7a
+		name:Black Molly
+		icon:icons[5,5] iconsd[8,6]
+		req:150 Gelbfisch and UgBLGelbfischF7
+*UgBLGelbfischF8a
+		name:Blattfisch
+		icon:icons[5,5] iconsd[8,7]
+		req:175 Gelbfisch and UgBLGelbfischF8
+*UgBLGelbfischF9a
+		name:Diskus
+		icon:icons[5,5] iconsd[8,8]
+		req:200 Gelbfisch and UgBLGelbfischF9
+*UgBLGelbfischF10a
+		name:Antennenwels
+		icon:icons[5,5] iconsd[8,9]
+		req:225 Gelbfisch and UgBLGelbfischF10
+*UgBLGelbfischF11a
+		name:Fadenfisch
+		icon:icons[5,5] iconsd[8,10]
+		req:250 Gelbfisch and UgBLGelbfischF11
+*UgBLGelbfischF12a
+		name:Neon
+		icon:icons[5,5] iconsd[8,11]
+		req:275 Gelbfisch and UgBLGelbfischF12
+*UgBLGelbfischF13a
+		name:Phantomwels
+		icon:icons[5,5] iconsd[8,12]
+		req:300 Gelbfisch and UgBLGelbfischF13
+*UgBLGelbfischF14a
+		name:Prachtkärpfling
+		icon:icons[5,5] iconsd[8,13]
+		req:325 Gelbfisch and UgBLGelbfischF14
+*UgBLGelbfischF15a
+		name:Regenbogenfisch
+		icon:icons[5,5] iconsd[8,14]
+		req:350 Gelbfisch and UgBLGelbfischF15
 *TEMPLATE			
 		no buy
 		tag:owned
@@ -18141,7 +18398,113 @@ Achievements
 		name:Pantherkrabbe
 		desc:Habe 950 Maruschas
 		req:950 Maruscha
-		icon:iconsd[0,20]			
+		icon:iconsd[0,20]
+//14 Gelbfisch|Gelbfische
+*BHGelbfisch1
+		name:Blutsalmler
+		desc:Habe einen Gelbfisch
+		req:1 Gelbfisch
+		icon:iconsd[9,0]
+*BHGelbfisch2
+		name:Zwergbuntbarsch
+		desc:Habe 19 Gelbfische
+		req:19 Gelbfisch
+		icon:iconsd[9,1]
+*BHGelbfisch3
+		name:Brassenbarbe
+		desc:Habe 50 Gelbfische
+		req:50 Gelbfisch
+		icon:iconsd[9,2]
+*BHGelbfisch4
+		name:Guppi
+		desc:Habe 100 Gelbfische
+		req:100 Gelbfisch
+		icon:iconsd[9,3]
+*BHGelbfisch5
+		name:Plati
+		desc:Habe 150 Gelbfische
+		req:150 Gelbfisch
+		icon:iconsd[9,4]
+*BHGelbfisch6
+		name:Kugelfisch
+		desc:Habe 200 Gelbfische
+		req:200 Gelbfisch
+		icon:iconsd[9,5]
+*BHGelbfisch7
+		name:Kampffisch
+		desc:Habe 250 Gelbfische
+		req:250 Gelbfisch
+		icon:iconsd[9,6]
+*BHGelbfisch8
+		name:Molly
+		desc:Habe 300 Gelbfische
+		req:300 Gelbfisch
+		icon:iconsd[9,7]
+*BHGelbfisch9
+		name:Tiegerschmerl
+		desc:Habe 350 Gelbfische
+		req:350 Gelbfisch
+		icon:iconsd[9,8]
+*BHGelbfisch10
+		name:Elfenwels
+		desc:Habe 400 Gelbfische
+		req:400 Gelbfisch
+		icon:iconsd[9,9]
+*BHGelbfisch11
+		name:Tüpfelbuntbarsch
+		desc:Habe 450 Gelbfische
+		req:450 Gelbfisch
+		icon:iconsd[9,10]
+*BHGelbfisch12
+		name:Glaswels
+		desc:Habe 500 Gelbfische
+		req:500 Gelbfisch
+		icon:iconsd[9,11]
+*BHGelbfisch13
+		name:Wimpelkarpfen
+		desc:Habe 550 Gelbfische
+		req:550 Gelbfisch
+		icon:iconsd[9,12]
+*BHGelbfisch14
+		name:Schmucksalmler
+		desc:Habe 600 Gelbfische
+		req:600 Gelbfisch
+		icon:iconsd[9,13]
+*BHGelbfisch15
+		name:Wimpelkarpfen
+		desc:Habe 650 Gelbfische
+		req:650 Gelbfisch
+		icon:iconsd[9,14]
+*BHGelbfisch16
+		name:Flösselhecht
+		desc:Habe 700 Gelbfische
+		req:700 Gelbfisch
+		icon:iconsd[9,15]
+*BHGelbfisch17
+		name:Grüner Neon
+		desc:Habe 750 Gelbfische
+		req:750 Gelbfisch
+		icon:iconsd[9,16]
+*BHGelbfisch18
+		name:Elefantenrüsselfisch
+		desc:Habe 800 Gelbfische
+		req:800 Gelbfisch
+		icon:iconsd[9,17]
+*BHGelbfisch19
+		name:Einpunktdämon
+		desc:Habe 850 Gelbfische
+		req:850 Gelbfisch
+		icon:iconsd[9,18]
+*BHGelbfisch20
+		name:Dreifleck Erdfresser
+		desc:Habe 900 Gelbfische
+		req:900 Gelbfisch
+		icon:iconsd[9,19]
+*BHGelbfisch21
+		name:Schachbrettschmerl
+		desc:Habe 950 Gelbfische
+		req:950 Gelbfisch
+		icon:iconsd[9,20]		
 				
 // Insekten achievments -----------------------------------		
 //1
