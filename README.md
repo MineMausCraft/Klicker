@@ -1241,7 +1241,7 @@ Buildings
     desc:Fleißge SammlerAmeisen die Nahrung in die Kolonie bringen!<//><b><.></b> Produziert <b>1</b> Nps. Aktuell: <b>[SammlerAp:ps/SammlerAmeise]</b> Nps<//><.> Produktion aktuell: <b>[SammlerAp:ps]</b> Nps
     icon:icons[4,3]
     cost:18 Insekten
-	cost increase:110%
+	cost increase:113%
     on tick:yield 1 Nahrung
 	on tick:yield 1 SammlerAp
     req:1000 Insekten:earned   
@@ -1252,7 +1252,7 @@ Buildings
     desc:Sie sind sehr effizient bei der Nahrungssuche!<//><b><.></b> Produziert <b>150</b> Nps.<//><.> Produktion: <b>[SucherAmeise*150]</b> /Nps 
     icon:icons[4,4]
     cost:1120000000 Insekten
-	cost increase:110%
+	cost increase:113%
     on tick:yield 150 Nahrung
     req:112000 Insekten:earned and BHSammler10
 	on earn:yield 0.1 Erfahrung
