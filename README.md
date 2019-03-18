@@ -6120,7 +6120,6 @@ Upgrades
 		class:noBackground
 		passive:multiply yield of Gelbfisch by 1.75
 		desc:<.> Erhöht die Produktion der Gelbfische um <b>75</b> %.
-//		23520000000000000
 *UgBLGelbfisch1
 		name:Große Flosse
 		icon:iconsd[7,0]
@@ -6257,7 +6256,153 @@ Upgrades
 		icon:icons[5,5] iconsd[8,14]
 		cost:350 Gelbfisch
 		req:350 Gelbfisch and UgBLGelbfischF14
-		
+//15 Schildkroete|Schildkroeten
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Schildkroete by 1.75
+		desc:<.> Erhöht die Produktion der Schildkröte um <b>75</b> %.
+//		30576000000000000
+*UgBLSchildkroete1
+		name:Vierzehenschildkröte
+		icon:iconsd[10,0]
+		cost:305760000000000000 Larven, 30576000000000000 Nahrung,1000000000000 Territorien
+		req:305760000000000000 Larven:earned and 10 Schildkroete
+*UgBLSchildkroete2
+		name:Landschildkröte
+		icon:iconsd[10,1]
+		cost:30576000000000000000 Larven, 3057600000000000000 Nahrung,100000000000000 Territorien
+		req:30576000000000000000 Larven:earned and UgBLSchildkroete1
+*UgBLSchildkroete3
+		name:Spornschildkröte
+		icon:iconsd[10,2]
+		cost:3057600000000000000000 Larven, 305760000000000000000 Nahrung,1000000000000000 Territorien
+		req:3057600000000000000000 Larven:earned and UgBLSchildkroete2
+*UgBLSchildkroete4
+		name:Schnabelbrustschildkröte
+		icon:iconsd[10,3]
+		cost:305760000000000000000000 Larven, 30576000000000000000000 Nahrung,10000000000000000 Territorien
+		req:305760000000000000000000 Larven:earned and UgBLSchildkroete3
+*UgBLSchildkroete5
+		name:Riesenschildkröte
+		icon:iconsd[10,4]
+		cost:30576000000000000000000000 Larven, 3057600000000000000000000 Nahrung,100000000000000000 Territorien
+		req:30576000000000000000000000 Larven:earned and UgBLSchildkroete4
+*UgBLSchildkroete6
+		name:Gopherschildkröte
+		icon:iconsd[10,5]
+		cost:3057600000000000000000000000 Larven, 305760000000000000000000000 Nahrung,1000000000000000000 Territorien
+		req:3057600000000000000000000000 Larven:earned and UgBLSchildkroete5
+*UgBLSchildkroete7
+		name:Flachschildkröte
+		icon:iconsd[10,6]
+		cost:305760000000000000000000000000 Larven, 30576000000000000000000000000 Nahrung,10000000000000000000 Territorien
+		req:305760000000000000000000000000 Larven:earned and UgBLSchildkroete6
+*UgBLSchildkroete8
+		name:Gelenkschildkröte
+		icon:iconsd[10,7]
+		cost:30576000000000000000000000000000 Larven, 3057600000000000000000000000000 Nahrung,100000000000000000000 Territorien
+		req:30576000000000000000000000000000 Larven:earned and UgBLSchildkroete7
+*UgBLSchildkroete9
+		name:Waldschildkröte
+		icon:iconsd[10,8]
+		cost:3057600000000000000000000000000000 Larven, 305760000000000000000000000000000 Nahrung,1000000000000000000000 Territorien
+		req:3057600000000000000000000000000000 Larven:earned and UgBLSchildkroete8
+*UgBLSchildkroete10
+		name:Pantherschildkröte
+		icon:iconsd[10,9]
+		cost:305760000000000000000000000000000000 Larven, 30576000000000000000000000000000000 Nahrung,10000000000000000000000 Territorien
+		req:305760000000000000000000000000000000 Larven:earned and UgBLSchildkroete9
+*UgBLSchildkroete11
+		name:Spinnenschildkröte
+		icon:iconsd[10,10]
+		cost:30576000000000000000000000000000000000 Larven, 3057600000000000000000000000000000000 Nahrung,100000000000000000000000 Territorien
+		req:30576000000000000000000000000000000000 Larven:earned and UgBLSchildkroete10
+*UgBLSchildkroete12
+		name:Maurische Landschildkröte
+		icon:iconsd[10,11]
+		cost:3057600000000000000000000000000000000000 Larven, 305760000000000000000000000000000000000 Nahrung,100000000000000000000000 Territorien
+		req:3057600000000000000000000000000000000000 Larven:earned and UgBLSchildkroete11
+//14
+*UgBLSchildkroeteF1
+		name:Starker Panzer
+		icon:icons[5,5] iconsd[11,0]
+		cost:10 Schildkroete
+		req:10 Schildkroete
+*UgBLSchildkroeteF2
+		name:Größeres Maul
+		icon:icons[5,5] iconsd[11,1] 
+		cost:25 Schildkroete
+		req:25 Schildkroete and UgBLSchildkroeteF1
+*UgBLSchildkroeteF3
+		name:Schnelleres Laufen
+		icon:icons[5,5] iconsd[11,2]
+		cost:50 Schildkroete
+		req:50 Schildkroete and UgBLSchildkroeteF2
+*UgBLSchildkroeteF4
+		name:Schnelles Verstecken
+		icon:icons[5,5] iconsd[11,3]
+		cost:75 Schildkroete
+		req:75 Schildkroete and UgBLSchildkroeteF3
+*UgBLSchildkroeteF5
+		name:Schauen + 1
+		icon:icons[5,5] iconsd[11,4]
+		cost:100 Schildkroete
+		req:100 Schildkroete and UgBLSchildkroeteF4
+*UgBLSchildkroeteF6
+		name:Größere Nase
+		icon:icons[5,5] iconsd[11,5]
+		cost:125 Schildkroete
+		req:125 Schildkroete and UgBLSchildkroeteF5
+*UgBLSchildkroeteF7
+		name:Besseres Riechen
+		icon:icons[5,5] iconsd[11,6]
+		cost:150 Schildkroete
+		req:150 Schildkroete and UgBLSchildkroeteF6
+*UgBLSchildkroeteF8
+		name:Stärkere Beine
+		icon:icons[5,5] iconsd[11,7]
+		cost:175 Schildkroete
+		req:175 Schildkroete and UgBLSchildkroeteF7
+*UgBLSchildkroeteF9
+		name:Flinkere Füße
+		icon:icons[5,5] iconsd[11,8]
+		cost:200 Schildkroete
+		req:200 Schildkroete and UgBLSchildkroeteF8
+*UgBLSchildkroeteF10
+		name:Mehr Zehen
+		icon:icons[5,5] iconsd[11,9]
+		cost:225 Schildkroete
+		req:225 Schildkroete and UgBLSchildkroeteF9
+*UgBLSchildkroeteF11
+		name:Ersatzpanzer
+		icon:icons[5,5] iconsd[11,10]
+		cost:250 Schildkroete
+		req:250 Schildkroete and UgBLSchildkroeteF10
+*UgBLSchildkroeteF12
+		name:Besseres Schnappen
+		icon:icons[5,5] iconsd[11,11]
+		cost:275 Schildkroete
+		req:275 Schildkroete and UgBLSchildkroeteF11
+*UgBLSchildkroeteF13
+		name:Größere Nasenlöcher
+		icon:icons[5,5] iconsd[11,12]
+		cost:300 Schildkroete
+		req:300 Schildkroete and UgBLSchildkroeteF12
+*UgBLSchildkroeteF14
+		name:Unterwasseratung + 1
+		icon:icons[5,5] iconsd[11,13]
+		cost:325 Schildkroete
+		req:325 Schildkroete and UgBLSchildkroeteF13
+*UgBLSchildkroeteF15
+		name:Längeres Leben
+		icon:icons[5,5] iconsd[11,14]
+		cost:350 Schildkroete
+		req:350 Schildkroete and UgBLSchildkroeteF14
 //Insekten Upgrades-------------------------------------------------------------------------------------------------
 // Upgrade Ressource Insekten		
 *TEMPLATE
@@ -12947,13 +13092,127 @@ class:noBackground
 		name:Regenbogenfisch
 		icon:icons[5,5] iconsd[8,14]
 		req:350 Gelbfisch and UgBLGelbfischF15
+//15 Schildkroete|Schildkroeten a
+*TEMPLATE
+		no buy
+		tag:owned
+		desc:<.> Erhöht die Produktion der Schildkröte um <b>75</b> %.
+*UgBLSchildkroete1a
+		name:Vierzehenschildkröte
+		icon:iconsd[10,0]
+		req:UgBLSchildkroete1
+*UgBLSchildkroete2a
+		name:Landschildkröte
+		icon:iconsd[10,1]
+		req:30576000000000000000 Larven:earned and UgBLSchildkroete2
+*UgBLSchildkroete3a
+		name:Spornschildkröte
+		icon:iconsd[10,2]
+		req:3057600000000000000000 Larven:earned and UgBLSchildkroete3
+*UgBLSchildkroete4a
+		name:Schnabelbrustschildkröte
+		icon:iconsd[10,3]
+		req:305760000000000000000000 Larven:earned and UgBLSchildkroete4
+*UgBLSchildkroete5a
+		name:Riesenschildkröte
+		icon:iconsd[10,4]
+		req:30576000000000000000000000 Larven:earned and UgBLSchildkroete5
+*UgBLSchildkroete6a
+		name:Gopherschildkröte
+		icon:iconsd[10,5]
+		req:3057600000000000000000000000 Larven:earned and UgBLSchildkroete6
+*UgBLSchildkroete7a
+		name:Flachschildkröte
+		icon:iconsd[10,6]
+		req:305760000000000000000000000000 Larven:earned and UgBLSchildkroete7
+*UgBLSchildkroete8a
+		name:Gelenkschildkröte
+		icon:iconsd[10,7]
+		req:30576000000000000000000000000000 Larven:earned and UgBLSchildkroete8
+*UgBLSchildkroete9a
+		name:Waldschildkröte
+		icon:iconsd[10,8]
+		req:3057600000000000000000000000000000 Larven:earned and UgBLSchildkroete9
+*UgBLSchildkroete10a
+		name:Pantherschildkröte
+		icon:iconsd[10,9]
+		req:305760000000000000000000000000000000 Larven:earned and UgBLSchildkroete10
+*UgBLSchildkroete11a
+		name:Spinnenschildkröte
+		icon:iconsd[10,10]
+		req:30576000000000000000000000000000000000 Larven:earned and UgBLSchildkroete11
+*UgBLSchildkroete12a
+		name:Maurische Landschildkröte
+		icon:iconsd[10,11]
+		req:3057600000000000000000000000000000000000 Larven:earned and UgBLSchildkroete12
+//14a
+*UgBLSchildkroeteF1a
+		name:Starker Panzer
+		icon:icons[5,5] iconsd[11,0]
+		req:UgBLSchildkroeteF1
+*UgBLSchildkroeteF2a
+		name:Größeres Maul
+		icon:icons[5,5] iconsd[11,1] 
+		req:25 Schildkroete and UgBLSchildkroeteF2
+*UgBLSchildkroeteF3a
+		name:Schnelleres Laufen
+		icon:icons[5,5] iconsd[11,2]
+		req:50 Schildkroete and UgBLSchildkroeteF3
+*UgBLSchildkroeteF4a
+		name:Schnelles Verstecken
+		icon:icons[5,5] iconsd[11,3]
+		req:75 Schildkroete and UgBLSchildkroeteF4
+*UgBLSchildkroeteF5a
+		name:Schauen + 1
+		icon:icons[5,5] iconsd[11,4]
+		req:100 Schildkroete and UgBLSchildkroeteF5
+*UgBLSchildkroeteF6a
+		name:Größere Nase
+		icon:icons[5,5] iconsd[11,5]
+		req:125 Schildkroete and UgBLSchildkroeteF6
+*UgBLSchildkroeteF7a
+		name:Besseres Riechen
+		icon:icons[5,5] iconsd[11,6]
+		req:150 Schildkroete and UgBLSchildkroeteF7
+*UgBLSchildkroeteF8a
+		name:Stärkere Beine
+		icon:icons[5,5] iconsd[11,7]
+		req:175 Schildkroete and UgBLSchildkroeteF8
+*UgBLSchildkroeteF9a
+		name:Flinkere Füße
+		icon:icons[5,5] iconsd[11,8]
+		req:200 Schildkroete and UgBLSchildkroeteF9
+*UgBLSchildkroeteF10a
+		name:Mehr Zehen
+		icon:icons[5,5] iconsd[11,9]
+		req:225 Schildkroete and UgBLSchildkroeteF10
+*UgBLSchildkroeteF11a
+		name:Ersatzpanzer
+		icon:icons[5,5] iconsd[11,10]
+		req:250 Schildkroete and UgBLSchildkroeteF11
+*UgBLSchildkroeteF12a
+		name:Besseres Schnappen
+		icon:icons[5,5] iconsd[11,11]
+		req:275 Schildkroete and UgBLSchildkroeteF12
+*UgBLSchildkroeteF13a
+		name:Größere Nasenlöcher
+		icon:icons[5,5] iconsd[11,12]
+		req:300 Schildkroete and UgBLSchildkroeteF13
+*UgBLSchildkroeteF14a
+		name:Unterwasseratung + 1
+		icon:icons[5,5] iconsd[11,13]
+		req:325 Schildkroete and UgBLSchildkroeteF14
+*UgBLSchildkroeteF15a
+		name:Längeres Leben
+		icon:icons[5,5] iconsd[11,14]
+		req:350 Schildkroete and UgBLSchildkroeteF15
+//Insekten Upgrades a
+// Upgrade Ressource Insekten	a	
 *TEMPLATE			
 		no buy
 		tag:owned
 		class:noBackground
 
-//Insekten Upgrades a
-// Upgrade Ressource Insekten	a	
 *UgRIBlume1a
 		name:Ackerwinde
 		desc:<.> Erhöht die Produktion von Insekten um <b>1</b> %.
@@ -18505,7 +18764,112 @@ Achievements
 		desc:Habe 950 Gelbfische
 		req:950 Gelbfisch
 		icon:iconsd[9,20]		
-				
+//15 Schildkroete|Schildkroeten 
+*BHSchildkroete1
+		name:Afrikanische Schnabelbrustschildkröte
+		desc:Habe eine Schildkröte
+		req:1 Schildkroete
+		icon:iconsd[12,0]
+*BHSchildkroete2
+		name:Argentinische Landschildkröte
+		desc:Habe 19 Schildkröten
+		req:19 Schildkroete
+		icon:iconsd[12,1]
+*BHSchildkroete3
+		name:Indische Sternschildkröte
+		desc:Habe 50 Schildkröten
+		req:50 Schildkroete
+		icon:iconsd[12,2]
+*BHSchildkroete4
+		name:Madagassische Strahlenschildkröte
+		desc:Habe 100 Schildkröten
+		req:100 Schildkroete
+		icon:iconsd[12,3]
+*BHSchildkroete5
+		name:Celebes-Landschildkröte
+		desc:Habe 150 Schildkröten
+		req:150 Schildkroete
+		icon:iconsd[12,4]
+*BHSchildkroete6
+		name:Waldschildkröte
+		desc:Habe 200 Schildkröten
+		req:200 Schildkroete
+		icon:iconsd[12,5]
+*BHSchildkroete7
+		name:Hinterindische Landschildkröte
+		desc:Habe 250 Schildkröten
+		req:250 Schildkroete
+		icon:iconsd[12,6]
+*BHSchildkroete8
+		name:Köhlerschildkröte
+		desc:Habe 300 Schildkröten
+		req:300 Schildkroete
+		icon:iconsd[12,7]
+*BHSchildkroete9
+		name:Diamantschildkröte
+		desc:Habe 350 Schildkröten
+		req:350 Schildkroete
+		icon:iconsd[12,8]
+*BHSchildkroete10
+		name:Sternotherus
+		desc:Habe 400 Schildkröten
+		req:400 Schildkroete
+		icon:iconsd[12,9]
+*BHSchildkroete11
+		name:Dach-moschusschildkröte
+		desc:Habe 450 Schildkröten
+		req:450 Schildkroete
+		icon:iconsd[12,10]
+*BHSchildkroete12
+		name:Dreistreifen Klappschildkröte
+		desc:Habe 500 Schildkröten
+		req:500 Schildkroete
+		icon:iconsd[12,11]
+*BHSchildkroete13
+		name:Weichschildkröte
+		desc:Habe 550 Schildkröten
+		req:550 Schildkroete
+		icon:iconsd[12,12]
+*BHSchildkroete14
+		name:barbours Höckerschildkröte
+		desc:Habe 600 Schildkröten
+		req:600 Schildkroete
+		icon:iconsd[12,13]
+*BHSchildkroete15
+		name:Rotwangenklappschildkröte
+		desc:Habe 650 Schildkröten
+		req:650 Schildkroete
+		icon:iconsd[12,14]
+*BHSchildkroete16
+		name:Tabasco Klappschildkröte
+		desc:Habe 700 Schildkröten
+		req:700 Schildkroete
+		icon:iconsd[12,15]
+*BHSchildkroete17
+		name:Chinesische Dreikielschildkröte
+		desc:Habe 750 Schildkröten
+		req:750 Schildkroete
+		icon:iconsd[12,16]
+*BHSchildkroete18
+		name:Zackenerdschildkröte
+		desc:Habe 800 Schildkröten
+		req:800 Schildkroete
+		icon:iconsd[12,17]
+*BHSchildkroete19
+		name:Schildkrötenbaby
+		desc:Habe 850 Schildkröten
+		req:850 Schildkroete
+		icon:iconsd[12,18]
+*BHSchildkroete20
+		name:Schildkrötenmami
+		desc:Habe 900 Schildkröten
+		req:900 Schildkroete
+		icon:iconsd[12,19]
+*BHSchildkroete21
+		name:Schidkrötenfamilie
+		desc:Habe 950 Schildkröten
+		req:950 Schildkroete
+		icon:iconsd[12,20]					
 // Insekten achievments -----------------------------------		
 //1
 *BHAmeise1
