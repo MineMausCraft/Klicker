@@ -6327,7 +6327,7 @@ Upgrades
 		icon:iconsd[10,11]
 		cost:3057600000000000000000000000000000000000 Larven, 305760000000000000000000000000000000000 Nahrung,100000000000000000000000 Territorien
 		req:3057600000000000000000000000000000000000 Larven:earned and UgBLSchildkroete11
-//14
+//15
 *UgBLSchildkroeteF1
 		name:Starker Panzer
 		icon:icons[5,5] iconsd[11,0]
@@ -6403,6 +6403,153 @@ Upgrades
 		icon:icons[5,5] iconsd[11,14]
 		cost:350 Schildkroete
 		req:350 Schildkroete and UgBLSchildkroeteF14
+		//16 Topf|Toepfe
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Topf by 1.75
+		desc:<.> Erhöht die Produktion der Töpfe um <b>75</b> %.
+//		364560000000000000
+*UgBLTopf1
+		name:Feuchte Erde
+		icon:iconsd[13,0]
+		cost:3645600000000000000 Larven, 364560000000000000 Nahrung,10000000000000 Territorien
+		req:3645600000000000000 Larven:earned and 10 Topf
+*UgBLTopf2
+		name:Mehr Luftfeuchtigkeit
+		icon:iconsd[13,1]
+		cost:364560000000000000000 Larven, 36456000000000000000 Nahrung,1000000000000000 Territorien
+		req:364560000000000000000 Larven:earned and UgBLTopf1
+*UgBLTopf3
+		name:Gutes Klima
+		icon:iconsd[13,2]
+		cost:36456000000000000000000 Larven, 3645600000000000000000 Nahrung,10000000000000000 Territorien
+		req:36456000000000000000000 Larven:earned and UgBLTopf2
+*UgBLTopf4
+		name:Warmes Klima
+		icon:iconsd[13,3]
+		cost:3645600000000000000000000 Larven, 364560000000000000000000 Nahrung,100000000000000000 Territorien
+		req:3645600000000000000000000 Larven:earned and UgBLTopf3
+*UgBLTopf5
+		name:Guter Pilzwuchs
+		icon:iconsd[13,4]
+		cost:364560000000000000000000000 Larven, 36456000000000000000000000 Nahrung,1000000000000000000 Territorien
+		req:364560000000000000000000000 Larven:earned and UgBLTopf4
+*UgBLTopf6
+		name:Feine Stengel
+		icon:iconsd[13,5]
+		cost:36456000000000000000000000000 Larven, 3645600000000000000000000000 Nahrung,10000000000000000000 Territorien
+		req:36456000000000000000000000000 Larven:earned and UgBLTopf5
+*UgBLTopf7
+		name:Luftlöcher
+		icon:iconsd[13,6]
+		cost:3645600000000000000000000000000 Larven, 364560000000000000000000000000 Nahrung,100000000000000000000 Territorien
+		req:3645600000000000000000000000000 Larven:earned and UgBLTopf6
+*UgBLTopf8
+		name:Gute Belüftung
+		icon:iconsd[13,7]
+		cost:364560000000000000000000000000000 Larven, 36456000000000000000000000000000 Nahrung,1000000000000000000000 Territorien
+		req:364560000000000000000000000000000 Larven:earned and UgBLTopf7
+*UgBLTopf9
+		name:Schneller Weg Rein
+		icon:iconsd[13,8]
+		cost:36456000000000000000000000000000000 Larven, 3645600000000000000000000000000000 Nahrung,10000000000000000000000 Territorien
+		req:36456000000000000000000000000000000 Larven:earned and UgBLTopf8
+*UgBLTopf10
+		name:Schneller Weg Raus
+		icon:iconsd[13,9]
+		cost:3645600000000000000000000000000000000 Larven, 364560000000000000000000000000000000 Nahrung,100000000000000000000000 Territorien
+		req:3645600000000000000000000000000000000 Larven:earned and UgBLTopf9
+*UgBLTopf11
+		name:Nahe am Wasser
+		icon:iconsd[13,10]
+		cost:364560000000000000000000000000000000000 Larven, 36456000000000000000000000000000000000 Nahrung,1000000000000000000000000 Territorien
+		req:364560000000000000000000000000000000000 Larven:earned and UgBLTopf10
+*UgBLTopf12
+		name:Küchentopf
+		icon:iconsd[13,11]
+		cost:36456000000000000000000000000000000000000 Larven, 3645600000000000000000000000000000000000 Nahrung,1000000000000000000000000 Territorien
+		req:36456000000000000000000000000000000000000 Larven:earned and UgBLTopf11
+//16
+*UgBLTopfF1
+		name:Wurzelreich
+		icon:icons[5,5] iconsd[14,0]
+		cost:10 Topf
+		req:10 Topf
+*UgBLTopfF2
+		name:Leckre Wurzeln
+		icon:icons[5,5] iconsd[14,1] 
+		cost:25 Topf
+		req:25 Topf and UgBLTopfF1
+*UgBLTopfF3
+		name:Altes Wurzelwerk
+		icon:icons[5,5] iconsd[14,2]
+		cost:50 Topf
+		req:50 Topf and UgBLTopfF2
+*UgBLTopfF4
+		name:Vertrocknete Pflanzenerde
+		icon:icons[5,5] iconsd[14,3]
+		cost:75 Topf
+		req:75 Topf and UgBLTopfF3
+*UgBLTopfF5
+		name:Pflanzendünger
+		icon:icons[5,5] iconsd[14,4]
+		cost:100 Topf
+		req:100 Topf and UgBLTopfF4
+*UgBLTopfF6
+		name:Nährstoffreich
+		icon:icons[5,5] iconsd[14,5]
+		cost:125 Topf
+		req:125 Topf and UgBLTopfF5
+*UgBLTopfF7
+		name:Regenwurm im Topf
+		icon:icons[5,5] iconsd[14,6]
+		cost:150 Topf
+		req:150 Topf and UgBLTopfF6
+*UgBLTopfF8
+		name:Lockerer Boden
+		icon:icons[5,5] iconsd[14,7]
+		cost:175 Topf
+		req:175 Topf and UgBLTopfF7
+*UgBLTopfF9
+		name:Guter Nährboden
+		icon:icons[5,5] iconsd[14,8]
+		cost:200 Topf
+		req:200 Topf and UgBLTopfF8
+*UgBLTopfF10
+		name:Voller Laub
+		icon:icons[5,5] iconsd[14,9]
+		cost:225 Topf
+		req:225 Topf and UgBLTopfF9
+*UgBLTopfF11
+		name:Mehr Verstecke
+		icon:icons[5,5] iconsd[14,10]
+		cost:250 Topf
+		req:250 Topf and UgBLTopfF10
+*UgBLTopfF12
+		name:Überdacht
+		icon:icons[5,5] iconsd[14,11]
+		cost:275 Topf
+		req:275 Topf and UgBLTopfF11
+*UgBLTopfF13
+		name:Regenschutz
+		icon:icons[5,5] iconsd[14,12]
+		cost:300 Topf
+		req:300 Topf and UgBLTopfF12
+*UgBLTopfF14
+		name:Sonnenschutz
+		icon:icons[5,5] iconsd[14,13]
+		cost:325 Topf
+		req:325 Topf and UgBLTopfF13
+*UgBLTopfF15
+		name:Windgeschützt
+		icon:icons[5,5] iconsd[14,14]
+		cost:350 Topf
+		req:350 Topf and UgBLTopfF14
 //Insekten Upgrades-------------------------------------------------------------------------------------------------
 // Upgrade Ressource Insekten		
 *TEMPLATE
@@ -13145,7 +13292,7 @@ class:noBackground
 		name:Maurische Landschildkröte
 		icon:iconsd[10,11]
 		req:3057600000000000000000000000000000000000 Larven:earned and UgBLSchildkroete12
-//14a
+//15a
 *UgBLSchildkroeteF1a
 		name:Starker Panzer
 		icon:icons[5,5] iconsd[11,0]
@@ -13206,6 +13353,121 @@ class:noBackground
 		name:Längeres Leben
 		icon:icons[5,5] iconsd[11,14]
 		req:350 Schildkroete and UgBLSchildkroeteF15
+//16 Topf|Toepfe a
+*TEMPLATE
+		no buy
+		tag:owned
+		desc:<.> Erhöht die Produktion der Töpfe um <b>75</b> %.
+*UgBLTopf1a
+		name:Feuchte Erde
+		icon:iconsd[13,0]
+		req:UgBLTopf1
+*UgBLTopf2a
+		name:Mehr Luftfeuchtigkeit
+		icon:iconsd[13,1]
+		req:364560000000000000000 Larven:earned and UgBLTopf12
+*UgBLTopf3a
+		name:Gutes Klima
+		icon:iconsd[13,2]
+		req:36456000000000000000000 Larven:earned and UgBLTopf3
+*UgBLTopf4a
+		name:Warmes Klima
+		icon:iconsd[13,3]
+		req:3645600000000000000000000 Larven:earned and UgBLTopf4
+*UgBLTopf5a
+		name:Guter Pilzwuchs
+		icon:iconsd[13,4]
+		req:364560000000000000000000000 Larven:earned and UgBLTopf5
+*UgBLTopf6a
+		name:Feine Stengel
+		icon:iconsd[13,5]
+		req:36456000000000000000000000000 Larven:earned and UgBLTopf6
+*UgBLTopf7a
+		name:Luftlöcher
+		icon:iconsd[13,6]
+		req:3645600000000000000000000000000 Larven:earned and UgBLTopf67
+*UgBLTopf8a
+		name:Gute Belüftung
+		icon:iconsd[13,7]
+		req:364560000000000000000000000000000 Larven:earned and UgBLTopf8
+*UgBLTopf9a
+		name:Schneller Weg Rein
+		icon:iconsd[13,8]
+		req:36456000000000000000000000000000000 Larven:earned and UgBLTopf9
+*UgBLTopf10a
+		name:Schneller Weg Raus
+		icon:iconsd[13,9]
+		req:3645600000000000000000000000000000000 Larven:earned and UgBLTopf10
+*UgBLTopf11a
+		name:Nahe am Wasser
+		icon:iconsd[13,10]
+		req:364560000000000000000000000000000000000 Larven:earned and UgBLTopf11
+*UgBLTopf12a
+		name:Küchentopf
+		icon:iconsd[13,11]
+		req:36456000000000000000000000000000000000000 Larven:earned and UgBLTopf12
+//16
+*UgBLTopfF1a
+		name:Wurzelreich
+		icon:icons[5,5] iconsd[14,0]
+		req:UgBLTopfF1
+*UgBLTopfF2a
+		name:Leckre Wurzeln
+		icon:icons[5,5] iconsd[14,1] 
+		req:25 Topf and UgBLTopfF2
+*UgBLTopfF3a
+		name:Altes Wurzelwerk
+		icon:icons[5,5] iconsd[14,2]
+		req:50 Topf and UgBLTopfF3
+*UgBLTopfF4a
+		name:Vertrocknete Pflanzenerde
+		icon:icons[5,5] iconsd[14,3]
+		req:75 Topf and UgBLTopfF4
+*UgBLTopfF5a
+		name:Pflanzendünger
+		icon:icons[5,5] iconsd[14,4]
+		req:100 Topf and UgBLTopfF45
+*UgBLTopfF6a
+		name:Nährstoffreich
+		icon:icons[5,5] iconsd[14,5]
+		req:125 Topf and UgBLTopfF56
+*UgBLTopfF7a
+		name:Regenwurm im Topf
+		icon:icons[5,5] iconsd[14,6]
+		req:150 Topf and UgBLTopfF7
+*UgBLTopfF8a
+		name:Lockerer Boden
+		icon:icons[5,5] iconsd[14,7]
+		req:175 Topf and UgBLTopfF8
+*UgBLTopfF9a
+		name:Guter Nährboden
+		icon:icons[5,5] iconsd[14,8]
+		req:200 Topf and UgBLTopfF9
+*UgBLTopfF10a
+		name:Voller Laub
+		icon:icons[5,5] iconsd[14,9]
+		req:225 Topf and UgBLTopfF10
+*UgBLTopfF11a
+		name:Mehr Verstecke
+		icon:icons[5,5] iconsd[14,10]
+		req:250 Topf and UgBLTopfF11
+*UgBLTopfF12a
+		name:Überdacht
+		icon:icons[5,5] iconsd[14,11]
+		req:275 Topf and UgBLTopfF12
+*UgBLTopfF13a
+		name:Regenschutz
+		icon:icons[5,5] iconsd[14,12]
+		req:300 Topf and UgBLTopfF13
+*UgBLTopfF14a
+		name:Sonnenschutz
+		icon:icons[5,5] iconsd[14,13]
+		req:325 Topf and UgBLTopfF14
+*UgBLTopfF15a
+		name:Windgeschützt
+		icon:icons[5,5] iconsd[14,14]
+		req:350 Topf and UgBLTopfF15
+*TEMPLATE				
 //Insekten Upgrades a
 // Upgrade Ressource Insekten	a	
 *TEMPLATE			
@@ -18869,7 +19131,113 @@ Achievements
 		name:Schidkrötenfamilie
 		desc:Habe 950 Schildkröten
 		req:950 Schildkroete
-		icon:iconsd[12,20]					
+		icon:iconsd[12,20]			
+//16 Topf|Toepfe 
+*BHTopf1
+		name:Blumentopf
+		desc:Habe einen Topf
+		req:1 Topf
+		icon:iconsd[15,0]
+*BHTopf2
+		name:Pflanzentopf
+		desc:Habe 19 Töpfe
+		req:19 Topf
+		icon:iconsd[15,1]
+*BHTopf3
+		name:Gärtnertopf
+		desc:Habe 50 Töpfe
+		req:50 Topf
+		icon:iconsd[15,2]
+*BHTopf4
+		name:Küchentopf
+		desc:Habe 100 Töpfe
+		req:100 Topf
+		icon:iconsd[15,3]
+*BHTopf5
+		name:Alter Topf
+		desc:Habe 150 Töpfe
+		req:150 Topf
+		icon:iconsd[15,4]
+*BHTopf6
+		name:Tontopf
+		desc:Habe 200 Töpfe
+		req:200 Topf
+		icon:iconsd[15,5]
+*BHTopf7
+		name:Alutopf
+		desc:Habe 250 Töpfe
+		req:250 Topf
+		icon:iconsd[15,6]
+*BHTopf8
+		name:Kunststofftopf
+		desc:Habe 300 Töpfe
+		req:300 Topf
+		icon:iconsd[15,7]
+*BHTopf9
+		name:Neuer Topf
+		desc:Habe 350 Töpfe
+		req:350 Topf
+		icon:iconsd[15,8]
+*BHTopf10
+		name:Brauner Topf
+		desc:Habe 400 Töpfe
+		req:400 Topf
+		icon:iconsd[15,9]
+*BHTopf11
+		name:Versteckter Topf
+		desc:Habe 450 Töpfe
+		req:450 Topf
+		icon:iconsd[15,10]
+*BHTopf12
+		name:Topfstapel
+		desc:Habe 500 Töpfe
+		req:500 Topf
+		icon:iconsd[15,11]
+*BHTopf13
+		name:Kaputter Topf
+		desc:Habe 550 Töpfe
+		req:550 Topf
+		icon:iconsd[15,12]
+*BHTopf14
+		name:Zerbrochener Topf
+		desc:Habe 600 Töpfe
+		req:600 Topf
+		icon:iconsd[15,13]
+*BHTopf15
+		name:Bunter Topf
+		desc:Habe 650 Töpfe
+		req:650 Topf
+		icon:iconsd[15,14]
+*BHTopf16
+		name:Kakteentopf
+		desc:Habe 700 Töpfe
+		req:700 Topf
+		icon:iconsd[15,15]
+*BHTopf17
+		name:Übertopf
+		desc:Habe 750 Töpfe
+		req:750 Topf
+		icon:iconsd[15,16]
+*BHTopf18
+		name:Verkratzter Topf
+		desc:Habe 800 Töpfe
+		req:800 Topf
+		icon:iconsd[15,17]
+*BHTopf19
+		name:Viel Platz im Topf
+		desc:Habe 850 Töpfe
+		req:850 Topf
+		icon:iconsd[15,18]
+*BHTopf20
+		name:Topflos
+		desc:Habe 900 Töpfe
+		req:900 Topf
+		icon:iconsd[15,19]
+*BHTopf21
+		name:Töpferei
+		desc:Habe 950 Töpfe
+		req:950 Topf
+		icon:iconsd[15,20]			
 // Insekten achievments -----------------------------------		
 //1
 *BHAmeise1
