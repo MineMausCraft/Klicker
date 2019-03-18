@@ -13385,7 +13385,7 @@ class:noBackground
 *UgBLTopf7a
 		name:Luftlöcher
 		icon:iconsd[13,6]
-		req:3645600000000000000000000000000 Larven:earned and UgBLTopf67
+		req:3645600000000000000000000000000 Larven:earned and UgBLTopf7
 *UgBLTopf8a
 		name:Gute Belüftung
 		icon:iconsd[13,7]
