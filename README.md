@@ -6403,7 +6403,7 @@ Upgrades
 		icon:icons[5,5] iconsd[11,14]
 		cost:350 Schildkroete
 		req:350 Schildkroete and UgBLSchildkroeteF14
-		//16 Topf|Toepfe
+//16 Topf|Toepfe
 *TEMPLATE
 		tag:upgrades
 		on tick:if (have this) hide this
@@ -6550,6 +6550,153 @@ Upgrades
 		icon:icons[5,5] iconsd[14,14]
 		cost:350 Topf
 		req:350 Topf and UgBLTopfF14
+//17 Kroete|Kroeten
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Kroete by 1.75
+		desc:<.> Erhöht die Produktion der Kröten um <b>75</b> %.
+//		4739280000000000000
+*UgBLKroete1
+		name:Klebezunge
+		icon:iconsd[16,0]
+		cost:47392800000000000000 Larven, 4739280000000000000 Nahrung,100000000000000 Territorien
+		req:47392800000000000000 Larven:earned and 10 Kroete
+*UgBLKroete2
+		name:Grüner
+		icon:iconsd[16,1]
+		cost:4739280000000000000000 Larven, 473928000000000000000 Nahrung,10000000000000000 Territorien
+		req:4739280000000000000000 Larven:earned and UgBLKroete1
+*UgBLKroete3
+		name:KLebefüße
+		icon:iconsd[16,2]
+		cost:473928000000000000000000 Larven, 47392800000000000000000 Nahrung,100000000000000000 Territorien
+		req:473928000000000000000000 Larven:earned and UgBLKroete2
+*UgBLKroete4
+		name:Mehr Halt
+		icon:iconsd[16,3]
+		cost:47392800000000000000000000 Larven, 4739280000000000000000000 Nahrung,1000000000000000000 Territorien
+		req:47392800000000000000000000 Larven:earned and UgBLKroete3
+*UgBLKroete5
+		name:Tarnfertigkeit + 1
+		icon:iconsd[16,4]
+		cost:4739280000000000000000000000 Larven, 473928000000000000000000000 Nahrung,10000000000000000000 Territorien
+		req:4739280000000000000000000000 Larven:earned and UgBLKroete4
+*UgBLKroete6
+		name:Kletterkünste
+		icon:iconsd[16,5]
+		cost:473928000000000000000000000000 Larven, 47392800000000000000000000000 Nahrung,100000000000000000000 Territorien
+		req:473928000000000000000000000000 Larven:earned and UgBLKroete5
+*UgBLKroete7
+		name:Weitspringen
+		icon:iconsd[16,6]
+		cost:47392800000000000000000000000000 Larven, 4739280000000000000000000000000 Nahrung,1000000000000000000000 Territorien
+		req:47392800000000000000000000000000 Larven:earned and UgBLKroete6
+*UgBLKroete8
+		name:Großer Sprung
+		icon:iconsd[16,7]
+		cost:4739280000000000000000000000000000 Larven, 473928000000000000000000000000000 Nahrung,10000000000000000000000 Territorien
+		req:4739280000000000000000000000000000 Larven:earned and UgBLKroete7
+*UgBLKroete9
+		name:Hoher Sprung
+		icon:iconsd[16,8]
+		cost:473928000000000000000000000000000000 Larven, 47392800000000000000000000000000000 Nahrung,100000000000000000000000 Territorien
+		req:473928000000000000000000000000000000 Larven:earned and UgBLKroete8
+*UgBLKroete10
+		name:Sprung in der Schüssel
+		icon:iconsd[16,9]
+		cost:47392800000000000000000000000000000000 Larven, 4739280000000000000000000000000000000 Nahrung,1000000000000000000000000 Territorien
+		req:47392800000000000000000000000000000000 Larven:earned and UgBLKroete9
+*UgBLKroete11
+		name:Schallblase + 1
+		icon:iconsd[16,10]
+		cost:4739280000000000000000000000000000000000 Larven, 473928000000000000000000000000000000000 Nahrung,10000000000000000000000000 Territorien
+		req:4739280000000000000000000000000000000000 Larven:earned and UgBLKroete10
+*UgBLKroete12
+		name:Größere Blase
+		icon:iconsd[16,11]
+		cost:473928000000000000000000000000000000000000 Larven, 47392800000000000000000000000000000000000 Nahrung,10000000000000000000000000 Territorien
+		req:473928000000000000000000000000000000000000 Larven:earned and UgBLKroete11
+//17
+*UgBLKroeteF1
+		name:Rückenkamm
+		icon:icons[5,5] iconsd[14,0]
+		cost:10 Kroete
+		req:10 Kroete
+*UgBLKroeteF2
+		name:Großer Rückenkamm
+		icon:icons[5,5] iconsd[14,1] 
+		cost:25 Kroete
+		req:25 Kroete and UgBLKroeteF1
+*UgBLKroeteF3
+		name:Hübscher Rückenkamm
+		icon:icons[5,5] iconsd[14,2]
+		cost:50 Kroete
+		req:50 Kroete and UgBLKroeteF2
+*UgBLKroeteF4
+		name:Unterwasseratmung + 1
+		icon:icons[5,5] iconsd[14,3]
+		cost:75 Kroete
+		req:75 Kroete and UgBLKroeteF3
+*UgBLKroeteF5
+		name:Schnellschwimmer
+		icon:icons[5,5] iconsd[14,4]
+		cost:100 Kroete
+		req:100 Kroete and UgBLKroeteF4
+*UgBLKroeteF6
+		name:Glubschies
+		icon:icons[5,5] iconsd[14,5]
+		cost:125 Kroete
+		req:125 Kroete and UgBLKroeteF5
+*UgBLKroeteF7
+		name:Signalfarbe
+		icon:icons[5,5] iconsd[14,6]
+		cost:150 Kroete
+		req:150 Kroete and UgBLKroeteF6
+*UgBLKroeteF8
+		name:Große Kröte
+		icon:icons[5,5] iconsd[14,7]
+		cost:175 Kroete
+		req:175 Kroete and UgBLKroeteF7
+*UgBLKroeteF9
+		name:Warzenreich
+		icon:icons[5,5] iconsd[14,8]
+		cost:200 Kroete
+		req:200 Kroete and UgBLKroeteF8
+*UgBLKroeteF10
+		name:Viele Warzen
+		icon:icons[5,5] iconsd[14,9]
+		cost:225 Kroete
+		req:225 Kroete and UgBLKroeteF9
+*UgBLKroeteF11
+		name:Große Warzen
+		icon:icons[5,5] iconsd[14,10]
+		cost:250 Kroete
+		req:250 Kroete and UgBLKroeteF10
+*UgBLKroeteF12
+		name:Hinterfußbuddler
+		icon:icons[5,5] iconsd[14,11]
+		cost:275 Kroete
+		req:275 Kroete and UgBLKroeteF11
+*UgBLKroeteF13
+		name:Eierträger
+		icon:icons[5,5] iconsd[14,12]
+		cost:300 Kroete
+		req:300 Kroete and UgBLKroeteF12
+*UgBLKroeteF14
+		name:Laichsack
+		icon:icons[5,5] iconsd[14,13]
+		cost:325 Kroete
+		req:325 Kroete and UgBLKroeteF13
+*UgBLKroeteF15
+		name:Haftscheiben + 1
+		icon:icons[5,5] iconsd[14,14]
+		cost:350 Kroete
+		req:350 Kroete and UgBLKroeteF14
 //Insekten Upgrades-------------------------------------------------------------------------------------------------
 // Upgrade Ressource Insekten		
 *TEMPLATE
@@ -13467,7 +13614,120 @@ class:noBackground
 		name:Windgeschützt
 		icon:icons[5,5] iconsd[14,14]
 		req:350 Topf and UgBLTopfF15
-*TEMPLATE				
+//17 Kroete|Kroeten a
+*TEMPLATE
+		no buy
+		tag:owned
+		desc:<.> Erhöht die Produktion der Kröten um <b>75</b> %.
+*UgBLKroete1a
+		name:Klebezunge
+		icon:iconsd[16,0]
+		req:UgBLKroete1
+*UgBLKroete2a
+		name:Grüner
+		icon:iconsd[16,1]
+		req:4739280000000000000000 Larven:earned and UgBLKroete2
+*UgBLKroete3a
+		name:KLebefüße
+		icon:iconsd[16,2]
+		req:473928000000000000000000 Larven:earned and UgBLKroete3
+*UgBLKroete4a
+		name:Mehr Halt
+		icon:iconsd[16,3]
+		req:47392800000000000000000000 Larven:earned and UgBLKroete4
+*UgBLKroete5a
+		name:Tarnfertigkeit + 1
+		icon:iconsd[16,4]
+		req:4739280000000000000000000000 Larven:earned and UgBLKroete5
+*UgBLKroete6a
+		name:Kletterkünste
+		icon:iconsd[16,5]
+		req:473928000000000000000000000000 Larven:earned and UgBLKroete6
+*UgBLKroete7a
+		name:Weitspringen
+		icon:iconsd[16,6]
+		req:47392800000000000000000000000000 Larven:earned and UgBLKroete7
+*UgBLKroete8a
+		name:Großer Sprung
+		icon:iconsd[16,7]
+		req:4739280000000000000000000000000000 Larven:earned and UgBLKroete8
+*UgBLKroete9a
+		name:Hoher Sprung
+		icon:iconsd[16,8]
+		req:473928000000000000000000000000000000 Larven:earned and UgBLKroete9
+*UgBLKroete10a
+		name:Sprung in der Schüssel
+		icon:iconsd[16,9]
+		req:47392800000000000000000000000000000000 Larven:earned and UgBLKroete10
+*UgBLKroete11a
+		name:Schallblase + 1
+		icon:iconsd[16,10]
+		req:4739280000000000000000000000000000000000 Larven:earned and UgBLKroete11
+*UgBLKroete12a
+		name:Größere Blase
+		icon:iconsd[16,11]
+		req:473928000000000000000000000000000000000000 Larven:earned and UgBLKroete12
+//17
+*UgBLKroeteF1a
+		name:Rückenkamm
+		icon:icons[5,5] iconsd[14,0]
+		req:UgBLKroeteF1
+*UgBLKroeteF2a
+		name:Großer Rückenkamm
+		icon:icons[5,5] iconsd[14,1] 
+		req:25 Kroete and UgBLKroeteF2
+*UgBLKroeteF3a
+		name:Hübscher Rückenkamm
+		icon:icons[5,5] iconsd[14,2]
+		req:50 Kroete and UgBLKroeteF23
+*UgBLKroeteF4a
+		name:Unterwasseratmung + 1
+		icon:icons[5,5] iconsd[14,3]
+		req:75 Kroete and UgBLKroeteF4
+*UgBLKroeteF5a
+		name:Schnellschwimmer
+		icon:icons[5,5] iconsd[14,4]
+		req:100 Kroete and UgBLKroeteF5
+*UgBLKroeteF6a
+		name:Glubschies
+		icon:icons[5,5] iconsd[14,5]
+		req:125 Kroete and UgBLKroeteF6
+*UgBLKroeteF7a
+		name:Signalfarbe
+		icon:icons[5,5] iconsd[14,6]
+		req:150 Kroete and UgBLKroeteF7
+*UgBLKroeteF8a
+		name:Große Kröte
+		icon:icons[5,5] iconsd[14,7]
+		req:175 Kroete and UgBLKroeteF8
+*UgBLKroeteF9a
+		name:Warzenreich
+		icon:icons[5,5] iconsd[14,8]
+		req:200 Kroete and UgBLKroeteF9
+*UgBLKroeteF10a
+		name:Viele Warzen
+		icon:icons[5,5] iconsd[14,9]
+		req:225 Kroete and UgBLKroeteF10
+*UgBLKroeteF11a
+		name:Große Warzen
+		icon:icons[5,5] iconsd[14,10]
+		req:250 Kroete and UgBLKroeteF11
+*UgBLKroeteF12a
+		name:Hinterfußbuddler
+		icon:icons[5,5] iconsd[14,11]
+		req:275 Kroete and UgBLKroeteF12
+*UgBLKroeteF13a
+		name:Eierträger
+		icon:icons[5,5] iconsd[14,12]
+		req:300 Kroete and UgBLKroeteF13
+*UgBLKroeteF14a
+		name:Laichsack
+		icon:icons[5,5] iconsd[14,13]
+		req:325 Kroete and UgBLKroeteF14
+*UgBLKroeteF15a
+		name:Haftscheiben + 1
+		icon:icons[5,5] iconsd[14,14]
+		req:350 Kroete and UgBLKroeteF15
 //Insekten Upgrades a
 // Upgrade Ressource Insekten	a	
 *TEMPLATE			
@@ -19237,7 +19497,113 @@ Achievements
 		name:Töpferei
 		desc:Habe 950 Töpfe
 		req:950 Topf
-		icon:iconsd[15,20]			
+		icon:iconsd[15,20]		
+//17 Kroete|Kroeten
+*BHKroete1
+		name:Frosch
+		desc:Habe eine Kröte
+		req:1 Kroete
+		icon:iconsd[18,0]
+*BHKroete2
+		name:Frogger
+		desc:Habe 19 Kröten
+		req:19 Kroete
+		icon:iconsd[18,1]
+*BHKroete3
+		name:Buntkröte
+		desc:Habe 50 Kröten
+		req:50 Kroete
+		icon:iconsd[18,2]
+*BHKroete4
+		name:Adenomus
+		desc:Habe 100 Kröten
+		req:100 Kroete
+		icon:iconsd[18,3]
+*BHKroete5
+		name:Erdkröte
+		desc:Habe 150 Kröten
+		req:150 Kroete
+		icon:iconsd[18,4]
+*BHKroete6
+		name:Wasserfrosch
+		desc:Habe 200 Kröten
+		req:200 Kroete
+		icon:iconsd[18,5]
+*BHKroete7
+		name:Knoblauchkröte
+		desc:Habe 250 Kröten
+		req:250 Kroete
+		icon:iconsd[18,6]
+*BHKroete8
+		name:Kreuzkröte
+		desc:Habe 300 Kröten
+		req:300 Kroete
+		icon:iconsd[18,7]
+*BHKroete9
+		name:Wechselkröte
+		desc:Habe 350 Kröten
+		req:350 Kroete
+		icon:iconsd[18,8]
+*BHKroete10
+		name:Laubfrosch
+		desc:Habe 400 Kröten
+		req:400 Kroete
+		icon:iconsd[18,9]
+*BHKroete11
+		name:Grasfrosch
+		desc:Habe 450 Kröten
+		req:450 Kroete
+		icon:iconsd[18,10]
+*BHKroete12
+		name:Springfrosch
+		desc:Habe 500 Kröten
+		req:500 Kroete
+		icon:iconsd[18,11]
+*BHKroete13
+		name:Giftfrosch
+		desc:Habe 550 Kröten
+		req:550 Kroete
+		icon:iconsd[18,12]
+*BHKroete14
+		name:Moorfrosch
+		desc:Habe 600 Kröten
+		req:600 Kroete
+		icon:iconsd[18,13]
+*BHKroete15
+		name:Seefrosch
+		desc:Habe 650 Kröten
+		req:650 Kroete
+		icon:iconsd[18,14]
+*BHKroete16
+		name:Alter Frosch
+		desc:Habe 700 Kröten
+		req:700 Kroete
+		icon:iconsd[18,15]
+*BHKroete17
+		name:Froschlurch
+		desc:Habe 750 Kröten
+		req:750 Kroete
+		icon:iconsd[18,16]
+*BHKroete18
+		name:Rotbauchunke
+		desc:Habe 800 Kröten
+		req:800 Kroete
+		icon:iconsd[18,17]
+*BHKroete19
+		name:Bergmolch
+		desc:Habe 850 Kröten
+		req:850 Kroete
+		icon:iconsd[18,18]
+*BHKroete20
+		name:Teichmolch
+		desc:Habe 900 Kröten
+		req:900 Kroete
+		icon:iconsd[18,19]
+*BHKroete21
+		name:Krötenreich
+		desc:Habe 950 Kröten
+		req:950 Kroete
+		icon:iconsd[18,20]			
 // Insekten achievments -----------------------------------		
 //1
 *BHAmeise1
