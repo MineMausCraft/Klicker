@@ -8603,164 +8603,135 @@ Upgrades
 		cost:724545454550000000000000000000 InsektenPanzer
 		passive:multiply yield of Skorpion by 1.75
 		req:UgBIPSkorpion9
-//10
+//11 Moskito|Moskitos
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Moskito by 1.75
+		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 *UgBIMoskito1
 		name:Moskitole
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[17,0]
 		cost:12700000000000 Insekten,3200000000000 Larven, 3150000000000 BauMaterial
-		passive:multiply yield of Moskito by 1.75
 		req:12700000000000 Insekten:earned and 1 Moskito
 *UgBIMoskito2
 		name:Nachtflügler
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[17,1]
 		cost:1270000000000000 Insekten,320000000000000 Larven, 315000000000000 BauMaterial
-		passive:multiply yield of Moskito by 1.75
 		req:1270000000000000 Insekten:earned and UgBIMoskito1
 *UgBIMoskito3
 		name:Vampier
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[17,2]
 		cost:127000000000000000 Insekten,32000000000000000 Larven, 31500000000000000 BauMaterial
-		passive:multiply yield of Moskito by 1.75
 		req:127000000000000000 Insekten:earned and UgBIMoskito2
 *UgBIMoskito4
 		name:Blutsauger
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[17,3]
 		cost:12700000000000000000 Insekten,3200000000000000000 Larven, 3150000000000000000 BauMaterial
-		passive:multiply yield of Moskito by 1.75
 		req:12700000000000000000 Insekten:earned and UgBIMoskito3
 *UgBIMoskito5
 		name:Weite Flügel
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[17,4]
 		cost:1270000000000000000000 Insekten,320000000000000000000 Larven, 315000000000000000000 BauMaterial
-		passive:multiply yield of Moskito by 1.75
 		req:1270000000000000000000 Insekten:earned and UgBIMoskito4
 *UgBIMoskito6
 		name:Schöne Flügel
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[17,5]
 		cost:127000000000000000000000 Insekten,32000000000000000000000 Larven, 31500000000000000000000 BauMaterial
-		passive:multiply yield of Moskito by 1.75
 		req:127000000000000000000000 Insekten:earned and UgBIMoskito5
 *UgBIMoskito7
 		name:Lange Flügel
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[17,6]
 		cost:12700000000000000000000000 Insekten,3200000000000000000000000 Larven, 3150000000000000000000000 BauMaterial
-		passive:multiply yield of Moskito by 1.75
 		req:12700000000000000000000000 Insekten:earned and UgBIMoskito6
 *UgBIMoskito8
 		name:Kurzer Stachel
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[17,7]
 		cost:1270000000000000000000000000 Insekten,320000000000000000000000000 Larven, 315000000000000000000000000 BauMaterial
-		passive:multiply yield of Moskito by 1.75
 		req:1270000000000000000000000000 Insekten:earned and UgBIMoskito7
 *UgBIMoskito9
 		name:Langer Stachel
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[17,8]
 		cost:127000000000000000000000000000 Insekten,32000000000000000000000000000 Larven, 31500000000000000000000000000 BauMaterial
-		passive:multiply yield of Moskito by 1.75
 		req:127000000000000000000000000000 Insekten:earned and UgBIMoskito8
 *UgBIMoskito10
 		name:Dicker Stachel
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[17,9]
 		cost:12700000000000000000000000000000 Insekten,3200000000000000000000000000000 Larven, 3150000000000000000000000000000 BauMaterial
-		passive:multiply yield of Moskito by 1.75
 		req:12700000000000000000000000000000 Insekten:earned and UgBIMoskito9
 *UgBIMoskito11
 		name:Dünner Stachel
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[17,10]
 		cost:1270000000000000000000000000000000 Insekten,320000000000000000000000000000000 Larven, 315000000000000000000000000000000 BauMaterial
-		passive:multiply yield of Moskito by 1.75
 		req:1270000000000000000000000000000000 Insekten:earned and UgBIMoskito10
 *UgBIMoskito12
 		name:Großer Mücken Stachel
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[17,11]
 		cost:127000000000000000000000000000000000 Insekten,32000000000000000000000000000000000 Larven, 31500000000000000000000000000000000 BauMaterial
-		passive:multiply yield of Moskito by 1.75
 		req:127000000000000000000000000000000000 Insekten:earned and UgBIMoskito11
-
 //11
 *UgBIPMoskito1
 		name:MoskitoPanzer I
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[0,10] icons[4,1]
 		cost:9727272727270 InsektenPanzer
-		passive:multiply yield of Moskito by 1.75
 		req:1 InsektenPanzer and 1 Moskito
 *UgBIPMoskito2
 		name:MoskitoPanzer II
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[0,10] icons[4,1]
 		cost:972727272727000 InsektenPanzer
-		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito1
 *UgBIPMoskito3
 		name:MoskitoPanzer III
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[0,10] icons[4,1]
 		cost:97272727272700000 InsektenPanzer
-		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito2
 *UgBIPMoskito4
 		name:MoskitoPanzer IV
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[0,10] icons[4,1]
 		cost:9727272727270000000 InsektenPanzer
-		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito3
 *UgBIPMoskito5
 		name:MoskitoPanzer V
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[0,10] icons[4,1]
 		cost:972727272727000000000 InsektenPanzer
-		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito4
 *UgBIPMoskito6
 		name:MoskitoPanzer VI
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[0,10] icons[4,1]
 		cost:97272727272700000000000 InsektenPanzer
-		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito5
 *UgBIPMoskito7
 		name:MoskitoPanzer VII
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[0,10] icons[4,1]
 		cost:9727272727270000000000000 InsektenPanzer
-		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito6
 *UgBIPMoskito8
 		name:MoskitoPanzer VIII
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[0,10] icons[4,1]
 		cost:972727272727000000000000000 InsektenPanzer
-		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito7
 *UgBIPMoskito9
 		name:MoskitoPanzer IX
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[0,10] icons[4,1]
 		cost:97272727272700000000000000000 InsektenPanzer
-		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito8
 *UgBIPMoskito10
 		name:MoskitoPanzer X
-		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[0,10] icons[4,1]
 		cost:9727272727270000000000000000000 InsektenPanzer
-		passive:multiply yield of Moskito by 1.75
 		req:UgBIPMoskito9
 // Schaltet insekten frei ----------------------------------------------------		
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
 //2
 *UpgITermitorium
 	name:Termitorium
