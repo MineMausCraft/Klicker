@@ -13426,11 +13426,11 @@ class:noBackground
 *UgBLTopfF5a
 		name:Pflanzendünger
 		icon:icons[5,5] iconsd[14,4]
-		req:100 Topf and UgBLTopfF45
+		req:100 Topf and UgBLTopfF5
 *UgBLTopfF6a
 		name:Nährstoffreich
 		icon:icons[5,5] iconsd[14,5]
-		req:125 Topf and UgBLTopfF56
+		req:125 Topf and UgBLTopfF6
 *UgBLTopfF7a
 		name:Regenwurm im Topf
 		icon:icons[5,5] iconsd[14,6]
