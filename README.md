@@ -13650,7 +13650,7 @@ class:noBackground
 *UgBLKroeteF3a
 		name:Hübscher Rückenkamm
 		icon:icons[5,5] iconsd[14,2]
-		req:50 Kroete and UgBLKroeteF23
+		req:50 Kroete and UgBLKroeteF3
 *UgBLKroeteF4a
 		name:Unterwasseratmung + 1
 		icon:icons[5,5] iconsd[14,3]
