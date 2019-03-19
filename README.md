@@ -37,7 +37,7 @@ Layout
     header:Buildings
     tooltip origin:left
   *upgrades
-    contains:tag:upgradesII, Upgrades
+    contains:tag:upgradesII, Upgrades, notTag:owned
     header:Upgrades
     costs:hide
     names:hide
