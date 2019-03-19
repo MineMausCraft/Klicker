@@ -1818,7 +1818,7 @@ Upgrades
 	desc:test
 	
 	cost:1 Insekt
-	if (have this) tag:owned
+	on earn:tag:owned
 	
 *TEMPLATE
 		class:noBackground
