@@ -8724,6 +8724,128 @@ Upgrades
 		icon:icons[0,10] icons[4,1]
 		cost:9727272727270000000000000000000 InsektenPanzer
 		req:UgBIPMoskito9
+//12 Willi|Willis
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Willi by 1.75
+		desc:<.> Erhöht die Produktion der Willis um <b>75</b> %.
+//178181818181820		
+*UgBIWilli1
+		name:Grün!
+		icon:iconsd[1,0]
+		cost:178181818181820 Insekten,84000000000000 Larven, 42200000000000 BauMaterial
+		req:178181818181820 Insekten:earned and 1 Willi
+*UgBIWilli2
+		name:Grüner!
+		icon:iconsd[1,1]
+		cost:17818181818182000 Insekten,8400000000000000 Larven, 4220000000000000 BauMaterial
+		req:17818181818182000 Insekten:earned and UgBIWilli1
+*UgBIWilli3
+		name:Am Grünsten!
+		icon:iconsd[1,2]
+		cost:1781818181818200000 Insekten,840000000000000000 Larven, 422000000000000000 BauMaterial
+		req:1781818181818200000 Insekten:earned and UgBIWilli2
+*UgBIWilli4
+		name:Dickere Beine
+		icon:iconsd[1,3]
+		cost:178181818181820000000 Insekten,84000000000000000000 Larven, 42200000000000000000 BauMaterial
+		req:178181818181820000000 Insekten:earned and UgBIWilli3
+*UgBIWilli5
+		name:Mehr Sprungkraft
+		icon:iconsd[1,4]
+		cost:17818181818182000000000 Insekten,8400000000000000000000 Larven, 4220000000000000000000 BauMaterial
+		req:17818181818182000000000 Insekten:earned and UgBIWilli4
+*UgBIWilli6
+		name:Schnelle Kauen
+		icon:iconsd[1,5]
+		cost:1781818181818200000000000 Insekten,840000000000000000000000 Larven, 422000000000000000000000 BauMaterial
+		req:1781818181818200000000000 Insekten:earned and UgBIWilli5
+*UgBIWilli7
+		name:Größere Augen
+		icon:iconsd[1,6]
+		cost:178181818181820000000000000 Insekten,84000000000000000000000000 Larven, 42200000000000000000000000 BauMaterial
+		req:178181818181820000000000000 Insekten:earned and UgBIWilli6
+*UgBIWilli8
+		name:Bessere Fühler
+		icon:iconsd[1,7]
+		cost:17818181818182000000000000000 Insekten,8400000000000000000000000000 Larven, 4220000000000000000000000000 BauMaterial
+		req:17818181818182000000000000000 Insekten:earned and UgBIWilli7
+*UgBIWilli9
+		name:Mehr Muskeln
+		icon:iconsd[1,8]
+		cost:1781818181818200000000000000000 Insekten,840000000000000000000000000000 Larven, 422000000000000000000000000000 BauMaterial
+		req:1781818181818200000000000000000 Insekten:earned and UgBIWilli8
+*UgBIWilli10
+		name:Bessere Beweglichkeit
+		icon:iconsd[1,9]
+		cost:178181818181820000000000000000000 Insekten,384000000000000000000000000000000 Larven, 42200000000000000000000000000000 BauMaterial
+		req:178181818181820000000000000000000 Insekten:earned and UgBIWilli9
+*UgBIWilli11
+		name:Hüpfen + 1
+		icon:iconsd[1,10]
+		cost:17818181818182000000000000000000000 Insekten,8400000000000000000000000000000000 Larven, 4220000000000000000000000000000000 BauMaterial
+		req:17818181818182000000000000000000000 Insekten:earned and UgBIWilli10
+*UgBIWilli12
+		name:Starke Füße
+		icon:iconsd[1,11]
+		cost:1781818181818200000000000000000000000 Insekten,3840000000000000000000000000000000000 Larven, 422000000000000000000000000000000000 BauMaterial
+		req:1781818181818200000000000000000000000 Insekten:earned and UgBIWilli11
+//12
+*UgBIPWilli1
+		name:WillisPanzer I
+		icon:iconsd[2,0] icons[4,1]
+		cost:9727272727270 InsektenPanzer
+		req:1 InsektenPanzer and 1 Willi
+*UgBIPWilli2
+		name:WillisPanzer II
+		icon:iconsd[2,1] icons[4,1]
+		cost:972727272727000 InsektenPanzer
+		req:UgBIPWilli1
+*UgBIPWilli3
+		name:WillisPanzer III
+		icon:iconsd[2,2] icons[4,1]
+		cost:97272727272700000 InsektenPanzer
+		req:UgBIPWilli2
+*UgBIPWilli4
+		name:WillisPanzer IV
+		icon:iconsd[2,3] icons[4,1]
+		cost:9727272727270000000 InsektenPanzer
+		req:UgBIPWilli3
+*UgBIPWilli5
+		name:WillisPanzer V
+		icon:iconsd[2,4] icons[4,1]
+		cost:972727272727000000000 InsektenPanzer
+		req:UgBIPWilli4
+*UgBIPWilli6
+		name:WillisPanzer VI
+		icon:iconsd[2,5] icons[4,1]
+		cost:97272727272700000000000 InsektenPanzer
+		req:UgBIPWilli5
+*UgBIPWilli7
+		name:WillisPanzer VII
+		icon:iconsd[2,6] icons[4,1]
+		cost:9727272727270000000000000 InsektenPanzer
+		req:UgBIPWilli6
+*UgBIPWilli8
+		name:WillisPanzer VIII
+		icon:iconsd[2,7] icons[4,1]
+		cost:972727272727000000000000000 InsektenPanzer
+		req:UgBIPWilli7
+*UgBIPWilli9
+		name:WillisPanzer IX
+		icon:iconsd[2,8] icons[4,1]
+		cost:97272727272700000000000000000 InsektenPanzer
+		req:UgBIPWilli8
+*UgBIPWilli10
+		name:WillisPanzer X
+		icon:iconsd[2,9] icons[4,1]
+		cost:9727272727270000000000000000000 InsektenPanzer
+		req:UgBIPWilli9
 // Schaltet insekten frei ----------------------------------------------------		
 *TEMPLATE
 		tag:upgrades
@@ -15453,7 +15575,7 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der Moskitos um <b>75</b> %.
 		icon:icons[17,11]
 		req:127000000000000000000000000000000000 Insekten:earned and UgBIMoskito12
-//11
+//11a
 *UgBIPMoskito1a
 		name:MoskitoPanzer I
 		desc:<.> Erhöht die Produktion der Moskitos um <b>10</b> %.
@@ -15513,131 +15635,198 @@ class:noBackground
 		desc:<.> Erhöht die Produktion der Moskitos um <b>10</b> %.
 		icon:icons[0,10] icons[4,1]
 		req:UgBIPMoskito10
-		class:noBackground		
-		
-		
+		class:noBackground
+//12 Willi|Willis a
+*TEMPLATE
+		no buy
+		tag:owned
+		desc:<.> Erhöht die Produktion der Willis um <b>75</b> %.
+*UgBIWilli1a
+		name:Grün!
+		icon:iconsd[1,0]
+		req:UgBIWilli1
+*UgBIWilli2a
+		name:Grüner!
+		icon:iconsd[1,1]
+		req:17818181818182000 Insekten:earned and UgBIWilli2
+*UgBIWilli3a
+		name:Am Grünsten!
+		icon:iconsd[1,2]
+		req:1781818181818200000 Insekten:earned and UgBIWilli3
+*UgBIWilli4a
+		name:Dickere Beine
+		icon:iconsd[1,3]
+		req:178181818181820000000 Insekten:earned and UgBIWilli4
+*UgBIWilli5a
+		name:Mehr Sprungkraft
+		icon:iconsd[1,4]
+		req:17818181818182000000000 Insekten:earned and UgBIWilli5
+*UgBIWilli6a
+		name:Schneller Kauen
+		icon:iconsd[1,5]
+		req:1781818181818200000000000 Insekten:earned and UgBIWilli6
+*UgBIWilli7a
+		name:Größere Augen
+		icon:iconsd[1,6]
+		req:178181818181820000000000000 Insekten:earned and UgBIWilli7
+*UgBIWilli8a
+		name:Bessere Fühler
+		icon:iconsd[1,7]
+		req:17818181818182000000000000000 Insekten:earned and UgBIWilli8
+*UgBIWilli9a
+		name:Mehr Muskeln
+		icon:iconsd[1,8]
+		req:1781818181818200000000000000000 Insekten:earned and UgBIWilli9
+*UgBIWilli10a
+		name:Bessere Beweglichkeit
+		icon:iconsd[1,9]
+		req:178181818181820000000000000000000 Insekten:earned and UgBIWilli10
+*UgBIWilli11a
+		name:Hüpfen + 1
+		icon:iconsd[1,10]
+		req:17818181818182000000000000000000000 Insekten:earned and UgBIWilli11
+*UgBIWilli12a
+		name:Starke Füße
+		icon:iconsd[1,11]
+		req:1781818181818200000000000000000000000 Insekten:earned and UgBIWilli12
+//12
+*UgBIPWilli1a
+		name:WillisPanzer I
+		icon:iconsd[2,0] icons[4,1]
+		req:UgBIPWilli1
+*UgBIPWilli2a
+		name:WillisPanzer II
+		icon:iconsd[2,1] icons[4,1]
+		req:UgBIPWilli2
+*UgBIPWilli3a
+		name:WillisPanzer III
+		icon:iconsd[2,2] icons[4,1]
+		req:UgBIPWilli3
+*UgBIPWilli4a
+		name:WillisPanzer IV
+		icon:iconsd[2,3] icons[4,1]
+		req:UgBIPWilli4
+*UgBIPWilli5a
+		name:WillisPanzer V
+		icon:iconsd[2,4] icons[4,1]
+		req:UgBIPWilli5
+*UgBIPWilli6a
+		name:WillisPanzer VI
+		icon:iconsd[2,5] icons[4,1]
+		req:UgBIPWilli6
+*UgBIPWilli7a
+		name:WillisPanzer VII
+		icon:iconsd[2,6] icons[4,1]
+		req:UgBIPWilli7
+*UgBIPWilli8a
+		name:WillisPanzer VIII
+		icon:iconsd[2,7] icons[4,1]
+		req:UgBIPWilli8
+*UgBIPWilli9a
+		name:WillisPanzer IX
+		icon:iconsd[2,8] icons[4,1]
+		req:UgBIPWilli9
+*UgBIPWilli10a
+		name:WillisPanzer X
+		icon:iconsd[2,9] icons[4,1]
+		req:UgBIPWilli10
 // Schaltet insekten frei a----------------------------------------------------		
-
+		class:noBackground
 //2a
 *UpgITermitoriuma
 	name:Termitorium
 	desc:Schaltet Termiten frei.
 	icon:icons[0,1] icons[4,0]
 	req:UpgITermitorium
-	class:noBackground
 //3a
 *UpgISchmeisfliegea
 	name:Schmeisfliege
 	desc:Schaltet Fliegen frei.
 	icon:icons[0,2] icons[4,0]
 	req:UpgISchmeisfliege
-	class:noBackground
 //4a
 *UpgIBuggya
 	name:Käferlinge
 	desc:Schaltet Käfer frei.
 	icon:icons[0,3] icons[4,0]
 	req:UpgIBuggy
-	class:noBackground
 //5a
 *UpgIBienenqueena
 	name:Bienenkönigin
 	desc:Schaltet Bienen frei.
 	icon:icons[0,4] icons[4,0]
 	req:UpgIBienenqueen
-	class:noBackground	
 //6a
 *UpgIRoteAmeisea
 	name:Feuerameise
 	desc:Schaltet RoteAmeisen frei.
 	icon:icons[0,5] icons[4,0]
 	req:UpgIRoteAmeise
-	class:noBackground	
 //7a		
 *UpgIGrosserBuga
 	name:Pillendreher
 	desc:Schaltet GroßeKäfer frei.
 	icon:icons[0,6]
 	req:UpgIGrosserBug
-	class:noBackground	
 //8	a
 *UpgISchmetterla
 	name:Zitronenfalter
 	desc:Schaltet Schmetterlinge frei.
 	icon:icons[0,7] icons[4,0]
 	req:UpgISchmetterl
-	class:noBackground			
 //9		a
 *UpgISchabea
 	name:Kakerlaki
 	desc:Schaltet Schabe frei.
 	icon:icons[0,8] icons[4,0]
 	req:UpgISchabe
-	class:noBackground	
 //10a
 *UpgISkoriona
 	name:Sultan Sting
 	desc:Schaltet Skorpion frei.
 	icon:icons[0,9] icons[4,0]
 	req:UpgISkorion
-	class:noBackground	
 //11a
 *UpgIMoskitoa
 	name:Stechmücke
 	desc:Schaltet Moskitos frei.
 	icon:icons[0,10] icons[4,0]
 	req:UpgIMoskito
-	class:noBackground	
 //12a
 *UpgIWillia
 	name:WilliWilli
 	desc:Schaltet GroßeKäfer frei.
 	icon:icons[0,11] icons[4,0]
 	req:UpgIWilli
-	class:noBackground	
 //13a
 *UpgILibellea
 	name:Urlibelle
 	desc:Schaltet Libellen frei.
 	icon:icons[0,12] icons[4,0]
 	req:UpgILibelle
-	class:noBackground	
 //14a
 *UpgIGluehwurma
 	name:Poleuchter
 	desc:Schaltet Glühwürmchen frei.
 	icon:icons[0,13] icons[4,0]
 	req:UpgIGluehwurm
-	class:noBackground	
 //15a
 *UpgIMistrollera
 	name:Mistkäfer
 	desc:Schaltet Mistroller frei.
 	icon:icons[0,14] icons[4,0]
 	req:UpgIMistroller
-	class:noBackground	
 //16a
 *UpgINachtfaltera
 	name:Flattermann
 	desc:Schaltet Nachtfalter frei.
 	icon:icons[0,15] icons[4,0]
 	req:UpgINachtfalter
-	class:noBackground			
-
-
-
-
-
 //BauMaterial Upgrades a ------------------------------------------------
-
-
-
-
 //Upgrades Ressource BauMaterial	a
-		
-
-		
-		
+*TEMPLATE
+		no buy
+		tag:owned
 *UgRBKiesel1a
 		name:Dacit
 		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
@@ -15743,9 +15932,6 @@ class:noBackground
 		desc:<.> Erhöht die Produktion von BauMaterial um <b>1</b> %.
 		icon:iconsa[2,20]
 		req:2500000000000000 BauMaterial:earned and UgRBKiesel21	
-		
-		
-		
 		
 *UgRBPilz1a
 		name:Fliegenpilz
@@ -20639,111 +20825,217 @@ Achievements
 		icon:iconsb[15,20]
 
 //11
-*BMoskito1
+*BHMoskito1
 		name:Ein Stecher!
 		desc:Habe einen Moskito
 		req:1 Moskito
 		icon:iconsb[16,0]
-*BMoskito2
+*BHMoskito2
 		name:Mehr Stecher!
 		desc:Habe 19 Moskitos
 		req:19 Moskito
 		icon:iconsb[16,1]
-*BMoskito3
+*BHMoskito3
 		name:Oft Gestochen!
 		desc:Habe 50 Moskitos
 		req:50 Moskito
 		icon:iconsb[16,2]
-*BMoskito4
+*BHMoskito4
 		name:Blutsauger
 		desc:Habe 100 Moskitos
 		req:100 Moskito
 		icon:iconsb[16,3]
-*BMoskito5
+*BHMoskito5
 		name:Blutarmut
 		desc:Habe 150 Moskitos
 		req:150 Moskito
 		icon:iconsb[16,4]
-*BMoskito6
+*BHMoskito6
 		name:Blutverlust
 		desc:Habe 200 Moskitos
 		req:200 Moskito
 		icon:iconsb[16,5]
-*BMoskito7
+*BHMoskito7
 		name:Es Juckt!
 		desc:Habe 250 Moskitos
 		req:250 Moskito
 		icon:iconsb[16,6]
-*BMoskito8
+*BHMoskito8
 		name:Mückenbiss
 		desc:Habe 300 Moskitos
 		req:300 Moskito
 		icon:iconsb[16,7]
-*BMoskito9
+*BHMoskito9
 		name:Blutbeutel
 		desc:Habe 350 Moskitos
 		req:350 Moskito
 		icon:iconsb[16,8]
-*BMoskito10
+*BHMoskito10
 		name:Moskitoparty
 		desc:Habe 400 Moskitos
 		req:400 Moskito
 		icon:iconsb[16,9]
-*BMoskito11
+*BHMoskito11
 		name:Moskitoschwarm
 		desc:Habe 450 Moskitos
 		req:450 Moskito
 		icon:iconsb[16,10]
-*BMoskito12
+*BHMoskito12
 		name:Moskitobündnis
 		desc:Habe 500 Moskitos
 		req:500 Moskito
 		icon:iconsb[16,11]
-*BMoskito13
+*BHMoskito13
 		name:Moskitouniversität
 		desc:Habe 550 Moskitos
 		req:550 Moskito
 		icon:iconsb[16,12]
-*BMoskito14
+*BHMoskito14
 		name:Moskitohochschule
 		desc:Habe 600 Moskitos
 		req:600 Moskito
 		icon:iconsb[16,13]
-*BMoskito15
+*BHMoskito15
 		name:Moskitogymnasium
 		desc:Habe 650 Moskitos
 		req:650 Moskito
 		icon:iconsb[16,14]
-*BMoskito16
+*BHMoskito16
 		name:Moskitoflieger
 		desc:Habe 700 Moskitos
 		req:700 Moskito
 		icon:iconsb[16,15]
-*BMoskito17
+*BHMoskito17
 		name:Moskitoüberflieger
 		desc:Habe 750 Moskitos
 		req:750 Moskito
 		icon:iconsb[16,16]
-*BMoskito18
+*BHMoskito18
 		name:Moskitositzung
 		desc:Habe 800 Moskitos
 		req:800 Moskito
 		icon:iconsb[16,17]
-*BMoskito19
+*BHMoskito19
 		name:Moskitoverband
 		desc:Habe 850 Moskitos
 		req:850 Moskito
 		icon:iconsb[16,18]
-*BMoskito20
+*BHMoskito20
 		name:Moskitovereinigung
 		desc:Habe 900 Moskitos
 		req:900 Moskito
 		icon:iconsb[16,19]
-*BMoskito21
+*BHMoskito21
 		name:Moskitoregion
 		desc:Habe 950 Moskitos
 		req:950 Moskito
 		icon:iconsb[16,20]
+//12 Willi|Willis
+*BHWilli1
+		name:Nadelholz Säbelschrecke
+		desc:Habe einen Willi
+		req:1 Willi
+		icon:iconsd[3,0]
+*BHWilli2
+		name:Laubholz Säbelschrecke
+		desc:Habe 19 Willis
+		req:19 Willi
+		icon:iconsd[3,1]
+*BHWilli3
+		name:Plumpschrecke
+		desc:Habe 50 Willis
+		req:50 Willi
+		icon:iconsd[3,2]
+*BHWilli4
+		name:Gemeine Sichelschrecke
+		desc:Habe 100 Willis
+		req:100 Willi
+		icon:iconsd[3,3]
+*BHWilli5
+		name:Wanstschrecke
+		desc:Habe 150 Willis
+		req:150 Willi
+		icon:iconsd[3,4]
+*BHWilli6
+		name:Südliche Eichenschrecke
+		desc:Habe 200 Willis
+		req:200 Willi
+		icon:iconsd[3,5]
+*BHWilli7
+		name:Schiefkopfschrecke
+		desc:Habe 250 Willis
+		req:250 Willi
+		icon:iconsd[3,6]
+*BHWilli8
+		name:Schwertschrecke
+		desc:Habe 300 Willis
+		req:300 Willi
+		icon:iconsd[3,7]
+*BHWilli9
+		name:Warzenbeißer
+		desc:Habe 350 Willis
+		req:350 Willi
+		icon:iconsd[3,8]
+*BHWilli10
+		name:Heideschrecke
+		desc:Habe 400 Willis
+		req:400 Willi
+		icon:iconsd[3,9]
+*BHWilli11
+		name:
+		desc:Habe 450 Willis
+		req:450 Willi
+		icon:iconsd[3,10]
+*BHWilli12
+		name:Sattelschrecke
+		desc:Habe 500 Willis
+		req:500 Willi
+		icon:iconsd[3,11]
+*BHWilli13
+		name:Heimchen
+		desc:Habe 550 Willis
+		req:550 Willi
+		icon:iconsd[3,12]
+*BHWilli14
+		name:Kurzflügelgrille
+		desc:Habe 600 Willis
+		req:600 Willi
+		icon:iconsd[3,13]
+*BHWilli15
+		name:Feldgrille
+		desc:Habe 650 Willis
+		req:650 Willi
+		icon:iconsd[3,14]
+*BHWilli16
+		name:Ameisengrille
+		desc:Habe 700 Willis
+		req:700 Willi
+		icon:iconsd[3,15]
+*BHWilli17
+		name:Waldgrille
+		desc:Habe 750 Willis
+		req:750 Willi
+		icon:iconsd[3,16]
+*BHWilli18
+		name:Sumpfgrille
+		desc:Habe 800 Willis
+		req:800 Willi
+		icon:iconsd[3,17]
+*BHWilli19
+		name:Zweifleckgrille
+		desc:Habe 850 Willis
+		req:850 Willi
+		icon:iconsd[3,18]
+*BHWilli20
+		name:Maulwurfsgrille
+		desc:Habe 900 Willis
+		req:900 Willi
+		icon:iconsd[3,19]
+*BHWilli21
+		name:Gebirgsschrecke
+		desc:Habe 950 Willis
+		req:950 Willi
+		icon:iconsd[3,20]			
 				
 // Baumateial Achievements -------------------------
 //1
