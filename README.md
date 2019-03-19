@@ -15,7 +15,7 @@ Settings
 	spritesheet:iconsb, 48 by 48, https://i.imgur.com/EMiAs6j.png
 	spritesheet:iconsc, 48 by 48, https://i.imgur.com/BHbzXDk.png
 	spritesheet:iconsd, 48 by 48, https://i.imgur.com/iQwfTxX.png
-	spritesheet:iconse, 48 by 48, https://i.imgur.com/JNYOOJE.png
+	spritesheet:iconse, 48 by 48, https://i.imgur.com/lRb2wUP.png
 	
 	spritesheet:iconsgr, 128 by 128, https://i.imgur.com/rIBALOu.png
 	spritesheet:iconskl, 40 by 40, https://i.imgur.com/sn7cIq5.png
@@ -769,9 +769,9 @@ Buttons
 Resources
 
 *upgradesII
-   		tag:upgradesII
-    	name:Freigeschaltet
-  		desc:[upgradesII]/900 //([((upgradesII/900)*100)]%)
+ 		tag:upgradesII
+		name:Freigeschaltet
+ 		desc:[upgradesII]/900 //([((upgradesII/900)*100)]%)
 		always hidden
 *Zeit
         name:Zeit
@@ -1811,6 +1811,13 @@ Buildings
 	
 Upgrades
 
+
+
+*test
+	name:1
+	desc:test
+	cost:1 Insekt
+	on tick:if (have this) tag:owned
 *TEMPLATE
 		class:noBackground
 		on click:anim glow
