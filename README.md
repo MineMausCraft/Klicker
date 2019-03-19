@@ -37,7 +37,7 @@ Layout
     header:Buildings
     tooltip origin:left
   *upgrades
-    contains:tag:upgradesII, Upgrades
+    contains:tag:upgradesII, Upgrades:notOwned
     header:Upgrades
     costs:hide
     names:hide
@@ -1811,15 +1811,6 @@ Buildings
 	
 Upgrades
 
-
-
-*test
-	name:1
-	desc:test
-	
-	cost:1 Insekt
-	on earn:tag:limitupgrades
-	
 *TEMPLATE
 		class:noBackground
 		on click:anim glow
