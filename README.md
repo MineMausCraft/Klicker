@@ -1816,8 +1816,10 @@ Upgrades
 *test
 	name:1
 	desc:test
+	
 	cost:1 Insekt
-	on tick:if (have this) tag:owned
+	if (have this) tag:owned
+	
 *TEMPLATE
 		class:noBackground
 		on click:anim glow
