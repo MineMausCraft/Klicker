@@ -1818,7 +1818,7 @@ Upgrades
 	desc:test
 	
 	cost:1 Insekt
-	on earn:tag:owned
+	on earn:tag:limitupgrades
 	
 *TEMPLATE
 		class:noBackground
