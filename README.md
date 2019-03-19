@@ -3124,72 +3124,72 @@ Upgrades
 		name:Schneller Sammeln
 		icon:icons[5,5] iconse[2,1]
 		cost:50 SammlerAmeisen
-		req:UgBISammlerA1
+		req:UgBISammlerAf1
 *UgBISammlerAf3
 		name:Rucksack
 		icon:icons[5,5] iconse[2,2]
 		cost:100 SammlerAmeisen
-		req:UgBISammlerA2
+		req:UgBISammlerAf2
 *UgBISammlerAf4
 		name:Tasche
 		icon:icons[5,5] iconse[2,3]
 		cost:150 SammlerAmeisen
-		req:UgBISammlerA3
+		req:UgBISammlerAf3
 *UgBISammlerAf5
 		name:Trolli
 		icon:icons[5,5] iconse[2,4]
 		cost:200 SammlerAmeisen
-		req:UgBISammlerA4
+		req:UgBISammlerAf4
 *UgBISammlerAf6
 		name:Koffer
 		icon:icons[5,5] iconse[2,5]
 		cost:250 SammlerAmeisen
-		req:UgBISammlerA5
+		req:UgBISammlerAf5
 *UgBISammlerAf7
 		name:Tüte
 		icon:icons[5,5] iconse[2,6]
 		cost:300 SammlerAmeisen
-		req:UgBISammlerA6
+		req:UgBISammlerAf6
 *UgBISammlerAf8
 		name:Handtasche
 		icon:icons[5,5] iconse[2,7]
 		cost:350 SammlerAmeisen
-		req:UgBISammlerA7
+		req:UgBISammlerAf7
 *UgBISammlerAf9
 		name:Beutel
 		icon:icons[5,5] iconse[2,8]
 		cost:400 SammlerAmeisen
-		req:UgBISammlerA8
+		req:UgBISammlerAf8
 *UgBISammlerAf10
 		name:Brusttasche
 		icon:icons[5,5] iconse[2,9]
 		cost:450 SammlerAmeisen
-		req:UgBISammlerA9
+		req:UgBISammlerAf9
 *UgBISammlerAf11
 		name:Bauchtasche
 		icon:icons[5,5] iconse[2,10]
 		cost:500 SammlerAmeisen
-		req:UgBISammlerA10
+		req:UgBISammlerAf10
 *UgBISammlerAf12
 		name:Kropf
 		icon:icons[5,5] iconse[2,11]
 		cost:550 SammlerAmeisen
-		req:UgBISammlerA11
+		req:UgBISammlerAf11
 *UgBISammlerAf13
 		name:Schubkarre
 		icon:icons[5,5] iconse[2,12]
 		cost:600 SammlerAmeisen
-		req:UgBISammlerA12
+		req:UgBISammlerAf12
 *UgBISammlerAf14
 		name:Tragekorb
 		icon:icons[5,5] iconse[2,13]
 		cost:650 SammlerAmeisen
-		req:UgBISammlerA13
+		req:UgBISammlerAf13
 *UgBISammlerAf15
 		name:Umhängetasche
 		icon:icons[5,5] iconse[2,14]
 		cost:700 SammlerAmeisen
-		req:UgBISammlerA14		
+		req:UgBISammlerAf14	
 		
 //2 SucherAmeise|SucherAmeisen
 *TEMPLATE
@@ -11258,59 +11258,59 @@ class:noBackground
 *UgBISammlerAf2a
 		name:Schneller Sammeln
 		icon:icons[5,5] iconse[2,1]
-		req:UgBISammlerA2
+		req:UgBISammlerAf2
 *UgBISammlerAf3a
 		name:Rucksack
 		icon:icons[5,5] iconse[2,2]
-		req:UgBISammlerA3
+		req:UgBISammlerAf3
 *UgBISammlerAf4a
 		name:Tasche
 		icon:icons[5,5] iconse[2,3]
-		req:UgBISammlerA4
+		req:UgBISammlerAf4
 *UgBISammlerAf5a
 		name:Trolli
 		icon:icons[5,5] iconse[2,4]
-		req:UgBISammlerA5
+		req:UgBISammlerAf5
 *UgBISammlerAf6a
 		name:Koffer
 		icon:icons[5,5] iconse[2,5]
-		req:UgBISammlerA6
+		req:UgBISammlerAf6
 *UgBISammlerAf7a
 		name:Tüte
 		icon:icons[5,5] iconse[2,6]
-		req:UgBISammlerA7
+		req:UgBISammlerAf7
 *UgBISammlerAf8a
 		name:Handtasche
 		icon:icons[5,5] iconse[2,7]
-		req:UgBISammlerA8
+		req:UgBISammlerAf8
 *UgBISammlerAf9a
 		name:Beutel
 		icon:icons[5,5] iconse[2,8]
-		req:UgBISammlerA9
+		req:UgBISammlerAf9
 *UgBISammlerAf10a
 		name:Brusttasche
 		icon:icons[5,5] iconse[2,9]
-		req:UgBISammlerA10
+		req:UgBISammlerAf10
 *UgBISammlerAf11a
 		name:Bauchtasche
 		icon:icons[5,5] iconse[2,10]
-		req:UgBISammlerA11
+		req:UgBISammlerAf11
 *UgBISammlerAf12a
 		name:Kropf
 		icon:icons[5,5] iconse[2,11]
-		req:UgBISammlerA12
+		req:UgBISammlerAf12
 *UgBISammlerAf13a
 		name:Schubkarre
 		icon:icons[5,5] iconse[2,12]
-		req:UgBISammlerA13
+		req:UgBISammlerAf13
 *UgBISammlerAf14a
 		name:Tragekorb
 		icon:icons[5,5] iconse[2,13]
-		req:UgBISammlerA14
+		req:UgBISammlerAf14
 *UgBISammlerAf15a
 		name:Umhängetasche
 		icon:icons[5,5] iconse[2,14]
-		req:UgBISammlerA15
+		req:UgBISammlerAf15
 *TEMPLATE		
 //2 SucherAmeise|SucherAmeisen a
 *TEMPLATE
