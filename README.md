@@ -1803,13 +1803,14 @@ Buildings
 	req:184391442876650000 BauMaterial:earned
 	on earn:yield 1 Erfahrung
 //--------------------------------------------------------------------------------------------------------------------
-*important
-		on tick:show :Upgrades
-		on tick:hide :Upgrades:owned
-		on tick:show tag:prestige
-		always hidden
+//*important
+//		on tick:show :Upgrades
+//		on tick:hide :Upgrades:owned
+//		on tick:show tag:prestige
+//		always hidden
 	
 Upgrades
+
 *TEMPLATE
 		class:noBackground
 		on click:anim glow
