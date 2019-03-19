@@ -10806,7 +10806,138 @@ Upgrades
 		icon:icons[5,5] iconsc[7,11]
 		cost:325 Fred
 		req:44200000000000000000000000000000 BauMaterial:earned and UgbBFredF11
+//10 Blumenbusch|Blumenbuesche
+*TEMPLATE
+		tag:upgrades
+		on tick:if (have this) hide this
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Blumenbusch by 1.75
+		desc:<.> Erhöht die Produktion der BlumenBüsche um <b>75</b> %.
+//		650000000000
+*UgbBBlumenbusch1
+		name:Mehr Laub
+		icon:iconsd[4,0]
+		cost:650000000000 BauMaterial,10 Fred
+		req:650000000000 BauMaterial:earned and 9 Blumenbusch
+*UgbBBlumenbusch2
+		name:Mehr Geäst
+		icon:iconsd[4,1]
+		cost:65000000000000 BauMaterial,20 Fred
+		req:65000000000000 BauMaterial:earned and UgbBBlumenbusch1
+*UgbBBlumenbusch3
+		name:Mehr Wurzeln
+		icon:iconsd[4,2]
+		cost:6500000000000000 BauMaterial,30 Fred
+		req:6500000000000000 BauMaterial:earned and UgbBBlumenbusch2
+*UgbBBlumenbusch4
+		name:Größerer Busch
+		icon:iconsd[4,3]
+		cost:650000000000000000 BauMaterial,40 Fred
+		req:650000000000000000 BauMaterial:earned and UgbBBlumenbusch3
+*UgbBBlumenbusch5
+		name:Schönere Blätter
+		icon:iconsd[4,4]
+		cost:65000000000000000000 BauMaterial,50 Fred
+		req:65000000000000000000 BauMaterial:earned and UgbBBlumenbusch4
+*UgbBBlumenbusch6
+		name:Mehr Blüten
+		icon:iconsd[4,5]
+		cost:6500000000000000000000 BauMaterial,75 Fred
+		req:6500000000000000000000 BauMaterial:earned and UgbBBlumenbusch5
+*UgbBBlumenbusch7
+		name:Dickerer Stamm
+		icon:iconsd[4,6]
+		cost:650000000000000000000000 BauMaterial,100 Fred
+		req:650000000000000000000000 BauMaterial:earned and UgbBBlumenbusch6
+*UgbBBlumenbusch8
+		name:Schnelleres Wachstum
+		icon:iconsd[4,7]
+		cost:65000000000000000000000000 BauMaterial,125 Fred
+		req:65000000000000000000000000 BauMaterial:earned and UgbBBlumenbusch7
+*UgbBBlumenbusch9
+		name:Wurzelwachsen
+		icon:iconsd[4,8]
+		cost:6500000000000000000000000000 BauMaterial,150 Fred
+		req:6500000000000000000000000000 BauMaterial:earned and UgbBBlumenbusch8
+*UgbBBlumenbusch10
+		name:Dichterer Busch
+		icon:iconsd[4,9]
+		cost:650000000000000000000000000000 BauMaterial,175 Fred
+		req:650000000000000000000000000000 BauMaterial:earned and UgbBBlumenbusch9
+*UgbBBlumenbusch11
+		name:Grünerer Busch
+		icon:iconsd[4,10]
+		cost:65000000000000000000000000000000 BauMaterial,200 Fred
+		req:65000000000000000000000000000000 BauMaterial:earned and UgbBBlumenbusch10
+*UgbBBlumenbusch12
+		name:Mehr Blumen
+		icon:iconsd[4,11]
+		cost:6500000000000000000000000000000000 BauMaterial,225 Fred
+		req:6500000000000000000000000000000000 BauMaterial:earned and UgbBBlumenbusch11
 
+*UgbBBlumenbuschF1
+		name:Große Blüten
+		icon:icons[5,5] iconsd[5,0]
+		cost:10 Blumenbusch
+		req:650000000000 BauMaterial:earned
+*UgbBBlumenbuschF2
+		name:Schöne Blüten
+		icon:icons[5,5] iconsd[5,1]
+		cost:50 Blumenbusch
+		req:65000000000000 BauMaterial:earned and UgbBBlumenbuschF1
+*UgbBBlumenbuschF3
+		name:Lila Blüten
+		icon:icons[5,5] iconsd[5,2]
+		cost:100 Blumenbusch
+		req:6500000000000000 BauMaterial:earned and UgbBBlumenbuschF2
+*UgbBBlumenbuschF4
+		name:Feinere Blüten
+		icon:icons[5,5] iconsd[5,3]
+		cost:125 Blumenbusch
+		req:650000000000000000 BauMaterial:earned and UgbBBlumenbuschF3
+*UgbBBlumenbuschF5
+		name:Mehr Blütenblätter
+		icon:icons[5,5] iconsd[5,4]
+		cost:150 Blumenbusch
+		req:65000000000000000000 BauMaterial:earned and UgbBBlumenbuschF4
+*UgbBBlumenbuschF6
+		name:Mehr Pollen
+		icon:icons[5,5] iconsd[5,5]
+		cost:175 Blumenbusch
+		req:6500000000000000000000 BauMaterial:earned and UgbBBlumenbuschF5
+*UgbBBlumenbuschF7
+		name:Dornen
+		icon:icons[5,5] iconsd[5,6]
+		cost:200 Blumenbusch
+		req:650000000000000000000000 BauMaterial:earned and UgbBBlumenbuschF6
+*UgbBBlumenbuschF8
+		name:Mehr Dornen
+		icon:icons[5,5] iconsd[5,7]
+		cost:225 Blumenbusch
+		req:65000000000000000000000000 BauMaterial:earned and UgbBBlumenbuschF7
+*UgbBBlumenbuschF9
+		name:Spitzere Dornen
+		icon:icons[5,5] iconsd[5,8]
+		cost:250 Blumenbusch
+		req:6500000000000000000000000000 BauMaterial:earned and UgbBBlumenbuschF8
+*UgbBBlumenbuschF10
+		name:Dichtere Blüten
+		icon:icons[5,5] iconsd[5,9]
+		cost:275 Blumenbusch
+		req:650000000000000000000000000000 BauMaterial:earned and UgbBBlumenbuschF9
+*UgbBBlumenbuschF11
+		name:Geschlossene Knospe
+		icon:icons[5,5] iconsd[5,10]
+		cost:300 Blumenbusch
+		req:65000000000000000000000000000000 BauMaterial:earned and UgbBBlumenbuschF10
+*UgbBBlumenbuschF12
+		name:Knösplein
+		icon:icons[5,5] iconsd[5,11]
+		cost:325 Blumenbusch
+		req:6500000000000000000000000000000000 BauMaterial:earned and UgbBBlumenbuschF11
 		
 *TEMPLATE
 no buy
@@ -17182,9 +17313,109 @@ class:noBackground
 		name:Drilldüsen
 		icon:icons[5,5] iconsc[7,11]
 		req:44200000000000000000000000000000 BauMaterial:earned and UgbBFredF12
+//10 Blumenbusch|Blumenbuesche a
 *TEMPLATE
+		no buy
+		tag:owned
+		desc:<.> Erhöht die Produktion der BlumenBüsche um <b>75</b> %.
+*UgbBBlumenbusch1a
+		name:Mehr Laub
+		icon:iconsd[4,0]
+		req:UgbBBlumenbusch1
+*UgbBBlumenbusch2a
+		name:Mehr Geäst
+		icon:iconsd[4,1]
+		req:65000000000000 BauMaterial:earned and UgbBBlumenbusch2
+*UgbBBlumenbusch3a
+		name:Mehr Wurzeln
+		icon:iconsd[4,2]
+		req:6500000000000000 BauMaterial:earned and UgbBBlumenbusch3
+*UgbBBlumenbusch4a
+		name:Größerer Busch
+		icon:iconsd[4,3]
+		req:650000000000000000 BauMaterial:earned and UgbBBlumenbusch4
+*UgbBBlumenbusch5a
+		name:Schönere Blätter
+		icon:iconsd[4,4]
+		req:65000000000000000000 BauMaterial:earned and UgbBBlumenbusch5
+*UgbBBlumenbusch6a
+		name:Mehr Blüten
+		icon:iconsd[4,5]
+		req:6500000000000000000000 BauMaterial:earned and UgbBBlumenbusch6
+*UgbBBlumenbusch7a
+		name:Dickerer Stamm
+		icon:iconsd[4,6]
+		req:650000000000000000000000 BauMaterial:earned and UgbBBlumenbusch7
+*UgbBBlumenbusch8a
+		name:Schnelleres Wachstum
+		icon:iconsd[4,7]
+		req:65000000000000000000000000 BauMaterial:earned and UgbBBlumenbusch8
+*UgbBBlumenbusch9a
+		name:Wurzelwachsen
+		icon:iconsd[4,8]
+		req:6500000000000000000000000000 BauMaterial:earned and UgbBBlumenbusch9
+*UgbBBlumenbusch10a
+		name:Dichterer Busch
+		icon:iconsd[4,9]
+		req:650000000000000000000000000000 BauMaterial:earned and UgbBBlumenbusch10
+*UgbBBlumenbusch11a
+		name:Grünerer Busch
+		icon:iconsd[4,10]
+		req:65000000000000000000000000000000 BauMaterial:earned and UgbBBlumenbusch11
+*UgbBBlumenbusch12a
+		name:Mehr Blumen
+		icon:iconsd[4,11]
+		req:6500000000000000000000000000000000 BauMaterial:earned and UgbBBlumenbusch12
+
+*UgbBBlumenbuschF1a
+		name:Große Blüten
+		icon:icons[5,5] iconsd[5,0]
+		req:UgbBBlumenbuschF1
+*UgbBBlumenbuschF2a
+		name:Schöne Blüten
+		icon:icons[5,5] iconsd[5,1]
+		req:65000000000000 BauMaterial:earned and UgbBBlumenbuschF2
+*UgbBBlumenbuschF3a
+		name:Lila Blüten
+		icon:icons[5,5] iconsd[5,2]
+		req:6500000000000000 BauMaterial:earned and UgbBBlumenbuschF3
+*UgbBBlumenbuschF4a
+		name:Feinere Blüten
+		icon:icons[5,5] iconsd[5,3]
+		req:650000000000000000 BauMaterial:earned and UgbBBlumenbuschF4
+*UgbBBlumenbuschF5a
+		name:Mehr Blütenblätter
+		icon:icons[5,5] iconsd[5,4]
+		req:65000000000000000000 BauMaterial:earned and UgbBBlumenbuschF5
+*UgbBBlumenbuschF6a
+		name:Mehr Pollen
+		icon:icons[5,5] iconsd[5,5]
+		req:6500000000000000000000 BauMaterial:earned and UgbBBlumenbuschF6
+*UgbBBlumenbuschF7a
+		name:Dornen
+		icon:icons[5,5] iconsd[5,6]
+		req:650000000000000000000000 BauMaterial:earned and UgbBBlumenbuschF7
+*UgbBBlumenbuschF8a
+		name:Mehr Dornen
+		icon:icons[5,5] iconsd[5,7]
+		req:65000000000000000000000000 BauMaterial:earned and UgbBBlumenbuschF8
+*UgbBBlumenbuschF9a
+		name:Spitzere Dornen
+		icon:icons[5,5] iconsd[5,8]
+		req:6500000000000000000000000000 BauMaterial:earned and UgbBBlumenbuschF9
+*UgbBBlumenbuschF10a
+		name:Dichtere Blüten
+		icon:icons[5,5] iconsd[5,9]
+		req:650000000000000000000000000000 BauMaterial:earned and UgbBBlumenbuschF10
+*UgbBBlumenbuschF11a
+		name:Geschlossene Knospe
+		icon:icons[5,5] iconsd[5,10]
+		req:65000000000000000000000000000000 BauMaterial:earned and UgbBBlumenbuschF11
+*UgbBBlumenbuschF12a
+		name:Knösplein
+		icon:icons[5,5] iconsd[5,11]
+		req:6500000000000000000000000000000000 BauMaterial:earned and UgbBBlumenbuschF12
 // Erfolge --Achievements-------------------------------------------------------------------------------			
-		
 Achievements
 	*TEMPLATE
 		on click:anim glow
@@ -20982,7 +21213,7 @@ Achievements
 		req:400 Willi
 		icon:iconsd[3,9]
 *BHWilli11
-		name:
+		name:Grashüpfer
 		desc:Habe 450 Willis
 		req:450 Willi
 		icon:iconsd[3,10]
@@ -21895,7 +22126,7 @@ Achievements
 //9 Fred
 *BHFred1
 		name:Der Wühler
-		desc:Habe einn Fred
+		desc:Habe einen Fred
 		req:1 Fred
 		icon:iconsc[8,0]
 *BHFred2
@@ -21998,3 +22229,109 @@ Achievements
 		desc:Habe 950 Fred
 		req:950 Fred
 		icon:iconsc[8,20]
+//10 Blumenbusch|Blumenbuesche
+*BHBlumenbusch1
+		name:Apfeldorn
+		desc:Habe einen Blumenbusch
+		req:1 Blumenbusch
+		icon:iconsd[6,0]
+*BHBlumenbusch2
+		name:Bartblume
+		desc:Habe 19 Blumenbüsche
+		req:19 Blumenbusch
+		icon:iconsd[6,1]
+*BHBlumenbusch3
+		name:Buchsbaum
+		desc:Habe 50 Blumenbüsche
+		req:50 Blumenbusch
+		icon:iconsd[6,2]
+*BHBlumenbusch4
+		name:Essigbaum
+		desc:Habe 100 Blumenbüsche
+		req:100 Blumenbusch
+		icon:iconsd[6,3]
+*BHBlumenbusch5
+		name:Eibe
+		desc:Habe 150 Blumenbüsche
+		req:150 Blumenbusch
+		icon:iconsd[6,4]
+*BHBlumenbusch6
+		name:Eberesche
+		desc:Habe 200 Blumenbüsche
+		req:200 Blumenbusch
+		icon:iconsd[6,5]
+*BHBlumenbusch7
+		name:Feuerdorn
+		desc:Habe 250 Blumenbüsche
+		req:250 Blumenbusch
+		icon:iconsd[6,6]
+*BHBlumenbusch8
+		name:Flieder
+		desc:Habe 300 Blumenbüsche
+		req:300 Blumenbusch
+		icon:iconsd[6,7]
+*BHBlumenbusch9
+		name:Geißblatt
+		desc:Habe 350 Blumenbüsche
+		req:350 Blumenbusch
+		icon:iconsd[6,8]
+*BHBlumenbusch10
+		name:Gewürzstrauch
+		desc:Habe 400 Blumenbüsche
+		req:400 Blumenbusch
+		icon:iconsd[6,9]
+*BHBlumenbusch11
+		name:Goldglöckchen
+		desc:Habe 450 Blumenbüsche
+		req:450 Blumenbusch
+		icon:iconsd[6,10]
+*BHBlumenbusch12
+		name:Felsenbirne
+		desc:Habe 500 Blumenbüsche
+		req:500 Blumenbusch
+		icon:iconsd[6,11]
+*BHBlumenbusch13
+		name:Holunder
+		desc:Habe 550 Blumenbüsche
+		req:550 Blumenbusch
+		icon:iconsd[6,12]
+*BHBlumenbusch14
+		name:Hortensie
+		desc:Habe 600 Blumenbüsche
+		req:600 Blumenbusch
+		icon:iconsd[6,13]
+*BHBlumenbusch15
+		name:Himbeerbusch
+		desc:Habe 650 Blumenbüsche
+		req:650 Blumenbusch
+		icon:iconsd[6,14]
+*BHBlumenbusch16
+		name:Jasmin
+		desc:Habe 700 Blumenbüsche
+		req:700 Blumenbusch
+		icon:iconsd[6,15]
+*BHBlumenbusch17
+		name:Johannisbeere
+		desc:Habe 750 Blumenbüsche
+		req:750 Blumenbusch
+		icon:iconsd[6,16]
+*BHBlumenbusch18
+		name:Kolkwitzie
+		desc:Habe 800 Blumenbüsche
+		req:800 Blumenbusch
+		icon:iconsd[6,17]
+*BHBlumenbusch19
+		name:Korallenbeere
+		desc:Habe 850 Blumenbüsche
+		req:850 Blumenbusch
+		icon:iconsd[6,18]
+*BHBlumenbusch20
+		name:Kornelkirsche
+		desc:Habe 900 Blumenbüsche
+		req:900 Blumenbusch
+		icon:iconsd[6,19]
+*BHBlumenbusch21
+		name:Lebensbaum
+		desc:Habe 950 Blumenbüsche
+		req:950 Blumenbusch
+		icon:iconsd[6,20]			
