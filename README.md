@@ -2697,7 +2697,6 @@ Upgrades
 			
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -3032,7 +3031,6 @@ Upgrades
 //1 SammlerAmeise|SammlerAmeisen
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -3195,7 +3193,6 @@ Upgrades
 //2 SucherAmeise|SucherAmeisen
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -3296,7 +3293,6 @@ Upgrades
 //2 SucherAmeise|SucherAmeisen
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -3459,7 +3455,6 @@ Upgrades
 //Larvenupgrades ---------------------------------------------------------------------------------------
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -5526,7 +5521,6 @@ Upgrades
 //10 SchneckeIvan|SchneckenIvan
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -5673,7 +5667,6 @@ Upgrades
 //11 Eimer
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -5820,7 +5813,6 @@ Upgrades
 //12 Korb|Koerbe
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -5967,7 +5959,6 @@ Upgrades
 //13 Maruscha|Maruschas
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -6114,7 +6105,6 @@ Upgrades
 //14 Gelbfisch|Gelbfische
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -6260,7 +6250,6 @@ Upgrades
 //15 Schildkroete|Schildkroeten
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -6407,7 +6396,6 @@ Upgrades
 //16 Topf|Toepfe
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -6554,7 +6542,6 @@ Upgrades
 //17 Kroete|Kroeten
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -6702,7 +6689,6 @@ Upgrades
 // Upgrade Ressource Insekten		
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -8607,7 +8593,6 @@ Upgrades
 //11 Moskito|Moskitos
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -8728,7 +8713,6 @@ Upgrades
 //12 Willi|Willis
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -8850,7 +8834,6 @@ Upgrades
 // Schaltet insekten frei ----------------------------------------------------		
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -8964,7 +8947,7 @@ Upgrades
 //Upgrades Ressource BauMaterial	
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
+		
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -10284,7 +10267,7 @@ Upgrades
 //6 AltesBuch|AlteBuecher 
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
+		
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -10415,7 +10398,7 @@ Upgrades
 //7 Karnickel 
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
+		
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -10546,7 +10529,7 @@ Upgrades
 //8 Sonnenblume|Sonnenblumen
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
+		
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -10678,7 +10661,7 @@ Upgrades
 //9 Fred|Freds
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
+		
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -10810,7 +10793,7 @@ Upgrades
 //10 Blumenbusch|Blumenbuesche
 *TEMPLATE
 		tag:upgrades
-		on tick:if (have this) hide this
+		
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
