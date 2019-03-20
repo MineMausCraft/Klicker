@@ -8780,7 +8780,6 @@ Upgrades
 		icon:iconsd[1,11]
 		cost:1781818181818200000000000000000000000 Insekten,3840000000000000000000000000000000000 Larven, 422000000000000000000000000000000000 BauMaterial
 		req:1781818181818200000000000000000000000 Insekten:earned and UgBIWilli11
-//12
 *UgBIPWilli1
 		name:WillisPanzer I
 		icon:iconsd[2,0] icons[4,1]
@@ -8831,6 +8830,126 @@ Upgrades
 		icon:iconsd[2,9] icons[4,1]
 		cost:9727272727270000000000000000000 InsektenPanzer
 		req:UgBIPWilli9
+//13 Libelle|Libellen
+*TEMPLATE
+		tag:upgrades
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Libelle by 1.75
+		desc:<.> Erhöht die Produktion der Libellen um <b>75</b> %.
+//2163636363636360		
+*UgBILibelle1
+		name:Starke Flügel
+		icon:iconse[3,0]
+		cost:2163636363636360 Insekten,1163636363636360 Larven, 663636363636360 BauMaterial
+		req:2163636363636360 Insekten:earned and 1 Libelle
+*UgBILibelle2
+		name:Weite Flügel
+		icon:iconse[3,1]
+		cost:216363636363636000 Insekten,11636363636363600 Larven, 6636363636363600 BauMaterial
+		req:216363636363636000 Insekten:earned and UgBILibelle1
+*UgBILibelle3
+		name:Schnelles Flattern
+		icon:iconse[3,2]
+		cost:21636363636363600000 Insekten,116363636363636000 Larven, 663636363636360000 BauMaterial
+		req:21636363636363600000 Insekten:earned and UgBILibelle2
+*UgBILibelle4
+		name:Besseres Sehen
+		icon:iconse[3,3]
+		cost:2163636363636360000000 Insekten,11636363636363600000 Larven, 66363636363636000000 BauMaterial
+		req:2163636363636360000000 Insekten:earned and UgBILibelle3
+*UgBILibelle5
+		name:Schneller Fliegen
+		icon:iconse[3,4]
+		cost:216363636363636000000000 Insekten,1163636363636360000000 Larven, 6636363636363600000000 BauMaterial
+		req:216363636363636000000000 Insekten:earned and UgBILibelle4
+*UgBILibelle6
+		name:Schneller Landen
+		icon:iconse[3,5]
+		cost:21636363636363600000000000 Insekten,116363636363636000000000 Larven, 663636363636360000000000 BauMaterial
+		req:21636363636363600000000000 Insekten:earned and UgBILibelle5
+*UgBILibelle7
+		name:Bessere Greifer
+		icon:iconse[3,6]
+		cost:2163636363636360000000000000 Insekten,11636363636363600000000000 Larven, 66363636363636000000000000 BauMaterial
+		req:2163636363636360000000000000 Insekten:earned and UgBILibelle6
+*UgBILibelle8
+		name:Libellig
+		icon:iconse[3,7]
+		cost:216363636363636000000000000000 Insekten,1163636363636360000000000000 Larven, 6636363636363600000000000000 BauMaterial
+		req:216363636363636000000000000000 Insekten:earned and UgBILibelle7
+*UgBILibelle9
+		name:Libellonig
+		icon:iconse[3,8]
+		cost:21636363636363600000000000000000 Insekten,116363636363636000000000000000 Larven, 663636363636360000000000000000 BauMaterial
+		req:21636363636363600000000000000000 Insekten:earned and UgBILibelle8
+*UgBILibelle10
+		name:Fühleralarm
+		icon:iconse[3,9]
+		cost:2163636363636360000000000000000000 Insekten,311636363636363600000000000000000 Larven, 66363636363636000000000000000000 BauMaterial
+		req:2163636363636360000000000000000000 Insekten:earned and UgBILibelle9
+*UgBILibelle11
+		name:Libellenfamilie
+		icon:iconse[3,10]
+		cost:216363636363636000000000000000000000 Insekten,1163636363636360000000000000000000 Larven, 6636363636363600000000000000000000 BauMaterial
+		req:216363636363636000000000000000000000 Insekten:earned and UgBILibelle10
+*UgBILibelle12
+		name:Libellensammlung
+		icon:iconse[3,11]
+		cost:21636363636363600000000000000000000000 Insekten,3116363636363636000000000000000000000 Larven, 663636363636360000000000000000000000 BauMaterial
+		req:21636363636363600000000000000000000000 Insekten:earned and UgBILibelle11
+*UgBIPLibelle1
+		name:LibellenPanzer I
+		icon:iconse[4,0] icons[4,1]
+		cost:9727272727270 InsektenPanzer
+		req:1 InsektenPanzer and 1 Libelle
+*UgBIPLibelle2
+		name:LibellenPanzer II
+		icon:iconse[4,1] icons[4,1]
+		cost:972727272727000 InsektenPanzer
+		req:UgBIPLibelle1
+*UgBIPLibelle3
+		name:LibellenPanzer III
+		icon:iconse[4,2] icons[4,1]
+		cost:97272727272700000 InsektenPanzer
+		req:UgBIPLibelle2
+*UgBIPLibelle4
+		name:LibellenPanzer IV
+		icon:iconse[4,3] icons[4,1]
+		cost:9727272727270000000 InsektenPanzer
+		req:UgBIPLibelle3
+*UgBIPLibelle5
+		name:LibellenPanzer V
+		icon:iconse[4,4] icons[4,1]
+		cost:972727272727000000000 InsektenPanzer
+		req:UgBIPLibelle4
+*UgBIPLibelle6
+		name:LibellenPanzer VI
+		icon:iconse[4,5] icons[4,1]
+		cost:97272727272700000000000 InsektenPanzer
+		req:UgBIPLibelle5
+*UgBIPLibelle7
+		name:LibellenPanzer VII
+		icon:iconse[4,6] icons[4,1]
+		cost:9727272727270000000000000 InsektenPanzer
+		req:UgBIPLibelle6
+*UgBIPLibelle8
+		name:LibellenPanzer VIII
+		icon:iconse[4,7] icons[4,1]
+		cost:972727272727000000000000000 InsektenPanzer
+		req:UgBIPLibelle7
+*UgBIPLibelle9
+		name:LibellenPanzer IX
+		icon:iconse[4,8] icons[4,1]
+		cost:97272727272700000000000000000 InsektenPanzer
+		req:UgBIPLibelle8
+*UgBIPLibelle10
+		name:LibellenPanzer X
+		icon:iconse[4,9] icons[4,1]
+		cost:9727272727270000000000000000000 InsektenPanzer
+		req:UgBIPLibelle9
 // Schaltet insekten frei ----------------------------------------------------		
 *TEMPLATE
 		tag:upgrades
@@ -8943,11 +9062,11 @@ Upgrades
 	icon:icons[5,5] icons[0,15] icons[4,0]
 	cost:10 Banane,5 CreepyTree
 	req:UpgIMistroller
+	
 //BauMaterial Upgrades-----------------------------------------------------------------------------------
 //Upgrades Ressource BauMaterial	
 *TEMPLATE
 		tag:upgrades
-		
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
@@ -15804,7 +15923,6 @@ class:noBackground
 		name:Starke Füße
 		icon:iconsd[1,11]
 		req:1781818181818200000000000000000000000 Insekten:earned and UgBIWilli12
-//12
 *UgBIPWilli1a
 		name:WillisPanzer I
 		icon:iconsd[2,0] icons[4,1]
@@ -15845,7 +15963,104 @@ class:noBackground
 		name:WillisPanzer X
 		icon:iconsd[2,9] icons[4,1]
 		req:UgBIPWilli10
+//13 Libelle|Libellen a
+*TEMPLATE
+		no buy
+		tag:owned
+		class:noBackground
+		desc:<.> Erhöht die Produktion der Libellen um <b>75</b> %.
+*UgBILibelle1a
+		name:Starke Flügel
+		icon:iconse[3,0]
+		req:UgBILibelle1
+*UgBILibelle2a
+		name:Weite Flügel
+		icon:iconse[3,1]
+		req:216363636363636000 Insekten:earned and UgBILibelle2
+*UgBILibelle3a
+		name:Schnelles Flattern
+		icon:iconse[3,2]
+		req:21636363636363600000 Insekten:earned and UgBILibelle3
+*UgBILibelle4a
+		name:Besseres Sehen
+		icon:iconse[3,3]
+		req:2163636363636360000000 Insekten:earned and UgBILibelle4
+*UgBILibelle5a
+		name:Schneller Fliegen
+		icon:iconse[3,4]
+		req:216363636363636000000000 Insekten:earned and UgBILibelle5
+*UgBILibelle6a
+		name:Schneller Landen
+		icon:iconse[3,5]
+		req:21636363636363600000000000 Insekten:earned and UgBILibelle6
+*UgBILibelle7a
+		name:Bessere Greifer
+		icon:iconse[3,6]
+		req:2163636363636360000000000000 Insekten:earned and UgBILibelle7
+*UgBILibelle8a
+		name:Libellig
+		icon:iconse[3,7]
+		req:216363636363636000000000000000 Insekten:earned and UgBILibelle8
+*UgBILibelle9a
+		name:Libellonig
+		icon:iconse[3,8]
+		req:21636363636363600000000000000000 Insekten:earned and UgBILibelle9
+*UgBILibelle10a
+		name:Fühleralarm
+		icon:iconse[3,9]
+		req:2163636363636360000000000000000000 Insekten:earned and UgBILibelle10
+*UgBILibelle11a
+		name:Libellenfamilie
+		icon:iconse[3,10]
+		req:216363636363636000000000000000000000 Insekten:earned and UgBILibelle11
+*UgBILibelle12a
+		name:Libellensammlung
+		icon:iconse[3,11]
+		req:21636363636363600000000000000000000000 Insekten:earned and UgBILibelle12
+*UgBIPLibelle1a
+		name:LibellenPanzer I
+		icon:iconse[4,0] icons[4,1]
+		req:UgBIPLibelle1
+*UgBIPLibelle2a
+		name:LibellenPanzer II
+		icon:iconse[4,1] icons[4,1]
+		req:UgBIPLibelle2
+*UgBIPLibelle3a
+		name:LibellenPanzer III
+		icon:iconse[4,2] icons[4,1]
+		req:UgBIPLibelle3
+*UgBIPLibelle4a
+		name:LibellenPanzer IV
+		icon:iconse[4,3] icons[4,1]
+		req:UgBIPLibelle4
+*UgBIPLibelle5a
+		name:LibellenPanzer V
+		icon:iconse[4,4] icons[4,1]
+		req:UgBIPLibelle5
+*UgBIPLibelle6a
+		name:LibellenPanzer VI
+		icon:iconse[4,5] icons[4,1]
+		req:UgBIPLibelle6
+*UgBIPLibelle7a
+		name:LibellenPanzer VII
+		icon:iconse[4,6] icons[4,1]
+		req:UgBIPLibelle7
+*UgBIPLibelle8a
+		name:LibellenPanzer VIII
+		icon:iconse[4,7] icons[4,1]
+		req:UgBIPLibelle8
+*UgBIPLibelle9a
+		name:LibellenPanzer IX
+		icon:iconse[4,8] icons[4,1]
+		req:UgBIPLibelle9
+*UgBIPLibelle10a
+		name:LibellenPanzer X
+		icon:iconse[4,9] icons[4,1]
+		req:UgBIPLibelle10
 // Schaltet insekten frei a----------------------------------------------------		
+*TEMPLATE
+		no buy
+		tag:owned
 		class:noBackground
 //2a
 *UpgITermitoriuma
@@ -21250,7 +21465,113 @@ Achievements
 		name:Gebirgsschrecke
 		desc:Habe 950 Willis
 		req:950 Willi
-		icon:iconsd[3,20]			
+		icon:iconsd[3,20]
+//13 Libelle|Libellen 
+*BHLibelle1
+		name:Schlanklibelle
+		desc:Habe eine Libelle
+		req:1 Libelle
+		icon:iconse[5,0]
+*BHLibelle2
+		name:Federlibelle
+		desc:Habe 19 Libellen
+		req:19 Libelle
+		icon:iconse[5,1]
+*BHLibelle3
+		name:Teichjungfer
+		desc:Habe 50 Libellen
+		req:50 Libelle
+		icon:iconse[5,2]
+*BHLibelle4
+		name:Prachtlibelle
+		desc:Habe 100 Libellen
+		req:100 Libelle
+		icon:iconse[5,3]
+*BHLibelle5
+		name:Edellibelle
+		desc:Habe 150 Libellen
+		req:150 Libelle
+		icon:iconse[5,4]
+*BHLibelle6
+		name:Flussjungfer
+		desc:Habe 200 Libellen
+		req:200 Libelle
+		icon:iconse[5,5]
+*BHLibelle7
+		name:Quellenjungfer
+		desc:Habe 250 Libellen
+		req:250 Libelle
+		icon:iconse[5,6]
+*BHLibelle8
+		name:Falkenlibelle
+		desc:Habe 300 Libellen
+		req:300 Libelle
+		icon:iconse[5,7]
+*BHLibelle9
+		name:Segellibelle
+		desc:Habe 350 Libellen
+		req:350 Libelle
+		icon:iconse[5,8]
+*BHLibelle10
+		name:
+		desc:Habe 400 Libellen
+		req:400 Libelle
+		icon:iconse[5,9]
+*BHLibelle11
+		name:zarte Rubinjungfer
+		desc:Habe 450 Libellen
+		req:450 Libelle
+		icon:iconse[5,10]
+*BHLibelle12
+		name:Sper Azurjungfer
+		desc:Habe 500 Libellen
+		req:500 Libelle
+		icon:iconse[5,11]
+*BHLibelle13
+		name:Saphirauge
+		desc:Habe 550 Libellen
+		req:550 Libelle
+		icon:iconse[5,12]
+*BHLibelle14
+		name:Kleines Granatauge
+		desc:Habe 600 Libellen
+		req:600 Libelle
+		icon:iconse[5,13]
+*BHLibelle15
+		name:Geisterlibelle
+		desc:Habe 650 Libellen
+		req:650 Libelle
+		icon:iconse[5,14]
+*BHLibelle16
+		name:Zweifleck
+		desc:Habe 700 Libellen
+		req:700 Libelle
+		icon:iconse[5,15]
+*BHLibelle17
+		name:Gekielte Flussfalke
+		desc:Habe 750 Libellen
+		req:750 Libelle
+		icon:iconse[5,16]
+*BHLibelle18
+		name:Plattbauch
+		desc:Habe 800 Libellen
+		req:800 Libelle
+		icon:iconse[5,17]
+*BHLibelle19
+		name:Spitzenfleck
+		desc:Habe 850 Libellen
+		req:850 Libelle
+		icon:iconse[5,18]
+*BHLibelle20
+		name:Heidelibelle
+		desc:Habe 900 Libellen
+		req:900 Libelle
+		icon:iconse[5,19]
+*BHLibelle21
+		name:Große Quelljungfer
+		desc:Habe 950 Libellen
+		req:950 Libelle
+		icon:iconse[5,20]					
 				
 // Baumateial Achievements -------------------------
 //1
