@@ -1617,8 +1617,8 @@ Buildings
 	on tick:lose 12887574 BauMaterial
 	on earn:yield 1 Erfahrung
 //14
-*Gluehwurm|Gluehwuermchen
-    name:Glühwurm|Glühwürmchen
+*Gluehwurm|Gluehwuermer
+    name:Glühwurm|Glühwürmer
     desc:Möge es dir ein Licht sein an dunklen Orten, wenn alle anderen Lichter ausgehen.<//><b><.></b> Produziert <b>2397559574</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Gluehwurm*2397559574]</b> /Ips <//><.> Verbrauch: <b>85256259</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[Gluehwurm*85256259]</b>/Bps
     icon:icons[0,13]
     cost:2672727272727270 Insekten,1336363636363640 Larven,668181818181818 BauMaterial
@@ -8783,52 +8783,52 @@ Upgrades
 *UgBIPWilli1
 		name:WillisPanzer I
 		icon:iconsd[2,0] icons[4,1]
-		cost:9727272727270 InsektenPanzer
+		cost:97272727272700 InsektenPanzer
 		req:1 InsektenPanzer and 1 Willi
 *UgBIPWilli2
 		name:WillisPanzer II
 		icon:iconsd[2,1] icons[4,1]
-		cost:972727272727000 InsektenPanzer
+		cost:9727272727270000 InsektenPanzer
 		req:UgBIPWilli1
 *UgBIPWilli3
 		name:WillisPanzer III
 		icon:iconsd[2,2] icons[4,1]
-		cost:97272727272700000 InsektenPanzer
+		cost:972727272727000000 InsektenPanzer
 		req:UgBIPWilli2
 *UgBIPWilli4
 		name:WillisPanzer IV
 		icon:iconsd[2,3] icons[4,1]
-		cost:9727272727270000000 InsektenPanzer
+		cost:97272727272700000000 InsektenPanzer
 		req:UgBIPWilli3
 *UgBIPWilli5
 		name:WillisPanzer V
 		icon:iconsd[2,4] icons[4,1]
-		cost:972727272727000000000 InsektenPanzer
+		cost:9727272727270000000000 InsektenPanzer
 		req:UgBIPWilli4
 *UgBIPWilli6
 		name:WillisPanzer VI
 		icon:iconsd[2,5] icons[4,1]
-		cost:97272727272700000000000 InsektenPanzer
+		cost:972727272727000000000000 InsektenPanzer
 		req:UgBIPWilli5
 *UgBIPWilli7
 		name:WillisPanzer VII
 		icon:iconsd[2,6] icons[4,1]
-		cost:9727272727270000000000000 InsektenPanzer
+		cost:97272727272700000000000000 InsektenPanzer
 		req:UgBIPWilli6
 *UgBIPWilli8
 		name:WillisPanzer VIII
 		icon:iconsd[2,7] icons[4,1]
-		cost:972727272727000000000000000 InsektenPanzer
+		cost:9727272727270000000000000000 InsektenPanzer
 		req:UgBIPWilli7
 *UgBIPWilli9
 		name:WillisPanzer IX
 		icon:iconsd[2,8] icons[4,1]
-		cost:97272727272700000000000000000 InsektenPanzer
+		cost:972727272727000000000000000000 InsektenPanzer
 		req:UgBIPWilli8
 *UgBIPWilli10
 		name:WillisPanzer X
 		icon:iconsd[2,9] icons[4,1]
-		cost:9727272727270000000000000000000 InsektenPanzer
+		cost:97272727272700000000000000000000 InsektenPanzer
 		req:UgBIPWilli9
 //13 Libelle|Libellen
 *TEMPLATE
@@ -8903,53 +8903,173 @@ Upgrades
 *UgBIPLibelle1
 		name:LibellenPanzer I
 		icon:iconse[4,0] icons[4,1]
-		cost:9727272727270 InsektenPanzer
+		cost:972727272727000 InsektenPanzer
 		req:1 InsektenPanzer and 1 Libelle
 *UgBIPLibelle2
 		name:LibellenPanzer II
 		icon:iconse[4,1] icons[4,1]
-		cost:972727272727000 InsektenPanzer
+		cost:97272727272700000 InsektenPanzer
 		req:UgBIPLibelle1
 *UgBIPLibelle3
 		name:LibellenPanzer III
 		icon:iconse[4,2] icons[4,1]
-		cost:97272727272700000 InsektenPanzer
+		cost:9727272727270000000 InsektenPanzer
 		req:UgBIPLibelle2
 *UgBIPLibelle4
 		name:LibellenPanzer IV
 		icon:iconse[4,3] icons[4,1]
-		cost:9727272727270000000 InsektenPanzer
+		cost:972727272727000000000 InsektenPanzer
 		req:UgBIPLibelle3
 *UgBIPLibelle5
 		name:LibellenPanzer V
 		icon:iconse[4,4] icons[4,1]
-		cost:972727272727000000000 InsektenPanzer
+		cost:97272727272700000000000 InsektenPanzer
 		req:UgBIPLibelle4
 *UgBIPLibelle6
 		name:LibellenPanzer VI
 		icon:iconse[4,5] icons[4,1]
-		cost:97272727272700000000000 InsektenPanzer
+		cost:9727272727270000000000000 InsektenPanzer
 		req:UgBIPLibelle5
 *UgBIPLibelle7
 		name:LibellenPanzer VII
 		icon:iconse[4,6] icons[4,1]
-		cost:9727272727270000000000000 InsektenPanzer
+		cost:972727272727000000000000000 InsektenPanzer
 		req:UgBIPLibelle6
 *UgBIPLibelle8
 		name:LibellenPanzer VIII
 		icon:iconse[4,7] icons[4,1]
-		cost:972727272727000000000000000 InsektenPanzer
+		cost:97272727272700000000000000000 InsektenPanzer
 		req:UgBIPLibelle7
 *UgBIPLibelle9
 		name:LibellenPanzer IX
 		icon:iconse[4,8] icons[4,1]
-		cost:97272727272700000000000000000 InsektenPanzer
+		cost:9727272727270000000000000000000 InsektenPanzer
 		req:UgBIPLibelle8
 *UgBIPLibelle10
 		name:LibellenPanzer X
 		icon:iconse[4,9] icons[4,1]
-		cost:9727272727270000000000000000000 InsektenPanzer
+		cost:972727272727000000000000000000000 InsektenPanzer
 		req:UgBIPLibelle9
+//14 Gluehwurm|Gluehwuermer
+*TEMPLATE
+		tag:upgrades
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Gluehwurm by 1.75
+		desc:<.> Erhöht die Produktion der Glühwürmer um <b>75</b> %.
+//2672727272727270	
+*UgBIGluehwurm1
+		name:Dickerer Po
+		icon:iconse[6,0]
+		cost:26727272727272700 Insekten,13636363636363600 Larven, 6636363636363600 BauMaterial
+		req:26727272727272700 Insekten:earned and 1 Gluehwurm
+*UgBIGluehwurm2
+		name:Mehr Leuchten
+		icon:iconse[6,1]
+		cost:2672727272727270000 Insekten,136363636363636000 Larven, 66363636363636000 BauMaterial
+		req:2672727272727270000 Insekten:earned and UgBIGluehwurm1
+*UgBIGluehwurm3
+		name:Schnelleres Einschalten
+		icon:iconse[6,2]
+		cost:267272727272727000000 Insekten,1363636363636360000 Larven, 6636363636363600000 BauMaterial
+		req:267272727272727000000 Insekten:earned and UgBIGluehwurm2
+*UgBIGluehwurm4
+		name:Schnelleres Dimmen
+		icon:iconse[6,3]
+		cost:26727272727272700000000 Insekten,136363636363636000000 Larven, 663636363636360000000 BauMaterial
+		req:26727272727272700000000 Insekten:earned and UgBIGluehwurm3
+*UgBIGluehwurm5
+		name:Schneller Fliegen
+		icon:iconse[6,4]
+		cost:2672727272727270000000000 Insekten,13636363636363600000000 Larven, 66363636363636000000000 BauMaterial
+		req:2672727272727270000000000 Insekten:earned and UgBIGluehwurm4
+*UgBIGluehwurm6
+		name:Würmlein
+		icon:iconse[6,5]
+		cost:267272727272727000000000000 Insekten,1363636363636360000000000 Larven, 6636363636363600000000000 BauMaterial
+		req:267272727272727000000000000 Insekten:earned and UgBIGluehwurm5
+*UgBIGluehwurm7
+		name:Würmchen
+		icon:iconse[6,6]
+		cost:26727272727272700000000000000 Insekten,136363636363636000000000000 Larven, 663636363636360000000000000 BauMaterial
+		req:26727272727272700000000000000 Insekten:earned and UgBIGluehwurm6
+*UgBIGluehwurm8
+		name:Glühchen
+		icon:iconse[6,7]
+		cost:2672727272727270000000000000000 Insekten,13636363636363600000000000000 Larven, 66363636363636000000000000000 BauMaterial
+		req:2672727272727270000000000000000 Insekten:earned and UgBIGluehwurm7
+*UgBIGluehwurm9
+		name:Glühweiter
+		icon:iconse[6,8]
+		cost:267272727272727000000000000000000 Insekten,1363636363636360000000000000000 Larven, 6636363636363600000000000000000 BauMaterial
+		req:267272727272727000000000000000000 Insekten:earned and UgBIGluehwurm8
+*UgBIGluehwurm10
+		name:Würmchen im Glas
+		icon:iconse[6,9]
+		cost:26727272727272700000000000000000000 Insekten,3136363636363636000000000000000000 Larven, 663636363636360000000000000000000 BauMaterial
+		req:26727272727272700000000000000000000 Insekten:earned and UgBIGluehwurm9
+*UgBIGluehwurm11
+		name:Glühen
+		icon:iconse[6,10]
+		cost:2672727272727270000000000000000000000 Insekten,13636363636363600000000000000000000 Larven, 66363636363636000000000000000000000 BauMaterial
+		req:2672727272727270000000000000000000000 Insekten:earned and UgBIGluehwurm10
+*UgBIGluehwurm12
+		name:Glühtum
+		icon:iconse[6,11]
+		cost:267272727272727000000000000000000000000 Insekten,31363636363636360000000000000000000000 Larven, 6636363636363600000000000000000000000 BauMaterial
+		req:267272727272727000000000000000000000000 Insekten:earned and UgBIGluehwurm11
+*UgBIPGluehwurm1
+		name:GlühwurmPanzer I
+		icon:iconse[7,0] icons[4,1]
+		cost:8521566527270000 InsektenPanzer
+		req:1 InsektenPanzer and 1 Gluehwurm
+*UgBIPGluehwurm2
+		name:GlühwurmPanzer II
+		icon:iconse[7,1] icons[4,1]
+		cost:852156652727000000 InsektenPanzer
+		req:UgBIPGluehwurm1
+*UgBIPGluehwurm3
+		name:GlühwurmPanzer III
+		icon:iconse[7,2] icons[4,1]
+		cost:85215665272700000000 InsektenPanzer
+		req:UgBIPGluehwurm2
+*UgBIPGluehwurm4
+		name:GlühwurmPanzer IV
+		icon:iconse[7,3] icons[4,1]
+		cost:8521566527270000000000 InsektenPanzer
+		req:UgBIPGluehwurm3
+*UgBIPGluehwurm5
+		name:GlühwurmPanzer V
+		icon:iconse[7,4] icons[4,1]
+		cost:852156652727000000000000 InsektenPanzer
+		req:UgBIPGluehwurm4
+*UgBIPGluehwurm6
+		name:GlühwurmPanzer VI
+		icon:iconse[7,5] icons[4,1]
+		cost:85215665272700000000000000 InsektenPanzer
+		req:UgBIPGluehwurm5
+*UgBIPGluehwurm7
+		name:GlühwurmPanzer VII
+		icon:iconse[7,6] icons[4,1]
+		cost:8521566527270000000000000000 InsektenPanzer
+		req:UgBIPGluehwurm6
+*UgBIPGluehwurm8
+		name:GlühwurmPanzer VIII
+		icon:iconse[7,7] icons[4,1]
+		cost:852156652727000000000000000000 InsektenPanzer
+		req:UgBIPGluehwurm7
+*UgBIPGluehwurm9
+		name:GlühwurmPanzer IX
+		icon:iconse[7,8] icons[4,1]
+		cost:85215665272700000000000000000000 InsektenPanzer
+		req:UgBIPGluehwurm8
+*UgBIPGluehwurm10
+		name:GlühwurmPanzer X
+		icon:iconse[7,9] icons[4,1]
+		cost:8521566527270000000000000000000000 InsektenPanzer
+		req:UgBIPGluehwurm9
 // Schaltet insekten frei ----------------------------------------------------		
 *TEMPLATE
 		tag:upgrades
@@ -13489,7 +13609,6 @@ class:noBackground
 		tag:owned
 		class:noBackground
 		desc:<.> Erhöht die Produktion der Maruschas um <b>75</b> %.
-
 *UgBLMaruscha1a
 		name:Stärkere Scheren
 		icon:iconsc[19,0]
@@ -16057,6 +16176,101 @@ class:noBackground
 		name:LibellenPanzer X
 		icon:iconse[4,9] icons[4,1]
 		req:UgBIPLibelle10
+//14 Gluehwurm|Gluehwuermer a
+*TEMPLATE
+		no buy
+		tag:owned
+		class:noBackground
+		desc:<.> Erhöht die Produktion der Glühwürmer um <b>75</b> %.
+*UgBIGluehwurm1a
+		name:Dickerer Po
+		icon:iconse[6,0]
+		req:UgBIGluehwurm1
+*UgBIGluehwurm2a
+		name:Mehr Leuchten
+		icon:iconse[6,1]
+		req:2672727272727270000 Insekten:earned and UgBIGluehwurm2
+*UgBIGluehwurm3a
+		name:Schnelleres Einschalten
+		icon:iconse[6,2]
+		req:267272727272727000000 Insekten:earned and UgBIGluehwurm3
+*UgBIGluehwurm4a
+		name:Schnelleres Dimmen
+		icon:iconse[6,3]
+		req:26727272727272700000000 Insekten:earned and UgBIGluehwurm4
+*UgBIGluehwurm5a
+		name:Schneller Fliegen
+		icon:iconse[6,4]
+		req:2672727272727270000000000 Insekten:earned and UgBIGluehwurm5
+*UgBIGluehwurm6a
+		name:Würmlein
+		icon:iconse[6,5]
+		req:267272727272727000000000000 Insekten:earned and UgBIGluehwurm6
+*UgBIGluehwurm7a
+		name:Würmchen
+		icon:iconse[6,6]
+		req:26727272727272700000000000000 Insekten:earned and UgBIGluehwurm7
+*UgBIGluehwurm8a
+		name:Glühchen
+		icon:iconse[6,7]
+		req:2672727272727270000000000000000 Insekten:earned and UgBIGluehwurm8
+*UgBIGluehwurm9a
+		name:Glühweiter
+		icon:iconse[6,8]
+		req:267272727272727000000000000000000 Insekten:earned and UgBIGluehwurm9
+*UgBIGluehwurm10a
+		name:Würmchen im Glas
+		icon:iconse[6,9]
+		req:26727272727272700000000000000000000 Insekten:earned and UgBIGluehwurm10
+*UgBIGluehwurm11a
+		name:Glühen
+		icon:iconse[6,10]
+		req:2672727272727270000000000000000000000 Insekten:earned and UgBIGluehwurm11
+*UgBIGluehwurm12a
+		name:Glühtum
+		icon:iconse[6,11]
+		req:267272727272727000000000000000000000000 Insekten:earned and UgBIGluehwurm12
+*UgBIPGluehwurm1a
+		name:GlühwurmPanzer I
+		icon:iconse[7,0] icons[4,1]
+		req:UgBIPGluehwurm1
+*UgBIPGluehwurm2a
+		name:GlühwurmPanzer II
+		icon:iconse[7,1] icons[4,1]
+		req:UgBIPGluehwurm2
+*UgBIPGluehwurm3a
+		name:GlühwurmPanzer III
+		icon:iconse[7,2] icons[4,1]
+		req:UgBIPGluehwurm3
+*UgBIPGluehwurm4a
+		name:GlühwurmPanzer IV
+		icon:iconse[7,3] icons[4,1]
+		req:UgBIPGluehwurm4
+*UgBIPGluehwurm5a
+		name:GlühwurmPanzer V
+		icon:iconse[7,4] icons[4,1]
+		req:UgBIPGluehwurm5
+*UgBIPGluehwurm6a
+		name:GlühwurmPanzer VI
+		icon:iconse[7,5] icons[4,1]
+		req:UgBIPGluehwurm6
+*UgBIPGluehwurm7a
+		name:GlühwurmPanzer VII
+		icon:iconse[7,6] icons[4,1]
+		req:UgBIPGluehwurm7
+*UgBIPGluehwurm8a
+		name:GlühwurmPanzer VIII
+		icon:iconse[7,7] icons[4,1]
+		req:UgBIPGluehwurm8
+*UgBIPGluehwurm9a
+		name:GlühwurmPanzer IX
+		icon:iconse[7,8] icons[4,1]
+		req:UgBIPGluehwurm9
+*UgBIPGluehwurm10a
+		name:GlühwurmPanzer X
+		icon:iconse[7,9] icons[4,1]
+		req:UgBIPGluehwurm10
+*TEMPLATE				
 // Schaltet insekten frei a----------------------------------------------------		
 *TEMPLATE
 		no buy
@@ -21513,7 +21727,7 @@ Achievements
 		req:350 Libelle
 		icon:iconse[5,8]
 *BHLibelle10
-		name:
+		name:Schöne Libelle
 		desc:Habe 400 Libellen
 		req:400 Libelle
 		icon:iconse[5,9]
@@ -21571,7 +21785,113 @@ Achievements
 		name:Große Quelljungfer
 		desc:Habe 950 Libellen
 		req:950 Libelle
-		icon:iconse[5,20]					
+		icon:iconse[5,20]	
+//14 Gluehwurm|Gluehwuermer 
+*BHGluehwurm1
+		name:Glüher
+		desc:Habe einen Glühwurm
+		req:1 Gluehwurm
+		icon:iconse[8,0]
+*BHGluehwurm2
+		name:Leuchten
+		desc:Habe 19 Glühwürmer
+		req:19 Gluehwurm
+		icon:iconse[8,1]
+*BHGluehwurm3
+		name:Ein Licht in Der Dunkelheit
+		desc:Habe 50 Glühwürmer
+		req:50 Gluehwurm
+		icon:iconse[8,2]
+*BHGluehwurm4
+		name:Glimmen
+		desc:Habe 100 Glühwürmer
+		req:100 Gluehwurm
+		icon:iconse[8,3]
+*BHGluehwurm5
+		name:Scheinen
+		desc:Habe 150 Glühwürmer
+		req:150 Gluehwurm
+		icon:iconse[8,4]
+*BHGluehwurm6
+		name:So Hell
+		desc:Habe 200 Glühwürmer
+		req:200 Gluehwurm
+		icon:iconse[8,5]
+*BHGluehwurm7
+		name:Leuchtkäfer
+		desc:Habe 250 Glühwürmer
+		req:250 Gluehwurm
+		icon:iconse[8,6]
+*BHGluehwurm8
+		name:Großes Glühwürmchen
+		desc:Habe 300 Glühwürmer
+		req:300 Gluehwurm
+		icon:iconse[8,7]
+*BHGluehwurm9
+		name:Italienischer Leuchtkäfer
+		desc:Habe 350 Glühwürmer
+		req:350 Gluehwurm
+		icon:iconse[8,8]
+*BHGluehwurm10
+		name:Kurzflügel Leuchtkäfer
+		desc:Habe 400 Glühwürmer
+		req:400 Gluehwurm
+		icon:iconse[8,9]
+*BHGluehwurm11
+		name:Lampyridae
+		desc:Habe 450 Glühwürmer
+		req:450 Gluehwurm
+		icon:iconse[8,10]
+*BHGluehwurm12
+		name:Glühbirne
+		desc:Habe 500 Glühwürmer
+		req:500 Gluehwurm
+		icon:iconse[8,11]
+*BHGluehwurm13
+		name:Deckenleuchte
+		desc:Habe 550 Glühwürmer
+		req:550 Gluehwurm
+		icon:iconse[8,12]
+*BHGluehwurm14
+		name:Straßenleuchte
+		desc:Habe 600 Glühwürmer
+		req:600 Gluehwurm
+		icon:iconse[8,13]
+*BHGluehwurm15
+		name:Wurmleuchten
+		desc:Habe 650 Glühwürmer
+		req:650 Gluehwurm
+		icon:iconse[8,14]
+*BHGluehwurm16
+		name:Glühkerze
+		desc:Habe 700 Glühwürmer
+		req:700 Gluehwurm
+		icon:iconse[8,15]
+*BHGluehwurm17
+		name:Glut
+		desc:Habe 750 Glühwürmer
+		req:750 Gluehwurm
+		icon:iconse[8,16]
+*BHGluehwurm18
+		name:Glühstand
+		desc:Habe 800 Glühwürmer
+		req:800 Gluehwurm
+		icon:iconse[8,17]
+*BHGluehwurm19
+		name:Glühpegel
+		desc:Habe 850 Glühwürmer
+		req:850 Gluehwurm
+		icon:iconse[8,18]
+*BHGluehwurm20
+		name:Glühfest
+		desc:Habe 900 Glühwürmer
+		req:900 Gluehwurm
+		icon:iconse[8,19]
+*BHGluehwurm21
+		name:Glühtat
+		desc:Habe 950 Glühwürmer
+		req:950 Gluehwurm
+		icon:iconse[8,20]					
 				
 // Baumateial Achievements -------------------------
 //1
