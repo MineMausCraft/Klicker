@@ -9070,6 +9070,126 @@ Upgrades
 		icon:iconse[7,9] icons[4,1]
 		cost:8521566527270000000000000000000000 InsektenPanzer
 		req:UgBIPGluehwurm9
+//15 Mistroller
+*TEMPLATE
+		tag:upgrades
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Mistroller by 1.75
+		desc:<.> Erhöht die Produktion der Mistroller um <b>75</b> %.
+//33090909090909100
+*UgBIMistroller1
+		name:Roller
+		icon:iconse[9,0]
+		cost:330909090909091000 Insekten,156363636363636000 Larven, 863636363636360000 BauMaterial
+		req:330909090909091000 Insekten:earned and 1 Mistroller
+*UgBIMistroller2
+		name:Schnellroller
+		icon:iconse[9,1]
+		cost:33090909090909100000 Insekten,1563636363636360000 Larven, 8636363636363600000 BauMaterial
+		req:33090909090909100000 Insekten:earned and UgBIMistroller1
+*UgBIMistroller3
+		name:Großroller
+		icon:iconse[9,2]
+		cost:3309090909090910000000 Insekten,15636363636363600000 Larven, 863636363636360000000 BauMaterial
+		req:3309090909090910000000 Insekten:earned and UgBIMistroller2
+*UgBIMistroller4
+		name:Weitroller
+		icon:iconse[9,3]
+		cost:330909090909091000000000 Insekten,1563636363636360000000 Larven, 86363636363636000000000 BauMaterial
+		req:330909090909091000000000 Insekten:earned and UgBIMistroller3
+*UgBIMistroller5
+		name:Pferdeäpfel
+		icon:iconse[9,4]
+		cost:33090909090909100000000000 Insekten,156363636363636000000000 Larven, 8636363636363600000000000 BauMaterial
+		req:33090909090909100000000000 Insekten:earned and UgBIMistroller4
+*UgBIMistroller6
+		name:Kuhfladen
+		icon:iconse[9,5]
+		cost:3309090909090910000000000000 Insekten,15636363636363600000000000 Larven, 863636363636360000000000000 BauMaterial
+		req:3309090909090910000000000000 Insekten:earned and UgBIMistroller5
+*UgBIMistroller7
+		name:Hundehaufen
+		icon:iconse[9,6]
+		cost:330909090909091000000000000000 Insekten,1563636363636360000000000000 Larven, 86363636363636000000000000000 BauMaterial
+		req:330909090909091000000000000000 Insekten:earned and UgBIMistroller6
+*UgBIMistroller8
+		name:Katzendreck
+		icon:iconse[9,7]
+		cost:33090909090909100000000000000000 Insekten,156363636363636000000000000000 Larven, 8636363636363600000000000000000 BauMaterial
+		req:33090909090909100000000000000000 Insekten:earned and UgBIMistroller7
+*UgBIMistroller9
+		name:Hasenköttel
+		icon:iconse[9,8]
+		cost:3309090909090910000000000000000000 Insekten,15636363636363600000000000000000 Larven, 863636363636360000000000000000000 BauMaterial
+		req:3309090909090910000000000000000000 Insekten:earned and UgBIMistroller8
+*UgBIMistroller10
+		name:Mistrollator
+		icon:iconse[9,9]
+		cost:330909090909091000000000000000000000 Insekten,31563636363636360000000000000000000 Larven, 86363636363636000000000000000000000 BauMaterial
+		req:330909090909091000000000000000000000 Insekten:earned and UgBIMistroller9
+*UgBIMistroller11
+		name:Misthaufen
+		icon:iconse[9,10]
+		cost:33090909090909100000000000000000000000 Insekten,156363636363636000000000000000000000 Larven, 8636363636363600000000000000000000000 BauMaterial
+		req:33090909090909100000000000000000000000 Insekten:earned and UgBIMistroller10
+*UgBIMistroller12
+		name:Schubkarre voll Mist
+		icon:iconse[9,11]
+		cost:3309090909090910000000000000000000000000 Insekten,315636363636363600000000000000000000000 Larven, 863636363636360000000000000000000000000 BauMaterial
+		req:3309090909090910000000000000000000000000 Insekten:earned and UgBIMistroller11
+*UgBIPMistroller1
+		name:GlühwurmPanzer I
+		icon:iconse[10,0] icons[4,1]
+		cost:8521566527270000 InsektenPanzer
+		req:1 InsektenPanzer and 1 Mistroller
+*UgBIPMistroller2
+		name:GlühwurmPanzer II
+		icon:iconse[10,1] icons[4,1]
+		cost:852156652727000000 InsektenPanzer
+		req:UgBIPMistroller1
+*UgBIPMistroller3
+		name:GlühwurmPanzer III
+		icon:iconse[10,2] icons[4,1]
+		cost:85215665272700000000 InsektenPanzer
+		req:UgBIPMistroller2
+*UgBIPMistroller4
+		name:GlühwurmPanzer IV
+		icon:iconse[10,3] icons[4,1]
+		cost:8521566527270000000000 InsektenPanzer
+		req:UgBIPMistroller3
+*UgBIPMistroller5
+		name:GlühwurmPanzer V
+		icon:iconse[10,4] icons[4,1]
+		cost:852156652727000000000000 InsektenPanzer
+		req:UgBIPMistroller4
+*UgBIPMistroller6
+		name:GlühwurmPanzer VI
+		icon:iconse[10,5] icons[4,1]
+		cost:85215665272700000000000000 InsektenPanzer
+		req:UgBIPMistroller5
+*UgBIPMistroller7
+		name:GlühwurmPanzer VII
+		icon:iconse[10,6] icons[4,1]
+		cost:8521566527270000000000000000 InsektenPanzer
+		req:UgBIPMistroller6
+*UgBIPMistroller8
+		name:GlühwurmPanzer VIII
+		icon:iconse[10,7] icons[4,1]
+		cost:852156652727000000000000000000 InsektenPanzer
+		req:UgBIPMistroller7
+*UgBIPMistroller9
+		name:GlühwurmPanzer IX
+		icon:iconse[10,8] icons[4,1]
+		cost:85215665272700000000000000000000 InsektenPanzer
+		req:UgBIPMistroller8
+*UgBIPMistroller10
+		name:GlühwurmPanzer X
+		icon:iconse[10,9] icons[4,1]
+		cost:8521566527270000000000000000000000 InsektenPanzer
+		req:UgBIPMistroller9
 // Schaltet insekten frei ----------------------------------------------------		
 *TEMPLATE
 		tag:upgrades
@@ -13771,7 +13891,6 @@ class:noBackground
 		name:Schmetterlingsfisch
 		icon:iconsd[7,11]
 		req:2352000000000000000000000000000000000000 Larven:earned and UgBLGelbfisch12
-//14a
 *UgBLGelbfischF1a
 		name:Zwergbuntbarsch
 		icon:icons[5,5] iconsd[8,0]
@@ -16270,7 +16389,100 @@ class:noBackground
 		name:GlühwurmPanzer X
 		icon:iconse[7,9] icons[4,1]
 		req:UgBIPGluehwurm10
-*TEMPLATE				
+//15 Mistroller a
+*TEMPLATE
+		no buy
+		tag:owned
+		class:noBackground
+		desc:<.> Erhöht die Produktion der Mistroller um <b>75</b> %.
+*UgBIMistroller1a
+		name:Roller
+		icon:iconse[9,0]
+		req:UgBIMistroller1
+*UgBIMistroller2a
+		name:Schnellroller
+		icon:iconse[9,1]
+		req:33090909090909100000 Insekten:earned and UgBIMistroller2
+*UgBIMistroller3a
+		name:Großroller
+		icon:iconse[9,2]
+		req:3309090909090910000000 Insekten:earned and UgBIMistroller3
+*UgBIMistroller4a
+		name:Weitroller
+		icon:iconse[9,3]
+		req:330909090909091000000000 Insekten:earned and UgBIMistroller4
+*UgBIMistroller5a
+		name:Pferdeäpfel
+		icon:iconse[9,4]
+		req:33090909090909100000000000 Insekten:earned and UgBIMistroller5
+*UgBIMistroller6a
+		name:Kuhfladen
+		icon:iconse[9,5]
+		req:3309090909090910000000000000 Insekten:earned and UgBIMistroller6
+*UgBIMistroller7a
+		name:Hundehaufen
+		icon:iconse[9,6]
+		req:330909090909091000000000000000 Insekten:earned and UgBIMistroller7
+*UgBIMistroller8a
+		name:Katzendreck
+		icon:iconse[9,7]
+		req:33090909090909100000000000000000 Insekten:earned and UgBIMistroller8
+*UgBIMistroller9a
+		name:Hasenköttel
+		icon:iconse[9,8]
+		req:3309090909090910000000000000000000 Insekten:earned and UgBIMistroller9
+*UgBIMistroller10a
+		name:Mistrollator
+		icon:iconse[9,9]
+		req:330909090909091000000000000000000000 Insekten:earned and UgBIMistroller10
+*UgBIMistroller11a
+		name:Misthaufen
+		icon:iconse[9,10]
+		req:33090909090909100000000000000000000000 Insekten:earned and UgBIMistroller11
+*UgBIMistroller12a
+		name:Schubkarre voll Mist
+		icon:iconse[9,11]
+		req:3309090909090910000000000000000000000000 Insekten:earned and UgBIMistroller12
+*UgBIPMistroller1a
+		name:GlühwurmPanzer I
+		icon:iconse[10,0] icons[4,1]
+		req:UgBIPMistroller1
+*UgBIPMistroller2a
+		name:GlühwurmPanzer II
+		icon:iconse[10,1] icons[4,1]
+		req:UgBIPMistroller2
+*UgBIPMistroller3a
+		name:GlühwurmPanzer III
+		icon:iconse[10,2] icons[4,1]
+		req:UgBIPMistroller3
+*UgBIPMistroller4a
+		name:GlühwurmPanzer IV
+		icon:iconse[10,3] icons[4,1]
+		req:UgBIPMistroller4
+*UgBIPMistroller5a
+		name:GlühwurmPanzer V
+		icon:iconse[10,4] icons[4,1]
+		req:UgBIPMistroller5
+*UgBIPMistroller6a
+		name:GlühwurmPanzer VI
+		icon:iconse[10,5] icons[4,1]
+		req:UgBIPMistroller6
+*UgBIPMistroller7a
+		name:GlühwurmPanzer VII
+		icon:iconse[10,6] icons[4,1]
+		req:UgBIPMistroller7
+*UgBIPMistroller8a
+		name:GlühwurmPanzer VIII
+		icon:iconse[10,7] icons[4,1]
+		req:UgBIPMistroller8
+*UgBIPMistroller9a
+		name:GlühwurmPanzer IX
+		icon:iconse[10,8] icons[4,1]
+		req:UgBIPMistroller9
+*UgBIPMistroller10a
+		name:GlühwurmPanzer X
+		icon:iconse[10,9] icons[4,1]
+		req:UgBIPMistroller10
 // Schaltet insekten frei a----------------------------------------------------		
 *TEMPLATE
 		no buy
@@ -21891,7 +22103,113 @@ Achievements
 		name:Glühtat
 		desc:Habe 950 Glühwürmer
 		req:950 Gluehwurm
-		icon:iconse[8,20]					
+		icon:iconse[8,20]
+//15 Mistroller
+*BHMistroller1
+		name:Mistkäfer
+		desc:Habe einen Mistroller
+		req:1 Mistroller
+		icon:iconse[11,0]
+*BHMistroller2
+		name:Geotrupes
+		desc:Habe 19 Mistroller
+		req:19 Mistroller
+		icon:iconse[11,1]
+*BHMistroller3
+		name:Stierkäfer
+		desc:Habe 50 Mistroller
+		req:50 Mistroller
+		icon:iconse[11,2]
+*BHMistroller4
+		name:Lethrus
+		desc:Habe 100 Mistroller
+		req:100 Mistroller
+		icon:iconse[11,3]
+*BHMistroller5
+		name:Frühlingsroller
+		desc:Habe 150 Mistroller
+		req:150 Mistroller
+		icon:iconse[11,4]
+*BHMistroller6
+		name:Sommerroller
+		desc:Habe 200 Mistroller
+		req:200 Mistroller
+		icon:iconse[11,5]
+*BHMistroller7
+		name:Herbstroller
+		desc:Habe 250 Mistroller
+		req:250 Mistroller
+		icon:iconse[11,6]
+*BHMistroller8
+		name:Winterroller
+		desc:Habe 300 Mistroller
+		req:300 Mistroller
+		icon:iconse[11,7]
+*BHMistroller9
+		name:Dreckroller
+		desc:Habe 350 Mistroller
+		req:350 Mistroller
+		icon:iconse[11,8]
+*BHMistroller10
+		name:Rollator
+		desc:Habe 400 Mistroller
+		req:400 Mistroller
+		icon:iconse[11,9]
+*BHMistroller11
+		name:Rolltor
+		desc:Habe 450 Mistroller
+		req:450 Mistroller
+		icon:iconse[11,10]
+*BHMistroller12
+		name:Roll The Door
+		desc:Habe 500 Mistroller
+		req:500 Mistroller
+		icon:iconse[11,11]
+*BHMistroller13
+		name:Rolligkeit
+		desc:Habe 550 Mistroller
+		req:550 Mistroller
+		icon:iconse[11,12]
+*BHMistroller14
+		name:Rollkreis
+		desc:Habe 600 Mistroller
+		req:600 Mistroller
+		icon:iconse[11,13]
+*BHMistroller15
+		name:Rollsammlung
+		desc:Habe 650 Mistroller
+		req:650 Mistroller
+		icon:iconse[11,14]
+*BHMistroller16
+		name:Rollseil
+		desc:Habe 700 Mistroller
+		req:700 Mistroller
+		icon:iconse[11,15]
+*BHMistroller17
+		name:Rollstart
+		desc:Habe 750 Mistroller
+		req:750 Mistroller
+		icon:iconse[11,16]
+*BHMistroller18
+		name:Hühnermistroller
+		desc:Habe 800 Mistroller
+		req:800 Mistroller
+		icon:iconse[11,17]
+*BHMistroller19
+		name:Rollstart
+		desc:Habe 850 Mistroller
+		req:850 Mistroller
+		icon:iconse[11,18]
+*BHMistroller20
+		name:Rolltastisch
+		desc:Habe 900 Mistroller
+		req:900 Mistroller
+		icon:iconse[11,19]
+*BHMistroller21
+		name:Rollistisch
+		desc:Habe 950 Mistroller
+		req:950 Mistroller
+		icon:iconse[11,20]		
 				
 // Baumateial Achievements -------------------------
 //1
