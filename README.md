@@ -857,10 +857,51 @@ Resources
 		on earn:lose Termitenbau
 		on earn:lose Blatt
 		on earn:lose WespenNest
-		on earn:lose UgRIErfahrung1
-		
+		on earn:lose VerfaulterApfel
+		on earn:lose AltesNest
+		on earn:lose UeberwucherterSchuh
+		on earn:lose Pizza
+		on earn:lose SchneckeIvan
+		on earn:lose WasserEimer
+		on earn:lose Korb
+		on earn:lose Maruscha
+		on earn:lose Gelbfisch
+		on earn:lose Schildkroete
+		on earn:lose Topf
+		on earn:lose Kroete
+		on earn:lose Ameise
+		on earn:lose Termite
+		on earn:lose Fliege
+		on earn:lose Kaefer
+		on earn:lose Biene
+		on earn:lose RoteAmeise
+		on earn:lose GrosserKaefer
+		on earn:lose Schmetterling
+		on earn:lose Schabe
+		on earn:lose Skorpion
+		on earn:lose Moskito
+		on earn:lose Willi
+		on earn:lose Libelle
+		on earn:lose Gluehwurm
+		on earn:lose Mistroller
+		on earn:lose Nachtfalter
+		on earn:lose Gras
+		on earn:lose Ast
+		on earn:lose Wurzel
+		on earn:lose Stein
+		on earn:lose Dreck
+		on earn:lose AltesBuch
+		on earn:lose Karnickel
+		on earn:lose Sonnenblume
+		on earn:lose Fred
+		on earn:lose Blumenbusch
+		on earn:lose Wollmaus
+		on earn:lose VogelNest
+		on earn:lose HolzStapel
+		on earn:lose HerbstLaub
+		on earn:lose EuleFrieda
+		on earn:lose CreepyTree
 // Gebäudeproduktions Ressourcen		------------------------------------------
-
 *TEMPLATE
 		always hidden
 
