@@ -9190,6 +9190,126 @@ Upgrades
 		icon:iconse[10,9] icons[4,1]
 		cost:8521566527270000000000000000000000 InsektenPanzer
 		req:UgBIPMistroller9
+//16 Nachtfalter
+*TEMPLATE
+		tag:upgrades
+		on earn:hide this
+		on earn:yield 1 upgradesII
+		on click:anim glow
+		class:noBackground
+		passive:multiply yield of Nachtfalter by 1.75
+		desc:<.> Erhöht die Produktion der Nachtfalter um <b>75</b> %.
+//3945454545454550000
+*UgBINachtfalter1
+		name:Nachtsicht + 1
+		icon:iconse[12,0]
+		cost:39454545454545500000 Insekten,20636363636363600000 Larven, 10636363636363600000 BauMaterial
+		req:39454545454545500000 Insekten:earned and 1 Nachtfalter
+*UgBINachtfalter2
+		name:Lichtsensor
+		icon:iconse[12,1]
+		cost:3945454545454550000000 Insekten,206363636363636000000 Larven, 106363636363636000000 BauMaterial
+		req:3945454545454550000000 Insekten:earned and UgBINachtfalter1
+*UgBINachtfalter3
+		name:Nightwatch
+		icon:iconse[12,2]
+		cost:394545454545455000000000 Insekten,2063636363636360000000 Larven, 10636363636363600000000 BauMaterial
+		req:394545454545455000000000 Insekten:earned and UgBINachtfalter2
+*UgBINachtfalter4
+		name:Flatter! Flatter! 
+		icon:iconse[12,3]
+		cost:39454545454545500000000000 Insekten,206363636363636000000000 Larven, 1063636363636360000000000 BauMaterial
+		req:39454545454545500000000000 Insekten:earned and UgBINachtfalter3
+*UgBINachtfalter5
+		name:Faltenlos
+		icon:iconse[12,4]
+		cost:3945454545454550000000000000 Insekten,20636363636363600000000000 Larven, 106363636363636000000000000 BauMaterial
+		req:3945454545454550000000000000 Insekten:earned and UgBINachtfalter4
+*UgBINachtfalter6
+		name:Antennen
+		icon:iconse[12,5]
+		cost:394545454545455000000000000000 Insekten,2063636363636360000000000000 Larven, 10636363636363600000000000000 BauMaterial
+		req:394545454545455000000000000000 Insekten:earned and UgBINachtfalter5
+*UgBINachtfalter7
+		name:Dämmerungsaktiv
+		icon:iconse[12,6]
+		cost:39454545454545500000000000000000 Insekten,206363636363636000000000000000 Larven, 1063636363636360000000000000000 BauMaterial
+		req:39454545454545500000000000000000 Insekten:earned and UgBINachtfalter6
+*UgBINachtfalter8
+		name:Große Glubscher
+		icon:iconse[12,7]
+		cost:3945454545454550000000000000000000 Insekten,20636363636363600000000000000000 Larven, 106363636363636000000000000000000 BauMaterial
+		req:3945454545454550000000000000000000 Insekten:earned and UgBINachtfalter7
+*UgBINachtfalter9
+		name:Mehr Falter
+		icon:iconse[12,8]
+		cost:394545454545455000000000000000000000 Insekten,2063636363636360000000000000000000 Larven, 10636363636363600000000000000000000 BauMaterial
+		req:394545454545455000000000000000000000 Insekten:earned and UgBINachtfalter8
+*UgBINachtfalter10
+		name:Falteralarm
+		icon:iconse[12,9]
+		cost:39454545454545500000000000000000000000 Insekten,3206363636363636000000000000000000000 Larven, 1063636363636360000000000000000000000 BauMaterial
+		req:39454545454545500000000000000000000000 Insekten:earned and UgBINachtfalter9
+*UgBINachtfalter11
+		name:Faltrig
+		icon:iconse[12,10]
+		cost:3945454545454550000000000000000000000000 Insekten,20636363636363600000000000000000000000 Larven, 106363636363636000000000000000000000000 BauMaterial
+		req:3945454545454550000000000000000000000000 Insekten:earned and UgBINachtfalter10
+*UgBINachtfalter12
+		name:Alter Falter
+		icon:iconse[12,11]
+		cost:394545454545455000000000000000000000000000 Insekten,32063636363636360000000000000000000000000 Larven, 10636363636363600000000000000000000000000 BauMaterial
+		req:394545454545455000000000000000000000000000 Insekten:earned and UgBINachtfalter11
+*UgBIPNachtfalter1
+		name:GlühwurmPanzer I
+		icon:iconse[13,0] icons[4,1]
+		cost:8521566527270000 InsektenPanzer
+		req:1 InsektenPanzer and 1 Nachtfalter
+*UgBIPNachtfalter2
+		name:GlühwurmPanzer II
+		icon:iconse[13,1] icons[4,1]
+		cost:852156652727000000 InsektenPanzer
+		req:UgBIPNachtfalter1
+*UgBIPNachtfalter3
+		name:GlühwurmPanzer III
+		icon:iconse[13,2] icons[4,1]
+		cost:85215665272700000000 InsektenPanzer
+		req:UgBIPNachtfalter2
+*UgBIPNachtfalter4
+		name:GlühwurmPanzer IV
+		icon:iconse[13,3] icons[4,1]
+		cost:8521566527270000000000 InsektenPanzer
+		req:UgBIPNachtfalter3
+*UgBIPNachtfalter5
+		name:GlühwurmPanzer V
+		icon:iconse[13,4] icons[4,1]
+		cost:852156652727000000000000 InsektenPanzer
+		req:UgBIPNachtfalter4
+*UgBIPNachtfalter6
+		name:GlühwurmPanzer VI
+		icon:iconse[13,5] icons[4,1]
+		cost:85215665272700000000000000 InsektenPanzer
+		req:UgBIPNachtfalter5
+*UgBIPNachtfalter7
+		name:GlühwurmPanzer VII
+		icon:iconse[13,6] icons[4,1]
+		cost:8521566527270000000000000000 InsektenPanzer
+		req:UgBIPNachtfalter6
+*UgBIPNachtfalter8
+		name:GlühwurmPanzer VIII
+		icon:iconse[13,7] icons[4,1]
+		cost:852156652727000000000000000000 InsektenPanzer
+		req:UgBIPNachtfalter7
+*UgBIPNachtfalter9
+		name:GlühwurmPanzer IX
+		icon:iconse[13,8] icons[4,1]
+		cost:85215665272700000000000000000000 InsektenPanzer
+		req:UgBIPNachtfalter8
+*UgBIPNachtfalter10
+		name:GlühwurmPanzer X
+		icon:iconse[13,9] icons[4,1]
+		cost:8521566527270000000000000000000000 InsektenPanzer
+		req:UgBIPNachtfalter9
 // Schaltet insekten frei ----------------------------------------------------		
 *TEMPLATE
 		tag:upgrades
@@ -14004,7 +14124,6 @@ class:noBackground
 		name:Maurische Landschildkröte
 		icon:iconsd[10,11]
 		req:3057600000000000000000000000000000000000 Larven:earned and UgBLSchildkroete12
-//15a
 *UgBLSchildkroeteF1a
 		name:Starker Panzer
 		icon:icons[5,5] iconsd[11,0]
@@ -16483,6 +16602,100 @@ class:noBackground
 		name:GlühwurmPanzer X
 		icon:iconse[10,9] icons[4,1]
 		req:UgBIPMistroller10
+//16 Nachtfalter
+*TEMPLATE
+		no buy
+		tag:owned
+		class:noBackground
+		desc:<.> Erhöht die Produktion der Nachtfalter um <b>75</b> %.
+*UgBINachtfalter1a
+		name:Nachtsicht + 1
+		icon:iconse[12,0]
+		req:UgBINachtfalter1
+*UgBINachtfalter2a
+		name:Lichtsensor
+		icon:iconse[12,1]
+		req:UgBINachtfalter2
+*UgBINachtfalter3a
+		name:Nightwatch
+		icon:iconse[12,2]
+		req:394545454545455000000000 Insekten:earned and UgBINachtfalter3
+*UgBINachtfalter4a
+		name:Flatter! Flatter! 
+		icon:iconse[12,3]
+		req:39454545454545500000000000 Insekten:earned and UgBINachtfalter4
+*UgBINachtfalter5a
+		name:Faltenlos
+		icon:iconse[12,4]
+		req:3945454545454550000000000000 Insekten:earned and UgBINachtfalter5
+*UgBINachtfalter6a
+		name:Antennen
+		icon:iconse[12,5]
+		req:394545454545455000000000000000 Insekten:earned and UgBINachtfalter6
+*UgBINachtfalter7a
+		name:Dämmerungsaktiv
+		icon:iconse[12,6]
+		req:39454545454545500000000000000000 Insekten:earned and UgBINachtfalter7
+*UgBINachtfalter8a
+		name:Große Glubscher
+		icon:iconse[12,7]
+		req:3945454545454550000000000000000000 Insekten:earned and UgBINachtfalter8
+*UgBINachtfalter9a
+		name:Mehr Falter
+		icon:iconse[12,8]
+		req:394545454545455000000000000000000000 Insekten:earned and UgBINachtfalter9
+*UgBINachtfalter10a
+		name:Falteralarm
+		icon:iconse[12,9]
+		req:39454545454545500000000000000000000000 Insekten:earned and UgBINachtfalter10
+*UgBINachtfalter11a
+		name:Faltrig
+		icon:iconse[12,10]
+		req:3945454545454550000000000000000000000000 Insekten:earned and UgBINachtfalter11
+*UgBINachtfalter12a
+		name:Alter Falter
+		icon:iconse[12,11]
+		req:394545454545455000000000000000000000000000 Insekten:earned and UgBINachtfalter12
+*UgBIPNachtfalter1a
+		name:GlühwurmPanzer I
+		icon:iconse[13,0] icons[4,1]
+		req:UgBIPNachtfalter1
+*UgBIPNachtfalter2a
+		name:GlühwurmPanzer II
+		icon:iconse[13,1] icons[4,1]
+		req:UgBIPNachtfalter2
+*UgBIPNachtfalter3a
+		name:GlühwurmPanzer III
+		icon:iconse[13,2] icons[4,1]
+		req:UgBIPNachtfalter3
+*UgBIPNachtfalter4a
+		name:GlühwurmPanzer IV
+		icon:iconse[13,3] icons[4,1]
+		req:UgBIPNachtfalter4
+*UgBIPNachtfalter5a
+		name:GlühwurmPanzer V
+		icon:iconse[13,4] icons[4,1]
+		req:UgBIPNachtfalter5
+*UgBIPNachtfalter6a
+		name:GlühwurmPanzer VI
+		icon:iconse[13,5] icons[4,1]
+		req:UgBIPNachtfalter6
+*UgBIPNachtfalter7a
+		name:GlühwurmPanzer VII
+		icon:iconse[13,6] icons[4,1]
+		req:UgBIPNachtfalter7
+*UgBIPNachtfalter8a
+		name:GlühwurmPanzer VIII
+		icon:iconse[13,7] icons[4,1]
+		req:UgBIPNachtfalter8
+*UgBIPNachtfalter9a
+		name:GlühwurmPanzer IX
+		icon:iconse[13,8] icons[4,1]
+		req:UgBIPNachtfalter9
+*UgBIPNachtfalter10a
+		name:GlühwurmPanzer X
+		icon:iconse[13,9] icons[4,1]
+		req:UgBIPNachtfalter10
 // Schaltet insekten frei a----------------------------------------------------		
 *TEMPLATE
 		no buy
@@ -22210,7 +22423,112 @@ Achievements
 		desc:Habe 950 Mistroller
 		req:950 Mistroller
 		icon:iconse[11,20]		
-				
+//16 Nachtfalter
+*BHNachtfalter1
+		name:Ultraschall
+		desc:Habe einen Nachtfalter
+		req:1 Nachtfalter
+		icon:iconse[14,0]
+*BHNachtfalter2
+		name:Laser
+		desc:Habe 19 Nachtfalter
+		req:19 Nachtfalter
+		icon:iconse[14,1]
+*BHNachtfalter3
+		name:Spannweite
+		desc:Habe 50 Nachtfalter
+		req:50 Nachtfalter
+		icon:iconse[14,2]
+*BHNachtfalter4
+		name:Irrflug
+		desc:Habe 100 Nachtfalter
+		req:100 Nachtfalter
+		icon:iconse[14,3]
+*BHNachtfalter5
+		name:Motte
+		desc:Habe 150 Nachtfalter
+		req:150 Nachtfalter
+		icon:iconse[14,4]
+*BHNachtfalter6
+		name:Eulenfalter
+		desc:Habe 200 Nachtfalter
+		req:200 Nachtfalter
+		icon:iconse[14,5]
+*BHNachtfalter7
+		name:Atlasspinner
+		desc:Habe 250 Nachtfalter
+		req:250 Nachtfalter
+		icon:iconse[14,6]
+*BHNachtfalter8
+		name:Bärenspinner
+		desc:Habe 300 Nachtfalter
+		req:300 Nachtfalter
+		icon:iconse[14,7]
+*BHNachtfalter9
+		name:Holzbohrer
+		desc:Habe 350 Nachtfalter
+		req:350 Nachtfalter
+		icon:iconse[14,8]
+*BHNachtfalter10
+		name:Glucken
+		desc:Habe 400 Nachtfalter
+		req:400 Nachtfalter
+		icon:iconse[14,9]
+*BHNachtfalter11
+		name:Zünsler
+		desc:Habe 450 Nachtfalter
+		req:450 Nachtfalter
+		icon:iconse[14,10]
+*BHNachtfalter12
+		name:Widderchen
+		desc:Habe 500 Nachtfalter
+		req:500 Nachtfalter
+		icon:iconse[14,11]
+*BHNachtfalter13
+		name:Federgeistchen
+		desc:Habe 550 Nachtfalter
+		req:550 Nachtfalter
+		icon:iconse[14,12]
+*BHNachtfalter14
+		name:Spanner
+		desc:Habe 600 Nachtfalter
+		req:600 Nachtfalter
+		icon:iconse[14,13]
+*BHNachtfalter15
+		name:Glucker
+		desc:Habe 650 Nachtfalter
+		req:650 Nachtfalter
+		icon:iconse[14,14]
+*BHNachtfalter16
+		name:Langhornmotte
+		desc:Habe 700 Nachtfalter
+		req:700 Nachtfalter
+		icon:iconse[14,15]
+*BHNachtfalter17
+		name:Pfauenspinner
+		desc:Habe 750 Nachtfalter
+		req:750 Nachtfalter
+		icon:iconse[14,16]
+*BHNachtfalter18
+		name:Knospenmotte
+		desc:Habe 800 Nachtfalter
+		req:800 Nachtfalter
+		icon:iconse[14,17]
+*BHNachtfalter19
+		name:Miniersackträger
+		desc:Habe 850 Nachtfalter
+		req:850 Nachtfalter
+		icon:iconse[14,18]
+*BHNachtfalter20
+		name:Trugmotte
+		desc:Habe 900 Nachtfalter
+		req:900 Nachtfalter
+		icon:iconse[14,19]
+*BHNachtfalter21
+		name:Zwergwickler
+		desc:Habe 950 Nachtfalter
+		req:950 Nachtfalter
+		icon:iconse[14,20]							
 // Baumateial Achievements -------------------------
 //1
 *BHGras1
