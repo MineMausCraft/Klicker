@@ -862,7 +862,7 @@ Resources
 		on earn:lose UeberwucherterSchuh
 		on earn:lose Pizza
 		on earn:lose SchneckeIvan
-		on earn:lose WasserEimer
+		on earn:lose Eimer
 		on earn:lose Korb
 		on earn:lose Maruscha
 		on earn:lose Gelbfisch
@@ -9426,7 +9426,7 @@ Upgrades
 	name:Stechmücke
 	desc:Schaltet Moskitos frei.
 	icon:icons[5,5] icons[0,10] icons[4,0]
-	cost:10 WasserEimer,5 Wollmaus
+	cost:10 Eimer,5 Wollmaus
 	req:UpgISkorion
 //12
 *UpgIWilli
