@@ -847,8 +847,8 @@ Resources
 		class:noBackground
 		show earned
 		tag:Resf
-		on earn:lose Larven
-		on earn:lose Insekten
+		on earn:lose Larve
+		on earn:lose Insekte
 		on earn:lose BauMaterial
 		on earn:lose Nahrung
 		on earn:lose Erfahrung
@@ -901,6 +901,10 @@ Resources
 		on earn:lose HerbstLaub
 		on earn:lose EuleFrieda
 		on earn:lose CreepyTree
+		on earn:lose SammlerAmeise
+		on earn:lose SucherAmeise
+		on earn:lose JaegerAmeise
+		
 // Gebäudeproduktions Ressourcen		------------------------------------------
 *TEMPLATE
 		always hidden
@@ -923,16 +927,35 @@ Resources
 		always hidden
 		start with:50
 *Raupenlimit
-*Ameisenlimit
-*Graslimit
 *Bienenstocklimit
 *Termitenbaulimit
 *Blattlimit
 *WNestlimit
 *VApfellimit
+*ANestlimit
+*Schuhlimit
+*Pizzenlimit
+*Ivanslimit
+*Eimerlimit
+*Korblimit
+*Maruschalimit
+*Gelbfischlimit
+*Schildkroetelimit
+*Topflimit
+*Kroetenlimit
+
+*Ameisenlimit
 *Termitenlimit
 *Fliegenlimit
 *Kaefernlimit
+*Bienenlimit
+*RoteAmeisenlimit
+*GrKaeferlimit
+*Schmetterlimit
+*Schabenlimit
+*Skorpionlimit
+
+*Graslimit
 *Astlimit
 *Wurzellimit
 *Steinlimit
@@ -942,16 +965,6 @@ Resources
 *Sonnenblumenlimit
 *Fredslimit
 *Bbuschlimit
-*Bienenlimit
-*RoteAmeisenlimit
-*GrKaeferlimit
-*Schmetterlimit
-*Schabenlimit
-*Skorpionlimit
-*ANestlimit
-*Schuhlimit
-*Pizzenlimit
-*Ivanslimit
 
 //Shinies ---------------------------------------------------------------------------------------------------------
 Shinies
@@ -1449,7 +1462,8 @@ Buildings
    	on tick:lose 300000 BauMaterial
 	on tick:lose 200 Nahrung
 	on earn:yield 1 Erfahrung
-//12
+	Limit:(Eimerlimit)
+//12	
 *Korb|Koerbe
     name:Korb|Körbe
     desc:Ein Korb voller toller Dinge die Larven glücklich machen!<//><b><.></b> Produziert <b>66382979</b> Lps.<//><.> Produktion: <b>[Korb*66382979]</b> /Lps <//><.> Verbrauch: <b>2147929</b> Bps und <b>225</b> Nps<//><.> Gesamter Vb: <b>[Korb*2147929]</b>/Bps und <b>[Korb*225]</b>/Nps
@@ -1460,6 +1474,7 @@ Buildings
  	on tick:lose 2147929 BauMaterial
 	on tick:lose 225 Nahrung
 	on earn:yield 1 Erfahrung
+	Limit:(Korblimit)
 //13
 *Maruscha|Maruschas
     name:Maruscha|Maruschas
@@ -1471,6 +1486,7 @@ Buildings
 	on tick:lose 12887574 BauMaterial
 	on tick:lose 250 Nahrung
 	on earn:yield 1 Erfahrung
+	Limit:(Maruschalimit)
 //14
 *Gelbfisch|Gelbfische
 	name:Gelbfisch|Gelbfische
@@ -1482,6 +1498,7 @@ Buildings
 	on tick:lose 85256259 BauMaterial
 	on tick:lose 275 Nahrung
 	on earn:yield 1 Erfahrung
+	Limit:(Gelbfischlimit)
 //15
 *Schildkroete|Schildkroeten
 	name:Schildkröte|Schildkröten
@@ -1493,6 +1510,7 @@ Buildings
 	on tick:lose 574984069 BauMaterial
 	on tick:lose 300 Nahrung
 	on earn:yield 1 Erfahrung
+	Limit:(Schildkroetelimit)
 //16
 *Topf|Toepfe
 	name:Topf|Töpfe
@@ -1504,6 +1522,7 @@ Buildings
 	on tick:lose 4163677742 BauMaterial
 	on tick:lose 325 Nahrung
 	on earn:yield 1 Erfahrung
+	Limit:(Topflimit)
 //17
 *Kroete|Kroeten
 	name:Kröte|Kröten
@@ -1515,6 +1534,7 @@ Buildings
 	on tick:lose 29740555303 BauMaterial
 	on tick:lose 350 Nahrung
 	on earn:yield 1 Erfahrung
+	Limit:(Kroetenlimit)
 	
 //Insekten Gebäude -------------------------------------------------------------------------------------------------------
 //1	   
@@ -2150,7 +2170,209 @@ Upgrades
         cost:84000000000000000000000 Insekten
         req:190 SchneckenIvan
 		on earn:yield 50 Ivanslimit
-											
+		
+*UgLimitEimer1
+        name:100 Eimer
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Eimer!
+        icon:icons[5,8] icons[1,10]
+        cost:1120000000000000 Insekten
+        req:40 Eimer
+		on earn:yield 50 Eimerlimit
+*UgLimitEimer2
+        name:150 Eimer
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Eimer!
+        icon:icons[5,8] icons[1,10]
+        cost:1120000000000000000 Insekten
+        req:80 Eimer
+		on earn:yield 50 Eimerlimit
+*UgLimitEimer3
+        name:200 Eimer
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Eimer!
+        icon:icons[5,8] icons[1,10]
+        cost:1120000000000000000000 Insekten
+        req:140 Eimer
+		on earn:yield 50 Eimerlimit
+*UgLimitEimer4
+        name:250 Eimer
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Eimer!
+        icon:icons[5,8] icons[1,10]
+        cost:1120000000000000000000000 Insekten
+        req:190 Eimer
+		on earn:yield 50 Eimerlimit	
+		
+*UgLimitKorb1
+        name:100 Körbe
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Körbe!
+        icon:icons[5,8] iconsc[18,0]
+        cost:15680000000000000 Insekten
+        req:40 Korb
+		on earn:yield 50 Korblimit
+*UgLimitKorb2
+        name:150 Körbe
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Körbe!
+        icon:icons[5,8] iconsc[18,0]
+        cost:15680000000000000000 Insekten
+        req:80 Korb
+		on earn:yield 50 Korblimit
+*UgLimitKorb3
+        name:200 Körbe
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Körbe!
+        icon:icons[5,8] iconsc[18,0]
+        cost:15680000000000000000000 Insekten
+        req:140 Korb
+		on earn:yield 50 Korblimit
+*UgLimitKorb4
+        name:250 Körbe
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Körbe!
+        icon:icons[5,8] iconsc[18,0]
+        cost:15680000000000000000000000 Insekten
+        req:190 Korb
+		on earn:yield 50 Korblimit
+
+*UgLimitMaruscha1
+        name:100 Maruschas
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Maruschas!
+        icon:icons[5,8] icons[1,12]
+        cost:190400000000000000 Insekten
+        req:40 Maruscha
+		on earn:yield 50 Maruschalimit
+*UgLimitMaruscha2
+        name:150 Maruschas
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Maruschas!
+        icon:icons[5,8] icons[1,12]
+        cost:190400000000000000000 Insekten
+        req:80 Maruscha
+		on earn:yield 50 Maruschalimit
+*UgLimitMaruscha3
+        name:200 Maruschas
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Maruschas!
+        icon:icons[5,8] icons[1,12]
+        cost:190400000000000000000000 Insekten
+        req:140 Maruscha
+		on earn:yield 50 Maruschalimit
+*UgLimitMaruscha4
+        name:250 Maruschas
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Maruschas!
+        icon:icons[5,8] icons[1,12]
+        cost:190400000000000000000000000 Insekten
+        req:190 Maruscha
+		on earn:yield 50 Maruschalimit		
+
+*UgLimitGelbfisch1
+        name:100 Gelbfische
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Gelbfische!
+        icon:icons[5,8] icons[1,13]
+        cost:2352000000000000000 Insekten
+        req:40 Gelbfisch
+		on earn:yield 50 Gelbfischlimit
+*UgLimitGelbfisch2
+        name:150 Gelbfische
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Gelbfische!
+        icon:icons[5,8] icons[1,13]
+        cost:2352000000000000000000 Insekten
+        req:80 Gelbfisch
+		on earn:yield 50 Gelbfischlimit
+*UgLimitGelbfisch3
+        name:200 Gelbfische
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Gelbfische!
+        icon:icons[5,8] icons[1,13]
+        cost:2352000000000000000000000 Insekten
+        req:140 Gelbfisch
+		on earn:yield 50 Gelbfischlimit
+*UgLimitGelbfisch4
+        name:250 Gelbfische
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Gelbfische!
+        icon:icons[5,8] icons[1,13]
+        cost:2352000000000000000000000000 Insekten
+        req:190 Gelbfisch
+		on earn:yield 50 Gelbfischlimit
+		
+*UgLimitSchildkroete1
+        name:100 Schildkröten
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Schildkröten!
+        icon:icons[5,8] icons[1,14]
+        cost:30576000000000000000 Insekten
+        req:40 Schildkroete
+		on earn:yield 50 Schildkroetelimit
+*UgLimitSchildkroete2
+        name:150 Schildkröten
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Schildkröten!
+        icon:icons[5,8] icons[1,14]
+        cost:30576000000000000000000 Insekten
+        req:80 Schildkroete
+		on earn:yield 50 Schildkroetelimit
+*UgLimitSchildkroete3
+        name:200 Schildkröten
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Schildkröten!
+        icon:icons[5,8] icons[1,14]
+        cost:30576000000000000000000000 Insekten
+        req:140 Schildkroete
+		on earn:yield 50 Schildkroetelimit
+*UgLimitSchildkroete4
+        name:250 Schildkröten
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Schildkröten!
+        icon:icons[5,8] icons[1,14]
+        cost:30576000000000000000000000000 Insekten
+        req:190 Schildkroete
+		on earn:yield 50 Schildkroetelimit
+
+*UgLimitTopf1
+        name:100 Töpfe
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Töpfe!
+        icon:icons[5,8] icons[1,15]
+        cost:364560000000000000000 Insekten
+        req:40 Topf
+		on earn:yield 50 Topflimit
+*UgLimitTopf2
+        name:150 Töpfe
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Töpfe!
+        icon:icons[5,8] icons[1,15]
+        cost:364560000000000000000000 Insekten
+        req:80 Topf
+		on earn:yield 50 Topflimit
+*UgLimitTopf3
+        name:200 Töpfe
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Töpfe!
+        icon:icons[5,8] icons[1,15]
+        cost:364560000000000000000000000 Insekten
+        req:140 Topf
+		on earn:yield 50 Topflimit
+*UgLimitTopf4
+        name:250 Töpfe
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Töpfe!
+        icon:icons[5,8] icons[1,15]
+        cost:364560000000000000000000000000 Insekten
+        req:190 Topf
+		on earn:yield 50 Topflimit
+		
+*UgLimitKroete1
+        name:100 Kröten
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Kröten!
+        icon:icons[5,8] icons[1,16]
+        cost:4739280000000000000000 Insekten
+        req:40 Kroete
+		on earn:yield 50 Kroetenlimit
+*UgLimitKroete2
+        name:150 Kröten
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Kröten!
+        icon:icons[5,8] icons[1,16]
+        cost:4739280000000000000000000 Insekten
+        req:80 Kroete
+		on earn:yield 50 Kroetenlimit
+*UgLimitKroete3
+        name:200 Kröten
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Kröten!
+        icon:icons[5,8] icons[1,16]
+        cost:4739280000000000000000000000 Insekten
+        req:140 Kroete
+		on earn:yield 50 Kroetenlimit
+*UgLimitKroete4
+        name:250 Kröten
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Kröten!
+        icon:icons[5,8] icons[1,16]
+        cost:4739280000000000000000000000000 Insekten
+        req:190 Kroete
+		on earn:yield 50 Kroetenlimit		
 	
 // Insekten Limits -------------------------------------------------------------------------------------------		
 *UgLimitAmeise1
