@@ -706,7 +706,7 @@ Buttons
 		
 *OPButton    
       name:Evolutions Starter
-      desc:Wenn du jetzt mit der Evolution beginnst bekommst du (pow(Insekten:earned/1000000000000,0.3)-Evo:earned) Evos !
+      desc:Wenn du jetzt mit der Evolution beginnst bekommst du [pow[Insekten:earned/1000000000000,0.3]-Evo:earned] Evos !
       on click:anim icon wobble
       icon:https://imgur.com/7ulsbid.png
       no text
