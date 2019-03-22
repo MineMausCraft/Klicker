@@ -706,7 +706,7 @@ Buttons
 		
 *OPButton    
       name:Evolutions Starter
-      desc:Ein bssssst 
+      desc:Wenn du jetzt mit der Evolution beginnst bekommst du (pow(Insekten:earned/1000000000000,0.3)-Evo:earned) Evos !
       on click:anim icon wobble
       icon:https://imgur.com/7ulsbid.png
       no text
@@ -852,6 +852,8 @@ Resources
 		on earn:lose BauMaterial
 		on earn:lose Nahrung
 		on earn:lose Erfahrung
+		on earn:lose InsektenPanzer
+		on earn:lose Territorien
 		on earn:lose Raupe
 		on earn:lose Bienenstock
 		on earn:lose Termitenbau
