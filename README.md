@@ -847,8 +847,8 @@ Resources
 		class:noBackground
 		show earned
 		tag:Resf
-		on earn:lose Larve
-		on earn:lose Insekte
+		on earn:lose Larven
+		on earn:lose Insekten
 		on earn:lose BauMaterial
 		on earn:lose Nahrung
 		on earn:lose Erfahrung
