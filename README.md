@@ -4053,6 +4053,7 @@ Upgrades
 		on earn:hide this
 		on earn:yield 1 upgradesII
 		on click:anim glow
+		class:noBackground
 
 *UgRLMandala1
 		name:Ein buntes Mandala
