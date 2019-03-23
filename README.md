@@ -436,11 +436,9 @@ Buttons
       on click:yield 1 BauMaterial
 *SuperButton42
         name:Insekten 1t
-        desc:Nur Buff1
+        desc:test 1t Insekten
         icon:iconskl[1,20]
         class:SuperButton42
-        text:Tada42
-        no tooltip
       on click:anim icon wobble
       on click:yield 1000000000000 Insekten
 *SuperButtonOn
