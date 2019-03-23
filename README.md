@@ -704,7 +704,7 @@ Buttons
 		
 *OPButton    
       name:Evolutions Starter
-      desc:Wenn du jetzt mit der Evolution beginnst bekommst du [(pow(Insekten:earned/1000000000000,0.3)-Evo:earned)] Evos !
+      desc:Wenn du jetzt mit der Evolution beginnst bekommst du [(pow(Insekten:earned/100000000000,0.3)-Evo:earned)] Evos !
       on click:anim icon wobble
       icon:https://imgur.com/7ulsbid.png
       no text
@@ -712,7 +712,7 @@ Buttons
       class:OPButton
 	  req:1000000000000 Insekten
 	  cost:1000000000000 Insekten
-	  on click:if (Insekten>1000000000000) yield (pow(Insekten:earned/1000000000000,0.3)-Evo:earned) Evo
+	  on click:if (Insekten>100000000000) yield (pow(Insekten:earned/100000000000,0.3)-Evo:earned) Evo
 	  passive:multiply yield of Larven by ((Evo:earned*1/100)+1)
 	  passive:multiply yield of Insekten by ((Evo:earned*1/100)+1)
   	  passive:multiply yield of BauMaterial by ((Evo:earned*1/100)+1)
