@@ -435,14 +435,14 @@ Buttons
       on click:anim icon wobble
       on click:yield 1 BauMaterial
 *SuperButton42
-        name:Superbutton42
+        name:Insekten 1t
         desc:Nur Buff1
         icon:iconskl[1,20]
         class:SuperButton42
         text:Tada42
         no tooltip
       on click:anim icon wobble
-      on click:yield 1 BauMaterial
+      on click:yield 1000000000000 Insekten
 *SuperButtonOn
 		name:EvolutionsKnopf
         desc:KLicke hier wenn du deine Evolutions Punkte ausgeben möchtest.
@@ -945,7 +945,6 @@ Resources
 *Schildkroetelimit
 *Topflimit
 *Kroetenlimit
-
 *Ameisenlimit
 *Termitenlimit
 *Fliegenlimit
@@ -962,8 +961,6 @@ Resources
 *Gluewurmlimit
 *Mistrollerlimit
 *Nachtfalterlimit
-
-
 *Graslimit
 *Astlimit
 *Wurzellimit
