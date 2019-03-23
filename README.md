@@ -50,7 +50,7 @@ Layout
                    
 *ownedupgrades
     contains:tag:owned
-    header:Gekaufte Upgrades: [upgradesII] ([((upgradesII/795)*100)]%)
+    header:Gekaufte Upgrades: [upgradesII] ([((upgradesII/1495)*100)]%)
     in:upgrades
     costs:hide
     names:hide
@@ -956,6 +956,13 @@ Resources
 *Schmetterlimit
 *Schabenlimit
 *Skorpionlimit
+*Moskitolimit
+*Willilimit
+*Libellelimit
+*Gluewurmlimit
+*Mistrollerlimit
+*Nachtfalterlimit
+
 
 *Graslimit
 *Astlimit
@@ -1659,6 +1666,7 @@ Buildings
     req:1272727272727 Insekten:earned and UpgIMoskito
 	on tick:lose 300000 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(Moskitolimit)
 //12
 *Willi|Willis
     name:Willi|Willis
@@ -1669,6 +1677,7 @@ Buildings
     req:17818181818182 Insekten:earned and UpgIWilli
 	on tick:lose 2147929 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(Willilimit)
 //13
 *Libelle|Libellen
     name:Libelle|Libellen<//><b><.></b> Produziert <b>355500213</b> Insekt pro Sekunde.<//><.> Produktion: <b>[Libelle*355500213]</b> /Ips <//><.> Verbrauch: <b>12887574</b> BauMaterial pro Sekunde <//><.> Gesamter Vb: <b>[Libelle*12887574]</b>/Bps
@@ -1679,6 +1688,7 @@ Buildings
     req:216363636363636 Insekten:earned and UpgILibelle
 	on tick:lose 12887574 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(Libellelimit)
 //14
 *Gluehwurm|Gluehwuermer
     name:Glühwurm|Glühwürmer
@@ -1689,6 +1699,7 @@ Buildings
     req:2672727272727270 Insekten:earned and UpgIGluehwurm
 	on tick:lose 85256259 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(Gluewurmlimit)
 //15
 *Mistroller
     name:Mistroller
@@ -1699,6 +1710,7 @@ Buildings
     req:33090909090909100 Insekten:earned and UpgIMistroller
 	on tick:lose 574984069 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(Mistrollerlimit)
 //16
 *Nachtfalter
     name:Nachtfalter
@@ -1709,6 +1721,7 @@ Buildings
     req:394545454545455000 Insekten:earned and UpgINachtfalter
 	on tick:lose 4163677742 BauMaterial
 	on earn:yield 1 Erfahrung
+	Limit:(Nachtfalterlimit)
 	
 // BauMaterial Gebäude ----------------------------------------------------
  //1 
@@ -2666,8 +2679,150 @@ Upgrades
         cost:95454545455000000000000 Insekten
         req:190 Skorpion
 		on earn:yield 50 Skorpionlimit
-				
-														
+*UgLimitMoskito1
+        name:100 Moskitos
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Moskitos!
+        icon:icons[5,8] icons[0,10]
+        cost:1272727272727000 Insekten
+        req:40 Moskito
+		on earn:yield 50 Moskitolimit
+*UgLimitMoskito2
+        name:150 Moskitos
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Moskitos!
+        icon:icons[5,8] icons[0,10]
+        cost:1272727272727000000 Insekten
+        req:80 Moskito
+		on earn:yield 50 Moskitolimit
+*UgLimitMoskito3
+        name:200 Moskitos
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Moskitos!
+        icon:icons[5,8] icons[0,10]
+        cost:1272727272727000000000 Insekten
+        req:140 Moskito
+		on earn:yield 50 Moskitolimit
+*UgLimitMoskito4
+        name:250 Moskitos
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Moskitos!
+        icon:icons[5,8] icons[0,10]
+        cost:1272727272727000000000000 Insekten
+        req:190 Moskito
+		on earn:yield 50 Moskitolimit
+		
+*UgLimitWilli1
+        name:100 Willis
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Willis!
+        icon:icons[5,8] icons[0,11]
+        cost:17818181818182000 Insekten
+        req:40 Willi
+		on earn:yield 50 Willilimit
+*UgLimitWilli2
+        name:150 Willis
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Willis!
+        icon:icons[5,8] icons[0,11]
+        cost:17818181818182000000 Insekten
+        req:80 Willi
+		on earn:yield 50 Willilimit
+*UgLimitWilli3
+        name:200 Willis
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Willis!
+        icon:icons[5,8] icons[0,11]
+        cost:17818181818182000000000 Insekten
+        req:140 Willi
+		on earn:yield 50 Willilimit
+*UgLimitWilli4
+        name:250 Willis
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Willis!
+        icon:icons[5,8] icons[0,11]
+        cost:17818181818182000000000000 Insekten
+        req:190 Willi
+		on earn:yield 50 Willilimit		
+		
+*UgLimitLibelle1
+        name:100 Libellen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Libellen!
+        icon:icons[5,8] icons[0,12]
+        cost:216363636363636000 Insekten
+        req:40 Libelle
+		on earn:yield 50 Libellelimit
+*UgLimitLibelle2
+        name:150 Libellen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Libellen!
+        icon:icons[5,8] icons[0,12]
+        cost:216363636363636000000 Insekten
+        req:80 Libelle
+		on earn:yield 50 Libellelimit
+*UgLimitLibelle3
+        name:200 Libellen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Libellen!
+        icon:icons[5,8] icons[0,12]
+        cost:216363636363636000000000 Insekten
+        req:140 Libelle
+		on earn:yield 50 Libellelimit
+*UgLimitLibelle4
+        name:250 Libellen
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Libellen!
+        icon:icons[5,8] icons[0,12]
+        cost:216363636363636000000000000 Insekten
+        req:190 Libelle
+		on earn:yield 50 Libellelimit
+		
+*UgLimitMistroller1
+        name:100 Mistroller
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Mistroller!
+        icon:icons[5,8] icons[0,14]
+        cost:33090909090909100000 Insekten
+        req:40 Mistroller
+		on earn:yield 50 Mistrollerlimit
+*UgLimitMistroller2
+        name:150 Mistroller
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Mistroller!
+        icon:icons[5,8] icons[0,14]
+        cost:33090909090909100000000 Insekten
+        req:80 Mistroller
+		on earn:yield 50 Mistrollerlimit
+*UgLimitMistroller3
+        name:200 Mistroller
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Mistroller!
+        icon:icons[5,8] icons[0,14]
+        cost:33090909090909100000000000 Insekten
+        req:140 Mistroller
+		on earn:yield 50 Mistrollerlimit
+*UgLimitMistroller4
+        name:250 Mistroller
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Mistroller!
+        icon:icons[5,8] icons[0,14]
+        cost:33090909090909100000000000000 Insekten
+        req:190 Mistroller
+		on earn:yield 50 Mistrollerlimit
+		
+*UgLimitNachtfalter1
+        name:100 Nachtfalter
+        desc:<.> Vergrößere deine Kolonie auf bis zu 100 Nachtfalter!
+        icon:icons[5,8] icons[0,15]
+        cost:394545454545455000000 Insekten
+        req:40 Nachtfalter
+		on earn:yield 50 Nachtfalterlimit
+*UgLimitNachtfalter2
+        name:150 Nachtfalter
+        desc:<.> Vergrößere deine Kolonie auf bis zu 150 Nachtfalter!
+        icon:icons[5,8] icons[0,15]
+        cost:394545454545455000000000 Insekten
+        req:80 Nachtfalter
+		on earn:yield 50 Nachtfalterlimit
+*UgLimitNachtfalter3
+        name:200 Nachtfalter
+        desc:<.> Vergrößere deine Kolonie auf bis zu 200 Nachtfalter!
+        icon:icons[5,8] icons[0,15]
+        cost:394545454545455000000000000 Insekten
+        req:140 Nachtfalter
+		on earn:yield 50 Nachtfalterlimit
+*UgLimitNachtfalter4
+        name:250 Nachtfalter
+        desc:<.> Vergrößere deine Kolonie auf bis zu 250 Nachtfalter!
+        icon:icons[5,8] icons[0,15]
+        cost:394545454545455000000000000000 Insekten
+        req:190 Nachtfalter
+		on earn:yield 50 Nachtfalterlimit		
 		
 // BauMaterial Limit	-------------------------------------------------------------------------------------------------------
 *UgLimitGras1
