@@ -11999,7 +11999,7 @@ Upgrades
 *TEMPLATE
 no buy
 tag:owned
-//class:noBackground
+class:noBackground
 
 // Larven Multi mit Erfahrung a
 *UgRLErfahrung1a
