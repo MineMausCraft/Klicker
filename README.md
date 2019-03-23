@@ -417,23 +417,19 @@ Buttons
         no tooltip
       on click:anim icon wobble
 *SuperButton40
-        name:Superbutton40
-        desc:Nur Buff1
+        name:Test 1 t Larven
+        desc:1t Larven
         icon:iconskl[1,18]
         class:SuperButton40
-        text:Tada40
-        no tooltip
       on click:anim icon wobble
-      on click:yield 1 BauMaterial
+      on click:yield 1000000000000 Larven
 *SuperButton41
-        name:Superbutton41
-        desc:Nur Buff1
+        name:test 1k baumaterial
+        desc:1k baumaterial
         icon:iconskl[1,19]
         class:SuperButton41
-        text:Tada41
-        no tooltip
       on click:anim icon wobble
-      on click:yield 1 BauMaterial
+      on click:yield 1000000000000 BauMaterial
 *SuperButton42
         name:Insekten 1t
         desc:test 1t Insekten
